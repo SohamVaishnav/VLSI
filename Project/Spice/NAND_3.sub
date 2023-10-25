@@ -1,0 +1,7 @@
+.subckt NAND_3 inA inB inC out vdd gnd
+    .include AND.sub
+    .include NAND.sub
+
+    X1 inA inB out1 vdd gnd AND
+    X2 inC out1 out vdd gnd NAND
+.ends NAND_3

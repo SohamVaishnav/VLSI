@@ -1,0 +1,7 @@
+.subckt four_bit_comparator inA inB Eq Gt Lt vdd gnd
+    .include AND.sub
+    .include OR.sub
+    .include XOR.sub
+    .include XNOR.sub
+
+.ends four_bit_comparator

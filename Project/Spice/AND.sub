@@ -1,0 +1,25 @@
+.subckt AND inA inB out vdd gnd
+    Mp1 out_nand inA vdd vdd CMOSP W={1.8u} L={0.18u}
+    + AS={5*1.8u*0.18u} PS={10*0.18u+2*1.8u} 
+    + AD={5*1.8u*0.18u} PD={10*0.18u+2*1.8u}
+
+    Mp2 out_nand inB vdd vdd CMOSP W={1.8u} L={0.18u}
+    + AS={5*1.8u*0.18u} PS={10*0.18u+2*1.8u} 
+    + AD={5*1.8u*0.18u} PD={10*0.18u+2*1.8u}
+
+    Mn1 out_nand inA B_drain B_drain CMOSN W={1.8u} L={0.36u}
+    + AS={5*1.8u*0.18u} PS={10*0.18u+2*1.8u} 
+    + AD={5*1.8u*0.18u} PD={10*0.18u+2*1.8u}
+
+    Mn2 B_drain inB 0 0 CMOSN W={1.8u} L={0.36u}
+    + AS={5*1.8u*0.18u} PS={10*0.18u+2*1.8u} 
+    + AD={5*1.8u*0.18u} PD={10*0.18u+2*1.8u}
+
+    Mp out out_nand vdd vdd CMOSP W={1.8u} L={0.18u}
+    + AS={5*1.8u*0.18u} PS={10*0.18u+2*1.8u} 
+    + AD={5*1.8u*0.18u} PD={10*0.18u+2*1.8u}
+    
+    Mn out out_nand gnd gnd CMOSN W={1.8u} L={0.36u}
+    + AS={5*1.8u*0.18u} PS={10*0.18u+2*1.8u} 
+    + AD={5*1.8u*0.18u} PD={10*0.18u+2*1.8u}
+.ends AND

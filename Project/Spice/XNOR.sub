@@ -1,0 +1,7 @@
+.subckt XNOR inA inB out vdd gnd
+    .include XOR.sub
+    .include NOT.sub
+    
+    X1 inA inB Xor_out vdd gnd XOR
+    X2 Xor_out out vdd gnd
+.ends XNOR
