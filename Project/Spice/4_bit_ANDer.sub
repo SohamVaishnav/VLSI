@@ -1,0 +1,13 @@
+.subckt 4_bit_ANDer En A3 A2 A1 A0 B3 B2 B1 B0 y3 y2 y1 y0 vdd gnd
+    .include AND.sub
+    
+    X1 A0 B0 w0 vdd gnd AND
+    X2 A1 B1 w1 vdd gnd AND
+    X3 A2 B2 w2 vdd gnd AND
+    X4 A3 B3 w3 vdd gnd AND
+
+    X5 En w0 y0 vdd gnd AND
+    X6 En w1 y1 vdd gnd AND
+    X7 En w2 y2 vdd gnd AND
+    X8 En w3 y3 vdd gnd AND
+.ends 4_bit_ANDer

@@ -1,0 +1,19 @@
+.subckt 4_bit_Adder_Sub En A3 A2 A1 A0 B3 B2 B1 B0 C_over S3 S2 S1 S0 vdd gnd
+    .include XOR.sub
+    .include full_adder.sub
+    .include AND.sub
+
+    X1 B3 En B_eff3 vdd gnd XOR
+    X2 B2 En B_eff2 vdd gnd XOR
+    X3 B1 En B_eff1 vdd gnd XOR
+    X4 B0 En B_eff0 vdd gnd XOR
+
+    X5 A0 B_eff0 En C0 s0 vdd gnd full_adder
+    X6 En s0 S0 vdd gnd AND
+    X7 A1 B_eff1 C0 C1 s1 vdd gnd full_adder
+    X8 En s1 S1 vdd gnd AND
+    X9 A2 B_eff2 C1 C2 s2 vdd gnd full_adder
+    X10 En s2 S2 vdd gnd AND
+    X11 A3 B_eff3 C2 C3 s3 vdd gnd full_adder
+    X12 En s3 S3 vdd gnd AND
+.ends 4_bit_Adder_Sub

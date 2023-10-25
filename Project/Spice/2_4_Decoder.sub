@@ -1,0 +1,12 @@
+.subckt 2_4_Decoder Sel0 Sel1 y1 y2 y3 y4 vdd gnd
+    .include AND.sub
+    .include NOT.sub
+
+    X1 Sel0 Sel0c vdd gnd NOT
+    X2 Sel1 Sel1c vdd gnd NOT
+
+    X3 Sel0c Sel1c y1 vdd gnd AND
+    X4 Sel0c Sel1 y2 vdd gnd AND
+    X5 Sel0 Sel1c y3 vdd gnd AND
+    X6 Sel0 Sel1 y4 vdd gnd AND
+.ends 2_4_Decoder

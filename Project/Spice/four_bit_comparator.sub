@@ -1,7 +1,43 @@
-.subckt four_bit_comparator inA inB Eq Gt Lt vdd gnd
+.subckt four_bit_comparator En A3 A2 A1 A0 B3 B2 B1 B0 Eq Gt Lt vdd gnd
+    .include NOT.sub
     .include AND.sub
+    .include AND_3.sub
+    .include AND_4.sub
+    .include AND_5.sub
     .include OR.sub
+    .include OR_3.sub
+    .include OR_4.sub
+    .include OR_5.sub
     .include XOR.sub
     .include XNOR.sub
 
+    X1 A0 A0c vdd gnd NOT
+    X2 A1 A1c vdd gnd NOT
+    X3 A2 A2c vdd gnd NOT
+    X4 A3 A3c vdd gnd NOT
+
+    X5 B0 B0c vdd gnd NOT
+    X6 B1 B1c vdd gnd NOT
+    X7 B2 B2c vdd gnd NOT
+    X8 B3 B3c vdd gnd NOT
+
+    X9 A0 B0 w1 vdd gnd XNOR
+    X10 A1 B1 w2 vdd gnd XNOR
+    X11 A2 B2 w3 vdd gnd XNOR
+    X12 A3 B3 w4 vdd gnd XNOR
+    X13 w1 w2 w3 w4 En Eq vdd out AND_5
+
+    X14 A3 B3c w5 vdd gnd AND
+    X15 w4 A2 B2c w6 vdd gnd AND_3
+    X16 w3 w4 A1 B1c w7 vdd gnd AND_4
+    X17 w2 w3 w4 A0 B0c w8 vdd gnd AND_5
+    X18 w5 w6 w7 w8 w9 vdd gnd OR_4
+    X19 w9 En Gt vdd gnd AND
+
+    X20 A3c B3 w10 vdd gnd AND
+    X21 w4 A2c B2 w11 vdd gnd AND_3
+    X22 w3 w4 A1c B1 w12 vdd gnd AND_4
+    X23 w2 w3 w4 A0c B0 w13 vdd gnd AND_5
+    X24 w5 w6 w7 w8 w14 vdd gnd OR_4
+    X25 w14 En Lt vdd gnd AND
 .ends four_bit_comparator
