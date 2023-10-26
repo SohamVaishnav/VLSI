@@ -8,12 +8,9 @@
     X3 B1 En B_eff1 vdd gnd XOR
     X4 B0 En B_eff0 vdd gnd XOR
 
-    X5 A0 B_eff0 En C0 s0 vdd gnd full_adder
-    X6 En s0 S0 vdd gnd AND
-    X7 A1 B_eff1 C0 C1 s1 vdd gnd full_adder
-    X8 En s1 S1 vdd gnd AND
-    X9 A2 B_eff2 C1 C2 s2 vdd gnd full_adder
-    X10 En s2 S2 vdd gnd AND
-    X11 A3 B_eff3 C2 C3 s3 vdd gnd full_adder
-    X12 En s3 S3 vdd gnd AND
+    X5 A0 B_eff0 En S0 C0 vdd gnd full_adder
+    X7 A1 B_eff1 C0 S1 C1 vdd gnd full_adder
+    X9 A2 B_eff2 C1 S2 C2 vdd gnd full_adder
+    X11 A3 B_eff3 C2 S3 C_over vdd gnd full_adder
+
 .ends 4_bit_Adder_Sub

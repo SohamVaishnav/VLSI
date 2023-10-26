@@ -3,5 +3,5 @@
     .include NOT.sub
     
     X1 inA inB Xor_out vdd gnd XOR
-    X2 Xor_out out vdd gnd
+    X2 Xor_out out vdd gnd NOT
 .ends XNOR

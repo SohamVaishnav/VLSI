@@ -1,0 +1,71 @@
+.title 4 Bit ALU
+.include TSMC_180nm.txt
+.include NOT.sub
+.include NAND.sub
+.include NAND_3.sub
+.include NAND_4.sub
+.include NAND_5.sub
+.include NOR.sub
+.include NOR_3.sub
+.include NOR_4.sub
+.include NOR_5.sub
+.include AND.sub
+.include AND_3.sub
+.include AND_4.sub
+.include AND_5.sub
+.include OR.sub
+.include OR_3.sub
+.include OR_4.sub
+.include OR_5.sub
+.include XOR.sub
+.include XNOR.sub
+.include full_adder.sub
+.include 4_bit_Adder_Sub.sub
+.include 2_4_Decoder.sub
+.include 2_1_MUX.sub
+.include 4_bit_Comparator.sub
+.include 4_bit_ANDer.sub
+
+.global gnd
+
+VinSelD0 SelD_0 0 PULSE(0 1.8 0 100p 100p 60n 120n)
+VinSelD1 SelD_1 0 dc 0
+
+VDD vdd 0 1.8
+
+X1 SelD_0 SelD_1 y1 y2 y3 y4 vdd 0 2_4_Decoder
+
+X2 y1 y1c vdd 0 NOT
+X3 y1c y2 y_as vdd 0 AND
+
+VinSelM0 SelM_0 0 dc 0 
+
+X4 SelM_0 y1 y2 y_M vdd 0 2_1_MUX
+
+VA0 A0 0 PULSE(0 1.8 0 100p 100p 60n 120n)
+VA1 A1 0 dc 0
+VA2 A2 0 PULSE(0 1.8 0 100p 100p 60n 120n)
+VA3 A3 0 dc 0
+
+VB0 B0 0 PULSE(0 1.8 0 100p 100p 60n 120n)
+VB1 B1 0 PULSE(0 1.8 0 100p 100p 60n 120n)
+VB2 B2 0 dc 0
+VB3 B3 0 dc 0
+
+X5 y_as A3 A2 A1 A0 B3 B2 B1 B0 C_over S3 S2 S1 S0 vdd 0 4_bit_Adder_Sub
+X6 y3 A3 A2 A1 A0 B3 B2 B1 B0 Eql Gth Lth vdd 0 4_bit_Comparator
+X7 y4 A3 A2 A1 A0 B3 B2 B1 B0 C3 C2 C1 C0 vdd 0 4_bit_ANDer
+
+.control 
+run
+tran 10u 60n
+
+plot v(SelD_0) v(SelD_1)
+plot v(y1) v(y2) v(y3) v(y4)
+plot v(y_as)
+plot v(C_over) v(S3) v(S2) v(S1) v(S0)
+plot v(Eql) v(Gth) v(Lth)
+plot v(C3) v(C2) v(C1) v(C0)
+.endc
+
+.end
