@@ -90,8 +90,8 @@ endmodule
 module four_bit_ALU(
     input [3:0] A, B,
     input [1:0] Sel,
-    output [4:0] Y_add,
-    output [4:0] Y_sub,
+    output [4:0] Y_addSub,
+    // output [4:0] Y_sub,
     output [3:0] Y_and,
     output Eq, Gt, Lt
 );
@@ -99,8 +99,8 @@ module four_bit_ALU(
     
     two_four_Decoder D(Sel, y);
 
-    four_bit_Adder_Subtr f1(y[0], y[1], A, B, Y_add);
-    four_bit_Adder_Subtr f2(y[1], y[1], A, B, Y_sub);
+    four_bit_Adder_Subtr f1(y[0], !y[0]&y[1], A, B, Y_addSub);
+    // four_bit_Adder_Subtr f2(y[1], y[1], A, B, Y_sub);
     four_bit_Comp f3(y[2], A, B, Eq, Gt, Lt);
     four_bit_ANDer f4(y[3], A, B, Y_and);
 endmodule
