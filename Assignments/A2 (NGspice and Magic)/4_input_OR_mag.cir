@@ -1,0 +1,43 @@
+* SPICE3 file created from 4_input.ext - technology: scmos
+
+.option scale=0.09u
+.include TSMC_180nm.txt
+.global Gnd GND
+
+Va A 0 dc 1.8
+Vb B 0 dc 0
+Vc C 0 dc 0
+Vd D 0 dc 0
+
+Vdd VDD 0 1.8
+
+M1000 a_14_n20# A GND Gnd CMOSN w=12 l=4
++  ad=384 pd=160 as=480 ps=200
+M1001 OUT a_14_n20# GND Gnd CMOSN w=12 l=4
++  ad=96 pd=40 as=0 ps=0
+M1002 a_14_n20# D GND Gnd CMOSN w=12 l=4
++  ad=0 pd=0 as=0 ps=0
+M1003 a_14_n20# C GND Gnd CMOSN w=12 l=4
++  ad=0 pd=0 as=0 ps=0
+M1004 VDD A a_14_5# w_n2_n2# CMOSP w=12 l=4
++  ad=216 pd=84 as=192 ps=80
+M1005 a_72_17# B a_14_5# w_56_n2# CMOSP w=12 l=4
++  ad=216 pd=84 as=0 ps=0
+M1006 a_14_n20# D a_130_5# w_171_n2# CMOSP w=12 l=4
++  ad=108 pd=42 as=192 ps=80
+M1007 VDD a_14_n20# OUT w_227_n2# CMOSP w=12 l=4
++  ad=0 pd=0 as=96 ps=40
+M1008 a_14_n20# B GND Gnd CMOSN w=12 l=4
++  ad=0 pd=0 as=0 ps=0
+M1009 a_72_17# C a_130_5# w_114_n2# CMOSP w=12 l=4
++  ad=0 pd=0 as=0 ps=0
+
+CL OUT 0 2.5n
+
+.control 
+run 
+tran 10u 120n
+plot v(OUT) 
+* v(A) v(B) v(C) v(D) v(E)
+.endc 
+.end

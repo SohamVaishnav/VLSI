@@ -1,0 +1,29 @@
+* SPICE3 file created from Ring_Os.ext - technology: scmos
+
+.option scale=0.09u
+.include TSMC_180nm.txt
+.global GND Gnd
+
+Vdd VDD 0 dc 1.8
+
+M1000 m1_n36_32# OUT GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=378 ps=138
+M1001 VDD OUT m1_n36_32# CMOS_in_0/w_0_0# CMOSP w=14 l=4
++  ad=378 pd=138 as=126 ps=46
+M1002 m1_22_32# m1_n36_32# GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1003 VDD m1_n36_32# m1_22_32# CMOS_in_1/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1004 OUT m1_22_32# GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1005 VDD m1_22_32# OUT CMOS_in_2/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+* C0 GND OUT 2.46fF
+
+.control 
+run 
+tran 10u 1500n
+plot v(OUT) 
+.endc 
+
+.end

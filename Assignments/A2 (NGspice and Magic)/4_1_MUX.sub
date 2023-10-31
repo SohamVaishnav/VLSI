@@ -1,0 +1,15 @@
+.subckt 4_1_MUX Sel0 Sel1 i1 i2 i3 i4 y vdd gnd
+    .include AND_3.sub 
+    .include OR_4.sub 
+    .include NOT.sub
+
+    X1 Sel0 Sel0c vdd gnd NOT
+    X2 Sel1 Sel1c vdd gnd NOT 
+
+    X3 Sel0c Sel1c i1 w1 vdd gnd AND_3
+    X4 Sel0c Sel1 i2 w2 vdd gnd AND_3
+    X5 Sel0 Sel1c i3 w3 vdd gnd AND_3 
+    X6 Sel0 Sel1 i4 w4 vdd gnd AND_3
+
+    X7 w1 w2 w3 w4 y vdd gnd OR_4 
+.ends 4_1_MUX

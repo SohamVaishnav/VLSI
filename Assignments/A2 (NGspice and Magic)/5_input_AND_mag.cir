@@ -1,0 +1,46 @@
+* SPICE3 file created from 5_input.ext - technology: scmos
+
+.option scale=0.09u
+.include TSMC_180nm.txt
+.global Gnd
+
+Va A 0 dc 1.8
+Vb B 0 dc 1.8
+Vc C 0 dc 1.8
+Vd D 0 dc 1.8
+Ve E 0 dc 1.8
+
+Vdd VDD 0 1.8
+
+M1000 a_14_n29# A a_4_n29# Gnd CMOSN w=12 l=2
++  ad=192 pd=80 as=96 ps=40
+M1001 a_57_n29# B a_14_n29# Gnd CMOSN w=12 l=2
++  ad=192 pd=80 as=0 ps=0
+M1002 VDD C a_4_n29# w_86_n4# CMOSP w=14 l=4
++  ad=1008 pd=312 as=770 ps=250
+M1003 VDD A a_4_n29# w_n1_n4# CMOSP w=14 l=4
++  ad=0 pd=0 as=0 ps=0
+M1004 GND a_4_n29# OUT Gnd CMOSN w=12 l=2
++  ad=192 pd=80 as=96 ps=40
+M1005 VDD E a_4_n29# w_174_n4# CMOSP w=14 l=4
++  ad=0 pd=0 as=0 ps=0
+M1006 VDD B a_4_n29# w_42_n4# CMOSP w=14 l=4
++  ad=0 pd=0 as=0 ps=0
+M1007 VDD a_4_n29# OUT w_219_n4# CMOSP w=14 l=4
++  ad=0 pd=0 as=154 ps=50
+M1008 VDD D a_4_n29# w_130_n4# CMOSP w=14 l=4
++  ad=0 pd=0 as=0 ps=0
+M1009 GND E a_145_n29# Gnd CMOSN w=12 l=2
++  ad=0 pd=0 as=192 ps=80
+M1010 a_101_n29# C a_57_n29# Gnd CMOSN w=12 l=2
++  ad=192 pd=80 as=0 ps=0
+M1011 a_145_n29# D a_101_n29# Gnd CMOSN w=12 l=2
++  ad=0 pd=0 as=0 ps=0
+
+CL OUT 0 10n 
+.control 
+run 
+tran 10u 60n
+plot v(OUT) v(A) v(B) v(C) v(D) v(E)
+.endc 
+.end

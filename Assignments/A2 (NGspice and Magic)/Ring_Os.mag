@@ -1,0 +1,30 @@
+magic
+tech scmos
+timestamp 1698783369
+<< metal1 >>
+rect -76 74 77 77
+rect -83 32 -71 36
+rect -36 32 -11 35
+rect 22 32 47 35
+rect 82 32 108 35
+rect -83 -5 -76 32
+rect -69 -2 73 1
+rect 91 -5 98 32
+rect -83 -10 98 -5
+use CMOS_in  CMOS_in_2
+timestamp 1698776633
+transform 1 0 57 0 1 38
+box -13 -40 30 39
+use CMOS_in  CMOS_in_1
+timestamp 1698776633
+transform 1 0 -2 0 1 38
+box -13 -40 30 39
+use CMOS_in  CMOS_in_0
+timestamp 1698776633
+transform 1 0 -62 0 1 38
+box -13 -40 30 39
+<< labels >>
+flabel metal1 -76 74 -65 77 0 FreeSans 9 0 0 0 VDD
+flabel metal1 -69 -2 -58 1 0 FreeSans 9 0 0 0 GND
+flabel metal1 98 32 108 35 0 FreeSans 9 0 0 0 OUT
+<< end >>

@@ -1,0 +1,19 @@
+.title Ring Oscillator
+
+.include TSMC_180nm.txt
+.include NOT.sub
+.global gnd 
+
+VDD vdd 0 dc 1.8
+
+X1 in w1 vdd gnd NOT 
+X2 w1 w2 vdd gnd NOT
+X3 w2 in vdd gnd NOT 
+
+.control 
+run
+tran 10u 1500n
+plot v(in) 
+.endc 
+
+.end

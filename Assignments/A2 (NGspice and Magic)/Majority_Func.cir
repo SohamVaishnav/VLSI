@@ -1,0 +1,21 @@
+.title Majority Func
+
+.include TSMC_180nm.txt 
+.include 4_1_MUX.sub
+.global gnd
+
+VA A 0 PULSE(0 1.8 0 100p 100p 60n 120n)
+VB B 0 dc 0 
+VC C 0 dc 1.8 
+
+VDD vdd gnd dc 1.8
+
+X1 A B 0 C C 1 Fn vdd gnd 4_1_MUX
+
+.control 
+run 
+tran 10u 120n 
+plot v(Fn) 
+plot v(A) v(B) v(C)
+.endc
+.end

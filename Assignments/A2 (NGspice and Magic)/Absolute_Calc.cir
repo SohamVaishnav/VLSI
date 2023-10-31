@@ -1,0 +1,32 @@
+.title Absolute Value Calculator 
+
+.include TSMC_180nm.txt 
+.include full_adder.sub
+.include XOR.sub 
+.global gnd 
+
+VDD vdd 0 dc 1.8 
+
+Va0 A0 0 PULSE(0 1.8 0 100p 100p 60n 120n)
+Va1 A1 0 PULSE(0 1.8 0 100p 100p 60n 120n)
+Va2 A2 0 dc 0 
+Va3 A3 0 PULSE(0 1.8 0 100p 100p 60n 120n)
+
+X1 A0 A3 A_eff0 vdd gnd XOR 
+X2 A1 A3 A_eff1 vdd gnd XOR 
+X3 A2 A3 A_eff2 vdd gnd XOR 
+
+X4 A_eff0 0 A3 S0 c1 vdd gnd full_adder
+X5 A_eff1 0 c1 S1 c2 vdd gnd full_adder
+X6 A_eff2 0 c2 S2 S3 vdd gnd full_adder
+
+.control 
+run 
+tran 10u 120n
+plot v(A0) v(A1) v(A2) v(A3)
+plot v(S0)
+plot v(S1)
+plot v(S2) 
+.endc 
+
+.end

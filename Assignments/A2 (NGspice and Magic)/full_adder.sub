@@ -1,0 +1,14 @@
+.subckt full_adder A B C Sum Carry vdd gnd
+    .include NOT.sub
+    .include AND.sub
+    .include XOR.sub
+    .include OR.sub
+
+    X1 A B s1 vdd 0 XOR
+    X2 A B c1 vdd 0 AND
+
+    X3 s1 C Sum vdd 0 XOR
+
+    X4 s1 C s2 vdd 0 AND
+    X5 c1 s2 Carry vdd 0 OR
+.ends full_adder
