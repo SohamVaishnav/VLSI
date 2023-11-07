@@ -1,0 +1,87 @@
+magic
+tech scmos
+timestamp 1699269911
+<< metal1 >>
+rect -80 84 -77 89
+rect -143 81 -120 84
+rect -96 81 -77 84
+rect 68 85 85 89
+rect -144 43 -138 69
+rect 68 43 77 47
+rect -144 39 -129 43
+rect -97 39 -84 42
+rect -144 27 -138 39
+rect -89 26 -84 39
+rect -89 19 -73 26
+rect -129 5 -121 8
+rect -99 5 -94 8
+rect -5 5 0 9
+rect -99 2 0 5
+rect -81 -7 -75 -2
+rect -135 -10 -119 -7
+rect -96 -10 -75 -7
+rect 73 -18 77 43
+rect 82 32 85 85
+rect 194 -4 215 -1
+rect 73 -23 87 -18
+rect -144 -48 -138 -32
+rect 65 -48 67 -44
+rect -144 -52 -129 -48
+rect -101 -52 -84 -49
+rect -144 -74 -138 -52
+rect -89 -65 -84 -52
+rect -89 -72 -74 -65
+rect -134 -86 -124 -83
+rect -97 -86 -94 -83
+rect -6 -86 -1 -82
+rect 100 -82 104 -30
+rect 63 -86 104 -82
+rect -97 -89 -1 -86
+<< m2contact >>
+rect 60 82 68 89
+rect -31 51 -22 59
+rect -144 21 -138 27
+rect 18 2 27 9
+rect 60 -6 68 2
+rect 119 -23 128 -18
+rect -144 -32 -138 -26
+rect -32 -40 -23 -32
+rect 67 -48 78 -42
+rect 18 -86 27 -79
+<< metal2 >>
+rect -144 5 -138 21
+rect -144 -1 -43 5
+rect -31 -6 -22 51
+rect -144 -12 -22 -6
+rect -144 -26 -138 -12
+rect -35 -40 -32 -32
+rect 18 -79 27 2
+rect 60 2 68 82
+rect 119 -42 128 -23
+rect 78 -48 128 -42
+<< m3contact >>
+rect -43 -1 -35 5
+rect -43 -40 -35 -32
+<< metal3 >>
+rect -43 -32 -35 -1
+use OR_2  OR_2_0
+timestamp 1698776833
+transform 1 0 129 0 1 -2
+box -47 -31 71 40
+use AND_2  AND_2_1
+timestamp 1698776759
+transform 1 0 -73 0 1 -49
+box -8 -37 143 47
+use AND_2  AND_2_0
+timestamp 1698776759
+transform 1 0 -72 0 1 42
+box -8 -37 143 47
+use CMOS_in  CMOS_in_0
+timestamp 1699269643
+transform 1 0 -124 0 1 45
+box -13 -40 30 39
+use CMOS_in  CMOS_in_1
+timestamp 1699269643
+transform 1 0 -124 0 1 -46
+box -13 -40 30 39
+<< end >>

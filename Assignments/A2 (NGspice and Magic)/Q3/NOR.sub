@@ -1,0 +1,17 @@
+.subckt NOR inA inB out vdd gnd
+    Mp1 A_drain inA vdd vdd CMOSP W={1.8u} L={0.18u}
+    + AS={5*1.8u*0.18u} PS={10*0.18u+2*1.8u} 
+    + AD={5*1.8u*0.18u} PD={10*0.18u+2*1.8u}
+
+    Mp2 out inB A_drain A_drain CMOSP W={1.8u} L={0.18u}
+    + AS={5*1.8u*0.18u} PS={10*0.18u+2*1.8u} 
+    + AD={5*1.8u*0.18u} PD={10*0.18u+2*1.8u}
+
+    Mn1 out inA gnd gnd CMOSN W={1.8u} L={0.36u}
+    + AS={5*1.8u*0.18u} PS={10*0.18u+2*1.8u} 
+    + AD={5*1.8u*0.18u} PD={10*0.18u+2*1.8u}
+
+    Mn2 out inB gnd gnd CMOSN W={1.8u} L={0.36u}
+    + AS={5*1.8u*0.18u} PS={10*0.18u+2*1.8u} 
+    + AD={5*1.8u*0.18u} PD={10*0.18u+2*1.8u}
+.ends NOR

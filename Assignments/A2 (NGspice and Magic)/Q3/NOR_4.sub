@@ -1,0 +1,7 @@
+.subckt NOR_4 inA inB inC inD out vdd gnd
+    .include OR.sub
+    .include NOR_3.sub
+
+    X1 inA inB out1 vdd gnd OR
+    X2 inC inD out1 out vdd gnd NOR_3
+.ends NOR_4

@@ -8,12 +8,14 @@ VDD vdd 0 dc 1.8
 
 X1 in w1 vdd gnd NOT 
 X2 w1 w2 vdd gnd NOT
-X3 w2 in vdd gnd NOT 
+X3 w2 in vdd gnd NOT
+
+.ic v(in) = 0
 
 .control 
 run
-tran 10u 1500n
-plot v(in) 
+tran 10u 10n
+plot v(w2)
 .endc 
 
 .end

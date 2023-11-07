@@ -12,4 +12,4 @@
     X6 Sel0 Sel1 i4 w4 vdd gnd AND_3
 
     X7 w1 w2 w3 w4 y vdd gnd OR_4 
-.ends 4_1_MUX
+.ends 4_1_MUX 

@@ -1,0 +1,13 @@
+.subckt XOR inA inB out vdd gnd
+    .include NOT.sub
+    .include AND.sub
+    .include OR.sub
+    
+    X1 inA inA_c vdd gnd NOT
+    X2 inB inB_c vdd gnd NOT
+
+    X3 inA inB_c ABc vdd gnd AND
+    X4 inB inA_c AcB vdd gnd AND
+
+    X5 ABc AcB out vdd gnd OR
+.ends XOR

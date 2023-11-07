@@ -1,0 +1,35 @@
+.title NOT gate 
+
+.include TSMC_180nm.txt 
+.global gnd GND
+
+Vdd vdd 0 dc 1.8
+
+VA inA 0 PULSE(0 1.8 0 100p 100p 10n 20n)
+
+* SPICE3 file created from CMOS_in.ext - technology: scmos
+
+.option scale=0.09u
+
+M1000 out inA GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=126 ps=46
+M1001 VDD inA out w_0_0# CMOSP w=14 l=4
++  ad=126 pd=46 as=126 ps=46
+
+.tran 10u 240n
+.measure tran trise
++ TRIG v(inA) VAL = 0.9 RISE =1
++ TARG v(out) VAL = 0.9 FALL =1 
+
+.measure tran tfall 
++ TRIG v(inA) VAL = 0.9 FALL =1 
++ TARG v(out) VAL = 0.9 RISE =1
+
+.measure tran tpd PARAM = '(trise + tfall)/2' GOAL = 0 
+
+.control 
+run 
+plot v(inA) v(out)+2
+.endc 
+
+.end

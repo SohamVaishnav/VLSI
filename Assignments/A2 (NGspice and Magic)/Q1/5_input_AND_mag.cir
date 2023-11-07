@@ -1,0 +1,95 @@
+* SPICE3 file created from 5_input.ext - technology: scmos
+
+.option scale=0.09u
+.include TSMC_180nm.txt
+.global Gnd
+
+Va A 0 PULSE(0 1.8 0 100p 100p 10n 20n)
+Vb B 0 PULSE(0 1.8 0 100p 100p 20n 40n)
+Vc C 0 PULSE(0 1.8 0 100p 100p 40n 80n)
+Vd D 0 PULSE(0 1.8 0 100p 100p 80n 160n)
+Ve E 0 PULSE(0 1.8 0 100p 100p 160n 320n)
+
+Vdd VDD 0 1.8
+
+M1000 a_14_n29# A a_4_n29# Gnd CMOSN w=12 l=2
++  ad=192 pd=80 as=96 ps=40
+M1001 a_57_n29# B a_14_n29# Gnd CMOSN w=12 l=2
++  ad=192 pd=80 as=0 ps=0
+M1002 VDD C a_4_n29# w_86_n4# CMOSP w=14 l=4
++  ad=1008 pd=312 as=770 ps=250
+M1003 VDD A a_4_n29# w_n1_n4# CMOSP w=14 l=4
++  ad=0 pd=0 as=0 ps=0
+M1004 GND a_4_n29# OUT Gnd CMOSN w=12 l=2
++  ad=192 pd=80 as=96 ps=40
+M1005 VDD E a_4_n29# w_174_n4# CMOSP w=14 l=4
++  ad=0 pd=0 as=0 ps=0
+M1006 VDD B a_4_n29# w_42_n4# CMOSP w=14 l=4
++  ad=0 pd=0 as=0 ps=0
+M1007 VDD a_4_n29# OUT w_219_n4# CMOSP w=14 l=4
++  ad=0 pd=0 as=154 ps=50
+M1008 VDD D a_4_n29# w_130_n4# CMOSP w=14 l=4
++  ad=0 pd=0 as=0 ps=0
+M1009 GND E a_145_n29# Gnd CMOSN w=12 l=2
++  ad=0 pd=0 as=192 ps=80
+M1010 a_101_n29# C a_57_n29# Gnd CMOSN w=12 l=2
++  ad=192 pd=80 as=0 ps=0
+M1011 a_145_n29# D a_101_n29# Gnd CMOSN w=12 l=2
++  ad=0 pd=0 as=0 ps=0
+
+.tran 10u 400n
+.measure tran triseA 
++ TRIG v(A) VAL = 0.9 RISE =1
++ TARG v(OUT) VAL = 0.9 RISE =1 
+
+.measure tran tfallA 
++ TRIG v(A) VAL = 0.9 FALL =1 
++ TARG v(OUT) VAL = 0.9 FALL =1
+
+.measure tran tpd param = '(triseA + tfallA)/2' goal = 0
+
+.measure tran triseB 
++ TRIG v(B) VAL = 0.9 RISE =1
++ TARG v(OUT) VAL = 0.9 RISE =1 
+
+.measure tran tfallB 
++ TRIG v(B) VAL = 0.9 RISE =1 
++ TARG v(OUT) VAL = 0.9 FALL =1
+
+.measure tran tpd param = '(triseB + tfallB)/2' goal = 0
+
+.measure tran triseC 
++ TRIG v(C) VAL = 0.9 RISE =1
++ TARG v(OUT) VAL = 0.9 RISE =1 
+
+.measure tran tfallC 
++ TRIG v(C) VAL = 0.9 RISE =1 
++ TARG v(OUT) VAL = 0.9 FALL =1
+
+.measure tran tpd param = '(triseC + tfallC)/2' goal = 0
+
+.measure tran triseD 
++ TRIG v(D) VAL = 0.9 RISE =1
++ TARG v(OUT) VAL = 0.9 RISE =1 
+
+.measure tran tfallD 
++ TRIG v(D) VAL = 0.9 RISE =1 
++ TARG v(OUT) VAL = 0.9 FALL =1
+
+.measure tran tpd param = '(triseD + tfallD)/2' goal = 0
+
+.measure tran triseE 
++ TRIG v(E) VAL = 0.9 RISE =1
++ TARG v(OUT) VAL = 0.9 RISE =1 
+
+.measure tran tfallE 
++ TRIG v(E) VAL = 0.9 RISE =1 
++ TARG v(OUT) VAL = 0.9 FALL =1
+
+.measure tran tpd param = '(triseE + tfallE)/2' goal = 0
+
+.control 
+run 
+plot v(OUT) v(A)+2 v(B)+4 v(C)+6 v(D)+8 v(E)+10
+.endc 
+.end

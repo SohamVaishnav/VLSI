@@ -18,11 +18,13 @@ M1004 OUT m1_22_32# GND Gnd CMOSN w=14 l=4
 +  ad=126 pd=46 as=0 ps=0
 M1005 VDD m1_22_32# OUT CMOS_in_2/w_0_0# CMOSP w=14 l=4
 +  ad=0 pd=0 as=126 ps=46
-* C0 GND OUT 2.46fF
+C0 GND OUT 2.46fF
+
+.ic v(m1_n36_32#) = 0
 
 .control 
 run 
-tran 10u 1500n
+tran 10u 10n
 plot v(OUT) 
 .endc 
 

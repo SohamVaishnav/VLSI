@@ -1,0 +1,41 @@
+.title CMOS 2_input NAND
+
+.include TSMC_180nm.txt 
+.include NAND.sub
+.global gnd
+*temperature 
+
+VDD vdd 0 dc 1.8 
+
+Va A 0 PULSE(0 1.8 0 100p 100p 10n 20n)
+Vb B 0 PULSE(0 1.8 0 100p 100p 20n 40n)
+
+X1 A B OUT vdd gnd NAND
+CL OUT 0 2fF
+
+.tran 10u 100n
+.measure tran triseA1
++ TRIG v(A) VAL = 0.9 RISE =1
++ TARG v(OUT) VAL = 0.9 FALL =1 
+
+.measure tran tfallA1 
++ TRIG v(A) VAL = 0.9 FALL =1 
++ TARG v(OUT) VAL = 0.9 RISE =1 
+
+.measure tran triseA2
++ TRIG v(A) VAL = 0.9 RISE =1
++ TARG v(OUT) VAL = 0.9 RISE =1 
+
+.measure tran tfallA2 
++ TRIG v(A) VAL = 0.9 FALL =1 
++ TARG v(OUT) VAL = 0.9 FALL =1
+
+.measure tran tpd PARAM = '(triseA1 + tfallA1 + triseA2 + tfallA2)/4' GOAL = 0
+
+.control 
+run 
+plot v(OUT) v(A)+2 v(B)+4
+quit
+.endc 
+
+.end

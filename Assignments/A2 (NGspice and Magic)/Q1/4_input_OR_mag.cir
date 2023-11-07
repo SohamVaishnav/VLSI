@@ -1,0 +1,80 @@
+* SPICE3 file created from 4_input.ext - technology: scmos
+
+.option scale=0.09u
+.include TSMC_180nm.txt
+.global Gnd GND
+
+Va A 0 PULSE(0 1.8 0 100p 100p 10n 20n)
+Vb B 0 PULSE(0 1.8 0 100p 100p 20n 40n)
+Vc C 0 PULSE(0 1.8 0 100p 100p 40n 80n)
+Vd D 0 PULSE(0 1.8 0 100p 100p 80n 160n)
+
+Vdd VDD 0 1.8
+
+M1000 a_14_n20# A GND Gnd CMOSN w=12 l=4
++  ad=384 pd=160 as=480 ps=200
+M1001 OUT a_14_n20# GND Gnd CMOSN w=12 l=4
++  ad=96 pd=40 as=0 ps=0
+M1002 a_14_n20# D GND Gnd CMOSN w=12 l=4
++  ad=0 pd=0 as=0 ps=0
+M1003 a_14_n20# C GND Gnd CMOSN w=12 l=4
++  ad=0 pd=0 as=0 ps=0
+M1004 VDD A a_14_5# w_n2_n2# CMOSP w=12 l=4
++  ad=216 pd=84 as=192 ps=80
+M1005 a_72_17# B a_14_5# w_56_n2# CMOSP w=12 l=4
++  ad=216 pd=84 as=0 ps=0
+M1006 a_14_n20# D a_130_5# w_171_n2# CMOSP w=12 l=4
++  ad=108 pd=42 as=192 ps=80
+M1007 VDD a_14_n20# OUT w_227_n2# CMOSP w=12 l=4
++  ad=0 pd=0 as=96 ps=40
+M1008 a_14_n20# B GND Gnd CMOSN w=12 l=4
++  ad=0 pd=0 as=0 ps=0
+M1009 a_72_17# C a_130_5# w_114_n2# CMOSP w=12 l=4
++  ad=0 pd=0 as=0 ps=0
+
+.tran 10u 200n
+.measure tran triseA 
++ TRIG v(A) VAL = 0.9 RISE =1
++ TARG v(OUT) VAL = 0.9 RISE =1 
+
+.measure tran tfallA 
++ TRIG v(A) VAL = 0.9 FALL =1 
++ TARG v(OUT) VAL = 0.9 FALL =1
+
+.measure tran tpd param = '(triseA + tfallA)/2' goal = 0
+
+.measure tran triseB 
++ TRIG v(B) VAL = 0.9 RISE =1
++ TARG v(OUT) VAL = 0.9 RISE =1 
+
+.measure tran tfallB 
++ TRIG v(B) VAL = 0.9 RISE =1 
++ TARG v(OUT) VAL = 0.9 FALL =1
+
+.measure tran tpd param = '(triseB + tfallB)/2' goal = 0
+
+.measure tran triseC 
++ TRIG v(C) VAL = 0.9 RISE =1
++ TARG v(OUT) VAL = 0.9 RISE =1 
+
+.measure tran tfallC 
++ TRIG v(C) VAL = 0.9 RISE =1 
++ TARG v(OUT) VAL = 0.9 FALL =1
+
+.measure tran tpd param = '(triseC + tfallC)/2' goal = 0
+
+.measure tran triseD 
++ TRIG v(D) VAL = 0.9 RISE =1
++ TARG v(OUT) VAL = 0.9 RISE =1 
+
+.measure tran tfallD 
++ TRIG v(D) VAL = 0.9 RISE =1 
++ TARG v(OUT) VAL = 0.9 FALL =1
+
+.measure tran tpd param = '(triseD + tfallD)/2' goal = 0
+
+.control 
+run 
+plot v(OUT) v(A)+2 v(B)+4 v(C)+6 v(D)+8
+.endc 
+.end
