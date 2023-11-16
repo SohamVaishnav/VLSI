@@ -1,6 +1,130 @@
 magic
 tech scmos
-timestamp 1699703636
-<< labels >>
-flabel metal1 226 32 235 36 0 FreeSans 9 0 0 0 VDD
+timestamp 1700131117
+<< nwell >>
+rect -2 -2 42 32
+rect 56 -2 100 32
+rect 114 -2 158 32
+rect 171 -2 215 32
+rect 227 -2 271 32
+<< ntransistor >>
+rect 14 -24 26 -20
+rect 72 -24 84 -20
+rect 130 -24 142 -20
+rect 187 -24 199 -20
+rect 243 -24 255 -20
+<< ptransistor >>
+rect 14 13 26 17
+rect 72 13 84 17
+rect 130 13 142 17
+rect 187 13 199 17
+rect 243 13 255 17
+<< ndiffusion >>
+rect 14 -20 26 -19
+rect 72 -20 84 -19
+rect 130 -20 142 -19
+rect 187 -20 199 -19
+rect 243 -20 255 -19
+rect 14 -25 26 -24
+rect 72 -25 84 -24
+rect 130 -25 142 -24
+rect 187 -25 199 -24
+rect 243 -25 255 -24
+<< pdiffusion >>
+rect 14 17 26 19
+rect 72 17 84 19
+rect 130 17 142 19
+rect 187 17 199 19
+rect 243 17 255 19
+rect 14 12 26 13
+rect 72 12 84 13
+rect 130 12 142 13
+rect 187 12 199 13
+rect 243 12 255 13
+<< ndcontact >>
+rect 14 -19 26 -12
+rect 72 -19 84 -12
+rect 130 -19 142 -12
+rect 187 -19 199 -12
+rect 243 -19 255 -12
+rect 14 -32 26 -25
+rect 72 -32 84 -25
+rect 130 -32 142 -25
+rect 187 -32 199 -25
+rect 243 -32 255 -25
+<< pdcontact >>
+rect 14 19 26 26
+rect 72 19 84 26
+rect 130 19 142 26
+rect 187 19 199 26
+rect 243 19 255 26
+rect 14 5 26 12
+rect 72 5 84 12
+rect 130 5 142 12
+rect 187 5 199 12
+rect 243 5 255 12
+<< polysilicon >>
+rect 3 13 14 17
+rect 26 13 42 17
+rect 61 13 72 17
+rect 84 13 100 17
+rect 119 13 130 17
+rect 142 13 158 17
+rect 176 13 187 17
+rect 199 13 215 17
+rect 222 13 243 17
+rect 255 13 271 17
+rect 3 -20 9 13
+rect 61 -20 67 13
+rect 119 -20 125 13
+rect 176 -20 182 13
+rect 222 -8 227 13
+rect 222 -20 227 -12
+rect 9 -24 14 -20
+rect 26 -24 33 -20
+rect 67 -24 72 -20
+rect 84 -24 91 -20
+rect 125 -24 130 -20
+rect 142 -24 149 -20
+rect 182 -24 187 -20
+rect 199 -24 205 -20
+rect 222 -24 243 -20
+rect 255 -24 259 -20
+<< polycontact >>
+rect 222 -12 227 -8
+rect 3 -24 9 -20
+rect 61 -24 67 -20
+rect 119 -24 125 -20
+rect 176 -24 182 -20
+<< metal1 >>
+rect -6 32 18 36
+rect 76 32 138 36
+rect 18 26 22 32
+rect 76 26 80 32
+rect 134 26 138 32
+rect 191 32 218 36
+rect 191 26 195 32
+rect 18 -1 22 5
+rect 76 -1 80 5
+rect 18 -5 80 -1
+rect 134 -1 138 5
+rect 191 -1 195 5
+rect 134 -5 195 -1
+rect 215 -8 218 32
+rect 231 32 251 36
+rect 247 26 251 32
+rect 247 -4 251 5
+rect 18 -12 222 -8
+rect 247 -9 278 -4
+rect 247 -12 251 -9
+rect -2 -24 3 -20
+rect 56 -24 61 -20
+rect 114 -24 119 -20
+rect 171 -24 176 -20
+rect 18 -36 261 -32
+<< m2contact >>
+rect 18 32 23 37
+rect 226 31 231 36
+<< metal2 >>
+rect 23 32 226 36
 << end >>
