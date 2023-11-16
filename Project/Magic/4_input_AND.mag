@@ -1,0 +1,127 @@
+magic
+tech scmos
+timestamp 1700132235
+<< nwell >>
+rect -64 -22 -36 17
+rect -28 -22 0 17
+rect 7 -22 35 17
+rect 42 -22 70 17
+rect 77 -22 105 17
+<< ntransistor >>
+rect -57 -41 -44 -38
+rect -21 -41 -8 -38
+rect 14 -41 27 -38
+rect 49 -41 62 -38
+rect 84 -41 97 -38
+<< ptransistor >>
+rect -57 -5 -44 -1
+rect -21 -5 -8 -1
+rect 14 -5 27 -1
+rect 49 -5 62 -1
+rect 84 -5 97 -1
+<< ndiffusion >>
+rect -57 -38 -44 -36
+rect -21 -38 -8 -36
+rect 14 -38 27 -36
+rect 49 -38 62 -36
+rect 84 -38 97 -36
+rect -57 -43 -44 -41
+rect -21 -43 -8 -41
+rect 14 -43 27 -41
+rect 49 -43 62 -41
+rect 84 -43 97 -41
+<< pdiffusion >>
+rect -57 -1 -44 1
+rect -21 -1 -8 1
+rect 14 -1 27 1
+rect 49 -1 62 1
+rect 84 -1 97 1
+rect -57 -7 -44 -5
+rect -21 -7 -8 -5
+rect 14 -7 27 -5
+rect 49 -7 62 -5
+rect 84 -7 97 -5
+<< ndcontact >>
+rect -57 -36 -44 -30
+rect -21 -36 -8 -30
+rect 14 -36 27 -30
+rect 49 -36 62 -30
+rect 84 -36 97 -30
+rect -57 -49 -44 -43
+rect -21 -49 -8 -43
+rect 14 -49 27 -43
+rect 49 -49 62 -43
+rect 84 -49 97 -43
+<< pdcontact >>
+rect -57 1 -44 8
+rect -21 1 -8 8
+rect 14 1 27 8
+rect 49 1 62 8
+rect 84 1 97 8
+rect -57 -14 -44 -7
+rect -21 -14 -8 -7
+rect 14 -14 27 -7
+rect 49 -14 62 -7
+rect 84 -14 97 -7
+<< polysilicon >>
+rect -64 -5 -57 -1
+rect -44 -5 -36 -1
+rect -28 -5 -21 -1
+rect -8 -5 0 -1
+rect 7 -5 14 -1
+rect 27 -5 35 -1
+rect 42 -5 49 -1
+rect 62 -5 70 -1
+rect 77 -5 84 -1
+rect 97 -5 105 -1
+rect -64 -37 -61 -5
+rect -28 -37 -25 -5
+rect -60 -41 -57 -38
+rect -44 -41 -36 -38
+rect 7 -37 10 -5
+rect -24 -41 -21 -38
+rect -8 -41 0 -38
+rect 42 -37 45 -5
+rect 77 -18 80 -5
+rect 11 -41 14 -38
+rect 27 -41 35 -38
+rect 77 -38 80 -22
+rect 46 -41 49 -38
+rect 62 -41 70 -38
+rect 77 -41 84 -38
+rect 97 -41 105 -38
+<< polycontact >>
+rect -64 -41 -60 -37
+rect -28 -41 -24 -37
+rect 7 -41 11 -37
+rect 76 -22 80 -18
+rect 42 -41 46 -37
+<< metal1 >>
+rect -64 13 105 17
+rect -52 8 -48 13
+rect -16 8 -12 13
+rect 19 8 23 13
+rect 54 8 58 13
+rect 89 8 93 13
+rect -52 -18 -48 -14
+rect -16 -18 -12 -14
+rect 19 -18 23 -14
+rect 54 -18 58 -14
+rect 89 -18 93 -14
+rect 105 -18 109 -11
+rect -52 -22 76 -18
+rect 89 -22 109 -18
+rect -52 -30 -48 -22
+rect -16 -30 23 -26
+rect 54 -30 93 -26
+rect -64 -45 -60 -41
+rect -28 -45 -24 -41
+rect 7 -45 11 -41
+rect 42 -45 46 -41
+rect 72 -49 76 -30
+rect 105 -49 109 -22
+rect -52 -53 -12 -49
+rect 19 -53 58 -49
+rect 66 -53 80 -49
+rect 89 -53 109 -49
+<< end >>
