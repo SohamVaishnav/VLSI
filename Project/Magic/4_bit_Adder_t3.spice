@@ -1,0 +1,701 @@
+* SPICE3 file created from 4_bit_Adder_t3.ext - technology: scmos
+
+.option scale=0.09u
+
+M1000 VDD Full_Adder_t3_0/OR_2_0/a_n35_n16# C_Over Full_Adder_t3_0/OR_2_0/w_40_n2# pfet w=15 l=5
++  ad=24624 pd=8208 as=135 ps=48
+M1001 Full_Adder_t3_0/OR_2_0/a_n35_n16# Full_Adder_t3_0/m1_295_n32# GND Gnd nfet w=15 l=5
++  ad=210 pd=88 as=19584 ps=6800
+M1002 Full_Adder_t3_0/OR_2_0/a_n35_n16# Full_Adder_t3_0/m1_295_n32# Full_Adder_t3_0/OR_2_0/a_n35_5# Full_Adder_t3_0/OR_2_0/w_n1_n2# pfet w=15 l=5
++  ad=135 pd=48 as=270 ps=96
+M1003 C_Over Full_Adder_t3_0/OR_2_0/a_n35_n16# GND Gnd nfet w=15 l=5
++  ad=105 pd=44 as=0 ps=0
+M1004 VDD Full_Adder_t3_0/m1_252_n34# Full_Adder_t3_0/OR_2_0/a_n35_5# Full_Adder_t3_0/OR_2_0/w_n42_n2# pfet w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1005 Full_Adder_t3_0/OR_2_0/a_n35_n16# Full_Adder_t3_0/m1_252_n34# GND Gnd nfet w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1006 VDD m1_96_n327# Full_Adder_t3_0/AND_2_1/a_9_10# Full_Adder_t3_0/AND_2_1/w_n1_1# pfet w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1007 Full_Adder_t3_0/AND_2_1/a_9_10# m1_96_n327# Full_Adder_t3_0/AND_2_1/a_10_n33# Gnd nfet w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1008 VDD Full_Adder_t3_0/AND_2_1/a_9_10# Full_Adder_t3_0/m1_252_n34# Full_Adder_t3_0/AND_2_1/w_101_1# pfet w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1009 Full_Adder_t3_0/AND_2_1/a_10_n33# Full_Adder_t3_0/m1_0_n50# GND Gnd nfet w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1010 VDD Full_Adder_t3_0/m1_0_n50# Full_Adder_t3_0/AND_2_1/a_9_10# Full_Adder_t3_0/AND_2_1/w_50_1# pfet w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1011 Full_Adder_t3_0/m1_252_n34# Full_Adder_t3_0/AND_2_1/a_9_10# GND Gnd nfet w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1012 VDD A3 Full_Adder_t3_0/AND_2_0/a_9_10# Full_Adder_t3_0/AND_2_0/w_n1_1# pfet w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1013 Full_Adder_t3_0/AND_2_0/a_9_10# A3 Full_Adder_t3_0/AND_2_0/a_10_n33# Gnd nfet w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1014 VDD Full_Adder_t3_0/AND_2_0/a_9_10# Full_Adder_t3_0/m1_295_n32# Full_Adder_t3_0/AND_2_0/w_101_1# pfet w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1015 Full_Adder_t3_0/AND_2_0/a_10_n33# m1_941_n469# GND Gnd nfet w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1016 VDD m1_941_n469# Full_Adder_t3_0/AND_2_0/a_9_10# Full_Adder_t3_0/AND_2_0/w_50_1# pfet w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1017 Full_Adder_t3_0/m1_295_n32# Full_Adder_t3_0/AND_2_0/a_9_10# GND Gnd nfet w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1018 VDD Full_Adder_t3_0/XOR_0/OR_2_0/a_n35_n16# Full_Adder_t3_0/m1_0_n50# Full_Adder_t3_0/XOR_0/OR_2_0/w_40_n2# pfet w=15 l=5
++  ad=0 pd=0 as=135 ps=48
+M1019 Full_Adder_t3_0/XOR_0/OR_2_0/a_n35_n16# Full_Adder_t3_0/XOR_0/m1_65_n48# GND Gnd nfet w=15 l=5
++  ad=210 pd=88 as=0 ps=0
+M1020 Full_Adder_t3_0/XOR_0/OR_2_0/a_n35_n16# Full_Adder_t3_0/XOR_0/m1_65_n48# Full_Adder_t3_0/XOR_0/OR_2_0/a_n35_5# Full_Adder_t3_0/XOR_0/OR_2_0/w_n1_n2# pfet w=15 l=5
++  ad=135 pd=48 as=270 ps=96
+M1021 Full_Adder_t3_0/m1_0_n50# Full_Adder_t3_0/XOR_0/OR_2_0/a_n35_n16# GND Gnd nfet w=15 l=5
++  ad=105 pd=44 as=0 ps=0
+M1022 VDD Full_Adder_t3_0/XOR_0/m1_68_43# Full_Adder_t3_0/XOR_0/OR_2_0/a_n35_5# Full_Adder_t3_0/XOR_0/OR_2_0/w_n42_n2# pfet w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1023 Full_Adder_t3_0/XOR_0/OR_2_0/a_n35_n16# Full_Adder_t3_0/XOR_0/m1_68_43# GND Gnd nfet w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1024 Full_Adder_t3_0/XOR_0/m1_n97_39# A3 GND Gnd nfet w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1025 VDD A3 Full_Adder_t3_0/XOR_0/m1_n97_39# Full_Adder_t3_0/XOR_0/CMOS_in_0/w_0_0# pfet w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1026 VDD Full_Adder_t3_0/XOR_0/m1_n97_39# Full_Adder_t3_0/XOR_0/AND_2_0/a_9_10# Full_Adder_t3_0/XOR_0/AND_2_0/w_n1_1# pfet w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1027 Full_Adder_t3_0/XOR_0/AND_2_0/a_9_10# Full_Adder_t3_0/XOR_0/m1_n97_39# Full_Adder_t3_0/XOR_0/AND_2_0/a_10_n33# Gnd nfet w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1028 VDD Full_Adder_t3_0/XOR_0/AND_2_0/a_9_10# Full_Adder_t3_0/XOR_0/m1_68_43# Full_Adder_t3_0/XOR_0/AND_2_0/w_101_1# pfet w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1029 Full_Adder_t3_0/XOR_0/AND_2_0/a_10_n33# m1_941_n469# GND Gnd nfet w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1030 VDD m1_941_n469# Full_Adder_t3_0/XOR_0/AND_2_0/a_9_10# Full_Adder_t3_0/XOR_0/AND_2_0/w_50_1# pfet w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1031 Full_Adder_t3_0/XOR_0/m1_68_43# Full_Adder_t3_0/XOR_0/AND_2_0/a_9_10# GND Gnd nfet w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1032 VDD Full_Adder_t3_0/XOR_0/m1_n101_n52# Full_Adder_t3_0/XOR_0/AND_2_1/a_9_10# Full_Adder_t3_0/XOR_0/AND_2_1/w_n1_1# pfet w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1033 Full_Adder_t3_0/XOR_0/AND_2_1/a_9_10# Full_Adder_t3_0/XOR_0/m1_n101_n52# Full_Adder_t3_0/XOR_0/AND_2_1/a_10_n33# Gnd nfet w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1034 VDD Full_Adder_t3_0/XOR_0/AND_2_1/a_9_10# Full_Adder_t3_0/XOR_0/m1_65_n48# Full_Adder_t3_0/XOR_0/AND_2_1/w_101_1# pfet w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1035 Full_Adder_t3_0/XOR_0/AND_2_1/a_10_n33# A3 GND Gnd nfet w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1036 VDD A3 Full_Adder_t3_0/XOR_0/AND_2_1/a_9_10# Full_Adder_t3_0/XOR_0/AND_2_1/w_50_1# pfet w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1037 Full_Adder_t3_0/XOR_0/m1_65_n48# Full_Adder_t3_0/XOR_0/AND_2_1/a_9_10# GND Gnd nfet w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1038 Full_Adder_t3_0/XOR_0/m1_n101_n52# m1_941_n469# GND Gnd nfet w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1039 VDD m1_941_n469# Full_Adder_t3_0/XOR_0/m1_n101_n52# Full_Adder_t3_0/XOR_0/CMOS_in_1/w_0_0# pfet w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1040 VDD Full_Adder_t3_0/XOR_1/OR_2_0/a_n35_n16# S3 Full_Adder_t3_0/XOR_1/OR_2_0/w_40_n2# pfet w=15 l=5
++  ad=0 pd=0 as=135 ps=48
+M1041 Full_Adder_t3_0/XOR_1/OR_2_0/a_n35_n16# Full_Adder_t3_0/XOR_1/m1_65_n48# GND Gnd nfet w=15 l=5
++  ad=210 pd=88 as=0 ps=0
+M1042 Full_Adder_t3_0/XOR_1/OR_2_0/a_n35_n16# Full_Adder_t3_0/XOR_1/m1_65_n48# Full_Adder_t3_0/XOR_1/OR_2_0/a_n35_5# Full_Adder_t3_0/XOR_1/OR_2_0/w_n1_n2# pfet w=15 l=5
++  ad=135 pd=48 as=270 ps=96
+M1043 S3 Full_Adder_t3_0/XOR_1/OR_2_0/a_n35_n16# GND Gnd nfet w=15 l=5
++  ad=105 pd=44 as=0 ps=0
+M1044 VDD Full_Adder_t3_0/XOR_1/m1_68_43# Full_Adder_t3_0/XOR_1/OR_2_0/a_n35_5# Full_Adder_t3_0/XOR_1/OR_2_0/w_n42_n2# pfet w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1045 Full_Adder_t3_0/XOR_1/OR_2_0/a_n35_n16# Full_Adder_t3_0/XOR_1/m1_68_43# GND Gnd nfet w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1046 Full_Adder_t3_0/XOR_1/m1_n97_39# Full_Adder_t3_0/m1_0_n50# GND Gnd nfet w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1047 VDD Full_Adder_t3_0/m1_0_n50# Full_Adder_t3_0/XOR_1/m1_n97_39# Full_Adder_t3_0/XOR_1/CMOS_in_0/w_0_0# pfet w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1048 VDD Full_Adder_t3_0/XOR_1/m1_n97_39# Full_Adder_t3_0/XOR_1/AND_2_0/a_9_10# Full_Adder_t3_0/XOR_1/AND_2_0/w_n1_1# pfet w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1049 Full_Adder_t3_0/XOR_1/AND_2_0/a_9_10# Full_Adder_t3_0/XOR_1/m1_n97_39# Full_Adder_t3_0/XOR_1/AND_2_0/a_10_n33# Gnd nfet w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1050 VDD Full_Adder_t3_0/XOR_1/AND_2_0/a_9_10# Full_Adder_t3_0/XOR_1/m1_68_43# Full_Adder_t3_0/XOR_1/AND_2_0/w_101_1# pfet w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1051 Full_Adder_t3_0/XOR_1/AND_2_0/a_10_n33# m1_96_n327# GND Gnd nfet w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1052 VDD m1_96_n327# Full_Adder_t3_0/XOR_1/AND_2_0/a_9_10# Full_Adder_t3_0/XOR_1/AND_2_0/w_50_1# pfet w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1053 Full_Adder_t3_0/XOR_1/m1_68_43# Full_Adder_t3_0/XOR_1/AND_2_0/a_9_10# GND Gnd nfet w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1054 VDD Full_Adder_t3_0/XOR_1/m1_n101_n52# Full_Adder_t3_0/XOR_1/AND_2_1/a_9_10# Full_Adder_t3_0/XOR_1/AND_2_1/w_n1_1# pfet w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1055 Full_Adder_t3_0/XOR_1/AND_2_1/a_9_10# Full_Adder_t3_0/XOR_1/m1_n101_n52# Full_Adder_t3_0/XOR_1/AND_2_1/a_10_n33# Gnd nfet w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1056 VDD Full_Adder_t3_0/XOR_1/AND_2_1/a_9_10# Full_Adder_t3_0/XOR_1/m1_65_n48# Full_Adder_t3_0/XOR_1/AND_2_1/w_101_1# pfet w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1057 Full_Adder_t3_0/XOR_1/AND_2_1/a_10_n33# Full_Adder_t3_0/m1_0_n50# GND Gnd nfet w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1058 VDD Full_Adder_t3_0/m1_0_n50# Full_Adder_t3_0/XOR_1/AND_2_1/a_9_10# Full_Adder_t3_0/XOR_1/AND_2_1/w_50_1# pfet w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1059 Full_Adder_t3_0/XOR_1/m1_65_n48# Full_Adder_t3_0/XOR_1/AND_2_1/a_9_10# GND Gnd nfet w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1060 Full_Adder_t3_0/XOR_1/m1_n101_n52# m1_96_n327# GND Gnd nfet w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1061 VDD m1_96_n327# Full_Adder_t3_0/XOR_1/m1_n101_n52# Full_Adder_t3_0/XOR_1/CMOS_in_1/w_0_0# pfet w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1062 VDD Full_Adder_t3_1/OR_2_0/a_n35_n16# m1_543_110# Full_Adder_t3_1/OR_2_0/w_40_n2# pfet w=15 l=5
++  ad=0 pd=0 as=135 ps=48
+M1063 Full_Adder_t3_1/OR_2_0/a_n35_n16# Full_Adder_t3_1/m1_295_n32# GND Gnd nfet w=15 l=5
++  ad=210 pd=88 as=0 ps=0
+M1064 Full_Adder_t3_1/OR_2_0/a_n35_n16# Full_Adder_t3_1/m1_295_n32# Full_Adder_t3_1/OR_2_0/a_n35_5# Full_Adder_t3_1/OR_2_0/w_n1_n2# pfet w=15 l=5
++  ad=135 pd=48 as=270 ps=96
+M1065 m1_543_110# Full_Adder_t3_1/OR_2_0/a_n35_n16# GND Gnd nfet w=15 l=5
++  ad=105 pd=44 as=0 ps=0
+M1066 VDD Full_Adder_t3_1/m1_252_n34# Full_Adder_t3_1/OR_2_0/a_n35_5# Full_Adder_t3_1/OR_2_0/w_n42_n2# pfet w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1067 Full_Adder_t3_1/OR_2_0/a_n35_n16# Full_Adder_t3_1/m1_252_n34# GND Gnd nfet w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1068 VDD C_in Full_Adder_t3_1/AND_2_1/a_9_10# Full_Adder_t3_1/AND_2_1/w_n1_1# pfet w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1069 Full_Adder_t3_1/AND_2_1/a_9_10# C_in Full_Adder_t3_1/AND_2_1/a_10_n33# Gnd nfet w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1070 VDD Full_Adder_t3_1/AND_2_1/a_9_10# Full_Adder_t3_1/m1_252_n34# Full_Adder_t3_1/AND_2_1/w_101_1# pfet w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1071 Full_Adder_t3_1/AND_2_1/a_10_n33# Full_Adder_t3_1/m1_0_n50# GND Gnd nfet w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1072 VDD Full_Adder_t3_1/m1_0_n50# Full_Adder_t3_1/AND_2_1/a_9_10# Full_Adder_t3_1/AND_2_1/w_50_1# pfet w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1073 Full_Adder_t3_1/m1_252_n34# Full_Adder_t3_1/AND_2_1/a_9_10# GND Gnd nfet w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1074 VDD A0 Full_Adder_t3_1/AND_2_0/a_9_10# Full_Adder_t3_1/AND_2_0/w_n1_1# pfet w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1075 Full_Adder_t3_1/AND_2_0/a_9_10# A0 Full_Adder_t3_1/AND_2_0/a_10_n33# Gnd nfet w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1076 VDD Full_Adder_t3_1/AND_2_0/a_9_10# Full_Adder_t3_1/m1_295_n32# Full_Adder_t3_1/AND_2_0/w_101_1# pfet w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1077 Full_Adder_t3_1/AND_2_0/a_10_n33# m1_939_251# GND Gnd nfet w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1078 VDD m1_939_251# Full_Adder_t3_1/AND_2_0/a_9_10# Full_Adder_t3_1/AND_2_0/w_50_1# pfet w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1079 Full_Adder_t3_1/m1_295_n32# Full_Adder_t3_1/AND_2_0/a_9_10# GND Gnd nfet w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1080 VDD Full_Adder_t3_1/XOR_0/OR_2_0/a_n35_n16# Full_Adder_t3_1/m1_0_n50# Full_Adder_t3_1/XOR_0/OR_2_0/w_40_n2# pfet w=15 l=5
++  ad=0 pd=0 as=135 ps=48
+M1081 Full_Adder_t3_1/XOR_0/OR_2_0/a_n35_n16# Full_Adder_t3_1/XOR_0/m1_65_n48# GND Gnd nfet w=15 l=5
++  ad=210 pd=88 as=0 ps=0
+M1082 Full_Adder_t3_1/XOR_0/OR_2_0/a_n35_n16# Full_Adder_t3_1/XOR_0/m1_65_n48# Full_Adder_t3_1/XOR_0/OR_2_0/a_n35_5# Full_Adder_t3_1/XOR_0/OR_2_0/w_n1_n2# pfet w=15 l=5
++  ad=135 pd=48 as=270 ps=96
+M1083 Full_Adder_t3_1/m1_0_n50# Full_Adder_t3_1/XOR_0/OR_2_0/a_n35_n16# GND Gnd nfet w=15 l=5
++  ad=105 pd=44 as=0 ps=0
+M1084 VDD Full_Adder_t3_1/XOR_0/m1_68_43# Full_Adder_t3_1/XOR_0/OR_2_0/a_n35_5# Full_Adder_t3_1/XOR_0/OR_2_0/w_n42_n2# pfet w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1085 Full_Adder_t3_1/XOR_0/OR_2_0/a_n35_n16# Full_Adder_t3_1/XOR_0/m1_68_43# GND Gnd nfet w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1086 Full_Adder_t3_1/XOR_0/m1_n97_39# A0 GND Gnd nfet w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1087 VDD A0 Full_Adder_t3_1/XOR_0/m1_n97_39# Full_Adder_t3_1/XOR_0/CMOS_in_0/w_0_0# pfet w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1088 VDD Full_Adder_t3_1/XOR_0/m1_n97_39# Full_Adder_t3_1/XOR_0/AND_2_0/a_9_10# Full_Adder_t3_1/XOR_0/AND_2_0/w_n1_1# pfet w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1089 Full_Adder_t3_1/XOR_0/AND_2_0/a_9_10# Full_Adder_t3_1/XOR_0/m1_n97_39# Full_Adder_t3_1/XOR_0/AND_2_0/a_10_n33# Gnd nfet w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1090 VDD Full_Adder_t3_1/XOR_0/AND_2_0/a_9_10# Full_Adder_t3_1/XOR_0/m1_68_43# Full_Adder_t3_1/XOR_0/AND_2_0/w_101_1# pfet w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1091 Full_Adder_t3_1/XOR_0/AND_2_0/a_10_n33# m1_939_251# GND Gnd nfet w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1092 VDD m1_939_251# Full_Adder_t3_1/XOR_0/AND_2_0/a_9_10# Full_Adder_t3_1/XOR_0/AND_2_0/w_50_1# pfet w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1093 Full_Adder_t3_1/XOR_0/m1_68_43# Full_Adder_t3_1/XOR_0/AND_2_0/a_9_10# GND Gnd nfet w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1094 VDD Full_Adder_t3_1/XOR_0/m1_n101_n52# Full_Adder_t3_1/XOR_0/AND_2_1/a_9_10# Full_Adder_t3_1/XOR_0/AND_2_1/w_n1_1# pfet w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1095 Full_Adder_t3_1/XOR_0/AND_2_1/a_9_10# Full_Adder_t3_1/XOR_0/m1_n101_n52# Full_Adder_t3_1/XOR_0/AND_2_1/a_10_n33# Gnd nfet w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1096 VDD Full_Adder_t3_1/XOR_0/AND_2_1/a_9_10# Full_Adder_t3_1/XOR_0/m1_65_n48# Full_Adder_t3_1/XOR_0/AND_2_1/w_101_1# pfet w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1097 Full_Adder_t3_1/XOR_0/AND_2_1/a_10_n33# A0 GND Gnd nfet w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1098 VDD A0 Full_Adder_t3_1/XOR_0/AND_2_1/a_9_10# Full_Adder_t3_1/XOR_0/AND_2_1/w_50_1# pfet w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1099 Full_Adder_t3_1/XOR_0/m1_65_n48# Full_Adder_t3_1/XOR_0/AND_2_1/a_9_10# GND Gnd nfet w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1100 Full_Adder_t3_1/XOR_0/m1_n101_n52# m1_939_251# GND Gnd nfet w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1101 VDD m1_939_251# Full_Adder_t3_1/XOR_0/m1_n101_n52# Full_Adder_t3_1/XOR_0/CMOS_in_1/w_0_0# pfet w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1102 VDD Full_Adder_t3_1/XOR_1/OR_2_0/a_n35_n16# S0 Full_Adder_t3_1/XOR_1/OR_2_0/w_40_n2# pfet w=15 l=5
++  ad=0 pd=0 as=135 ps=48
+M1103 Full_Adder_t3_1/XOR_1/OR_2_0/a_n35_n16# Full_Adder_t3_1/XOR_1/m1_65_n48# GND Gnd nfet w=15 l=5
++  ad=210 pd=88 as=0 ps=0
+M1104 Full_Adder_t3_1/XOR_1/OR_2_0/a_n35_n16# Full_Adder_t3_1/XOR_1/m1_65_n48# Full_Adder_t3_1/XOR_1/OR_2_0/a_n35_5# Full_Adder_t3_1/XOR_1/OR_2_0/w_n1_n2# pfet w=15 l=5
++  ad=135 pd=48 as=270 ps=96
+M1105 S0 Full_Adder_t3_1/XOR_1/OR_2_0/a_n35_n16# GND Gnd nfet w=15 l=5
++  ad=105 pd=44 as=0 ps=0
+M1106 VDD Full_Adder_t3_1/XOR_1/m1_68_43# Full_Adder_t3_1/XOR_1/OR_2_0/a_n35_5# Full_Adder_t3_1/XOR_1/OR_2_0/w_n42_n2# pfet w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1107 Full_Adder_t3_1/XOR_1/OR_2_0/a_n35_n16# Full_Adder_t3_1/XOR_1/m1_68_43# GND Gnd nfet w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1108 Full_Adder_t3_1/XOR_1/m1_n97_39# Full_Adder_t3_1/m1_0_n50# GND Gnd nfet w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1109 VDD Full_Adder_t3_1/m1_0_n50# Full_Adder_t3_1/XOR_1/m1_n97_39# Full_Adder_t3_1/XOR_1/CMOS_in_0/w_0_0# pfet w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1110 VDD Full_Adder_t3_1/XOR_1/m1_n97_39# Full_Adder_t3_1/XOR_1/AND_2_0/a_9_10# Full_Adder_t3_1/XOR_1/AND_2_0/w_n1_1# pfet w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1111 Full_Adder_t3_1/XOR_1/AND_2_0/a_9_10# Full_Adder_t3_1/XOR_1/m1_n97_39# Full_Adder_t3_1/XOR_1/AND_2_0/a_10_n33# Gnd nfet w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1112 VDD Full_Adder_t3_1/XOR_1/AND_2_0/a_9_10# Full_Adder_t3_1/XOR_1/m1_68_43# Full_Adder_t3_1/XOR_1/AND_2_0/w_101_1# pfet w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1113 Full_Adder_t3_1/XOR_1/AND_2_0/a_10_n33# C_in GND Gnd nfet w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1114 VDD C_in Full_Adder_t3_1/XOR_1/AND_2_0/a_9_10# Full_Adder_t3_1/XOR_1/AND_2_0/w_50_1# pfet w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1115 Full_Adder_t3_1/XOR_1/m1_68_43# Full_Adder_t3_1/XOR_1/AND_2_0/a_9_10# GND Gnd nfet w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1116 VDD Full_Adder_t3_1/XOR_1/m1_n101_n52# Full_Adder_t3_1/XOR_1/AND_2_1/a_9_10# Full_Adder_t3_1/XOR_1/AND_2_1/w_n1_1# pfet w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1117 Full_Adder_t3_1/XOR_1/AND_2_1/a_9_10# Full_Adder_t3_1/XOR_1/m1_n101_n52# Full_Adder_t3_1/XOR_1/AND_2_1/a_10_n33# Gnd nfet w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1118 VDD Full_Adder_t3_1/XOR_1/AND_2_1/a_9_10# Full_Adder_t3_1/XOR_1/m1_65_n48# Full_Adder_t3_1/XOR_1/AND_2_1/w_101_1# pfet w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1119 Full_Adder_t3_1/XOR_1/AND_2_1/a_10_n33# Full_Adder_t3_1/m1_0_n50# GND Gnd nfet w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1120 VDD Full_Adder_t3_1/m1_0_n50# Full_Adder_t3_1/XOR_1/AND_2_1/a_9_10# Full_Adder_t3_1/XOR_1/AND_2_1/w_50_1# pfet w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1121 Full_Adder_t3_1/XOR_1/m1_65_n48# Full_Adder_t3_1/XOR_1/AND_2_1/a_9_10# GND Gnd nfet w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1122 Full_Adder_t3_1/XOR_1/m1_n101_n52# C_in GND Gnd nfet w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1123 VDD C_in Full_Adder_t3_1/XOR_1/m1_n101_n52# Full_Adder_t3_1/XOR_1/CMOS_in_1/w_0_0# pfet w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1124 VDD Full_Adder_t3_2/OR_2_0/a_n35_n16# m1_96_n327# Full_Adder_t3_2/OR_2_0/w_40_n2# pfet w=15 l=5
++  ad=0 pd=0 as=135 ps=48
+M1125 Full_Adder_t3_2/OR_2_0/a_n35_n16# Full_Adder_t3_2/m1_295_n32# GND Gnd nfet w=15 l=5
++  ad=210 pd=88 as=0 ps=0
+M1126 Full_Adder_t3_2/OR_2_0/a_n35_n16# Full_Adder_t3_2/m1_295_n32# Full_Adder_t3_2/OR_2_0/a_n35_5# Full_Adder_t3_2/OR_2_0/w_n1_n2# pfet w=15 l=5
++  ad=135 pd=48 as=270 ps=96
+M1127 m1_96_n327# Full_Adder_t3_2/OR_2_0/a_n35_n16# GND Gnd nfet w=15 l=5
++  ad=105 pd=44 as=0 ps=0
+M1128 VDD Full_Adder_t3_2/m1_252_n34# Full_Adder_t3_2/OR_2_0/a_n35_5# Full_Adder_t3_2/OR_2_0/w_n42_n2# pfet w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1129 Full_Adder_t3_2/OR_2_0/a_n35_n16# Full_Adder_t3_2/m1_252_n34# GND Gnd nfet w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1130 VDD m1_n28_n529# Full_Adder_t3_2/AND_2_1/a_9_10# Full_Adder_t3_2/AND_2_1/w_n1_1# pfet w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1131 Full_Adder_t3_2/AND_2_1/a_9_10# m1_n28_n529# Full_Adder_t3_2/AND_2_1/a_10_n33# Gnd nfet w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1132 VDD Full_Adder_t3_2/AND_2_1/a_9_10# Full_Adder_t3_2/m1_252_n34# Full_Adder_t3_2/AND_2_1/w_101_1# pfet w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1133 Full_Adder_t3_2/AND_2_1/a_10_n33# Full_Adder_t3_2/m1_0_n50# GND Gnd nfet w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1134 VDD Full_Adder_t3_2/m1_0_n50# Full_Adder_t3_2/AND_2_1/a_9_10# Full_Adder_t3_2/AND_2_1/w_50_1# pfet w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1135 Full_Adder_t3_2/m1_252_n34# Full_Adder_t3_2/AND_2_1/a_9_10# GND Gnd nfet w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1136 VDD A2 Full_Adder_t3_2/AND_2_0/a_9_10# Full_Adder_t3_2/AND_2_0/w_n1_1# pfet w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1137 Full_Adder_t3_2/AND_2_0/a_9_10# A2 Full_Adder_t3_2/AND_2_0/a_10_n33# Gnd nfet w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1138 VDD Full_Adder_t3_2/AND_2_0/a_9_10# Full_Adder_t3_2/m1_295_n32# Full_Adder_t3_2/AND_2_0/w_101_1# pfet w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1139 Full_Adder_t3_2/AND_2_0/a_10_n33# m1_938_n224# GND Gnd nfet w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1140 VDD m1_938_n224# Full_Adder_t3_2/AND_2_0/a_9_10# Full_Adder_t3_2/AND_2_0/w_50_1# pfet w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1141 Full_Adder_t3_2/m1_295_n32# Full_Adder_t3_2/AND_2_0/a_9_10# GND Gnd nfet w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1142 VDD Full_Adder_t3_2/XOR_0/OR_2_0/a_n35_n16# Full_Adder_t3_2/m1_0_n50# Full_Adder_t3_2/XOR_0/OR_2_0/w_40_n2# pfet w=15 l=5
++  ad=0 pd=0 as=135 ps=48
+M1143 Full_Adder_t3_2/XOR_0/OR_2_0/a_n35_n16# Full_Adder_t3_2/XOR_0/m1_65_n48# GND Gnd nfet w=15 l=5
++  ad=210 pd=88 as=0 ps=0
+M1144 Full_Adder_t3_2/XOR_0/OR_2_0/a_n35_n16# Full_Adder_t3_2/XOR_0/m1_65_n48# Full_Adder_t3_2/XOR_0/OR_2_0/a_n35_5# Full_Adder_t3_2/XOR_0/OR_2_0/w_n1_n2# pfet w=15 l=5
++  ad=135 pd=48 as=270 ps=96
+M1145 Full_Adder_t3_2/m1_0_n50# Full_Adder_t3_2/XOR_0/OR_2_0/a_n35_n16# GND Gnd nfet w=15 l=5
++  ad=105 pd=44 as=0 ps=0
+M1146 VDD Full_Adder_t3_2/XOR_0/m1_68_43# Full_Adder_t3_2/XOR_0/OR_2_0/a_n35_5# Full_Adder_t3_2/XOR_0/OR_2_0/w_n42_n2# pfet w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1147 Full_Adder_t3_2/XOR_0/OR_2_0/a_n35_n16# Full_Adder_t3_2/XOR_0/m1_68_43# GND Gnd nfet w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1148 Full_Adder_t3_2/XOR_0/m1_n97_39# A2 GND Gnd nfet w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1149 VDD A2 Full_Adder_t3_2/XOR_0/m1_n97_39# Full_Adder_t3_2/XOR_0/CMOS_in_0/w_0_0# pfet w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1150 VDD Full_Adder_t3_2/XOR_0/m1_n97_39# Full_Adder_t3_2/XOR_0/AND_2_0/a_9_10# Full_Adder_t3_2/XOR_0/AND_2_0/w_n1_1# pfet w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1151 Full_Adder_t3_2/XOR_0/AND_2_0/a_9_10# Full_Adder_t3_2/XOR_0/m1_n97_39# Full_Adder_t3_2/XOR_0/AND_2_0/a_10_n33# Gnd nfet w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1152 VDD Full_Adder_t3_2/XOR_0/AND_2_0/a_9_10# Full_Adder_t3_2/XOR_0/m1_68_43# Full_Adder_t3_2/XOR_0/AND_2_0/w_101_1# pfet w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1153 Full_Adder_t3_2/XOR_0/AND_2_0/a_10_n33# m1_938_n224# GND Gnd nfet w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1154 VDD m1_938_n224# Full_Adder_t3_2/XOR_0/AND_2_0/a_9_10# Full_Adder_t3_2/XOR_0/AND_2_0/w_50_1# pfet w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1155 Full_Adder_t3_2/XOR_0/m1_68_43# Full_Adder_t3_2/XOR_0/AND_2_0/a_9_10# GND Gnd nfet w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1156 VDD Full_Adder_t3_2/XOR_0/m1_n101_n52# Full_Adder_t3_2/XOR_0/AND_2_1/a_9_10# Full_Adder_t3_2/XOR_0/AND_2_1/w_n1_1# pfet w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1157 Full_Adder_t3_2/XOR_0/AND_2_1/a_9_10# Full_Adder_t3_2/XOR_0/m1_n101_n52# Full_Adder_t3_2/XOR_0/AND_2_1/a_10_n33# Gnd nfet w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1158 VDD Full_Adder_t3_2/XOR_0/AND_2_1/a_9_10# Full_Adder_t3_2/XOR_0/m1_65_n48# Full_Adder_t3_2/XOR_0/AND_2_1/w_101_1# pfet w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1159 Full_Adder_t3_2/XOR_0/AND_2_1/a_10_n33# A2 GND Gnd nfet w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1160 VDD A2 Full_Adder_t3_2/XOR_0/AND_2_1/a_9_10# Full_Adder_t3_2/XOR_0/AND_2_1/w_50_1# pfet w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1161 Full_Adder_t3_2/XOR_0/m1_65_n48# Full_Adder_t3_2/XOR_0/AND_2_1/a_9_10# GND Gnd nfet w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1162 Full_Adder_t3_2/XOR_0/m1_n101_n52# m1_938_n224# GND Gnd nfet w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1163 VDD m1_938_n224# Full_Adder_t3_2/XOR_0/m1_n101_n52# Full_Adder_t3_2/XOR_0/CMOS_in_1/w_0_0# pfet w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1164 VDD Full_Adder_t3_2/XOR_1/OR_2_0/a_n35_n16# S2 Full_Adder_t3_2/XOR_1/OR_2_0/w_40_n2# pfet w=15 l=5
++  ad=0 pd=0 as=135 ps=48
+M1165 Full_Adder_t3_2/XOR_1/OR_2_0/a_n35_n16# Full_Adder_t3_2/XOR_1/m1_65_n48# GND Gnd nfet w=15 l=5
++  ad=210 pd=88 as=0 ps=0
+M1166 Full_Adder_t3_2/XOR_1/OR_2_0/a_n35_n16# Full_Adder_t3_2/XOR_1/m1_65_n48# Full_Adder_t3_2/XOR_1/OR_2_0/a_n35_5# Full_Adder_t3_2/XOR_1/OR_2_0/w_n1_n2# pfet w=15 l=5
++  ad=135 pd=48 as=270 ps=96
+M1167 S2 Full_Adder_t3_2/XOR_1/OR_2_0/a_n35_n16# GND Gnd nfet w=15 l=5
++  ad=105 pd=44 as=0 ps=0
+M1168 VDD Full_Adder_t3_2/XOR_1/m1_68_43# Full_Adder_t3_2/XOR_1/OR_2_0/a_n35_5# Full_Adder_t3_2/XOR_1/OR_2_0/w_n42_n2# pfet w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1169 Full_Adder_t3_2/XOR_1/OR_2_0/a_n35_n16# Full_Adder_t3_2/XOR_1/m1_68_43# GND Gnd nfet w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1170 Full_Adder_t3_2/XOR_1/m1_n97_39# Full_Adder_t3_2/m1_0_n50# GND Gnd nfet w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1171 VDD Full_Adder_t3_2/m1_0_n50# Full_Adder_t3_2/XOR_1/m1_n97_39# Full_Adder_t3_2/XOR_1/CMOS_in_0/w_0_0# pfet w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1172 VDD Full_Adder_t3_2/XOR_1/m1_n97_39# Full_Adder_t3_2/XOR_1/AND_2_0/a_9_10# Full_Adder_t3_2/XOR_1/AND_2_0/w_n1_1# pfet w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1173 Full_Adder_t3_2/XOR_1/AND_2_0/a_9_10# Full_Adder_t3_2/XOR_1/m1_n97_39# Full_Adder_t3_2/XOR_1/AND_2_0/a_10_n33# Gnd nfet w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1174 VDD Full_Adder_t3_2/XOR_1/AND_2_0/a_9_10# Full_Adder_t3_2/XOR_1/m1_68_43# Full_Adder_t3_2/XOR_1/AND_2_0/w_101_1# pfet w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1175 Full_Adder_t3_2/XOR_1/AND_2_0/a_10_n33# m1_n28_n529# GND Gnd nfet w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1176 VDD m1_n28_n529# Full_Adder_t3_2/XOR_1/AND_2_0/a_9_10# Full_Adder_t3_2/XOR_1/AND_2_0/w_50_1# pfet w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1177 Full_Adder_t3_2/XOR_1/m1_68_43# Full_Adder_t3_2/XOR_1/AND_2_0/a_9_10# GND Gnd nfet w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1178 VDD Full_Adder_t3_2/XOR_1/m1_n101_n52# Full_Adder_t3_2/XOR_1/AND_2_1/a_9_10# Full_Adder_t3_2/XOR_1/AND_2_1/w_n1_1# pfet w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1179 Full_Adder_t3_2/XOR_1/AND_2_1/a_9_10# Full_Adder_t3_2/XOR_1/m1_n101_n52# Full_Adder_t3_2/XOR_1/AND_2_1/a_10_n33# Gnd nfet w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1180 VDD Full_Adder_t3_2/XOR_1/AND_2_1/a_9_10# Full_Adder_t3_2/XOR_1/m1_65_n48# Full_Adder_t3_2/XOR_1/AND_2_1/w_101_1# pfet w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1181 Full_Adder_t3_2/XOR_1/AND_2_1/a_10_n33# Full_Adder_t3_2/m1_0_n50# GND Gnd nfet w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1182 VDD Full_Adder_t3_2/m1_0_n50# Full_Adder_t3_2/XOR_1/AND_2_1/a_9_10# Full_Adder_t3_2/XOR_1/AND_2_1/w_50_1# pfet w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1183 Full_Adder_t3_2/XOR_1/m1_65_n48# Full_Adder_t3_2/XOR_1/AND_2_1/a_9_10# GND Gnd nfet w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1184 Full_Adder_t3_2/XOR_1/m1_n101_n52# m1_n28_n529# GND Gnd nfet w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1185 VDD m1_n28_n529# Full_Adder_t3_2/XOR_1/m1_n101_n52# Full_Adder_t3_2/XOR_1/CMOS_in_1/w_0_0# pfet w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1186 VDD XOR_0/OR_2_0/a_n35_n16# m1_939_251# XOR_0/OR_2_0/w_40_n2# pfet w=15 l=5
++  ad=0 pd=0 as=135 ps=48
+M1187 XOR_0/OR_2_0/a_n35_n16# XOR_0/m1_65_n48# GND Gnd nfet w=15 l=5
++  ad=210 pd=88 as=0 ps=0
+M1188 XOR_0/OR_2_0/a_n35_n16# XOR_0/m1_65_n48# XOR_0/OR_2_0/a_n35_5# XOR_0/OR_2_0/w_n1_n2# pfet w=15 l=5
++  ad=135 pd=48 as=270 ps=96
+M1189 m1_939_251# XOR_0/OR_2_0/a_n35_n16# GND Gnd nfet w=15 l=5
++  ad=105 pd=44 as=0 ps=0
+M1190 VDD XOR_0/m1_68_43# XOR_0/OR_2_0/a_n35_5# XOR_0/OR_2_0/w_n42_n2# pfet w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1191 XOR_0/OR_2_0/a_n35_n16# XOR_0/m1_68_43# GND Gnd nfet w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1192 XOR_0/m1_n97_39# B0 GND Gnd nfet w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1193 VDD B0 XOR_0/m1_n97_39# XOR_0/CMOS_in_0/w_0_0# pfet w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1194 VDD XOR_0/m1_n97_39# XOR_0/AND_2_0/a_9_10# XOR_0/AND_2_0/w_n1_1# pfet w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1195 XOR_0/AND_2_0/a_9_10# XOR_0/m1_n97_39# XOR_0/AND_2_0/a_10_n33# Gnd nfet w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1196 VDD XOR_0/AND_2_0/a_9_10# XOR_0/m1_68_43# XOR_0/AND_2_0/w_101_1# pfet w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1197 XOR_0/AND_2_0/a_10_n33# C_in GND Gnd nfet w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1198 VDD C_in XOR_0/AND_2_0/a_9_10# XOR_0/AND_2_0/w_50_1# pfet w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1199 XOR_0/m1_68_43# XOR_0/AND_2_0/a_9_10# GND Gnd nfet w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1200 VDD XOR_0/m1_n101_n52# XOR_0/AND_2_1/a_9_10# XOR_0/AND_2_1/w_n1_1# pfet w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1201 XOR_0/AND_2_1/a_9_10# XOR_0/m1_n101_n52# XOR_0/AND_2_1/a_10_n33# Gnd nfet w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1202 VDD XOR_0/AND_2_1/a_9_10# XOR_0/m1_65_n48# XOR_0/AND_2_1/w_101_1# pfet w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1203 XOR_0/AND_2_1/a_10_n33# B0 GND Gnd nfet w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1204 VDD B0 XOR_0/AND_2_1/a_9_10# XOR_0/AND_2_1/w_50_1# pfet w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1205 XOR_0/m1_65_n48# XOR_0/AND_2_1/a_9_10# GND Gnd nfet w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1206 XOR_0/m1_n101_n52# C_in GND Gnd nfet w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1207 VDD C_in XOR_0/m1_n101_n52# XOR_0/CMOS_in_1/w_0_0# pfet w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1208 VDD Full_Adder_t3_3/OR_2_0/a_n35_n16# m1_n28_n529# Full_Adder_t3_3/OR_2_0/w_40_n2# pfet w=15 l=5
++  ad=0 pd=0 as=135 ps=48
+M1209 Full_Adder_t3_3/OR_2_0/a_n35_n16# Full_Adder_t3_3/m1_295_n32# GND Gnd nfet w=15 l=5
++  ad=210 pd=88 as=0 ps=0
+M1210 Full_Adder_t3_3/OR_2_0/a_n35_n16# Full_Adder_t3_3/m1_295_n32# Full_Adder_t3_3/OR_2_0/a_n35_5# Full_Adder_t3_3/OR_2_0/w_n1_n2# pfet w=15 l=5
++  ad=135 pd=48 as=270 ps=96
+M1211 m1_n28_n529# Full_Adder_t3_3/OR_2_0/a_n35_n16# GND Gnd nfet w=15 l=5
++  ad=105 pd=44 as=0 ps=0
+M1212 VDD Full_Adder_t3_3/m1_252_n34# Full_Adder_t3_3/OR_2_0/a_n35_5# Full_Adder_t3_3/OR_2_0/w_n42_n2# pfet w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1213 Full_Adder_t3_3/OR_2_0/a_n35_n16# Full_Adder_t3_3/m1_252_n34# GND Gnd nfet w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1214 VDD m1_543_110# Full_Adder_t3_3/AND_2_1/a_9_10# Full_Adder_t3_3/AND_2_1/w_n1_1# pfet w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1215 Full_Adder_t3_3/AND_2_1/a_9_10# m1_543_110# Full_Adder_t3_3/AND_2_1/a_10_n33# Gnd nfet w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1216 VDD Full_Adder_t3_3/AND_2_1/a_9_10# Full_Adder_t3_3/m1_252_n34# Full_Adder_t3_3/AND_2_1/w_101_1# pfet w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1217 Full_Adder_t3_3/AND_2_1/a_10_n33# Full_Adder_t3_3/m1_0_n50# GND Gnd nfet w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1218 VDD Full_Adder_t3_3/m1_0_n50# Full_Adder_t3_3/AND_2_1/a_9_10# Full_Adder_t3_3/AND_2_1/w_50_1# pfet w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1219 Full_Adder_t3_3/m1_252_n34# Full_Adder_t3_3/AND_2_1/a_9_10# GND Gnd nfet w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1220 VDD A1 Full_Adder_t3_3/AND_2_0/a_9_10# Full_Adder_t3_3/AND_2_0/w_n1_1# pfet w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1221 Full_Adder_t3_3/AND_2_0/a_9_10# A1 Full_Adder_t3_3/AND_2_0/a_10_n33# Gnd nfet w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1222 VDD Full_Adder_t3_3/AND_2_0/a_9_10# Full_Adder_t3_3/m1_295_n32# Full_Adder_t3_3/AND_2_0/w_101_1# pfet w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1223 Full_Adder_t3_3/AND_2_0/a_10_n33# m1_938_7# GND Gnd nfet w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1224 VDD m1_938_7# Full_Adder_t3_3/AND_2_0/a_9_10# Full_Adder_t3_3/AND_2_0/w_50_1# pfet w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1225 Full_Adder_t3_3/m1_295_n32# Full_Adder_t3_3/AND_2_0/a_9_10# GND Gnd nfet w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1226 VDD Full_Adder_t3_3/XOR_0/OR_2_0/a_n35_n16# Full_Adder_t3_3/m1_0_n50# Full_Adder_t3_3/XOR_0/OR_2_0/w_40_n2# pfet w=15 l=5
++  ad=0 pd=0 as=135 ps=48
+M1227 Full_Adder_t3_3/XOR_0/OR_2_0/a_n35_n16# Full_Adder_t3_3/XOR_0/m1_65_n48# GND Gnd nfet w=15 l=5
++  ad=210 pd=88 as=0 ps=0
+M1228 Full_Adder_t3_3/XOR_0/OR_2_0/a_n35_n16# Full_Adder_t3_3/XOR_0/m1_65_n48# Full_Adder_t3_3/XOR_0/OR_2_0/a_n35_5# Full_Adder_t3_3/XOR_0/OR_2_0/w_n1_n2# pfet w=15 l=5
++  ad=135 pd=48 as=270 ps=96
+M1229 Full_Adder_t3_3/m1_0_n50# Full_Adder_t3_3/XOR_0/OR_2_0/a_n35_n16# GND Gnd nfet w=15 l=5
++  ad=105 pd=44 as=0 ps=0
+M1230 VDD Full_Adder_t3_3/XOR_0/m1_68_43# Full_Adder_t3_3/XOR_0/OR_2_0/a_n35_5# Full_Adder_t3_3/XOR_0/OR_2_0/w_n42_n2# pfet w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1231 Full_Adder_t3_3/XOR_0/OR_2_0/a_n35_n16# Full_Adder_t3_3/XOR_0/m1_68_43# GND Gnd nfet w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1232 Full_Adder_t3_3/XOR_0/m1_n97_39# A1 GND Gnd nfet w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1233 VDD A1 Full_Adder_t3_3/XOR_0/m1_n97_39# Full_Adder_t3_3/XOR_0/CMOS_in_0/w_0_0# pfet w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1234 VDD Full_Adder_t3_3/XOR_0/m1_n97_39# Full_Adder_t3_3/XOR_0/AND_2_0/a_9_10# Full_Adder_t3_3/XOR_0/AND_2_0/w_n1_1# pfet w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1235 Full_Adder_t3_3/XOR_0/AND_2_0/a_9_10# Full_Adder_t3_3/XOR_0/m1_n97_39# Full_Adder_t3_3/XOR_0/AND_2_0/a_10_n33# Gnd nfet w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1236 VDD Full_Adder_t3_3/XOR_0/AND_2_0/a_9_10# Full_Adder_t3_3/XOR_0/m1_68_43# Full_Adder_t3_3/XOR_0/AND_2_0/w_101_1# pfet w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1237 Full_Adder_t3_3/XOR_0/AND_2_0/a_10_n33# m1_938_7# GND Gnd nfet w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1238 VDD m1_938_7# Full_Adder_t3_3/XOR_0/AND_2_0/a_9_10# Full_Adder_t3_3/XOR_0/AND_2_0/w_50_1# pfet w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1239 Full_Adder_t3_3/XOR_0/m1_68_43# Full_Adder_t3_3/XOR_0/AND_2_0/a_9_10# GND Gnd nfet w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1240 VDD Full_Adder_t3_3/XOR_0/m1_n101_n52# Full_Adder_t3_3/XOR_0/AND_2_1/a_9_10# Full_Adder_t3_3/XOR_0/AND_2_1/w_n1_1# pfet w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1241 Full_Adder_t3_3/XOR_0/AND_2_1/a_9_10# Full_Adder_t3_3/XOR_0/m1_n101_n52# Full_Adder_t3_3/XOR_0/AND_2_1/a_10_n33# Gnd nfet w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1242 VDD Full_Adder_t3_3/XOR_0/AND_2_1/a_9_10# Full_Adder_t3_3/XOR_0/m1_65_n48# Full_Adder_t3_3/XOR_0/AND_2_1/w_101_1# pfet w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1243 Full_Adder_t3_3/XOR_0/AND_2_1/a_10_n33# A1 GND Gnd nfet w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1244 VDD A1 Full_Adder_t3_3/XOR_0/AND_2_1/a_9_10# Full_Adder_t3_3/XOR_0/AND_2_1/w_50_1# pfet w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1245 Full_Adder_t3_3/XOR_0/m1_65_n48# Full_Adder_t3_3/XOR_0/AND_2_1/a_9_10# GND Gnd nfet w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1246 Full_Adder_t3_3/XOR_0/m1_n101_n52# m1_938_7# GND Gnd nfet w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1247 VDD m1_938_7# Full_Adder_t3_3/XOR_0/m1_n101_n52# Full_Adder_t3_3/XOR_0/CMOS_in_1/w_0_0# pfet w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1248 VDD Full_Adder_t3_3/XOR_1/OR_2_0/a_n35_n16# S1 Full_Adder_t3_3/XOR_1/OR_2_0/w_40_n2# pfet w=15 l=5
++  ad=0 pd=0 as=135 ps=48
+M1249 Full_Adder_t3_3/XOR_1/OR_2_0/a_n35_n16# Full_Adder_t3_3/XOR_1/m1_65_n48# GND Gnd nfet w=15 l=5
++  ad=210 pd=88 as=0 ps=0
+M1250 Full_Adder_t3_3/XOR_1/OR_2_0/a_n35_n16# Full_Adder_t3_3/XOR_1/m1_65_n48# Full_Adder_t3_3/XOR_1/OR_2_0/a_n35_5# Full_Adder_t3_3/XOR_1/OR_2_0/w_n1_n2# pfet w=15 l=5
++  ad=135 pd=48 as=270 ps=96
+M1251 S1 Full_Adder_t3_3/XOR_1/OR_2_0/a_n35_n16# GND Gnd nfet w=15 l=5
++  ad=105 pd=44 as=0 ps=0
+M1252 VDD Full_Adder_t3_3/XOR_1/m1_68_43# Full_Adder_t3_3/XOR_1/OR_2_0/a_n35_5# Full_Adder_t3_3/XOR_1/OR_2_0/w_n42_n2# pfet w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1253 Full_Adder_t3_3/XOR_1/OR_2_0/a_n35_n16# Full_Adder_t3_3/XOR_1/m1_68_43# GND Gnd nfet w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1254 Full_Adder_t3_3/XOR_1/m1_n97_39# Full_Adder_t3_3/m1_0_n50# GND Gnd nfet w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1255 VDD Full_Adder_t3_3/m1_0_n50# Full_Adder_t3_3/XOR_1/m1_n97_39# Full_Adder_t3_3/XOR_1/CMOS_in_0/w_0_0# pfet w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1256 VDD Full_Adder_t3_3/XOR_1/m1_n97_39# Full_Adder_t3_3/XOR_1/AND_2_0/a_9_10# Full_Adder_t3_3/XOR_1/AND_2_0/w_n1_1# pfet w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1257 Full_Adder_t3_3/XOR_1/AND_2_0/a_9_10# Full_Adder_t3_3/XOR_1/m1_n97_39# Full_Adder_t3_3/XOR_1/AND_2_0/a_10_n33# Gnd nfet w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1258 VDD Full_Adder_t3_3/XOR_1/AND_2_0/a_9_10# Full_Adder_t3_3/XOR_1/m1_68_43# Full_Adder_t3_3/XOR_1/AND_2_0/w_101_1# pfet w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1259 Full_Adder_t3_3/XOR_1/AND_2_0/a_10_n33# m1_543_110# GND Gnd nfet w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1260 VDD m1_543_110# Full_Adder_t3_3/XOR_1/AND_2_0/a_9_10# Full_Adder_t3_3/XOR_1/AND_2_0/w_50_1# pfet w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1261 Full_Adder_t3_3/XOR_1/m1_68_43# Full_Adder_t3_3/XOR_1/AND_2_0/a_9_10# GND Gnd nfet w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1262 VDD Full_Adder_t3_3/XOR_1/m1_n101_n52# Full_Adder_t3_3/XOR_1/AND_2_1/a_9_10# Full_Adder_t3_3/XOR_1/AND_2_1/w_n1_1# pfet w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1263 Full_Adder_t3_3/XOR_1/AND_2_1/a_9_10# Full_Adder_t3_3/XOR_1/m1_n101_n52# Full_Adder_t3_3/XOR_1/AND_2_1/a_10_n33# Gnd nfet w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1264 VDD Full_Adder_t3_3/XOR_1/AND_2_1/a_9_10# Full_Adder_t3_3/XOR_1/m1_65_n48# Full_Adder_t3_3/XOR_1/AND_2_1/w_101_1# pfet w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1265 Full_Adder_t3_3/XOR_1/AND_2_1/a_10_n33# Full_Adder_t3_3/m1_0_n50# GND Gnd nfet w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1266 VDD Full_Adder_t3_3/m1_0_n50# Full_Adder_t3_3/XOR_1/AND_2_1/a_9_10# Full_Adder_t3_3/XOR_1/AND_2_1/w_50_1# pfet w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1267 Full_Adder_t3_3/XOR_1/m1_65_n48# Full_Adder_t3_3/XOR_1/AND_2_1/a_9_10# GND Gnd nfet w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1268 Full_Adder_t3_3/XOR_1/m1_n101_n52# m1_543_110# GND Gnd nfet w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1269 VDD m1_543_110# Full_Adder_t3_3/XOR_1/m1_n101_n52# Full_Adder_t3_3/XOR_1/CMOS_in_1/w_0_0# pfet w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1270 VDD XOR_1/OR_2_0/a_n35_n16# m1_938_7# XOR_1/OR_2_0/w_40_n2# pfet w=15 l=5
++  ad=0 pd=0 as=135 ps=48
+M1271 XOR_1/OR_2_0/a_n35_n16# XOR_1/m1_65_n48# GND Gnd nfet w=15 l=5
++  ad=210 pd=88 as=0 ps=0
+M1272 XOR_1/OR_2_0/a_n35_n16# XOR_1/m1_65_n48# XOR_1/OR_2_0/a_n35_5# XOR_1/OR_2_0/w_n1_n2# pfet w=15 l=5
++  ad=135 pd=48 as=270 ps=96
+M1273 m1_938_7# XOR_1/OR_2_0/a_n35_n16# GND Gnd nfet w=15 l=5
++  ad=105 pd=44 as=0 ps=0
+M1274 VDD XOR_1/m1_68_43# XOR_1/OR_2_0/a_n35_5# XOR_1/OR_2_0/w_n42_n2# pfet w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1275 XOR_1/OR_2_0/a_n35_n16# XOR_1/m1_68_43# GND Gnd nfet w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1276 XOR_1/m1_n97_39# B1 GND Gnd nfet w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1277 VDD B1 XOR_1/m1_n97_39# XOR_1/CMOS_in_0/w_0_0# pfet w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1278 VDD XOR_1/m1_n97_39# XOR_1/AND_2_0/a_9_10# XOR_1/AND_2_0/w_n1_1# pfet w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1279 XOR_1/AND_2_0/a_9_10# XOR_1/m1_n97_39# XOR_1/AND_2_0/a_10_n33# Gnd nfet w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1280 VDD XOR_1/AND_2_0/a_9_10# XOR_1/m1_68_43# XOR_1/AND_2_0/w_101_1# pfet w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1281 XOR_1/AND_2_0/a_10_n33# C_in GND Gnd nfet w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1282 VDD C_in XOR_1/AND_2_0/a_9_10# XOR_1/AND_2_0/w_50_1# pfet w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1283 XOR_1/m1_68_43# XOR_1/AND_2_0/a_9_10# GND Gnd nfet w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1284 VDD XOR_1/m1_n101_n52# XOR_1/AND_2_1/a_9_10# XOR_1/AND_2_1/w_n1_1# pfet w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1285 XOR_1/AND_2_1/a_9_10# XOR_1/m1_n101_n52# XOR_1/AND_2_1/a_10_n33# Gnd nfet w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1286 VDD XOR_1/AND_2_1/a_9_10# XOR_1/m1_65_n48# XOR_1/AND_2_1/w_101_1# pfet w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1287 XOR_1/AND_2_1/a_10_n33# B1 GND Gnd nfet w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1288 VDD B1 XOR_1/AND_2_1/a_9_10# XOR_1/AND_2_1/w_50_1# pfet w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1289 XOR_1/m1_65_n48# XOR_1/AND_2_1/a_9_10# GND Gnd nfet w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1290 XOR_1/m1_n101_n52# C_in GND Gnd nfet w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1291 VDD C_in XOR_1/m1_n101_n52# XOR_1/CMOS_in_1/w_0_0# pfet w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1292 VDD XOR_2/OR_2_0/a_n35_n16# m1_941_n469# XOR_2/OR_2_0/w_40_n2# pfet w=15 l=5
++  ad=0 pd=0 as=135 ps=48
+M1293 XOR_2/OR_2_0/a_n35_n16# XOR_2/m1_65_n48# GND Gnd nfet w=15 l=5
++  ad=210 pd=88 as=0 ps=0
+M1294 XOR_2/OR_2_0/a_n35_n16# XOR_2/m1_65_n48# XOR_2/OR_2_0/a_n35_5# XOR_2/OR_2_0/w_n1_n2# pfet w=15 l=5
++  ad=135 pd=48 as=270 ps=96
+M1295 m1_941_n469# XOR_2/OR_2_0/a_n35_n16# GND Gnd nfet w=15 l=5
++  ad=105 pd=44 as=0 ps=0
+M1296 VDD XOR_2/m1_68_43# XOR_2/OR_2_0/a_n35_5# XOR_2/OR_2_0/w_n42_n2# pfet w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1297 XOR_2/OR_2_0/a_n35_n16# XOR_2/m1_68_43# GND Gnd nfet w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1298 XOR_2/m1_n97_39# B3 GND Gnd nfet w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1299 VDD B3 XOR_2/m1_n97_39# XOR_2/CMOS_in_0/w_0_0# pfet w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1300 VDD XOR_2/m1_n97_39# XOR_2/AND_2_0/a_9_10# XOR_2/AND_2_0/w_n1_1# pfet w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1301 XOR_2/AND_2_0/a_9_10# XOR_2/m1_n97_39# XOR_2/AND_2_0/a_10_n33# Gnd nfet w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1302 VDD XOR_2/AND_2_0/a_9_10# XOR_2/m1_68_43# XOR_2/AND_2_0/w_101_1# pfet w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1303 XOR_2/AND_2_0/a_10_n33# C_in GND Gnd nfet w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1304 VDD C_in XOR_2/AND_2_0/a_9_10# XOR_2/AND_2_0/w_50_1# pfet w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1305 XOR_2/m1_68_43# XOR_2/AND_2_0/a_9_10# GND Gnd nfet w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1306 VDD XOR_2/m1_n101_n52# XOR_2/AND_2_1/a_9_10# XOR_2/AND_2_1/w_n1_1# pfet w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1307 XOR_2/AND_2_1/a_9_10# XOR_2/m1_n101_n52# XOR_2/AND_2_1/a_10_n33# Gnd nfet w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1308 VDD XOR_2/AND_2_1/a_9_10# XOR_2/m1_65_n48# XOR_2/AND_2_1/w_101_1# pfet w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1309 XOR_2/AND_2_1/a_10_n33# B3 GND Gnd nfet w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1310 VDD B3 XOR_2/AND_2_1/a_9_10# XOR_2/AND_2_1/w_50_1# pfet w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1311 XOR_2/m1_65_n48# XOR_2/AND_2_1/a_9_10# GND Gnd nfet w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1312 XOR_2/m1_n101_n52# C_in GND Gnd nfet w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1313 VDD C_in XOR_2/m1_n101_n52# XOR_2/CMOS_in_1/w_0_0# pfet w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1314 VDD XOR_3/OR_2_0/a_n35_n16# m1_938_n224# XOR_3/OR_2_0/w_40_n2# pfet w=15 l=5
++  ad=0 pd=0 as=135 ps=48
+M1315 XOR_3/OR_2_0/a_n35_n16# XOR_3/m1_65_n48# GND Gnd nfet w=15 l=5
++  ad=210 pd=88 as=0 ps=0
+M1316 XOR_3/OR_2_0/a_n35_n16# XOR_3/m1_65_n48# XOR_3/OR_2_0/a_n35_5# XOR_3/OR_2_0/w_n1_n2# pfet w=15 l=5
++  ad=135 pd=48 as=270 ps=96
+M1317 m1_938_n224# XOR_3/OR_2_0/a_n35_n16# GND Gnd nfet w=15 l=5
++  ad=105 pd=44 as=0 ps=0
+M1318 VDD XOR_3/m1_68_43# XOR_3/OR_2_0/a_n35_5# XOR_3/OR_2_0/w_n42_n2# pfet w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1319 XOR_3/OR_2_0/a_n35_n16# XOR_3/m1_68_43# GND Gnd nfet w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1320 XOR_3/m1_n97_39# B2 GND Gnd nfet w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1321 VDD B2 XOR_3/m1_n97_39# XOR_3/CMOS_in_0/w_0_0# pfet w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1322 VDD XOR_3/m1_n97_39# XOR_3/AND_2_0/a_9_10# XOR_3/AND_2_0/w_n1_1# pfet w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1323 XOR_3/AND_2_0/a_9_10# XOR_3/m1_n97_39# XOR_3/AND_2_0/a_10_n33# Gnd nfet w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1324 VDD XOR_3/AND_2_0/a_9_10# XOR_3/m1_68_43# XOR_3/AND_2_0/w_101_1# pfet w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1325 XOR_3/AND_2_0/a_10_n33# C_in GND Gnd nfet w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1326 VDD C_in XOR_3/AND_2_0/a_9_10# XOR_3/AND_2_0/w_50_1# pfet w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1327 XOR_3/m1_68_43# XOR_3/AND_2_0/a_9_10# GND Gnd nfet w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1328 VDD XOR_3/m1_n101_n52# XOR_3/AND_2_1/a_9_10# XOR_3/AND_2_1/w_n1_1# pfet w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1329 XOR_3/AND_2_1/a_9_10# XOR_3/m1_n101_n52# XOR_3/AND_2_1/a_10_n33# Gnd nfet w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1330 VDD XOR_3/AND_2_1/a_9_10# XOR_3/m1_65_n48# XOR_3/AND_2_1/w_101_1# pfet w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1331 XOR_3/AND_2_1/a_10_n33# B2 GND Gnd nfet w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1332 VDD B2 XOR_3/AND_2_1/a_9_10# XOR_3/AND_2_1/w_50_1# pfet w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1333 XOR_3/m1_65_n48# XOR_3/AND_2_1/a_9_10# GND Gnd nfet w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1334 XOR_3/m1_n101_n52# C_in GND Gnd nfet w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1335 VDD C_in XOR_3/m1_n101_n52# XOR_3/CMOS_in_1/w_0_0# pfet w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+C0 VDD C_in 2.99fF
+C1 m1_941_n469# A3 2.52fF
+C2 m1_938_n224# A2 2.35fF
+C3 A0 m1_939_251# 2.35fF
+C4 m1_938_7# A1 2.35fF
+C5 VDD GND 29.45fF
+C6 VDD m1_939_251# 2.24fF
+C7 C_in Gnd 10.61fF
+C8 m1_543_110# Gnd 3.35fF
+C9 Full_Adder_t3_3/m1_0_n50# Gnd 3.47fF
+C10 m1_938_7# Gnd 4.02fF
+C11 A1 Gnd 3.15fF
+C12 m1_n28_n529# Gnd 3.48fF
+C13 Full_Adder_t3_2/m1_0_n50# Gnd 3.47fF
+C14 GND Gnd 38.18fF
+C15 m1_938_n224# Gnd 3.94fF
+C16 A2 Gnd 3.15fF
+C17 Full_Adder_t3_1/m1_0_n50# Gnd 3.47fF
+C18 m1_939_251# Gnd 2.49fF
+C19 A0 Gnd 3.15fF
+C20 VDD Gnd 18.23fF
+C21 m1_96_n327# Gnd 3.21fF
+C22 Full_Adder_t3_0/m1_0_n50# Gnd 3.47fF
+C23 m1_941_n469# Gnd 3.80fF
+C24 A3 Gnd 3.15fF

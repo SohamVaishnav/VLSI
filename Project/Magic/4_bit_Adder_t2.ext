@@ -1,0 +1,437 @@
+timestamp 1698959774
+version 8.3
+tech scmos
+style TSMC0.18um(tsmc18)from:t24i
+scale 1000 1 9
+resistclasses 6900 7800 946000 946000 1 8000 8000 80 80 80 80 80 40
+use XOR XOR_3 1 0 -516 0 1 556
+use XOR XOR_2 1 0 -54 0 1 556
+use XOR XOR_1 1 0 405 0 1 556
+use XOR XOR_0 1 0 864 0 1 556
+use Full_Adder_t2 Full_Adder_t2_3 1 0 845 0 1 339
+use Full_Adder_t2 Full_Adder_t2_2 1 0 386 0 1 339
+use Full_Adder_t2 Full_Adder_t2_1 1 0 -73 0 1 339
+use Full_Adder_t2 Full_Adder_t2_0 1 0 -535 0 1 339
+node "m1_679_2#" 1 368.858 679 2 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 483 152 0 0 0 0 0 0 0 0 0 0
+node "m1_220_2#" 1 368.858 220 2 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 483 152 0 0 0 0 0 0 0 0 0 0
+node "m1_n242_2#" 1 368.858 -242 2 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 483 152 0 0 0 0 0 0 0 0 0 0
+node "GND" 0 72.478 -658 2 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 36 0 0 0 0 0 0 0 0 0 0
+node "VDD" 0 89.336 -660 94 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 96 44 0 0 0 0 0 0 0 0 0 0
+node "S3" 0 87.808 1097 119 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 98 42 0 0 0 0 0 0 0 0 0 0
+node "S2" 0 87.808 638 119 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 98 42 0 0 0 0 0 0 0 0 0 0
+node "S1" 0 87.808 179 119 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 98 42 0 0 0 0 0 0 0 0 0 0
+node "S0" 0 118.468 -289 119 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 140 54 0 0 0 0 0 0 0 0 0 0
+node "C_in" 1 139.803 -671 164 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 105 58 122 66 0 0 0 0 0 0 0 0
+node "C_over" 0 87.808 1115 197 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 98 42 0 0 0 0 0 0 0 0 0 0
+node "D2" 1 642.4 647 205 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 750 212 548 126 0 0 0 0 0 0 0 0
+node "D1" 1 648.866 188 206 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 759 214 539 128 0 0 0 0 0 0 0 0
+node "D0" 2 667.907 -274 202 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 783 220 538 132 0 0 0 0 0 0 0 0
+node "A3" 0 57.148 730 388 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 56 30 0 0 0 0 0 0 0 0 0 0
+node "A2" 0 57.148 271 388 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 56 30 0 0 0 0 0 0 0 0 0 0
+node "A1" 0 92.918 -188 381 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 105 44 0 0 0 0 0 0 0 0 0 0
+node "A0" 0 57.148 -650 388 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 56 30 0 0 0 0 0 0 0 0 0 0
+node "m1_789_314#" 2 438.109 789 314 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 180 76 1134 288 369 100 0 0 0 0 0 0
+node "m1_931_508#" 1 250.113 931 508 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 111 62 582 182 0 0 0 0 0 0 0 0
+node "m1_699_470#" 4 724.24 699 470 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 864 400 0 0 0 0 0 0 0 0 0 0
+node "m1_1033_591#" 2 1283.12 1033 591 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1805 486 0 0 0 0 0 0 0 0 0 0
+node "B3" 3 536.202 720 576 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 394 140 1272 374 0 0 0 0 0 0 0 0
+node "m1_330_314#" 3 386.345 330 314 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 147 70 931 294 224 78 0 0 0 0 0 0
+node "m1_472_508#" 1 250.113 472 508 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 111 62 582 182 0 0 0 0 0 0 0 0
+node "m1_248_470#" 3 367.016 248 470 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 874 346 0 0 0 0 0 0 0 0 0 0
+node "m1_582_591#" 3 1590.39 582 591 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2263 634 0 0 0 0 0 0 0 0 0 0
+node "B2" 3 527.393 261 577 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 394 140 1177 376 0 0 0 0 0 0 0 0
+node "m1_n129_314#" 2 450.267 -129 314 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 198 80 1170 296 324 90 0 0 0 0 0 0
+node "m1_13_508#" 2 238.204 13 508 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 60 530 182 0 0 0 0 0 0 0 0
+node "m1_118_591#" 3 1750.94 118 591 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2608 654 0 0 0 0 0 0 0 0 0 0
+node "m1_925_550#" 2 244.854 925 550 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 66 46 642 226 0 0 0 0 0 0 0 0
+node "m1_465_550#" 2 262.21 465 550 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 50 725 224 0 0 0 0 0 0 0 0
+node "B1" 3 548.08 -198 577 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 394 140 1279 376 0 0 0 0 0 0 0 0
+node "m1_n591_314#" 2 417.438 -591 314 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 176 76 1032 290 272 84 0 0 0 0 0 0
+node "m1_n325_523#" 4 1005.56 -325 523 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1155 410 666 234 0 0 0 0 0 0 0 0
+node "m1_n449_508#" 1 250.113 -449 508 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 111 62 582 182 0 0 0 0 0 0 0 0
+node "m1_n458_561#" 2 270.082 -458 561 m123c 0 0 0 0 0 0 0 0 0 0 0 0 0 0 136 66 136 66 960 256 0 0 0 0 0 0
+node "m1_n353_591#" 3 1770.85 -353 591 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2615 662 0 0 0 0 0 0 0 0 0 0
+node "m1_6_550#" 2 262.21 6 550 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 50 725 224 0 0 0 0 0 0 0 0
+node "m1_n660_484#" 36 3983.13 -660 484 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1625 588 7429 1854 12742 3816 0 0 0 0 0 0
+node "B0" 3 525.985 -660 576 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 394 140 1075 376 0 0 0 0 0 0 0 0
+node "m1_n455_550#" 2 241.702 -455 550 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 66 46 630 222 0 0 0 0 0 0 0 0
+node "b_eff3" 288 8791.95 708 236 p 0 0 0 0 0 0 0 0 0 0 5020 866 0 0 2482 652 1862 442 0 0 0 0 0 0 0 0
+node "b_eff2" 288 8795.74 249 236 p 0 0 0 0 0 0 0 0 0 0 4992 864 0 0 2503 656 2021 444 0 0 0 0 0 0 0 0
+node "b_eff1" 345 8260.3 -208 236 p 0 0 0 0 0 0 0 0 0 0 4214 866 0 0 3050 756 1230 336 0 0 0 0 0 0 0 0
+node "b_eff0" 315 8798.42 -671 236 p 0 0 0 0 0 0 0 0 0 0 4610 866 0 0 3367 952 399 128 0 0 0 0 0 0 0 0
+cap "b_eff0" "m1_n455_550#" 92.348
+cap "m1_n353_591#" "b_eff1" 48.648
+cap "m1_582_591#" "m1_n660_484#" 25.284
+cap "m1_118_591#" "b_eff2" 56.512
+cap "b_eff2" "m1_248_470#" 501.184
+cap "m1_n129_314#" "m1_n660_484#" 183.406
+cap "B1" "b_eff1" 126.856
+cap "b_eff3" "m1_1033_591#" 38.48
+cap "m1_925_550#" "b_eff3" 69.261
+cap "B0" "m1_n660_484#" 344.981
+cap "m1_n458_561#" "m1_n449_508#" 56.672
+cap "m1_n660_484#" "b_eff1" 163.958
+cap "m1_n591_314#" "m1_n660_484#" 148.576
+cap "b_eff2" "B2" 125.224
+cap "b_eff3" "m1_n660_484#" 165.598
+cap "m1_n353_591#" "m1_n325_523#" 82.582
+cap "m1_582_591#" "b_eff3" 56.512
+cap "m1_n458_561#" "m1_n455_550#" 202.305
+cap "m1_n660_484#" "m1_699_470#" 34.621
+cap "b_eff2" "m1_n660_484#" 166.006
+cap "B3" "m1_n660_484#" 352.095
+cap "m1_n353_591#" "b_eff0" 34.621
+cap "B1" "m1_n325_523#" 34.621
+cap "m1_582_591#" "b_eff2" 38.48
+cap "m1_248_470#" "B2" 87.877
+cap "m1_n325_523#" "m1_n660_484#" 34.621
+cap "m1_118_591#" "m1_n660_484#" 28.812
+cap "b_eff0" "m1_n660_484#" 476.348
+cap "m1_n660_484#" "m1_248_470#" 388.622
+cap "b_eff2" "m1_465_550#" 80.8045
+cap "b_eff3" "m1_699_470#" 98.76
+cap "B3" "b_eff3" 125.224
+cap "m1_n353_591#" "m1_n660_484#" 28.812
+cap "m1_6_550#" "b_eff1" 80.8045
+cap "m1_n325_523#" "b_eff1" 84.632
+cap "b_eff0" "B0" 127.264
+cap "B3" "m1_699_470#" 103.093
+cap "m1_330_314#" "m1_n660_484#" 110.763
+cap "m1_118_591#" "b_eff1" 34.621
+cap "m1_n660_484#" "B2" 340.207
+cap "B1" "m1_n660_484#" 357.19
+subcap "VDD" -44.668
+cap "Full_Adder_t2_0/m1_n114_n270#" "Full_Adder_t2_0/m1_n125_n232#" 73.8784
+cap "Full_Adder_t2_0/m1_n125_n232#" "Full_Adder_t2_0/m1_n114_n270#" 46.174
+cap "Full_Adder_t2_0/m1_n116_n208#" "Full_Adder_t2_0/m1_n125_n232#" 220.621
+cap "Full_Adder_t2_0/m1_n116_n208#" "Full_Adder_t2_0/m1_n115_n337#" 122.28
+subcap "D0" -671.983
+cap "S0" "Full_Adder_t2_0/m1_147_n142#" 57.113
+subcap "D0" -135.54
+cap "Full_Adder_t2_1/m1_n115_n337#" "Full_Adder_t2_1/m1_n116_n208#" 91.71
+cap "Full_Adder_t2_1/m1_n125_n232#" "Full_Adder_t2_1/m1_n116_n208#" 61.854
+subcap "D1" -683.94
+cap "S1" "Full_Adder_t2_1/m1_147_n142#" 57.113
+cap "Full_Adder_t2_2/m1_n125_n232#" "D1" 61.854
+cap "D1" "Full_Adder_t2_2/m1_n115_n337#" 91.71
+subcap "D2" -553.921
+cap "Full_Adder_t2_3/m1_n125_n232#" "Full_Adder_t2_3/m1_n116_n208#" 67.036
+cap "S2" "Full_Adder_t2_2/m1_147_n142#" 57.113
+cap "Full_Adder_t2_3/m1_n116_n208#" "Full_Adder_t2_3/m1_n115_n337#" 101.9
+subcap "C_over" -20.646
+cap "Full_Adder_t2_3/m1_261_n142#" "Full_Adder_t2_3/m1_n114_n270#" 26.903
+cap "Full_Adder_t2_3/m1_147_n142#" "S3" 57.113
+cap "Full_Adder_t2_3/m1_261_n142#" "Full_Adder_t2_3/m1_214_8#" 16.2
+cap "Full_Adder_t2_3/m1_261_n142#" "Full_Adder_t2_3/OR_2_0/a_n35_n28#" 92.348
+cap "C_over" "Full_Adder_t2_3/m1_n114_n270#" -3.804
+cap "m1_n660_484#" "Full_Adder_t2_0/XOR_1/CMOS_in_0/a_8_20#" 253.6
+cap "m1_n660_484#" "Full_Adder_t2_0/m1_n116_n103#" -3.672
+cap "Full_Adder_t2_0/m1_n116_n103#" "Full_Adder_t2_0/XOR_1/CMOS_in_0/a_8_20#" 189.504
+subcap "D0" -607.035
+subcap "D0" -145.949
+subcap "b_eff1" -6754.83
+cap "Full_Adder_t2_1/m1_n125_n232#" "Full_Adder_t2_1/m1_n116_n103#" 189.504
+cap "Full_Adder_t2_0/m1_261_n142#" "Full_Adder_t2_1/m1_n125_n232#" 61.5653
+cap "Full_Adder_t2_0/m1_261_n142#" "Full_Adder_t2_0/m1_n114_n270#" 68.8
+cap "Full_Adder_t2_0/m1_261_n142#" "Full_Adder_t2_0/m1_214_8#" 21.888
+cap "Full_Adder_t2_0/m1_261_n142#" "Full_Adder_t2_0/m1_n115_n337#" 62.736
+subcap "D1" -399.496
+cap "Full_Adder_t2_1/m1_261_n142#" "Full_Adder_t2_1/m1_214_8#" 21.888
+cap "Full_Adder_t2_1/m1_261_n142#" "Full_Adder_t2_1/m1_n115_n337#" 62.736
+cap "Full_Adder_t2_1/m1_261_n142#" "Full_Adder_t2_1/OR_2_0/a_47_n16#" -1.42109e-14
+cap "Full_Adder_t2_1/m1_261_n142#" "Full_Adder_t2_1/m1_n114_n270#" 68.8
+subcap "b_eff2" -6593.88
+cap "D1" "Full_Adder_t2_2/XOR_1/CMOS_in_0/a_8_20#" 61.5653
+cap "Full_Adder_t2_2/XOR_1/CMOS_in_0/a_8_20#" "Full_Adder_t2_2/m1_n116_n103#" 189.504
+subcap "D2" -129.364
+subcap "b_eff3" -7529.78
+cap "Full_Adder_t2_2/m1_261_n142#" "Full_Adder_t2_2/m1_n114_n270#" 68.8
+cap "Full_Adder_t2_2/m1_261_n142#" "Full_Adder_t2_2/m1_214_8#" 21.888
+cap "Full_Adder_t2_2/m1_261_n142#" "Full_Adder_t2_2/m1_n115_n337#" 62.736
+cap "Full_Adder_t2_3/m1_n116_n103#" "Full_Adder_t2_3/m1_n125_n232#" 191.904
+cap "Full_Adder_t2_3/m1_n116_n103#" "Full_Adder_t2_3/XOR_1/CMOS_in_0/a_8_20#" -5.68434e-14
+cap "Full_Adder_t2_3/m1_261_n142#" "Full_Adder_t2_3/m1_n114_n270#" 15.326
+cap "Full_Adder_t2_3/m1_261_n142#" "Full_Adder_t2_3/m1_214_8#" 10.512
+cap "Full_Adder_t2_3/m1_n114_n270#" "C_over" -3.804
+cap "Full_Adder_t2_0/m1_n115_n15#" "Full_Adder_t2_0/XOR_0/CMOS_in_0/a_8_20#" 23.087
+cap "Full_Adder_t2_0/XOR_0/CMOS_in_1/a_8_20#" "m1_n660_484#" 253.6
+cap "Full_Adder_t2_0/XOR_0/m1_n99_2#" "Full_Adder_t2_0/XOR_0/CMOS_in_0/a_8_20#" 38.48
+cap "Full_Adder_t2_0/m1_n116_n103#" "Full_Adder_t2_0/XOR_0/m1_n99_2#" 22.616
+cap "b_eff0" "Full_Adder_t2_0/XOR_0/CMOS_in_1/a_8_20#" 233.2
+cap "Full_Adder_t2_0/XOR_0/CMOS_in_1/a_8_20#" "Full_Adder_t2_0/m1_n115_n15#" 92.348
+cap "Full_Adder_t2_0/XOR_0/m1_n99_2#" "Full_Adder_t2_0/XOR_0/CMOS_in_0/a_8_n20#" 205.58
+cap "Full_Adder_t2_1/m1_n125_n232#" "b_eff1" 233.2
+cap "Full_Adder_t2_1/m1_n125_n232#" "Full_Adder_t2_1/m1_n115_n15#" 23.087
+cap "Full_Adder_t2_1/m1_n125_n232#" "Full_Adder_t2_1/m1_n115_n15#" 92.348
+cap "Full_Adder_t2_1/XOR_0/CMOS_in_0/a_8_n20#" "Full_Adder_t2_1/XOR_0/m1_n99_2#" 201.968
+cap "Full_Adder_t2_1/m1_n116_n103#" "Full_Adder_t2_1/XOR_0/m1_n99_2#" 25.128
+cap "Full_Adder_t2_1/XOR_0/CMOS_in_0/a_8_20#" "Full_Adder_t2_1/XOR_0/m1_n99_2#" 55.019
+subcap "m1_330_314#" -142.494
+cap "Full_Adder_t2_2/XOR_0/m1_n99_2#" "Full_Adder_t2_2/XOR_0/CMOS_in_0/a_8_n20#" -7.608
+cap "Full_Adder_t2_2/XOR_0/CMOS_in_1/a_8_20#" "b_eff2" 233.2
+cap "Full_Adder_t2_2/XOR_0/CMOS_in_0/a_8_20#" "Full_Adder_t2_2/m1_n115_n15#" 23.087
+cap "Full_Adder_t2_2/XOR_0/CMOS_in_1/a_8_20#" "Full_Adder_t2_2/m1_n115_n15#" 92.348
+subcap "m1_330_314#" -173.089
+cap "Full_Adder_t2_2/XOR_0/m1_n99_2#" "Full_Adder_t2_2/XOR_0/m1_n97_39#" 172.253
+cap "Full_Adder_t2_2/XOR_0/m1_n99_2#" "Full_Adder_t2_2/XOR_0/m1_n96_81#" 34.621
+cap "Full_Adder_t2_2/XOR_0/m1_n99_2#" "Full_Adder_t2_2/m1_n116_n103#" 20.104
+subcap "A3" -94.948
+cap "Full_Adder_t2_3/m1_n125_n232#" "b_eff3" 233.2
+cap "Full_Adder_t2_3/m1_n125_n232#" "Full_Adder_t2_3/m1_n115_n15#" 46.174
+cap "Full_Adder_t2_3/XOR_0/CMOS_in_0/a_8_20#" "Full_Adder_t2_3/XOR_0/m1_n99_2#" 55.019
+cap "Full_Adder_t2_3/XOR_0/CMOS_in_0/a_8_n20#" "Full_Adder_t2_3/XOR_0/m1_n99_2#" 201.968
+cap "Full_Adder_t2_3/XOR_0/CMOS_in_1/a_8_20#" "Full_Adder_t2_3/m1_n115_n15#" 46.174
+cap "Full_Adder_t2_3/m1_n116_n103#" "Full_Adder_t2_3/XOR_0/m1_n99_2#" 25.128
+cap "Full_Adder_t2_3/m1_n115_n15#" "Full_Adder_t2_3/XOR_0/CMOS_in_0/a_8_20#" 23.087
+subcap "m1_n660_484#" -3505.48
+cap "Full_Adder_t2_0/m1_n125_n232#" "XOR_3/m1_n97_n89#" 10.944
+cap "Full_Adder_t2_0/m1_n125_n232#" "XOR_3/m1_n144_n52#" 114.12
+cap "Full_Adder_t2_0/m1_n125_n232#" "b_eff0" 88.616
+cap "XOR_3/m1_n97_n89#" "Full_Adder_t2_0/m1_n103_12#" 114.901
+subcap "m1_n449_508#" -343.531
+cap "Full_Adder_t2_1/m1_n125_n232#" "b_eff1" 79.288
+cap "Full_Adder_t2_1/m1_n125_n232#" "XOR_2/m1_n97_n89#" 11.892
+cap "XOR_2/m1_n97_n89#" "Full_Adder_t2_1/m1_n103_12#" 192.868
+subcap "m1_13_508#" -288.036
+subcap "m1_248_470#" -49.295
+cap "Full_Adder_t2_2/m1_n125_n232#" "b_eff2" 79.288
+cap "Full_Adder_t2_2/m1_n103_12#" "XOR_1/AND_2_1/a_61_n33#" 191.603
+cap "XOR_1/AND_2_1/a_61_n33#" "Full_Adder_t2_2/m1_n125_n232#" 24.808
+subcap "m1_472_508#" -331.187
+subcap "m1_699_470#" -527.754
+cap "Full_Adder_t2_3/m1_n125_n232#" "b_eff3" 79.288
+cap "XOR_0/CMOS_in_1/a_8_n33#" "Full_Adder_t2_3/m1_n125_n232#" 11.892
+cap "XOR_0/CMOS_in_1/a_8_n33#" "Full_Adder_t2_3/m1_n103_12#" 127.361
+subcap "m1_931_508#" -243.437
+subcap "m1_931_508#" -327.639
+cap "XOR_3/AND_2_1/w_n1_1#" "XOR_3/m1_n144_n52#" 14.004
+cap "XOR_3/m1_n144_n52#" "XOR_3/CMOS_in_1/w_0_0#" 12.324
+cap "XOR_3/CMOS_in_0/a_8_n33#" "XOR_3/m1_n144_39#" 152.928
+cap "XOR_3/CMOS_in_1/a_8_20#" "XOR_3/m1_n144_n52#" 101.82
+cap "XOR_3/AND_2_1/a_50_n23#" "XOR_3/AND_2_1/a_9_26#" 40.244
+cap "XOR_3/AND_2_0/a_50_n23#" "XOR_3/AND_2_1/w_n1_1#" 5.566
+cap "XOR_3/AND_2_1/a_50_n23#" "XOR_3/AND_2_0/a_61_n33#" 48.072
+cap "XOR_3/AND_2_0/a_50_n23#" "XOR_3/AND_2_0/a_9_10#" 42.339
+cap "XOR_3/AND_2_0/a_50_n23#" "XOR_3/AND_2_1/a_9_26#" 64.636
+cap "XOR_3/AND_2_1/a_50_n23#" "XOR_3/AND_2_1/w_n1_1#" 37.841
+cap "XOR_3/AND_2_0/a_50_n23#" "XOR_3/AND_2_0/a_61_n33#" 42.339
+cap "XOR_3/AND_2_0/a_50_n23#" "XOR_3/AND_2_0/a_10_n33#" 109.484
+cap "XOR_3/AND_2_1/a_n1_n23#" "XOR_3/AND_2_1/a_50_n23#" 14.84
+cap "XOR_3/AND_2_0/a_50_n23#" "XOR_3/AND_2_1/w_50_1#" 6.113
+subcap "m1_n458_561#" -90.86
+subcap "m1_n455_550#" -123.151
+cap "XOR_3/AND_2_1/a_9_26#" "XOR_3/AND_2_0/a_61_n33#" -21.1081
+cap "XOR_3/AND_2_1/w_101_1#" "XOR_3/OR_2_0/a_n1_n21#" 3.138
+cap "XOR_3/AND_2_1/w_101_1#" "XOR_3/AND_2_1/a_9_26#" 2.442
+cap "XOR_3/AND_2_0/a_111_10#" "XOR_3/AND_2_0/a_61_n33#" 34.812
+cap "XOR_3/AND_2_0/a_111_10#" "XOR_3/AND_2_1/a_9_26#" 190.917
+cap "XOR_3/OR_2_0/a_n35_n28#" "XOR_3/OR_2_0/a_n1_n21#" 78.283
+subcap "m1_n325_523#" -765.776
+subcap "m1_n353_591#" -1517.56
+cap "XOR_3/OR_2_0/w_40_n2#" "XOR_3/m1_194_n4#" 18.368
+cap "XOR_3/OR_2_0/a_n35_n16#" "XOR_3/m1_194_n4#" 4.08
+subcap "B1" -53.238
+cap "XOR_2/m1_n144_n52#" "XOR_2/CMOS_in_1/a_8_20#" 15.948
+cap "XOR_2/CMOS_in_1/w_0_0#" "XOR_2/m1_n144_n52#" 3.318
+cap "XOR_2/AND_2_1/a_50_n23#" "XOR_2/CMOS_in_1/a_8_20#" 156.347
+cap "XOR_2/AND_2_1/a_50_n23#" "XOR_2/m1_n99_2#" 223.824
+cap "XOR_2/CMOS_in_1/a_8_20#" "XOR_2/AND_2_0/a_50_n23#" 95.008
+cap "XOR_2/m1_n99_2#" "XOR_2/AND_2_0/a_50_n23#" 42.339
+cap "XOR_2/AND_2_1/w_50_1#" "XOR_2/AND_2_0/a_50_n23#" 5.867
+cap "XOR_2/AND_2_0/a_9_10#" "XOR_2/AND_2_0/a_50_n23#" 42.339
+cap "XOR_2/AND_2_0/a_10_n33#" "XOR_2/AND_2_0/a_50_n23#" 109.484
+cap "XOR_2/AND_2_1/w_n1_1#" "XOR_2/AND_2_1/a_50_n23#" 37.841
+cap "XOR_2/AND_2_1/w_n1_1#" "XOR_2/AND_2_0/a_50_n23#" 26.544
+cap "XOR_2/CMOS_in_1/w_0_0#" "XOR_2/AND_2_0/a_50_n23#" 6.792
+cap "XOR_2/AND_2_1/a_n1_n23#" "XOR_2/AND_2_1/a_50_n23#" 14.84
+subcap "m1_13_508#" -132.655
+subcap "m1_6_550#" -39.282
+cap "XOR_2/AND_2_1/a_9_26#" "XOR_2/AND_2_1/w_101_1#" 2.849
+cap "XOR_2/AND_2_0/a_111_10#" "XOR_2/AND_2_1/a_9_26#" 194.776
+cap "XOR_2/AND_2_0/a_61_n33#" "XOR_2/AND_2_1/a_9_26#" 18.4696
+cap "XOR_2/m1_65_n48#" "XOR_2/AND_2_1/w_101_1#" 1.569
+subcap "m1_118_591#" -1372.83
+cap "XOR_2/OR_2_0/a_n35_n28#" "XOR_2/OR_2_0/a_n1_n21#" 73.983
+cap "XOR_2/m1_194_n4#" "XOR_2/OR_2_0/w_40_n2#" 18.368
+cap "XOR_2/OR_2_0/a_n35_n16#" "XOR_2/m1_194_n4#" 4.08
+cap "XOR_1/m1_n144_39#" "XOR_1/m1_n99_2#" 112.849
+cap "XOR_1/m1_n144_n52#" "XOR_1/CMOS_in_1/w_0_0#" 12.324
+cap "b_eff2" "XOR_1/m1_n99_2#" 2.84217e-14
+cap "XOR_1/m1_n144_n52#" "XOR_1/m1_n99_2#" -2.84217e-14
+cap "XOR_1/m1_n144_n52#" "XOR_1/CMOS_in_1/a_8_20#" 55.188
+cap "XOR_1/m1_n99_2#" "XOR_1/AND_2_0/a_50_n23#" 42.339
+cap "XOR_1/AND_2_0/a_10_n33#" "XOR_1/AND_2_0/a_50_n23#" 109.484
+cap "XOR_1/AND_2_1/a_50_n23#" "XOR_1/m1_n99_2#" 87.211
+cap "XOR_1/AND_2_1/a_9_26#" "XOR_1/AND_2_0/a_50_n23#" 55.348
+cap "XOR_1/AND_2_1/a_50_n23#" "XOR_1/AND_2_1/a_n1_n23#" 14.84
+cap "XOR_1/AND_2_1/w_50_1#" "XOR_1/AND_2_0/a_50_n23#" 5.867
+cap "XOR_1/AND_2_1/a_50_n23#" "XOR_1/AND_2_1/a_9_26#" 40.244
+cap "XOR_1/AND_2_1/w_n1_1#" "XOR_1/AND_2_0/a_50_n23#" 26.544
+cap "XOR_1/AND_2_0/a_9_10#" "XOR_1/AND_2_0/a_50_n23#" 42.339
+cap "XOR_1/AND_2_1/a_50_n23#" "XOR_1/AND_2_1/w_n1_1#" 37.841
+subcap "m1_472_508#" -239.112
+subcap "m1_465_550#" -157.156
+cap "XOR_1/AND_2_1/w_101_1#" "XOR_1/OR_2_0/a_n1_n21#" 3.138
+cap "XOR_1/AND_2_1/a_9_26#" "XOR_1/AND_2_1/w_101_1#" 2.849
+cap "XOR_1/AND_2_0/a_61_n33#" "XOR_1/AND_2_1/a_9_26#" 18.4696
+cap "XOR_1/AND_2_1/a_9_26#" "XOR_1/OR_2_0/a_n42_n21#" 194.776
+cap "XOR_1/OR_2_0/a_n1_n21#" "XOR_1/OR_2_0/a_n35_n28#" 53.971
+subcap "m1_582_591#" -1263.22
+cap "XOR_1/m1_194_n4#" "XOR_1/OR_2_0/w_40_n2#" 19.53
+cap "XOR_1/m1_194_n4#" "XOR_1/OR_2_0/a_n35_n16#" 4.08
+cap "XOR_1/OR_2_0/a_n1_n21#" "XOR_1/OR_2_0/a_n35_n28#" 1.488
+subcap "B3" -544.03
+cap "XOR_0/m1_n144_n52#" "b_eff3" -1.42109e-14
+subcap "B3" -24.289
+cap "XOR_0/AND_2_1/w_n1_1#" "XOR_0/m1_n31_51#" 26.544
+cap "XOR_0/AND_2_1/w_n1_1#" "XOR_0/m1_n144_39#" 37.841
+cap "XOR_0/CMOS_in_1/a_8_20#" "XOR_0/m1_n31_51#" 69.672
+cap "XOR_0/AND_2_1/a_n1_n23#" "XOR_0/m1_n144_39#" 14.84
+cap "XOR_0/CMOS_in_1/a_8_20#" "XOR_0/m1_n144_39#" 139.148
+cap "XOR_0/CMOS_in_0/a_8_n33#" "XOR_0/m1_n144_39#" 207.668
+cap "XOR_0/CMOS_in_1/w_0_0#" "XOR_0/m1_n31_51#" 12.324
+subcap "m1_931_508#" -222.651
+subcap "m1_925_550#" -92.41
+cap "XOR_0/AND_2_1/a_9_26#" "XOR_0/AND_2_0/a_61_n33#" 10.5541
+cap "XOR_0/AND_2_0/a_9_10#" "XOR_0/AND_2_0/a_50_n23#" 42.339
+cap "XOR_0/AND_2_1/a_9_26#" "XOR_0/AND_2_1/w_101_1#" 1.628
+cap "XOR_0/AND_2_1/w_50_1#" "XOR_0/AND_2_0/a_50_n23#" 5.867
+cap "XOR_0/AND_2_1/a_9_26#" "XOR_0/AND_2_0/a_50_n23#" 48.844
+cap "XOR_0/AND_2_1/a_50_n23#" "XOR_0/AND_2_1/a_9_26#" -11.412
+cap "XOR_0/AND_2_0/a_61_n33#" "XOR_0/AND_2_0/a_50_n23#" 42.339
+cap "XOR_0/AND_2_1/a_50_n23#" "XOR_0/AND_2_0/a_61_n33#" -11.412
+cap "XOR_0/AND_2_1/w_n1_1#" "XOR_0/AND_2_0/a_50_n23#" -2.214
+cap "XOR_0/AND_2_0/a_10_n33#" "XOR_0/AND_2_0/a_50_n23#" 109.484
+cap "XOR_0/AND_2_1/a_50_n23#" "XOR_0/AND_2_1/w_n1_1#" -2.849
+subcap "m1_1033_591#" -960.468
+subcap "m1_925_550#" -174.121
+cap "XOR_0/AND_2_1/a_9_26#" "XOR_0/AND_2_1/w_101_1#" 9.644
+cap "XOR_0/AND_2_1/a_9_26#" "XOR_0/AND_2_0/a_61_n33#" 5.27703
+cap "XOR_0/OR_2_0/a_n1_n21#" "XOR_0/OR_2_0/a_n35_n28#" 78.283
+cap "XOR_0/AND_2_1/a_9_26#" "XOR_0/OR_2_0/a_n42_n21#" 194.611
+cap "XOR_0/OR_2_0/a_n1_n21#" "XOR_0/AND_2_1/w_101_1#" 3.138
+subcap "m1_1033_591#" -1100.19
+cap "XOR_0/m1_194_n4#" "XOR_0/OR_2_0/a_n35_n16#" 4.08
+cap "XOR_0/m1_194_n4#" "XOR_0/OR_2_0/w_40_n2#" 19.53
+cap "b_eff0" "XOR_3/CMOS_in_0/a_8_20#" 384.783
+cap "XOR_3/AND_2_0/a_9_26#" "b_eff0" 1539.13
+cap "XOR_3/AND_2_0/a_50_n23#" "XOR_3/AND_2_0/a_9_10#" 29.329
+cap "b_eff0" "XOR_3/m1_61_85#" 523.305
+cap "XOR_3/AND_2_0/w_101_1#" "XOR_3/m1_61_85#" 2.84217e-14
+cap "XOR_3/AND_2_0/a_111_10#" "XOR_3/m1_61_85#" 14.058
+cap "b_eff1" "XOR_2/CMOS_in_0/a_8_20#" 727.24
+cap "XOR_2/AND_2_0/a_9_10#" "XOR_2/AND_2_0/a_50_n23#" 29.329
+cap "XOR_2/m1_61_85#" "XOR_2/AND_2_0/w_101_1#" 5.68434e-14
+cap "XOR_2/m1_61_85#" "b_eff1" 1073.55
+cap "XOR_2/m1_61_85#" "XOR_2/AND_2_0/a_111_10#" 17.035
+cap "b_eff1" "m1_6_550#" 23.087
+cap "b_eff2" "XOR_1/CMOS_in_0/a_8_20#" 46.174
+cap "XOR_1/AND_2_0/a_9_10#" "XOR_1/AND_2_0/a_50_n23#" 29.329
+cap "b_eff2" "XOR_1/AND_2_0/a_9_26#" 1154.35
+cap "XOR_1/AND_2_0/a_111_10#" "XOR_1/m1_61_85#" 17.035
+cap "XOR_1/m1_61_85#" "b_eff2" 623.349
+cap "XOR_1/m1_61_85#" "XOR_1/AND_2_0/w_101_1#" 5.68434e-14
+cap "b_eff3" "XOR_0/CMOS_in_0/a_8_20#" 519.457
+cap "XOR_0/m1_61_85#" "b_eff3" 1154.35
+cap "XOR_0/m1_61_85#" "XOR_0/AND_2_0/w_101_1#" 5.68434e-14
+cap "XOR_0/AND_2_0/a_9_10#" "XOR_0/AND_2_0/a_50_n23#" 29.329
+cap "b_eff3" "XOR_0/m1_61_85#" 161.609
+cap "XOR_0/m1_68_43#" "XOR_0/m1_61_85#" 9.372
+merge "XOR_0/m1_61_85#" "XOR_0/AND_2_1/a_9_26#" -131.281 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -60 -44 -4 -134 0 0 0 0 0 0 0 0
+merge "XOR_0/AND_2_1/a_9_26#" "m1_925_550#"
+merge "Full_Adder_t2_3/m1_261_n142#" "C_over" -31.566 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -18 -21 0 0 0 0 0 0 0 0 0 0
+merge "XOR_2/m1_n99_2#" "XOR_2/m1_n129_5#" -224.653 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -117 -113 0 0 0 0 0 0 0 0 0 0
+merge "XOR_2/m1_n129_5#" "XOR_3/OR_2_0/a_n35_n28#"
+merge "XOR_3/OR_2_0/a_n35_n28#" "XOR_2/m1_n97_n89#"
+merge "XOR_2/m1_n97_n89#" "XOR_2/CMOS_in_1/a_8_n33#"
+merge "XOR_2/CMOS_in_1/a_8_n33#" "m1_n325_523#"
+merge "m1_n325_523#" "Full_Adder_t2_1/XOR_0/m1_n99_2#"
+merge "Full_Adder_t2_1/XOR_0/m1_n99_2#" "m1_n129_314#"
+merge "XOR_1/OR_2_0/a_n35_19#" "Full_Adder_t2_2/AND_2_0/a_9_26#" -4.602 0 0 0 0 0 0 0 0 0 0 0 0 0 0 549 -158 0 0 0 0 0 0 0 0 0 0
+merge "Full_Adder_t2_2/AND_2_0/a_9_26#" "Full_Adder_t2_3/m1_n125_n232#"
+merge "Full_Adder_t2_3/m1_n125_n232#" "m1_582_591#"
+merge "XOR_2/AND_2_1/a_50_n23#" "XOR_2/m1_n144_39#" -225.788 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -101 -56 0 0 0 0 0 0 0 0 0 0
+merge "XOR_2/m1_n144_39#" "B1"
+merge "Full_Adder_t2_0/m1_217_n220#" "S0" -211.386 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -245 -98 0 0 0 0 0 0 0 0 0 0
+merge "XOR_1/m1_n99_2#" "XOR_1/m1_n97_n89#" -341.857 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -180 -114 -357 -123 -224 -78 0 0 0 0 0 0
+merge "XOR_1/m1_n97_n89#" "m1_248_470#"
+merge "m1_248_470#" "Full_Adder_t2_2/XOR_0/m1_n99_2#"
+merge "Full_Adder_t2_2/XOR_0/m1_n99_2#" "m1_330_314#"
+merge "Full_Adder_t2_1/m1_217_n220#" "S1" -150.066 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -161 -74 0 0 0 0 0 0 0 0 0 0
+merge "Full_Adder_t2_2/m1_217_n220#" "S2" -150.066 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -161 -74 0 0 0 0 0 0 0 0 0 0
+merge "Full_Adder_t2_1/m1_n115_n15#" "A1" -35.322 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -7 -28 0 0 0 0 0 0 0 0 0 0
+merge "XOR_0/OR_2_0/a_n1_n21#" "XOR_0/m1_65_n48#" -95.526 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -23 -58 0 0 0 0 0 0 0 0 0 0
+merge "XOR_0/m1_65_n48#" "m1_931_508#"
+merge "XOR_0/AND_2_0/a_50_n23#" "XOR_0/m1_n31_51#" -2009.19 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -327 -276 -1625 -400 -5383 -2002 0 0 0 0 0 0
+merge "XOR_0/m1_n31_51#" "XOR_1/AND_2_0/a_50_n23#"
+merge "XOR_1/AND_2_0/a_50_n23#" "XOR_2/AND_2_0/a_50_n23#"
+merge "XOR_2/AND_2_0/a_50_n23#" "XOR_3/AND_2_0/a_50_n23#"
+merge "XOR_3/AND_2_0/a_50_n23#" "XOR_0/m1_n144_n52#"
+merge "XOR_0/m1_n144_n52#" "XOR_1/m1_n144_n52#"
+merge "XOR_1/m1_n144_n52#" "XOR_2/m1_n144_n52#"
+merge "XOR_2/m1_n144_n52#" "XOR_3/m1_n144_n52#"
+merge "XOR_3/m1_n144_n52#" "Full_Adder_t2_0/m1_n116_n208#"
+merge "Full_Adder_t2_0/m1_n116_n208#" "m1_n660_484#"
+merge "m1_n660_484#" "C_in"
+merge "Full_Adder_t2_2/m1_n115_n337#" "Full_Adder_t2_0/m1_n115_n337#" -160.349 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -168 -78 0 0 0 0 0 0 0 0 0 0
+merge "Full_Adder_t2_0/m1_n115_n337#" "GND"
+merge "GND" "Full_Adder_t2_1/m1_n115_n337#"
+merge "Full_Adder_t2_1/m1_n115_n337#" "m1_n242_2#"
+merge "m1_n242_2#" "m1_220_2#"
+merge "m1_220_2#" "Full_Adder_t2_3/m1_n115_n337#"
+merge "Full_Adder_t2_3/m1_n115_n337#" "m1_679_2#"
+merge "Full_Adder_t2_3/m1_217_n220#" "S3" -150.066 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -161 -74 0 0 0 0 0 0 0 0 0 0
+merge "Full_Adder_t2_1/m1_n116_n208#" "Full_Adder_t2_0/m1_261_n142#" -186.976 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -207 -75 0 0 0 0 0 0 0 0 0 0
+merge "Full_Adder_t2_0/m1_261_n142#" "D0"
+merge "XOR_1/m1_61_85#" "XOR_1/AND_2_1/a_9_26#" -190.019 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -70 -48 -424 -131 0 0 0 0 0 0 0 0
+merge "XOR_1/AND_2_1/a_9_26#" "m1_465_550#"
+merge "XOR_3/OR_2_0/a_n35_19#" "Full_Adder_t2_1/m1_n125_n232#" -214.812 0 0 0 0 0 0 0 0 0 0 0 0 0 0 269 -243 0 0 0 0 0 0 0 0 0 0
+merge "Full_Adder_t2_1/m1_n125_n232#" "Full_Adder_t2_0/AND_2_0/a_9_26#"
+merge "Full_Adder_t2_0/AND_2_0/a_9_26#" "m1_n353_591#"
+merge "XOR_0/m1_194_n4#" "Full_Adder_t2_3/m1_n116_n103#" -6422.07 0 0 0 0 0 0 0 0 0 0 -3351 -687 0 0 -1691 -635 -1249 -304 0 0 0 0 0 0 0 0
+merge "Full_Adder_t2_3/m1_n116_n103#" "b_eff3"
+merge "Full_Adder_t2_0/m1_n125_n232#" "VDD" -16.14 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12 -18 0 0 0 0 0 0 0 0 0 0
+merge "XOR_0/AND_2_1/a_50_n23#" "XOR_0/m1_n32_n40#" -208.188 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -103 -56 0 0 0 0 0 0 0 0 0 0
+merge "XOR_0/m1_n32_n40#" "XOR_0/m1_n144_39#"
+merge "XOR_0/m1_n144_39#" "B3"
+merge "XOR_2/OR_2_0/a_n1_n21#" "XOR_2/m1_65_n48#" -78.889 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -63 -58 240 0 0 0 0 0 0 0 0 0
+merge "XOR_2/m1_65_n48#" "m1_13_508#"
+merge "Full_Adder_t2_2/m1_n115_n15#" "A2" 0.448 0 0 0 0 0 0 0 0 0 0 0 0 0 0 42 -14 0 0 0 0 0 0 0 0 0 0
+merge "XOR_3/m1_194_n4#" "Full_Adder_t2_0/m1_n116_n103#" -6660.66 0 0 0 0 0 0 0 0 0 0 -3060 -689 0 0 -2785 -932 -49 -21 0 0 0 0 0 0 0 0
+merge "Full_Adder_t2_0/m1_n116_n103#" "b_eff0"
+merge "XOR_3/AND_2_0/a_61_n33#" "XOR_3/m1_63_n86#" -196.518 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -88 -54 -56 -30 -704 -184 0 0 0 0 0 0
+merge "XOR_3/m1_63_n86#" "m1_n458_561#"
+merge "XOR_3/m1_61_85#" "XOR_3/AND_2_1/a_9_26#" -175.015 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -60 -44 -372 -130 0 0 0 0 0 0 0 0
+merge "XOR_3/AND_2_1/a_9_26#" "m1_n455_550#"
+merge "XOR_0/OR_2_0/a_n35_19#" "Full_Adder_t2_3/AND_2_0/a_9_26#" 135.486 0 0 0 0 0 0 0 0 0 0 0 0 0 0 755 -142 0 0 0 0 0 0 0 0 0 0
+merge "Full_Adder_t2_3/AND_2_0/a_9_26#" "m1_1033_591#"
+merge "Full_Adder_t2_2/m1_261_n142#" "Full_Adder_t2_3/m1_n116_n208#" -124.197 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -44 -78 -21 -24 0 0 0 0 0 0 0 0
+merge "Full_Adder_t2_3/m1_n116_n208#" "D2"
+merge "XOR_2/m1_61_85#" "XOR_2/AND_2_1/a_9_26#" -192.207 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -126 -93 146 -131 0 0 0 0 0 0 0 0
+merge "XOR_2/AND_2_1/a_9_26#" "m1_6_550#"
+merge "XOR_0/CMOS_in_0/a_8_n33#" "XOR_0/m1_n129_5#" -251.517 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -141 -130 0 0 0 0 0 0 0 0 0 0
+merge "XOR_0/m1_n129_5#" "XOR_0/CMOS_in_1/a_8_n33#"
+merge "XOR_0/CMOS_in_1/a_8_n33#" "m1_699_470#"
+merge "m1_699_470#" "Full_Adder_t2_3/XOR_0/m1_n99_2#"
+merge "Full_Adder_t2_3/XOR_0/m1_n99_2#" "m1_789_314#"
+merge "XOR_3/AND_2_1/a_50_n23#" "XOR_3/m1_n144_39#" -220.81 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -149 -56 0 0 0 0 0 0 0 0 0 0
+merge "XOR_3/m1_n144_39#" "B0"
+merge "Full_Adder_t2_2/m1_n116_n208#" "Full_Adder_t2_1/m1_261_n142#" -434.926 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -399 -158 -495 -128 0 0 0 0 0 0 0 0
+merge "Full_Adder_t2_1/m1_261_n142#" "D1"
+merge "Full_Adder_t2_3/m1_n115_n15#" "A3" -1.94 0 0 0 0 0 0 0 0 0 0 0 0 0 0 36 -14 0 0 0 0 0 0 0 0 0 0
+merge "XOR_2/m1_194_n4#" "Full_Adder_t2_1/m1_n116_n103#" -6533.66 0 0 0 0 0 0 0 0 0 0 -3169 -691 0 0 -2177 -749 -880 -316 0 0 0 0 0 0 0 0
+merge "Full_Adder_t2_1/m1_n116_n103#" "b_eff1"
+merge "XOR_2/OR_2_0/a_n35_19#" "Full_Adder_t2_2/m1_n125_n232#" -291.124 0 0 0 0 0 0 0 0 0 0 0 0 0 0 232 -296 0 0 0 0 0 0 0 0 0 0
+merge "Full_Adder_t2_2/m1_n125_n232#" "Full_Adder_t2_1/AND_2_0/a_9_26#"
+merge "Full_Adder_t2_1/AND_2_0/a_9_26#" "m1_118_591#"
+merge "Full_Adder_t2_0/m1_n115_n15#" "A0" 0.448 0 0 0 0 0 0 0 0 0 0 0 0 0 0 42 -14 0 0 0 0 0 0 0 0 0 0
+merge "XOR_1/AND_2_1/a_50_n23#" "XOR_1/m1_n144_39#" -212.251 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -149 -56 0 0 0 0 0 0 0 0 0 0
+merge "XOR_1/m1_n144_39#" "B2"
+merge "XOR_1/m1_194_n4#" "Full_Adder_t2_2/m1_n116_n103#" -6436.61 0 0 0 0 0 0 0 0 0 0 -3342 -685 0 0 -1832 -629 -1229 -265 0 0 0 0 0 0 0 0
+merge "Full_Adder_t2_2/m1_n116_n103#" "b_eff2"
+merge "XOR_1/OR_2_0/a_n1_n21#" "XOR_1/m1_65_n48#" -85.559 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -23 -58 24 0 0 0 0 0 0 0 0 0
+merge "XOR_1/m1_65_n48#" "m1_472_508#"
+merge "XOR_3/OR_2_0/a_n1_n21#" "XOR_3/m1_65_n48#" -95.526 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -23 -58 0 0 0 0 0 0 0 0 0 0
+merge "XOR_3/m1_65_n48#" "m1_n449_508#"
+merge "XOR_3/m1_n97_n89#" "Full_Adder_t2_0/XOR_0/m1_n99_2#" -110.506 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -48 -44 0 0 0 0 0 0 0 0 0 0
+merge "Full_Adder_t2_0/XOR_0/m1_n99_2#" "m1_n591_314#"

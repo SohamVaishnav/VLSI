@@ -1,0 +1,108 @@
+magic
+tech scmos
+timestamp 1699864537
+<< metal1 >>
+rect -145 165 -75 169
+rect 24 165 50 169
+rect -158 116 -152 135
+rect -118 99 -112 140
+rect 34 115 40 138
+rect 26 85 36 89
+rect 44 78 50 165
+rect -145 74 -75 78
+rect 27 74 50 78
+rect -158 19 -152 52
+rect -119 22 -113 41
+rect -58 40 -53 52
+rect 34 25 40 44
+rect 25 -6 36 -2
+rect 44 -13 50 74
+rect 27 -17 50 -13
+rect 34 -66 40 -47
+rect 25 -97 36 -93
+rect 44 -104 50 -17
+rect 27 -108 50 -104
+rect 44 -122 50 -108
+rect 34 -157 40 -138
+rect 27 -188 36 -184
+rect 41 -188 49 -184
+<< m2contact >>
+rect -120 85 -115 92
+rect 36 85 41 90
+rect -158 52 -152 58
+rect -58 52 -53 58
+rect -119 41 -113 48
+rect -120 -6 -115 1
+rect 36 -6 41 1
+rect 36 -97 41 -90
+rect -58 -142 -53 -134
+rect 36 -188 41 -181
+<< metal2 >>
+rect -120 78 41 85
+rect -152 52 -58 58
+rect -138 -134 -129 52
+rect -113 41 -74 48
+rect 36 1 41 78
+rect -120 -13 41 -6
+rect 36 -90 41 -13
+rect -138 -142 -58 -134
+rect 36 -181 41 -97
+<< m3contact >>
+rect -74 41 -65 48
+<< m123contact >>
+rect -58 131 -53 139
+rect -158 108 -152 116
+rect -112 99 -104 106
+rect -112 8 -104 15
+rect -58 -51 -53 -43
+rect -110 -83 -104 -76
+rect -109 -174 -104 -167
+<< metal3 >>
+rect -158 67 -152 108
+rect -158 62 -139 67
+rect -145 12 -139 62
+rect -158 7 -139 12
+rect -112 15 -104 99
+rect -58 90 -53 131
+rect -74 82 -53 90
+rect -74 48 -65 82
+rect -158 -76 -152 7
+rect -74 -43 -65 41
+rect -74 -51 -58 -43
+rect -158 -83 -110 -76
+rect -121 -167 -114 -83
+rect -121 -174 -109 -167
+use AND_2  AND_2_3
+timestamp 1698776759
+transform 1 0 -103 0 1 -151
+box -8 -37 143 47
+use AND_2  AND_2_2
+timestamp 1698776759
+transform 1 0 -103 0 1 -60
+box -8 -37 143 47
+use AND_2  AND_2_1
+timestamp 1698776759
+transform 1 0 -103 0 1 31
+box -8 -37 143 47
+use AND_2  AND_2_0
+timestamp 1698776759
+transform 1 0 -103 0 1 122
+box -8 -37 143 47
+use CMOS_in  CMOS_in_0
+timestamp 1699269643
+transform 1 0 -145 0 1 129
+box -13 -40 30 39
+use CMOS_in  CMOS_in_1
+timestamp 1699269643
+transform 1 0 -145 0 1 38
+box -13 -40 30 39
+<< labels >>
+flabel metal1 44 -122 50 -108 0 FreeSans 9 0 0 0 VDD
+flabel metal1 41 -188 49 -184 0 FreeSans 9 0 0 0 GND
+flabel metal1 34 127 40 138 0 FreeSans 9 0 0 0 y1
+flabel metal1 34 -146 40 -138 0 FreeSans 9 0 0 0 y4
+flabel metal1 34 -55 40 -47 0 FreeSans 9 0 0 0 y3
+flabel metal1 34 36 40 44 0 FreeSans 9 0 0 0 y2
+flabel metal1 -158 127 -152 135 0 FreeSans 9 0 0 0 Sel0
+flabel metal1 -158 19 -152 30 0 FreeSans 9 0 0 0 Sel1
+<< end >>

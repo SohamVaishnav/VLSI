@@ -1,0 +1,75 @@
+magic
+tech scmos
+timestamp 1700128855
+<< metal1 >>
+rect 0 54 5 62
+rect 0 23 5 31
+rect 38 10 43 23
+rect 146 21 151 41
+rect 76 6 81 19
+rect 154 3 158 11
+rect 139 0 158 3
+rect 38 -59 43 -46
+rect 146 -49 151 -29
+rect 76 -63 81 -50
+rect 154 -66 158 0
+rect 134 -69 158 -66
+rect 38 -128 43 -115
+rect 146 -118 151 -98
+rect 76 -132 81 -119
+rect 154 -135 158 -69
+rect 134 -138 158 -135
+rect 38 -197 43 -184
+rect 146 -187 151 -167
+rect 76 -201 81 -188
+rect 154 -204 158 -138
+rect 134 -207 158 -204
+<< m2contact >>
+rect 112 59 117 65
+rect 0 18 5 23
+rect 112 -9 117 -4
+rect 0 -51 5 -46
+rect 112 -78 117 -73
+rect 0 -120 5 -115
+rect 112 -147 117 -142
+rect 0 -189 5 -184
+<< metal2 >>
+rect 0 -46 5 18
+rect 0 -115 5 -51
+rect 0 -184 5 -120
+rect 112 -4 117 59
+rect 112 -73 117 -9
+rect 112 -142 117 -78
+use 3in_AND  3in_AND_0
+timestamp 1698787690
+transform 1 0 55 0 1 33
+box 0 0 1 1
+use 3in_AND  3in_AND_1
+timestamp 1698787690
+transform 1 0 55 0 1 -36
+box 0 0 1 1
+use 3in_AND  3in_AND_2
+timestamp 1698787690
+transform 1 0 55 0 1 -105
+box 0 0 1 1
+use 3in_AND  3in_AND_3
+timestamp 1698787690
+transform 1 0 55 0 1 -174
+box 0 0 1 1
+<< labels >>
+flabel metal1 76 -201 81 -193 0 FreeSans 9 0 0 0 B3
+flabel metal1 38 -197 43 -189 0 FreeSans 9 0 0 0 A3
+flabel metal1 146 -187 151 -179 0 FreeSans 9 0 0 0 C3
+flabel metal1 146 -118 151 -110 0 FreeSans 9 0 0 0 C2
+flabel metal1 76 -132 81 -124 0 FreeSans 9 0 0 0 B2
+flabel metal1 38 -128 43 -120 0 FreeSans 9 0 0 0 A2
+flabel metal1 38 -59 43 -51 0 FreeSans 9 0 0 0 A1
+flabel metal1 76 -63 81 -55 0 FreeSans 9 0 0 0 B1
+flabel metal1 146 -49 151 -41 0 FreeSans 9 0 0 0 C1
+flabel metal1 146 21 151 29 0 FreeSans 9 0 0 0 C0
+flabel metal1 76 6 81 14 0 FreeSans 9 0 0 0 B0
+flabel metal1 38 10 43 18 0 FreeSans 9 0 0 0 A0
+flabel metal1 0 54 5 62 0 FreeSans 9 0 0 0 VDD
+flabel metal1 154 3 158 11 0 FreeSans 9 0 0 0 GND
+flabel metal1 0 23 5 31 0 FreeSans 9 0 0 0 En
+<< end >>

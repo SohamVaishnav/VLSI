@@ -1,0 +1,32 @@
+timestamp 1698783369
+version 8.3
+tech scmos
+style TSMC0.18um(tsmc18)from:t24i
+scale 1000 1 9
+resistclasses 6900 7800 946000 946000 1 8000 8000 80 80 80 80 80 40
+use CMOS_in CMOS_in_2 1 0 57 0 1 38
+use CMOS_in CMOS_in_1 1 0 -2 0 1 38
+use CMOS_in CMOS_in_0 1 0 -62 0 1 38
+node "GND" 4 506.528 -69 -2 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 426 290 0 0 0 0 0 0 0 0 0 0
+node "m1_22_32#" 1 94.922 22 32 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 75 56 0 0 0 0 0 0 0 0 0 0
+node "m1_n36_32#" 1 94.922 -36 32 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 75 56 0 0 0 0 0 0 0 0 0 0
+node "OUT" 4 1292.79 -83 -10 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1549 582 0 0 0 0 0 0 0 0 0 0
+node "VDD" 4 545.226 -76 74 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 459 312 0 0 0 0 0 0 0 0 0 0
+cap "GND" "OUT" 2205.36
+subcap "GND" -134.306
+subcap "m1_22_32#" -28.542
+subcap "OUT" -59.606
+subcap "VDD" -268.018
+cap "CMOS_in_2/a_8_n20#" "CMOS_in_2/a_8_n33#" 250.109
+merge "CMOS_in_2/a_8_20#" "CMOS_in_0/a_8_20#" -302.356 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -240 -178 0 0 0 0 0 0 0 0 0 0
+merge "CMOS_in_0/a_8_20#" "CMOS_in_1/a_8_20#"
+merge "CMOS_in_1/a_8_20#" "VDD"
+merge "CMOS_in_2/a_8_n33#" "CMOS_in_0/a_8_n33#" -288.284 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -228 -170 0 0 0 0 0 0 0 0 0 0
+merge "CMOS_in_0/a_8_n33#" "CMOS_in_1/a_8_n33#"
+merge "CMOS_in_1/a_8_n33#" "GND"
+merge "CMOS_in_0/a_8_n20#" "CMOS_in_1/a_n5_n24#" -42.088 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -24 -28 0 0 0 0 0 0 0 0 0 0
+merge "CMOS_in_1/a_n5_n24#" "m1_n36_32#"
+merge "CMOS_in_2/a_8_n20#" "CMOS_in_0/a_n5_n24#" -49.522 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -31 -32 0 0 0 0 0 0 0 0 0 0
+merge "CMOS_in_0/a_n5_n24#" "OUT"
+merge "CMOS_in_2/a_n5_n24#" "CMOS_in_1/a_8_n20#" -39.636 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 -30 0 0 0 0 0 0 0 0 0 0
+merge "CMOS_in_1/a_8_n20#" "m1_22_32#"

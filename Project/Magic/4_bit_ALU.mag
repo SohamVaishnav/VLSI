@@ -1,0 +1,20 @@
+magic
+tech scmos
+timestamp 1700128855
+use 4_bit_ANDer  4_bit_ANDer_0
+timestamp 1700128855
+transform 0 1 1838 -1 0 903
+box 0 -207 158 65
+use Decoder  Decoder_0
+timestamp 1699864537
+transform 0 1 1449 -1 0 795
+box -158 -188 50 169
+use 4_bit_Comp  4_bit_Comp_0
+timestamp 1700128855
+transform 1 0 1377 0 1 555
+box -116 -555 836 181
+use 4_bit_Adder_t3  4_bit_Adder_t3_0
+timestamp 1699914285
+transform 1 0 290 0 1 554
+box -290 -554 950 348
+<< end >>

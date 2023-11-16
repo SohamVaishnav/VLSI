@@ -1,0 +1,70 @@
+* SPICE3 file created from 4_bit_ANDer.ext - technology: scmos
+
+.option scale=0.09u
+
+M1000 C1 3in_AND_1/a_n42_n19# GND Gnd nfet w=13 l=4
++  ad=104 pd=42 as=728 ps=320
+M1001 VDD A1 3in_AND_1/a_n42_n19# 3in_AND_1/w_n12_n4# pfet w=13 l=6
++  ad=1664 pd=672 as=312 ps=126
+M1002 3in_AND_1/a_n42_n19# En 3in_AND_1/a_n42_n30# Gnd nfet w=13 l=4
++  ad=104 pd=42 as=182 ps=80
+M1003 VDD 3in_AND_1/a_n42_n19# C1 3in_AND_1/w_64_n4# pfet w=13 l=6
++  ad=0 pd=0 as=104 ps=42
+M1004 VDD En 3in_AND_1/a_n42_n19# 3in_AND_1/w_n50_n4# pfet w=13 l=6
++  ad=0 pd=0 as=0 ps=0
+M1005 VDD B1 3in_AND_1/a_n42_n19# 3in_AND_1/w_26_n4# pfet w=13 l=6
++  ad=0 pd=0 as=0 ps=0
+M1006 3in_AND_1/a_n4_n19# B1 GND Gnd nfet w=13 l=4
++  ad=208 pd=84 as=0 ps=0
+M1007 3in_AND_1/a_n4_n19# A1 3in_AND_1/a_n42_n30# Gnd nfet w=13 l=4
++  ad=0 pd=0 as=0 ps=0
+M1008 C0 3in_AND_0/a_n42_n19# GND Gnd nfet w=13 l=4
++  ad=104 pd=42 as=0 ps=0
+M1009 VDD A0 3in_AND_0/a_n42_n19# 3in_AND_0/w_n12_n4# pfet w=13 l=6
++  ad=0 pd=0 as=312 ps=126
+M1010 3in_AND_0/a_n42_n19# En 3in_AND_0/a_n42_n30# Gnd nfet w=13 l=4
++  ad=104 pd=42 as=182 ps=80
+M1011 VDD 3in_AND_0/a_n42_n19# C0 3in_AND_0/w_64_n4# pfet w=13 l=6
++  ad=0 pd=0 as=104 ps=42
+M1012 VDD En 3in_AND_0/a_n42_n19# 3in_AND_0/w_n50_n4# pfet w=13 l=6
++  ad=0 pd=0 as=0 ps=0
+M1013 VDD B0 3in_AND_0/a_n42_n19# 3in_AND_0/w_26_n4# pfet w=13 l=6
++  ad=0 pd=0 as=0 ps=0
+M1014 3in_AND_0/a_n4_n19# B0 GND Gnd nfet w=13 l=4
++  ad=208 pd=84 as=0 ps=0
+M1015 3in_AND_0/a_n4_n19# A0 3in_AND_0/a_n42_n30# Gnd nfet w=13 l=4
++  ad=0 pd=0 as=0 ps=0
+M1016 C2 3in_AND_2/a_n42_n19# GND Gnd nfet w=13 l=4
++  ad=104 pd=42 as=0 ps=0
+M1017 VDD A2 3in_AND_2/a_n42_n19# 3in_AND_2/w_n12_n4# pfet w=13 l=6
++  ad=0 pd=0 as=312 ps=126
+M1018 3in_AND_2/a_n42_n19# En 3in_AND_2/a_n42_n30# Gnd nfet w=13 l=4
++  ad=104 pd=42 as=182 ps=80
+M1019 VDD 3in_AND_2/a_n42_n19# C2 3in_AND_2/w_64_n4# pfet w=13 l=6
++  ad=0 pd=0 as=104 ps=42
+M1020 VDD En 3in_AND_2/a_n42_n19# 3in_AND_2/w_n50_n4# pfet w=13 l=6
++  ad=0 pd=0 as=0 ps=0
+M1021 VDD B2 3in_AND_2/a_n42_n19# 3in_AND_2/w_26_n4# pfet w=13 l=6
++  ad=0 pd=0 as=0 ps=0
+M1022 3in_AND_2/a_n4_n19# B2 GND Gnd nfet w=13 l=4
++  ad=208 pd=84 as=0 ps=0
+M1023 3in_AND_2/a_n4_n19# A2 3in_AND_2/a_n42_n30# Gnd nfet w=13 l=4
++  ad=0 pd=0 as=0 ps=0
+M1024 C3 3in_AND_3/a_n42_n19# GND Gnd nfet w=13 l=4
++  ad=104 pd=42 as=0 ps=0
+M1025 VDD A3 3in_AND_3/a_n42_n19# 3in_AND_3/w_n12_n4# pfet w=13 l=6
++  ad=0 pd=0 as=312 ps=126
+M1026 3in_AND_3/a_n42_n19# En 3in_AND_3/a_n42_n30# Gnd nfet w=13 l=4
++  ad=104 pd=42 as=182 ps=80
+M1027 VDD 3in_AND_3/a_n42_n19# C3 3in_AND_3/w_64_n4# pfet w=13 l=6
++  ad=0 pd=0 as=104 ps=42
+M1028 VDD En 3in_AND_3/a_n42_n19# 3in_AND_3/w_n50_n4# pfet w=13 l=6
++  ad=0 pd=0 as=0 ps=0
+M1029 VDD B3 3in_AND_3/a_n42_n19# 3in_AND_3/w_26_n4# pfet w=13 l=6
++  ad=0 pd=0 as=0 ps=0
+M1030 3in_AND_3/a_n4_n19# B3 GND Gnd nfet w=13 l=4
++  ad=208 pd=84 as=0 ps=0
+M1031 3in_AND_3/a_n4_n19# A3 3in_AND_3/a_n42_n30# Gnd nfet w=13 l=4
++  ad=0 pd=0 as=0 ps=0
+C0 GND VDD 2.09fF
+C1 En Gnd 2.02fF

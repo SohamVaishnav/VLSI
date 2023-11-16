@@ -1,0 +1,475 @@
+* SPICE3 file created from 4_bit_Comp.ext - technology: scmos
+
+.option scale=0.09u
+
+M1000 4_input_OR_0/a_14_n20# m1_459_n118# GND Gnd nfet w=12 l=4
++  ad=384 pd=160 as=10392 ps=3760
+M1001 m1_610_n129# 4_input_OR_0/a_14_n20# GND Gnd nfet w=12 l=4
++  ad=96 pd=40 as=0 ps=0
+M1002 4_input_OR_0/a_14_n20# m1_736_n54# GND Gnd nfet w=12 l=4
++  ad=0 pd=0 as=0 ps=0
+M1003 4_input_OR_0/a_14_n20# m1_734_29# GND Gnd nfet w=12 l=4
++  ad=0 pd=0 as=0 ps=0
+M1004 VDD m1_459_n118# 4_input_OR_0/a_14_5# 4_input_OR_0/w_n2_n2# pfet w=12 l=4
++  ad=15628 pd=5292 as=192 ps=80
+M1005 4_input_OR_0/a_72_17# m1_733_117# 4_input_OR_0/a_14_5# 4_input_OR_0/w_56_n2# pfet w=12 l=4
++  ad=216 pd=84 as=0 ps=0
+M1006 4_input_OR_0/a_14_n20# m1_736_n54# 4_input_OR_0/a_130_5# 4_input_OR_0/w_171_n2# pfet w=12 l=4
++  ad=108 pd=42 as=192 ps=80
+M1007 VDD 4_input_OR_0/a_14_n20# m1_610_n129# 4_input_OR_0/w_227_n2# pfet w=12 l=4
++  ad=0 pd=0 as=96 ps=40
+M1008 4_input_OR_0/a_14_n20# m1_733_117# GND Gnd nfet w=12 l=4
++  ad=0 pd=0 as=0 ps=0
+M1009 4_input_OR_0/a_72_17# m1_734_29# 4_input_OR_0/a_130_5# 4_input_OR_0/w_114_n2# pfet w=12 l=4
++  ad=0 pd=0 as=0 ps=0
+M1010 4_input_OR_1/a_14_n20# m1_459_n555# GND Gnd nfet w=12 l=4
++  ad=384 pd=160 as=0 ps=0
+M1011 m1_610_n221# 4_input_OR_1/a_14_n20# GND Gnd nfet w=12 l=4
++  ad=96 pd=40 as=0 ps=0
+M1012 4_input_OR_1/a_14_n20# m1_733_n500# GND Gnd nfet w=12 l=4
++  ad=0 pd=0 as=0 ps=0
+M1013 4_input_OR_1/a_14_n20# m1_734_n411# GND Gnd nfet w=12 l=4
++  ad=0 pd=0 as=0 ps=0
+M1014 VDD m1_459_n555# 4_input_OR_1/a_14_5# 4_input_OR_1/w_n2_n2# pfet w=12 l=4
++  ad=0 pd=0 as=192 ps=80
+M1015 4_input_OR_1/a_72_17# m1_737_n328# 4_input_OR_1/a_14_5# 4_input_OR_1/w_56_n2# pfet w=12 l=4
++  ad=216 pd=84 as=0 ps=0
+M1016 4_input_OR_1/a_14_n20# m1_733_n500# 4_input_OR_1/a_130_5# 4_input_OR_1/w_171_n2# pfet w=12 l=4
++  ad=108 pd=42 as=192 ps=80
+M1017 VDD 4_input_OR_1/a_14_n20# m1_610_n221# 4_input_OR_1/w_227_n2# pfet w=12 l=4
++  ad=0 pd=0 as=96 ps=40
+M1018 4_input_OR_1/a_14_n20# m1_737_n328# GND Gnd nfet w=12 l=4
++  ad=0 pd=0 as=0 ps=0
+M1019 4_input_OR_1/a_72_17# m1_734_n411# 4_input_OR_1/a_130_5# 4_input_OR_1/w_114_n2# pfet w=12 l=4
++  ad=0 pd=0 as=0 ps=0
+M1020 VDD m1_n61_n135# AND_2_1/a_9_10# AND_2_1/w_n1_1# pfet w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1021 AND_2_1/a_9_10# m1_n61_n135# AND_2_1/a_10_n33# Gnd nfet w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1022 VDD AND_2_1/a_9_10# m1_733_n500# AND_2_1/w_101_1# pfet w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1023 AND_2_1/a_10_n33# B3 GND Gnd nfet w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1024 VDD B3 AND_2_1/a_9_10# AND_2_1/w_50_1# pfet w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1025 m1_733_n500# AND_2_1/a_9_10# GND Gnd nfet w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1026 a_319_n385# A0 GND Gnd nfet w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1027 VDD A0 a_319_n385# CMOS_in_0/w_0_0# pfet w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1028 VDD A3 AND_2_0/a_9_10# AND_2_0/w_n1_1# pfet w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1029 AND_2_0/a_9_10# A3 AND_2_0/a_10_n33# Gnd nfet w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1030 VDD AND_2_0/a_9_10# m1_733_117# AND_2_0/w_101_1# pfet w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1031 AND_2_0/a_10_n33# m1_n27_n133# GND Gnd nfet w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1032 VDD m1_n27_n133# AND_2_0/a_9_10# AND_2_0/w_50_1# pfet w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1033 m1_733_117# AND_2_0/a_9_10# GND Gnd nfet w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1034 VDD En AND_2_2/a_9_10# AND_2_2/w_n1_1# pfet w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1035 AND_2_2/a_9_10# En AND_2_2/a_10_n33# Gnd nfet w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1036 VDD AND_2_2/a_9_10# Gth AND_2_2/w_101_1# pfet w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1037 AND_2_2/a_10_n33# m1_610_n129# GND Gnd nfet w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1038 VDD m1_610_n129# AND_2_2/a_9_10# AND_2_2/w_50_1# pfet w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1039 Gth AND_2_2/a_9_10# GND Gnd nfet w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1040 m1_n12_121# B0 GND Gnd nfet w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1041 VDD B0 m1_n12_121# CMOS_in_1/w_0_0# pfet w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1042 m1_n61_36# A1 GND Gnd nfet w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1043 VDD A1 m1_n61_36# CMOS_in_2/w_0_0# pfet w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1044 VDD En AND_2_3/a_9_10# AND_2_3/w_n1_1# pfet w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1045 AND_2_3/a_9_10# En AND_2_3/a_10_n33# Gnd nfet w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1046 VDD AND_2_3/a_9_10# Lth AND_2_3/w_101_1# pfet w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1047 AND_2_3/a_10_n33# m1_610_n221# GND Gnd nfet w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1048 VDD m1_610_n221# AND_2_3/a_9_10# AND_2_3/w_50_1# pfet w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1049 Lth AND_2_3/a_9_10# GND Gnd nfet w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1050 m1_n61_n50# A2 GND Gnd nfet w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1051 VDD A2 m1_n61_n50# CMOS_in_4/w_0_0# pfet w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1052 m1_n11_36# B1 GND Gnd nfet w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1053 VDD B1 m1_n11_36# CMOS_in_3/w_0_0# pfet w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1054 m1_n11_n50# B2 GND Gnd nfet w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1055 VDD B2 m1_n11_n50# CMOS_in_5/w_0_0# pfet w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1056 m1_n61_n135# A3 GND Gnd nfet w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1057 VDD A3 m1_n61_n135# CMOS_in_6/w_0_0# pfet w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1058 m1_734_n411# 3in_AND_1/a_n42_n19# GND Gnd nfet w=13 l=4
++  ad=104 pd=42 as=0 ps=0
+M1059 VDD m1_n61_n50# 3in_AND_1/a_n42_n19# 3in_AND_1/w_n12_n4# pfet w=13 l=6
++  ad=0 pd=0 as=312 ps=126
+M1060 3in_AND_1/a_n42_n19# m1_349_n227# 3in_AND_1/a_n42_n30# Gnd nfet w=13 l=4
++  ad=104 pd=42 as=182 ps=80
+M1061 VDD 3in_AND_1/a_n42_n19# m1_734_n411# 3in_AND_1/w_64_n4# pfet w=13 l=6
++  ad=0 pd=0 as=104 ps=42
+M1062 VDD m1_349_n227# 3in_AND_1/a_n42_n19# 3in_AND_1/w_n50_n4# pfet w=13 l=6
++  ad=0 pd=0 as=0 ps=0
+M1063 VDD B2 3in_AND_1/a_n42_n19# 3in_AND_1/w_26_n4# pfet w=13 l=6
++  ad=0 pd=0 as=0 ps=0
+M1064 3in_AND_1/a_n4_n19# B2 GND Gnd nfet w=13 l=4
++  ad=208 pd=84 as=0 ps=0
+M1065 3in_AND_1/a_n4_n19# m1_n61_n50# 3in_AND_1/a_n42_n30# Gnd nfet w=13 l=4
++  ad=0 pd=0 as=0 ps=0
+M1066 m1_n27_n133# B3 GND Gnd nfet w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1067 VDD B3 m1_n27_n133# CMOS_in_7/w_0_0# pfet w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1068 m1_734_29# 3in_AND_0/a_n42_n19# GND Gnd nfet w=13 l=4
++  ad=104 pd=42 as=0 ps=0
+M1069 VDD A2 3in_AND_0/a_n42_n19# 3in_AND_0/w_n12_n4# pfet w=13 l=6
++  ad=0 pd=0 as=312 ps=126
+M1070 3in_AND_0/a_n42_n19# m1_349_n227# 3in_AND_0/a_n42_n30# Gnd nfet w=13 l=4
++  ad=104 pd=42 as=182 ps=80
+M1071 VDD 3in_AND_0/a_n42_n19# m1_734_29# 3in_AND_0/w_64_n4# pfet w=13 l=6
++  ad=0 pd=0 as=104 ps=42
+M1072 VDD m1_349_n227# 3in_AND_0/a_n42_n19# 3in_AND_0/w_n50_n4# pfet w=13 l=6
++  ad=0 pd=0 as=0 ps=0
+M1073 VDD m1_n11_n50# 3in_AND_0/a_n42_n19# 3in_AND_0/w_26_n4# pfet w=13 l=6
++  ad=0 pd=0 as=0 ps=0
+M1074 3in_AND_0/a_n4_n19# m1_n11_n50# GND Gnd nfet w=13 l=4
++  ad=208 pd=84 as=0 ps=0
+M1075 3in_AND_0/a_n4_n19# A2 3in_AND_0/a_n42_n30# Gnd nfet w=13 l=4
++  ad=0 pd=0 as=0 ps=0
+M1076 5_input_AND_0/a_14_n29# A0 5_input_AND_0/a_4_n29# Gnd nfet w=12 l=2
++  ad=192 pd=80 as=96 ps=40
+M1077 5_input_AND_0/a_57_n29# m1_n12_121# 5_input_AND_0/a_14_n29# Gnd nfet w=12 l=2
++  ad=192 pd=80 as=0 ps=0
+M1078 VDD m1_385_n281# 5_input_AND_0/a_4_n29# 5_input_AND_0/w_86_n4# pfet w=14 l=4
++  ad=0 pd=0 as=770 ps=250
+M1079 VDD A0 5_input_AND_0/a_4_n29# 5_input_AND_0/w_n1_n4# pfet w=14 l=4
++  ad=0 pd=0 as=0 ps=0
+M1080 GND 5_input_AND_0/a_4_n29# m1_459_n118# Gnd nfet w=12 l=2
++  ad=0 pd=0 as=96 ps=40
+M1081 VDD m1_386_n98# 5_input_AND_0/a_4_n29# 5_input_AND_0/w_174_n4# pfet w=14 l=4
++  ad=0 pd=0 as=0 ps=0
+M1082 VDD m1_n12_121# 5_input_AND_0/a_4_n29# 5_input_AND_0/w_42_n4# pfet w=14 l=4
++  ad=0 pd=0 as=0 ps=0
+M1083 VDD 5_input_AND_0/a_4_n29# m1_459_n118# 5_input_AND_0/w_219_n4# pfet w=14 l=4
++  ad=0 pd=0 as=154 ps=50
+M1084 VDD m1_349_n227# 5_input_AND_0/a_4_n29# 5_input_AND_0/w_130_n4# pfet w=14 l=4
++  ad=0 pd=0 as=0 ps=0
+M1085 GND m1_386_n98# 5_input_AND_0/a_145_n29# Gnd nfet w=12 l=2
++  ad=0 pd=0 as=192 ps=80
+M1086 5_input_AND_0/a_101_n29# m1_385_n281# 5_input_AND_0/a_57_n29# Gnd nfet w=12 l=2
++  ad=192 pd=80 as=0 ps=0
+M1087 5_input_AND_0/a_145_n29# m1_349_n227# 5_input_AND_0/a_101_n29# Gnd nfet w=12 l=2
++  ad=0 pd=0 as=0 ps=0
+M1088 5_input_AND_1/a_14_n29# m1_385_n281# 5_input_AND_1/a_4_n29# Gnd nfet w=12 l=2
++  ad=192 pd=80 as=96 ps=40
+M1089 5_input_AND_1/a_57_n29# m1_386_n98# 5_input_AND_1/a_14_n29# Gnd nfet w=12 l=2
++  ad=192 pd=80 as=0 ps=0
+M1090 VDD a_319_n385# 5_input_AND_1/a_4_n29# 5_input_AND_1/w_86_n4# pfet w=14 l=4
++  ad=0 pd=0 as=770 ps=250
+M1091 VDD m1_385_n281# 5_input_AND_1/a_4_n29# 5_input_AND_1/w_n1_n4# pfet w=14 l=4
++  ad=0 pd=0 as=0 ps=0
+M1092 GND 5_input_AND_1/a_4_n29# m1_459_n555# Gnd nfet w=12 l=2
++  ad=0 pd=0 as=96 ps=40
+M1093 VDD m1_349_n227# 5_input_AND_1/a_4_n29# 5_input_AND_1/w_174_n4# pfet w=14 l=4
++  ad=0 pd=0 as=0 ps=0
+M1094 VDD m1_386_n98# 5_input_AND_1/a_4_n29# 5_input_AND_1/w_42_n4# pfet w=14 l=4
++  ad=0 pd=0 as=0 ps=0
+M1095 VDD 5_input_AND_1/a_4_n29# m1_459_n555# 5_input_AND_1/w_219_n4# pfet w=14 l=4
++  ad=0 pd=0 as=154 ps=50
+M1096 VDD B0 5_input_AND_1/a_4_n29# 5_input_AND_1/w_130_n4# pfet w=14 l=4
++  ad=0 pd=0 as=0 ps=0
+M1097 GND m1_349_n227# 5_input_AND_1/a_145_n29# Gnd nfet w=12 l=2
++  ad=0 pd=0 as=192 ps=80
+M1098 5_input_AND_1/a_101_n29# a_319_n385# 5_input_AND_1/a_57_n29# Gnd nfet w=12 l=2
++  ad=192 pd=80 as=0 ps=0
+M1099 5_input_AND_1/a_145_n29# B0 5_input_AND_1/a_101_n29# Gnd nfet w=12 l=2
++  ad=0 pd=0 as=0 ps=0
+M1100 5_input_AND_2/a_14_n29# En 5_input_AND_2/a_4_n29# Gnd nfet w=12 l=2
++  ad=192 pd=80 as=96 ps=40
+M1101 5_input_AND_2/a_57_n29# m1_305_n227# 5_input_AND_2/a_14_n29# Gnd nfet w=12 l=2
++  ad=192 pd=80 as=0 ps=0
+M1102 VDD m1_349_n227# 5_input_AND_2/a_4_n29# 5_input_AND_2/w_86_n4# pfet w=14 l=4
++  ad=0 pd=0 as=770 ps=250
+M1103 VDD En 5_input_AND_2/a_4_n29# 5_input_AND_2/w_n1_n4# pfet w=14 l=4
++  ad=0 pd=0 as=0 ps=0
+M1104 GND 5_input_AND_2/a_4_n29# Eql Gnd nfet w=12 l=2
++  ad=0 pd=0 as=96 ps=40
+M1105 VDD m1_386_n98# 5_input_AND_2/a_4_n29# 5_input_AND_2/w_174_n4# pfet w=14 l=4
++  ad=0 pd=0 as=0 ps=0
+M1106 VDD m1_305_n227# 5_input_AND_2/a_4_n29# 5_input_AND_2/w_42_n4# pfet w=14 l=4
++  ad=0 pd=0 as=0 ps=0
+M1107 VDD 5_input_AND_2/a_4_n29# Eql 5_input_AND_2/w_219_n4# pfet w=14 l=4
++  ad=0 pd=0 as=154 ps=50
+M1108 VDD m1_385_n281# 5_input_AND_2/a_4_n29# 5_input_AND_2/w_130_n4# pfet w=14 l=4
++  ad=0 pd=0 as=0 ps=0
+M1109 GND m1_386_n98# 5_input_AND_2/a_145_n29# Gnd nfet w=12 l=2
++  ad=0 pd=0 as=192 ps=80
+M1110 5_input_AND_2/a_101_n29# m1_349_n227# 5_input_AND_2/a_57_n29# Gnd nfet w=12 l=2
++  ad=192 pd=80 as=0 ps=0
+M1111 5_input_AND_2/a_145_n29# m1_385_n281# 5_input_AND_2/a_101_n29# Gnd nfet w=12 l=2
++  ad=0 pd=0 as=0 ps=0
+M1112 m1_386_n98# XNOR_1/m1_52_52# GND Gnd nfet w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1113 VDD XNOR_1/m1_52_52# m1_386_n98# XNOR_1/CMOS_in_0/w_0_0# pfet w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1114 VDD XNOR_1/XOR_0/OR_2_0/a_n35_n16# XNOR_1/m1_52_52# XNOR_1/XOR_0/OR_2_0/w_40_n2# pfet w=15 l=5
++  ad=0 pd=0 as=135 ps=48
+M1115 XNOR_1/XOR_0/OR_2_0/a_n35_n16# XNOR_1/XOR_0/m1_65_n48# GND Gnd nfet w=15 l=5
++  ad=210 pd=88 as=0 ps=0
+M1116 XNOR_1/XOR_0/OR_2_0/a_n35_n16# XNOR_1/XOR_0/m1_65_n48# XNOR_1/XOR_0/OR_2_0/a_n35_5# XNOR_1/XOR_0/OR_2_0/w_n1_n2# pfet w=15 l=5
++  ad=135 pd=48 as=270 ps=96
+M1117 XNOR_1/m1_52_52# XNOR_1/XOR_0/OR_2_0/a_n35_n16# GND Gnd nfet w=15 l=5
++  ad=105 pd=44 as=0 ps=0
+M1118 VDD XNOR_1/XOR_0/m1_68_43# XNOR_1/XOR_0/OR_2_0/a_n35_5# XNOR_1/XOR_0/OR_2_0/w_n42_n2# pfet w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1119 XNOR_1/XOR_0/OR_2_0/a_n35_n16# XNOR_1/XOR_0/m1_68_43# GND Gnd nfet w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1120 XNOR_1/XOR_0/m1_n97_39# A1 GND Gnd nfet w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1121 VDD A1 XNOR_1/XOR_0/m1_n97_39# XNOR_1/XOR_0/CMOS_in_0/w_0_0# pfet w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1122 VDD XNOR_1/XOR_0/m1_n97_39# XNOR_1/XOR_0/AND_2_0/a_9_10# XNOR_1/XOR_0/AND_2_0/w_n1_1# pfet w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1123 XNOR_1/XOR_0/AND_2_0/a_9_10# XNOR_1/XOR_0/m1_n97_39# XNOR_1/XOR_0/AND_2_0/a_10_n33# Gnd nfet w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1124 VDD XNOR_1/XOR_0/AND_2_0/a_9_10# XNOR_1/XOR_0/m1_68_43# XNOR_1/XOR_0/AND_2_0/w_101_1# pfet w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1125 XNOR_1/XOR_0/AND_2_0/a_10_n33# B1 GND Gnd nfet w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1126 VDD B1 XNOR_1/XOR_0/AND_2_0/a_9_10# XNOR_1/XOR_0/AND_2_0/w_50_1# pfet w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1127 XNOR_1/XOR_0/m1_68_43# XNOR_1/XOR_0/AND_2_0/a_9_10# GND Gnd nfet w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1128 VDD XNOR_1/XOR_0/m1_n101_n52# XNOR_1/XOR_0/AND_2_1/a_9_10# XNOR_1/XOR_0/AND_2_1/w_n1_1# pfet w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1129 XNOR_1/XOR_0/AND_2_1/a_9_10# XNOR_1/XOR_0/m1_n101_n52# XNOR_1/XOR_0/AND_2_1/a_10_n33# Gnd nfet w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1130 VDD XNOR_1/XOR_0/AND_2_1/a_9_10# XNOR_1/XOR_0/m1_65_n48# XNOR_1/XOR_0/AND_2_1/w_101_1# pfet w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1131 XNOR_1/XOR_0/AND_2_1/a_10_n33# A1 GND Gnd nfet w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1132 VDD A1 XNOR_1/XOR_0/AND_2_1/a_9_10# XNOR_1/XOR_0/AND_2_1/w_50_1# pfet w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1133 XNOR_1/XOR_0/m1_65_n48# XNOR_1/XOR_0/AND_2_1/a_9_10# GND Gnd nfet w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1134 XNOR_1/XOR_0/m1_n101_n52# B1 GND Gnd nfet w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1135 VDD B1 XNOR_1/XOR_0/m1_n101_n52# XNOR_1/XOR_0/CMOS_in_1/w_0_0# pfet w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1136 m1_305_n227# XNOR_0/m1_52_52# GND Gnd nfet w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1137 VDD XNOR_0/m1_52_52# m1_305_n227# XNOR_0/CMOS_in_0/w_0_0# pfet w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1138 VDD XNOR_0/XOR_0/OR_2_0/a_n35_n16# XNOR_0/m1_52_52# XNOR_0/XOR_0/OR_2_0/w_40_n2# pfet w=15 l=5
++  ad=0 pd=0 as=135 ps=48
+M1139 XNOR_0/XOR_0/OR_2_0/a_n35_n16# XNOR_0/XOR_0/m1_65_n48# GND Gnd nfet w=15 l=5
++  ad=210 pd=88 as=0 ps=0
+M1140 XNOR_0/XOR_0/OR_2_0/a_n35_n16# XNOR_0/XOR_0/m1_65_n48# XNOR_0/XOR_0/OR_2_0/a_n35_5# XNOR_0/XOR_0/OR_2_0/w_n1_n2# pfet w=15 l=5
++  ad=135 pd=48 as=270 ps=96
+M1141 XNOR_0/m1_52_52# XNOR_0/XOR_0/OR_2_0/a_n35_n16# GND Gnd nfet w=15 l=5
++  ad=105 pd=44 as=0 ps=0
+M1142 VDD XNOR_0/XOR_0/m1_68_43# XNOR_0/XOR_0/OR_2_0/a_n35_5# XNOR_0/XOR_0/OR_2_0/w_n42_n2# pfet w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1143 XNOR_0/XOR_0/OR_2_0/a_n35_n16# XNOR_0/XOR_0/m1_68_43# GND Gnd nfet w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1144 XNOR_0/XOR_0/m1_n97_39# A0 GND Gnd nfet w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1145 VDD A0 XNOR_0/XOR_0/m1_n97_39# XNOR_0/XOR_0/CMOS_in_0/w_0_0# pfet w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1146 VDD XNOR_0/XOR_0/m1_n97_39# XNOR_0/XOR_0/AND_2_0/a_9_10# XNOR_0/XOR_0/AND_2_0/w_n1_1# pfet w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1147 XNOR_0/XOR_0/AND_2_0/a_9_10# XNOR_0/XOR_0/m1_n97_39# XNOR_0/XOR_0/AND_2_0/a_10_n33# Gnd nfet w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1148 VDD XNOR_0/XOR_0/AND_2_0/a_9_10# XNOR_0/XOR_0/m1_68_43# XNOR_0/XOR_0/AND_2_0/w_101_1# pfet w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1149 XNOR_0/XOR_0/AND_2_0/a_10_n33# B0 GND Gnd nfet w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1150 VDD B0 XNOR_0/XOR_0/AND_2_0/a_9_10# XNOR_0/XOR_0/AND_2_0/w_50_1# pfet w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1151 XNOR_0/XOR_0/m1_68_43# XNOR_0/XOR_0/AND_2_0/a_9_10# GND Gnd nfet w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1152 VDD XNOR_0/XOR_0/m1_n101_n52# XNOR_0/XOR_0/AND_2_1/a_9_10# XNOR_0/XOR_0/AND_2_1/w_n1_1# pfet w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1153 XNOR_0/XOR_0/AND_2_1/a_9_10# XNOR_0/XOR_0/m1_n101_n52# XNOR_0/XOR_0/AND_2_1/a_10_n33# Gnd nfet w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1154 VDD XNOR_0/XOR_0/AND_2_1/a_9_10# XNOR_0/XOR_0/m1_65_n48# XNOR_0/XOR_0/AND_2_1/w_101_1# pfet w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1155 XNOR_0/XOR_0/AND_2_1/a_10_n33# A0 GND Gnd nfet w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1156 VDD A0 XNOR_0/XOR_0/AND_2_1/a_9_10# XNOR_0/XOR_0/AND_2_1/w_50_1# pfet w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1157 XNOR_0/XOR_0/m1_65_n48# XNOR_0/XOR_0/AND_2_1/a_9_10# GND Gnd nfet w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1158 XNOR_0/XOR_0/m1_n101_n52# B0 GND Gnd nfet w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1159 VDD B0 XNOR_0/XOR_0/m1_n101_n52# XNOR_0/XOR_0/CMOS_in_1/w_0_0# pfet w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1160 m1_385_n281# XNOR_2/m1_52_52# GND Gnd nfet w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1161 VDD XNOR_2/m1_52_52# m1_385_n281# XNOR_2/CMOS_in_0/w_0_0# pfet w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1162 VDD XNOR_2/XOR_0/OR_2_0/a_n35_n16# XNOR_2/m1_52_52# XNOR_2/XOR_0/OR_2_0/w_40_n2# pfet w=15 l=5
++  ad=0 pd=0 as=135 ps=48
+M1163 XNOR_2/XOR_0/OR_2_0/a_n35_n16# XNOR_2/XOR_0/m1_65_n48# GND Gnd nfet w=15 l=5
++  ad=210 pd=88 as=0 ps=0
+M1164 XNOR_2/XOR_0/OR_2_0/a_n35_n16# XNOR_2/XOR_0/m1_65_n48# XNOR_2/XOR_0/OR_2_0/a_n35_5# XNOR_2/XOR_0/OR_2_0/w_n1_n2# pfet w=15 l=5
++  ad=135 pd=48 as=270 ps=96
+M1165 XNOR_2/m1_52_52# XNOR_2/XOR_0/OR_2_0/a_n35_n16# GND Gnd nfet w=15 l=5
++  ad=105 pd=44 as=0 ps=0
+M1166 VDD XNOR_2/XOR_0/m1_68_43# XNOR_2/XOR_0/OR_2_0/a_n35_5# XNOR_2/XOR_0/OR_2_0/w_n42_n2# pfet w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1167 XNOR_2/XOR_0/OR_2_0/a_n35_n16# XNOR_2/XOR_0/m1_68_43# GND Gnd nfet w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1168 XNOR_2/XOR_0/m1_n97_39# A2 GND Gnd nfet w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1169 VDD A2 XNOR_2/XOR_0/m1_n97_39# XNOR_2/XOR_0/CMOS_in_0/w_0_0# pfet w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1170 VDD XNOR_2/XOR_0/m1_n97_39# XNOR_2/XOR_0/AND_2_0/a_9_10# XNOR_2/XOR_0/AND_2_0/w_n1_1# pfet w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1171 XNOR_2/XOR_0/AND_2_0/a_9_10# XNOR_2/XOR_0/m1_n97_39# XNOR_2/XOR_0/AND_2_0/a_10_n33# Gnd nfet w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1172 VDD XNOR_2/XOR_0/AND_2_0/a_9_10# XNOR_2/XOR_0/m1_68_43# XNOR_2/XOR_0/AND_2_0/w_101_1# pfet w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1173 XNOR_2/XOR_0/AND_2_0/a_10_n33# B2 GND Gnd nfet w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1174 VDD B2 XNOR_2/XOR_0/AND_2_0/a_9_10# XNOR_2/XOR_0/AND_2_0/w_50_1# pfet w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1175 XNOR_2/XOR_0/m1_68_43# XNOR_2/XOR_0/AND_2_0/a_9_10# GND Gnd nfet w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1176 VDD XNOR_2/XOR_0/m1_n101_n52# XNOR_2/XOR_0/AND_2_1/a_9_10# XNOR_2/XOR_0/AND_2_1/w_n1_1# pfet w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1177 XNOR_2/XOR_0/AND_2_1/a_9_10# XNOR_2/XOR_0/m1_n101_n52# XNOR_2/XOR_0/AND_2_1/a_10_n33# Gnd nfet w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1178 VDD XNOR_2/XOR_0/AND_2_1/a_9_10# XNOR_2/XOR_0/m1_65_n48# XNOR_2/XOR_0/AND_2_1/w_101_1# pfet w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1179 XNOR_2/XOR_0/AND_2_1/a_10_n33# A2 GND Gnd nfet w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1180 VDD A2 XNOR_2/XOR_0/AND_2_1/a_9_10# XNOR_2/XOR_0/AND_2_1/w_50_1# pfet w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1181 XNOR_2/XOR_0/m1_65_n48# XNOR_2/XOR_0/AND_2_1/a_9_10# GND Gnd nfet w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1182 XNOR_2/XOR_0/m1_n101_n52# B2 GND Gnd nfet w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1183 VDD B2 XNOR_2/XOR_0/m1_n101_n52# XNOR_2/XOR_0/CMOS_in_1/w_0_0# pfet w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1184 m1_349_n227# XNOR_3/m1_52_52# GND Gnd nfet w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1185 VDD XNOR_3/m1_52_52# m1_349_n227# XNOR_3/CMOS_in_0/w_0_0# pfet w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1186 VDD XNOR_3/XOR_0/OR_2_0/a_n35_n16# XNOR_3/m1_52_52# XNOR_3/XOR_0/OR_2_0/w_40_n2# pfet w=15 l=5
++  ad=0 pd=0 as=135 ps=48
+M1187 XNOR_3/XOR_0/OR_2_0/a_n35_n16# XNOR_3/XOR_0/m1_65_n48# GND Gnd nfet w=15 l=5
++  ad=210 pd=88 as=0 ps=0
+M1188 XNOR_3/XOR_0/OR_2_0/a_n35_n16# XNOR_3/XOR_0/m1_65_n48# XNOR_3/XOR_0/OR_2_0/a_n35_5# XNOR_3/XOR_0/OR_2_0/w_n1_n2# pfet w=15 l=5
++  ad=135 pd=48 as=270 ps=96
+M1189 XNOR_3/m1_52_52# XNOR_3/XOR_0/OR_2_0/a_n35_n16# GND Gnd nfet w=15 l=5
++  ad=105 pd=44 as=0 ps=0
+M1190 VDD XNOR_3/XOR_0/m1_68_43# XNOR_3/XOR_0/OR_2_0/a_n35_5# XNOR_3/XOR_0/OR_2_0/w_n42_n2# pfet w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1191 XNOR_3/XOR_0/OR_2_0/a_n35_n16# XNOR_3/XOR_0/m1_68_43# GND Gnd nfet w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1192 XNOR_3/XOR_0/m1_n97_39# A3 GND Gnd nfet w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1193 VDD A3 XNOR_3/XOR_0/m1_n97_39# XNOR_3/XOR_0/CMOS_in_0/w_0_0# pfet w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1194 VDD XNOR_3/XOR_0/m1_n97_39# XNOR_3/XOR_0/AND_2_0/a_9_10# XNOR_3/XOR_0/AND_2_0/w_n1_1# pfet w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1195 XNOR_3/XOR_0/AND_2_0/a_9_10# XNOR_3/XOR_0/m1_n97_39# XNOR_3/XOR_0/AND_2_0/a_10_n33# Gnd nfet w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1196 VDD XNOR_3/XOR_0/AND_2_0/a_9_10# XNOR_3/XOR_0/m1_68_43# XNOR_3/XOR_0/AND_2_0/w_101_1# pfet w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1197 XNOR_3/XOR_0/AND_2_0/a_10_n33# B3 GND Gnd nfet w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1198 VDD B3 XNOR_3/XOR_0/AND_2_0/a_9_10# XNOR_3/XOR_0/AND_2_0/w_50_1# pfet w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1199 XNOR_3/XOR_0/m1_68_43# XNOR_3/XOR_0/AND_2_0/a_9_10# GND Gnd nfet w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1200 VDD XNOR_3/XOR_0/m1_n101_n52# XNOR_3/XOR_0/AND_2_1/a_9_10# XNOR_3/XOR_0/AND_2_1/w_n1_1# pfet w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1201 XNOR_3/XOR_0/AND_2_1/a_9_10# XNOR_3/XOR_0/m1_n101_n52# XNOR_3/XOR_0/AND_2_1/a_10_n33# Gnd nfet w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1202 VDD XNOR_3/XOR_0/AND_2_1/a_9_10# XNOR_3/XOR_0/m1_65_n48# XNOR_3/XOR_0/AND_2_1/w_101_1# pfet w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1203 XNOR_3/XOR_0/AND_2_1/a_10_n33# A3 GND Gnd nfet w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1204 VDD A3 XNOR_3/XOR_0/AND_2_1/a_9_10# XNOR_3/XOR_0/AND_2_1/w_50_1# pfet w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1205 XNOR_3/XOR_0/m1_65_n48# XNOR_3/XOR_0/AND_2_1/a_9_10# GND Gnd nfet w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1206 XNOR_3/XOR_0/m1_n101_n52# B3 GND Gnd nfet w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1207 VDD B3 XNOR_3/XOR_0/m1_n101_n52# XNOR_3/XOR_0/CMOS_in_1/w_0_0# pfet w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1208 4_input_0/a_n22_n12# A1 4_input_0/a_25_n23# Gnd nfet w=14 l=4
++  ad=196 pd=84 as=196 ps=84
+M1209 4_input_0/a_n22_n12# m1_385_n281# 4_input_0/a_n68_n23# Gnd nfet w=14 l=4
++  ad=0 pd=0 as=196 ps=84
+M1210 VDD 4_input_0/a_n68_n12# m1_736_n54# 4_input_0/w_108_2# pfet w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1211 4_input_0/a_n68_n12# m1_349_n227# 4_input_0/a_n68_n23# Gnd nfet w=14 l=4
++  ad=98 pd=42 as=0 ps=0
+M1212 VDD m1_385_n281# 4_input_0/a_n68_n12# 4_input_0/w_n29_2# pfet w=14 l=4
++  ad=0 pd=0 as=504 ps=184
+M1213 m1_736_n54# 4_input_0/a_n68_n12# GND Gnd nfet w=14 l=4
++  ad=98 pd=42 as=0 ps=0
+M1214 VDD m1_349_n227# 4_input_0/a_n68_n12# 4_input_0/w_n75_2# pfet w=14 l=4
++  ad=0 pd=0 as=0 ps=0
+M1215 GND m1_n11_36# 4_input_0/a_25_n23# Gnd nfet w=14 l=4
++  ad=0 pd=0 as=0 ps=0
+M1216 VDD A1 4_input_0/a_n68_n12# 4_input_0/w_18_2# pfet w=14 l=4
++  ad=0 pd=0 as=0 ps=0
+M1217 VDD m1_n11_36# 4_input_0/a_n68_n12# 4_input_0/w_64_2# pfet w=14 l=4
++  ad=0 pd=0 as=0 ps=0
+M1218 4_input_1/a_n22_n12# m1_n61_36# 4_input_1/a_25_n23# Gnd nfet w=14 l=4
++  ad=196 pd=84 as=196 ps=84
+M1219 4_input_1/a_n22_n12# m1_385_n281# 4_input_1/a_n68_n23# Gnd nfet w=14 l=4
++  ad=0 pd=0 as=196 ps=84
+M1220 VDD 4_input_1/a_n68_n12# m1_737_n328# 4_input_1/w_108_2# pfet w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1221 4_input_1/a_n68_n12# m1_349_n227# 4_input_1/a_n68_n23# Gnd nfet w=14 l=4
++  ad=98 pd=42 as=0 ps=0
+M1222 VDD m1_385_n281# 4_input_1/a_n68_n12# 4_input_1/w_n29_2# pfet w=14 l=4
++  ad=0 pd=0 as=504 ps=184
+M1223 m1_737_n328# 4_input_1/a_n68_n12# GND Gnd nfet w=14 l=4
++  ad=98 pd=42 as=0 ps=0
+M1224 VDD m1_349_n227# 4_input_1/a_n68_n12# 4_input_1/w_n75_2# pfet w=14 l=4
++  ad=0 pd=0 as=0 ps=0
+M1225 GND B1 4_input_1/a_25_n23# Gnd nfet w=14 l=4
++  ad=0 pd=0 as=0 ps=0
+M1226 VDD m1_n61_36# 4_input_1/a_n68_n12# 4_input_1/w_18_2# pfet w=14 l=4
++  ad=0 pd=0 as=0 ps=0
+M1227 VDD B1 4_input_1/a_n68_n12# 4_input_1/w_64_2# pfet w=14 l=4
++  ad=0 pd=0 as=0 ps=0
+C0 A0 A3 5.14fF
+C1 GND VDD 11.25fF
+C2 B0 En 2.89fF
+C3 B1 m1_n61_36# 2.56fF
+C4 m1_459_n555# GND 5.44fF
+C5 VDD Gnd 17.59fF
+C6 A3 Gnd 3.74fF
+C7 m1_349_n227# Gnd 4.63fF
+C8 B2 Gnd 3.06fF
+C9 B0 Gnd 3.81fF
+C10 A0 Gnd 3.85fF
+C11 GND Gnd 18.42fF
+C12 B1 Gnd 3.53fF
+C13 A1 Gnd 3.35fF
+C14 En Gnd 4.53fF

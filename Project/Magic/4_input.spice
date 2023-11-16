@@ -1,0 +1,24 @@
+* SPICE3 file created from 4_input.ext - technology: scmos
+
+.option scale=0.09u
+
+M1000 a_n22_n12# a_18_n16# a_25_n23# Gnd nfet w=14 l=4
++  ad=196 pd=84 as=196 ps=84
+M1001 a_n22_n12# a_n29_n16# a_n68_n23# Gnd nfet w=14 l=4
++  ad=0 pd=0 as=196 ps=84
+M1002 a_n68_23# a_n68_n12# a_115_n12# w_108_2# pfet w=14 l=4
++  ad=630 pd=230 as=126 ps=46
+M1003 a_n68_n12# a_n75_n16# a_n68_n23# Gnd nfet w=14 l=4
++  ad=98 pd=42 as=0 ps=0
+M1004 a_n68_23# a_n29_n16# a_n68_n12# w_n29_2# pfet w=14 l=4
++  ad=0 pd=0 as=504 ps=184
+M1005 a_115_n12# a_n68_n12# a_71_n12# Gnd nfet w=14 l=4
++  ad=98 pd=42 as=196 ps=84
+M1006 a_n68_23# a_n75_n16# a_n68_n12# w_n75_2# pfet w=14 l=4
++  ad=0 pd=0 as=0 ps=0
+M1007 a_71_n12# a_64_n16# a_25_n23# Gnd nfet w=14 l=4
++  ad=0 pd=0 as=0 ps=0
+M1008 a_n68_23# a_18_n16# a_n68_n12# w_18_2# pfet w=14 l=4
++  ad=0 pd=0 as=0 ps=0
+M1009 a_n68_23# a_64_n16# a_n68_n12# w_64_2# pfet w=14 l=4
++  ad=0 pd=0 as=0 ps=0

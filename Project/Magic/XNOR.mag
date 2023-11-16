@@ -1,0 +1,18 @@
+magic
+tech scmos
+timestamp 1699700809
+<< metal1 >>
+rect 68 94 71 99
+rect 23 91 71 94
+rect 52 52 63 58
+rect 44 23 71 26
+rect 68 20 71 23
+use XOR  XOR_0
+timestamp 1699269911
+transform 1 0 -147 0 1 56
+box -144 -89 215 89
+use CMOS_in  CMOS_in_0
+timestamp 1699269643
+transform 1 0 68 0 1 60
+box -13 -40 30 39
+<< end >>
