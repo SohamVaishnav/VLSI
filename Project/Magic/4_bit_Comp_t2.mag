@@ -1,6 +1,6 @@
 magic
 tech scmos
-timestamp 1700499200
+timestamp 1700499660
 << polysilicon >>
 rect 384 -383 388 -353
 << metal1 >>
@@ -542,6 +542,6 @@ flabel metal1 791 161 807 168 0 FreeSans 9 0 0 0 VDD
 flabel space 757 -449 772 -442 0 FreeSans 9 0 0 0 GND
 flabel metal1 511 -357 517 -341 0 FreeSans 9 0 0 0 Gth
 flabel metal1 511 -273 517 -257 0 FreeSans 9 0 0 0 Lth
-flabel space 780 -149 797 -143 0 FreeSans 9 0 0 0 Eql
 flabel metal1 739 98 745 107 0 FreeSans 9 0 0 0 En
+flabel metal1 780 -149 796 -143 0 FreeSans 9 0 0 0 Eql
 << end >>

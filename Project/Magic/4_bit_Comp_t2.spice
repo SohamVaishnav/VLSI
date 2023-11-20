@@ -150,13 +150,13 @@ M1072 VDD m1_n45_n288# 5_input_AND_2/a_4_n29# 5_input_AND_2/w_86_n4# pfet w=14 l
 +  ad=0 pd=0 as=770 ps=250
 M1073 VDD En 5_input_AND_2/a_4_n29# 5_input_AND_2/w_n1_n4# pfet w=14 l=4
 +  ad=0 pd=0 as=0 ps=0
-M1074 m1_n72_79# 5_input_AND_2/a_4_n29# m1_776_n149# Gnd nfet w=12 l=2
+M1074 m1_n72_79# 5_input_AND_2/a_4_n29# Eql Gnd nfet w=12 l=2
 +  ad=0 pd=0 as=96 ps=40
 M1075 VDD m1_34_n284# 5_input_AND_2/a_4_n29# 5_input_AND_2/w_174_n4# pfet w=14 l=4
 +  ad=0 pd=0 as=0 ps=0
 M1076 VDD m1_724_77# 5_input_AND_2/a_4_n29# 5_input_AND_2/w_42_n4# pfet w=14 l=4
 +  ad=0 pd=0 as=0 ps=0
-M1077 VDD 5_input_AND_2/a_4_n29# m1_776_n149# 5_input_AND_2/w_219_n4# pfet w=14 l=4
+M1077 VDD 5_input_AND_2/a_4_n29# Eql 5_input_AND_2/w_219_n4# pfet w=14 l=4
 +  ad=0 pd=0 as=154 ps=50
 M1078 VDD m1_2_n284# 5_input_AND_2/a_4_n29# 5_input_AND_2/w_130_n4# pfet w=14 l=4
 +  ad=0 pd=0 as=0 ps=0
@@ -434,13 +434,13 @@ M1214 XNOR_3/XOR_0/m1_n101_n52# m1_102_n360# m1_n72_79# Gnd nfet w=14 l=4
 +  ad=126 pd=46 as=0 ps=0
 M1215 VDD m1_102_n360# XNOR_3/XOR_0/m1_n101_n52# XNOR_3/XOR_0/CMOS_in_1/w_0_0# pfet w=14 l=4
 +  ad=0 pd=0 as=126 ps=46
-C0 VDD m1_n72_79# 15.57fF
+C0 B2 A2 3.70fF
 C1 B3 m1_n72_n157# 9.79fF
-C2 m1_102_n360# m1_2_n284# 5.88fF
-C3 m1_n45_n288# m1_2_n284# 6.69fF
+C2 m1_n45_n288# m1_2_n284# 6.69fF
+C3 VDD m1_n72_79# 15.57fF
 C4 A3 m1_n121_n17# 2.65fF
-C5 B2 A2 3.70fF
-C6 m1_293_n361# a_384_n389# 2.36fF
+C5 m1_293_n361# a_384_n389# 2.36fF
+C6 m1_2_n284# m1_102_n360# 5.88fF
 C7 m1_722_n379# Gnd 2.37fF
 C8 m1_n72_79# Gnd 13.44fF
 C9 m1_341_n42# Gnd 3.03fF
