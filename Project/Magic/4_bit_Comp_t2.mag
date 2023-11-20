@@ -1,6 +1,6 @@
 magic
 tech scmos
-timestamp 1700501889
+timestamp 1700522019
 << polysilicon >>
 rect 384 -383 388 -353
 << metal1 >>
@@ -537,22 +537,8 @@ timestamp 1699269643
 transform 1 0 850 0 1 129
 box -13 -40 30 39
 << labels >>
-flabel metal1 -109 -160 -104 -155 0 FreeSans 9 0 0 0 B2
-flabel metal1 -109 -76 -104 -71 0 FreeSans 9 0 0 0 A2
-flabel metal1 -109 24 -104 29 0 FreeSans 9 0 0 0 B3
-flabel metal1 -109 108 -104 113 0 FreeSans 9 0 0 0 A3
-flabel metal1 791 161 807 168 0 FreeSans 9 0 0 0 VDD
-flabel metal1 511 -357 517 -341 0 FreeSans 9 0 0 0 Gth
-flabel metal1 511 -273 517 -257 0 FreeSans 9 0 0 0 Lth
-flabel metal1 739 98 745 107 0 FreeSans 9 0 0 0 En
-flabel metal1 780 -149 796 -143 0 FreeSans 9 0 0 0 Eql
-flabel metal1 757 -449 771 -442 0 FreeSans 9 0 0 0 GND
 flabel metal3 340 -273 347 -266 0 FreeSans 9 0 0 0 A3nB3
 flabel m123contact 293 -275 300 -268 0 FreeSans 9 0 0 0 A1nB1
 flabel m123contact 408 -275 415 -268 0 FreeSans 9 0 0 0 A2nB2
 flabel metal1 237 -268 242 -261 0 FreeSans 9 0 0 0 A0nB0
-flabel metal1 837 129 845 135 0 FreeSans 9 0 0 0 A0
-flabel metal1 837 45 845 51 0 FreeSans 9 0 0 0 B0
-flabel metal1 837 -55 845 -49 0 FreeSans 9 0 0 0 A1
-flabel metal1 837 -145 845 -139 0 FreeSans 9 0 0 0 B1
 << end >>

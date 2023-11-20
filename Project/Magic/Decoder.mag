@@ -1,6 +1,6 @@
 magic
 tech scmos
-timestamp 1699864537
+timestamp 1700521764
 << metal1 >>
 rect -145 165 -75 169
 rect 24 165 50 169
@@ -72,37 +72,28 @@ rect -74 -51 -58 -43
 rect -158 -83 -110 -76
 rect -121 -167 -114 -83
 rect -121 -174 -109 -167
-use AND_2  AND_2_3
+use CMOS_in  CMOS_in_1
+timestamp 1699269643
+transform 1 0 -145 0 1 38
+box -13 -40 30 39
+use CMOS_in  CMOS_in_0
+timestamp 1699269643
+transform 1 0 -145 0 1 129
+box -13 -40 30 39
+use AND_2  AND_2_0
 timestamp 1698776759
-transform 1 0 -103 0 1 -151
-box -8 -37 143 47
-use AND_2  AND_2_2
-timestamp 1698776759
-transform 1 0 -103 0 1 -60
+transform 1 0 -103 0 1 122
 box -8 -37 143 47
 use AND_2  AND_2_1
 timestamp 1698776759
 transform 1 0 -103 0 1 31
 box -8 -37 143 47
-use AND_2  AND_2_0
+use AND_2  AND_2_2
 timestamp 1698776759
-transform 1 0 -103 0 1 122
+transform 1 0 -103 0 1 -60
 box -8 -37 143 47
-use CMOS_in  CMOS_in_0
-timestamp 1699269643
-transform 1 0 -145 0 1 129
-box -13 -40 30 39
-use CMOS_in  CMOS_in_1
-timestamp 1699269643
-transform 1 0 -145 0 1 38
-box -13 -40 30 39
-<< labels >>
-flabel metal1 44 -122 50 -108 0 FreeSans 9 0 0 0 VDD
-flabel metal1 41 -188 49 -184 0 FreeSans 9 0 0 0 GND
-flabel metal1 34 127 40 138 0 FreeSans 9 0 0 0 y1
-flabel metal1 34 -146 40 -138 0 FreeSans 9 0 0 0 y4
-flabel metal1 34 -55 40 -47 0 FreeSans 9 0 0 0 y3
-flabel metal1 34 36 40 44 0 FreeSans 9 0 0 0 y2
-flabel metal1 -158 127 -152 135 0 FreeSans 9 0 0 0 Sel0
-flabel metal1 -158 19 -152 30 0 FreeSans 9 0 0 0 Sel1
+use AND_2  AND_2_3
+timestamp 1698776759
+transform 1 0 -103 0 1 -151
+box -8 -37 143 47
 << end >>

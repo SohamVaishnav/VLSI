@@ -1,6 +1,6 @@
 magic
 tech scmos
-timestamp 1699914285
+timestamp 1700521624
 << metal1 >>
 rect 127 344 487 348
 rect 577 340 606 343
@@ -139,53 +139,36 @@ rect 610 -120 628 -104
 << metal5 >>
 rect 144 -106 155 -47
 rect 376 -120 610 -104
-use XOR  XOR_1
-timestamp 1699269911
-transform 1 0 735 0 1 18
-box -144 -89 215 89
-use XOR  XOR_3
-timestamp 1699269911
-transform 1 0 735 0 1 -220
-box -144 -89 215 89
-use XOR  XOR_2
-timestamp 1699269911
-transform 1 0 735 0 1 -465
-box -144 -89 215 89
-use XOR  XOR_0
-timestamp 1699269911
-transform 1 0 735 0 1 259
-box -144 -89 215 89
-use Full_Adder_t3  Full_Adder_t3_0
+use Full_Adder_t3  Full_Adder_t3_3
 timestamp 1699877225
-transform 1 0 -277 0 1 134
-box -13 -232 411 214
-use Full_Adder_t3  Full_Adder_t3_1
-timestamp 1699877225
-transform 1 0 170 0 1 134
+transform 1 0 171 0 1 -321
 box -13 -232 411 214
 use Full_Adder_t3  Full_Adder_t3_2
 timestamp 1699877225
 transform 1 0 -277 0 1 -321
 box -13 -232 411 214
-use Full_Adder_t3  Full_Adder_t3_3
+use Full_Adder_t3  Full_Adder_t3_1
 timestamp 1699877225
-transform 1 0 171 0 1 -321
+transform 1 0 170 0 1 134
 box -13 -232 411 214
-<< labels >>
-flabel metal1 524 -443 531 -434 0 FreeSans 9 0 0 0 S1
-flabel metal1 523 11 530 20 0 FreeSans 9 0 0 0 S0
-flabel metal1 76 -445 83 -435 0 FreeSans 9 0 0 0 S2
-flabel metal1 76 13 83 20 0 FreeSans 9 0 0 0 S3
-flabel metal1 96 135 103 142 0 FreeSans 9 0 0 0 C_Over
-flabel metal1 537 -553 551 -547 0 FreeSans 9 0 0 0 VDD
-flabel metal1 398 -548 405 -533 0 FreeSans 9 0 0 0 GND
-flabel metal1 591 -401 597 -389 0 FreeSans 9 0 0 0 B3
-flabel metal1 591 -154 597 -142 0 FreeSans 9 0 0 0 B2
-flabel metal1 591 83 597 95 0 FreeSans 9 0 0 0 B1
-flabel metal1 591 325 597 337 0 FreeSans 9 0 0 0 B0
-flabel metal2 170 318 176 335 0 FreeSans 9 0 0 0 A0
-flabel metal2 185 -74 191 -57 0 FreeSans 9 0 0 0 C_in
-flabel metal2 171 -137 177 -120 0 FreeSans 9 0 0 0 A1
-flabel metal2 -277 -137 -271 -120 0 FreeSans 9 0 0 0 A2
-flabel metal2 -277 318 -271 335 0 FreeSans 9 0 0 0 A3
+use Full_Adder_t3  Full_Adder_t3_0
+timestamp 1699877225
+transform 1 0 -277 0 1 134
+box -13 -232 411 214
+use XOR  XOR_0
+timestamp 1699269911
+transform 1 0 735 0 1 259
+box -144 -89 215 89
+use XOR  XOR_2
+timestamp 1699269911
+transform 1 0 735 0 1 -465
+box -144 -89 215 89
+use XOR  XOR_3
+timestamp 1699269911
+transform 1 0 735 0 1 -220
+box -144 -89 215 89
+use XOR  XOR_1
+timestamp 1699269911
+transform 1 0 735 0 1 18
+box -144 -89 215 89
 << end >>
