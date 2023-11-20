@@ -1,6 +1,6 @@
 magic
 tech scmos
-timestamp 1700499660
+timestamp 1700501889
 << polysilicon >>
 rect 384 -383 388 -353
 << metal1 >>
@@ -15,6 +15,7 @@ rect 648 158 826 165
 rect -109 108 -104 113
 rect 739 98 745 111
 rect 814 96 826 158
+rect 837 129 845 135
 rect 884 126 889 139
 rect 871 123 889 126
 rect 884 119 889 123
@@ -24,12 +25,14 @@ rect -73 29 -57 32
 rect -109 24 -104 29
 rect -63 -11 -57 29
 rect 329 -4 335 46
+rect 837 45 845 51
 rect 873 39 889 42
 rect 329 -7 387 -4
 rect -115 -17 -57 -11
 rect 328 -23 371 -20
 rect 328 -64 335 -23
 rect 738 -31 745 -20
+rect 837 -55 845 -49
 rect -70 -71 -57 -68
 rect 874 -61 888 -58
 rect -109 -76 -104 -71
@@ -40,6 +43,7 @@ rect 724 -163 730 -137
 rect 776 -149 796 -143
 rect 329 -190 390 -187
 rect 822 -197 826 -124
+rect 837 -145 845 -139
 rect 870 -150 873 -147
 rect 880 -150 887 -147
 rect -48 -201 -29 -197
@@ -229,8 +233,11 @@ rect 15 -359 28 -353
 rect 219 -362 228 -284
 rect 653 -278 660 -244
 rect 792 -256 808 -250
+rect 801 -261 808 -256
+rect 839 -261 846 -184
+rect 801 -267 846 -261
 rect 688 -284 693 -278
-rect 801 -286 808 -256
+rect 801 -286 808 -267
 rect 248 -339 359 -329
 rect 764 -332 810 -325
 rect 317 -353 408 -346
@@ -530,18 +537,22 @@ timestamp 1699269643
 transform 1 0 850 0 1 129
 box -13 -40 30 39
 << labels >>
-flabel metal1 884 133 889 139 0 FreeSans 9 0 0 0 A0
-flabel metal1 882 39 887 42 0 FreeSans 9 0 0 0 B0
-flabel metal1 882 -61 887 -58 0 FreeSans 9 0 0 0 A1
-flabel metal1 881 -150 886 -147 0 FreeSans 9 0 0 0 B1
 flabel metal1 -109 -160 -104 -155 0 FreeSans 9 0 0 0 B2
 flabel metal1 -109 -76 -104 -71 0 FreeSans 9 0 0 0 A2
 flabel metal1 -109 24 -104 29 0 FreeSans 9 0 0 0 B3
 flabel metal1 -109 108 -104 113 0 FreeSans 9 0 0 0 A3
 flabel metal1 791 161 807 168 0 FreeSans 9 0 0 0 VDD
-flabel space 757 -449 772 -442 0 FreeSans 9 0 0 0 GND
 flabel metal1 511 -357 517 -341 0 FreeSans 9 0 0 0 Gth
 flabel metal1 511 -273 517 -257 0 FreeSans 9 0 0 0 Lth
 flabel metal1 739 98 745 107 0 FreeSans 9 0 0 0 En
 flabel metal1 780 -149 796 -143 0 FreeSans 9 0 0 0 Eql
+flabel metal1 757 -449 771 -442 0 FreeSans 9 0 0 0 GND
+flabel metal3 340 -273 347 -266 0 FreeSans 9 0 0 0 A3nB3
+flabel m123contact 293 -275 300 -268 0 FreeSans 9 0 0 0 A1nB1
+flabel m123contact 408 -275 415 -268 0 FreeSans 9 0 0 0 A2nB2
+flabel metal1 237 -268 242 -261 0 FreeSans 9 0 0 0 A0nB0
+flabel metal1 837 129 845 135 0 FreeSans 9 0 0 0 A0
+flabel metal1 837 45 845 51 0 FreeSans 9 0 0 0 B0
+flabel metal1 837 -55 845 -49 0 FreeSans 9 0 0 0 A1
+flabel metal1 837 -145 845 -139 0 FreeSans 9 0 0 0 B1
 << end >>
