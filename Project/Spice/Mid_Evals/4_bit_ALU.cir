@@ -28,8 +28,8 @@
 
 .global gnd
 
-VinSelD0 SelD_0 0 PULSE(0 1.8 0 100p 100p 60n 120n)
-VinSelD1 SelD_1 0 dc 0
+VinSelD0 SelD_0 0 dc 1.8
+VinSelD1 SelD_1 0 dc 1.8
 
 VDD vdd 0 1.8
 
@@ -42,15 +42,16 @@ VinSelM0 SelM_0 0 dc 0
 
 X4 SelM_0 y1 y2 y_M vdd 0 2_1_MUX
 
-VA0 A0 0 PULSE(0 1.8 0 100p 100p 60n 120n)
-VA1 A1 0 dc 0
-VA2 A2 0 PULSE(0 1.8 0 100p 100p 60n 120n)
+*input sequence taken as an example is A = 0101 and B = 1011
+VA0 A0 0 dc 1.8
+VA1 A1 0 dc 1.8
+VA2 A2 0 dc 1.8
 VA3 A3 0 dc 0
 
-VB0 B0 0 PULSE(0 1.8 0 100p 100p 60n 120n)
-VB1 B1 0 PULSE(0 1.8 0 100p 100p 60n 120n)
-VB2 B2 0 dc 0
-VB3 B3 0 dc 0
+VB0 B0 0 dc 0
+VB1 B1 0 dc 1.8
+VB2 B2 0 dc 1.8
+VB3 B3 0 dc 1.8
 
 X5 y_as A3 A2 A1 A0 B3 B2 B1 B0 C_over S3 S2 S1 S0 vdd 0 4_bit_Adder_Sub
 X6 y3 A3 A2 A1 A0 B3 B2 B1 B0 Eql Gth Lth vdd 0 4_bit_Comparator
@@ -60,12 +61,13 @@ X7 y4 A3 A2 A1 A0 B3 B2 B1 B0 C3 C2 C1 C0 vdd 0 4_bit_ANDer
 run
 tran 10u 60n
 
-plot v(SelD_0) v(SelD_1)
-plot v(y1) v(y2) v(y3) v(y4)
-plot v(y_as)
-plot v(C_over) v(S3) v(S2) v(S1) v(S0)
-plot v(Eql) v(Gth) v(Lth)
-plot v(C3) v(C2) v(C1) v(C0)
+* plot v(A0) v(A1)+2 v(A2)+4 v(A3)+6
+* plot v(B0) v(B1)+2 v(B2)+4 v(B3)+6
+* plot v(SelD_0) v(SelD_1)+2
+* plot v(y1) v(y2)+2 v(y3)+4 v(y4)+6
+* plot v(C_over)+8 v(S3)+6 v(S2)+4 v(S1)+2 v(S0)
+* plot v(Eql) v(Gth)+2 v(Lth)+4
+plot v(C3)+6 v(C2)+4 v(C1)+2 v(C0)
 .endc
 
 .end

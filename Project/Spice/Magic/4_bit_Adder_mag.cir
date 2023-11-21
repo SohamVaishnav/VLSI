@@ -1,0 +1,732 @@
+* SPICE3 file created from 4_bit_Adder.ext - technology: scmos
+
+.option scale=0.09u
+.include TSMC_180nm.txt
+.global GND Gnd gnd
+
+Va0 A0 0 dc 0
+Va1 A1 0 dc 0
+Va2 A2 0 dc 0
+Va3 A3 0 dc 0
+
+Vb0 B0 0 dc 0
+Vb1 B1 0 dc 0
+Vb2 B2 0 dc 0
+Vb3 B3 0 dc 0
+
+Vcin C_in 0 dc 0
+
+Vdd VDD 0 dc 1.8
+
+M1000 VDD Full_Adder_t2_0/OR_2_0/a_n35_n16# D0 Full_Adder_t2_0/OR_2_0/w_40_n2# CMOSP w=15 l=5
++  ad=24624 pd=8208 as=135 ps=48
+M1001 Full_Adder_t2_0/OR_2_0/a_n35_n16# Full_Adder_t2_0/m1_188_n142# GND Gnd CMOSN w=15 l=5
++  ad=210 pd=88 as=19584 ps=6800
+M1002 Full_Adder_t2_0/OR_2_0/a_n35_n16# Full_Adder_t2_0/m1_188_n142# Full_Adder_t2_0/OR_2_0/a_n35_5# Full_Adder_t2_0/OR_2_0/w_n1_n2# CMOSP w=15 l=5
++  ad=135 pd=48 as=270 ps=96
+M1003 D0 Full_Adder_t2_0/OR_2_0/a_n35_n16# GND Gnd CMOSN w=15 l=5
++  ad=105 pd=44 as=0 ps=0
+M1004 VDD Full_Adder_t2_0/m1_147_n142# Full_Adder_t2_0/OR_2_0/a_n35_5# Full_Adder_t2_0/OR_2_0/w_n42_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1005 Full_Adder_t2_0/OR_2_0/a_n35_n16# Full_Adder_t2_0/m1_147_n142# GND Gnd CMOSN w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1006 VDD Full_Adder_t2_0/m1_n114_n270# Full_Adder_t2_0/AND_2_1/a_9_10# Full_Adder_t2_0/AND_2_1/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1007 Full_Adder_t2_0/AND_2_1/a_9_10# Full_Adder_t2_0/m1_n114_n270# Full_Adder_t2_0/AND_2_1/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1008 VDD Full_Adder_t2_0/AND_2_1/a_9_10# Full_Adder_t2_0/m1_147_n142# Full_Adder_t2_0/AND_2_1/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1009 Full_Adder_t2_0/AND_2_1/a_10_n33# C_in GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1010 VDD C_in Full_Adder_t2_0/AND_2_1/a_9_10# Full_Adder_t2_0/AND_2_1/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1011 Full_Adder_t2_0/m1_147_n142# Full_Adder_t2_0/AND_2_1/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1012 VDD A0 Full_Adder_t2_0/AND_2_0/a_9_10# Full_Adder_t2_0/AND_2_0/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1013 Full_Adder_t2_0/AND_2_0/a_9_10# A0 Full_Adder_t2_0/AND_2_0/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1014 VDD Full_Adder_t2_0/AND_2_0/a_9_10# Full_Adder_t2_0/m1_188_n142# Full_Adder_t2_0/AND_2_0/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1015 Full_Adder_t2_0/AND_2_0/a_10_n33# b_eff0 GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1016 VDD b_eff0 Full_Adder_t2_0/AND_2_0/a_9_10# Full_Adder_t2_0/AND_2_0/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1017 Full_Adder_t2_0/m1_188_n142# Full_Adder_t2_0/AND_2_0/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1018 VDD Full_Adder_t2_0/XOR_0/OR_2_0/a_n35_n16# Full_Adder_t2_0/m1_n114_n270# Full_Adder_t2_0/XOR_0/OR_2_0/w_40_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=135 ps=48
+M1019 Full_Adder_t2_0/XOR_0/OR_2_0/a_n35_n16# Full_Adder_t2_0/m1_83_n75# GND Gnd CMOSN w=15 l=5
++  ad=210 pd=88 as=0 ps=0
+M1020 Full_Adder_t2_0/XOR_0/OR_2_0/a_n35_n16# Full_Adder_t2_0/m1_83_n75# Full_Adder_t2_0/XOR_0/OR_2_0/a_n35_5# Full_Adder_t2_0/XOR_0/OR_2_0/w_n1_n2# CMOSP w=15 l=5
++  ad=135 pd=48 as=270 ps=96
+M1021 Full_Adder_t2_0/m1_n114_n270# Full_Adder_t2_0/XOR_0/OR_2_0/a_n35_n16# GND Gnd CMOSN w=15 l=5
++  ad=105 pd=44 as=0 ps=0
+M1022 VDD Full_Adder_t2_0/XOR_0/m1_68_43# Full_Adder_t2_0/XOR_0/OR_2_0/a_n35_5# Full_Adder_t2_0/XOR_0/OR_2_0/w_n42_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1023 Full_Adder_t2_0/XOR_0/OR_2_0/a_n35_n16# Full_Adder_t2_0/XOR_0/m1_68_43# GND Gnd CMOSN w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1024 VDD Full_Adder_t2_0/XOR_0/m1_n101_n52# Full_Adder_t2_0/XOR_0/AND_2_1/a_9_10# Full_Adder_t2_0/XOR_0/AND_2_1/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1025 Full_Adder_t2_0/XOR_0/AND_2_1/a_9_10# Full_Adder_t2_0/XOR_0/m1_n101_n52# Full_Adder_t2_0/XOR_0/AND_2_1/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1026 VDD Full_Adder_t2_0/XOR_0/AND_2_1/a_9_10# Full_Adder_t2_0/m1_83_n75# Full_Adder_t2_0/XOR_0/AND_2_1/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1027 Full_Adder_t2_0/XOR_0/AND_2_1/a_10_n33# A0 GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1028 VDD A0 Full_Adder_t2_0/XOR_0/AND_2_1/a_9_10# Full_Adder_t2_0/XOR_0/AND_2_1/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1029 Full_Adder_t2_0/m1_83_n75# Full_Adder_t2_0/XOR_0/AND_2_1/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1030 VDD Full_Adder_t2_0/XOR_0/m1_n97_39# Full_Adder_t2_0/XOR_0/AND_2_0/a_9_10# Full_Adder_t2_0/XOR_0/AND_2_0/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1031 Full_Adder_t2_0/XOR_0/AND_2_0/a_9_10# Full_Adder_t2_0/XOR_0/m1_n97_39# Full_Adder_t2_0/XOR_0/AND_2_0/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1032 VDD Full_Adder_t2_0/XOR_0/AND_2_0/a_9_10# Full_Adder_t2_0/XOR_0/m1_68_43# Full_Adder_t2_0/XOR_0/AND_2_0/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1033 Full_Adder_t2_0/XOR_0/AND_2_0/a_10_n33# b_eff0 GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1034 VDD b_eff0 Full_Adder_t2_0/XOR_0/AND_2_0/a_9_10# Full_Adder_t2_0/XOR_0/AND_2_0/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1035 Full_Adder_t2_0/XOR_0/m1_68_43# Full_Adder_t2_0/XOR_0/AND_2_0/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1036 Full_Adder_t2_0/XOR_0/m1_n97_39# A0 GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1037 VDD A0 Full_Adder_t2_0/XOR_0/m1_n97_39# Full_Adder_t2_0/XOR_0/CMOS_in_0/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1038 Full_Adder_t2_0/XOR_0/m1_n101_n52# b_eff0 GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1039 VDD b_eff0 Full_Adder_t2_0/XOR_0/m1_n101_n52# Full_Adder_t2_0/XOR_0/CMOS_in_1/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1040 VDD Full_Adder_t2_0/XOR_1/OR_2_0/a_n35_n16# S0 Full_Adder_t2_0/XOR_1/OR_2_0/w_40_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=135 ps=48
+M1041 Full_Adder_t2_0/XOR_1/OR_2_0/a_n35_n16# Full_Adder_t2_0/m1_80_n261# GND Gnd CMOSN w=15 l=5
++  ad=210 pd=88 as=0 ps=0
+M1042 Full_Adder_t2_0/XOR_1/OR_2_0/a_n35_n16# Full_Adder_t2_0/m1_80_n261# Full_Adder_t2_0/XOR_1/OR_2_0/a_n35_5# Full_Adder_t2_0/XOR_1/OR_2_0/w_n1_n2# CMOSP w=15 l=5
++  ad=135 pd=48 as=270 ps=96
+M1043 S0 Full_Adder_t2_0/XOR_1/OR_2_0/a_n35_n16# GND Gnd CMOSN w=15 l=5
++  ad=105 pd=44 as=0 ps=0
+M1044 VDD Full_Adder_t2_0/XOR_1/m1_68_43# Full_Adder_t2_0/XOR_1/OR_2_0/a_n35_5# Full_Adder_t2_0/XOR_1/OR_2_0/w_n42_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1045 Full_Adder_t2_0/XOR_1/OR_2_0/a_n35_n16# Full_Adder_t2_0/XOR_1/m1_68_43# GND Gnd CMOSN w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1046 VDD Full_Adder_t2_0/XOR_1/m1_n101_n52# Full_Adder_t2_0/XOR_1/AND_2_1/a_9_10# Full_Adder_t2_0/XOR_1/AND_2_1/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1047 Full_Adder_t2_0/XOR_1/AND_2_1/a_9_10# Full_Adder_t2_0/XOR_1/m1_n101_n52# Full_Adder_t2_0/XOR_1/AND_2_1/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1048 VDD Full_Adder_t2_0/XOR_1/AND_2_1/a_9_10# Full_Adder_t2_0/m1_80_n261# Full_Adder_t2_0/XOR_1/AND_2_1/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1049 Full_Adder_t2_0/XOR_1/AND_2_1/a_10_n33# C_in GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1050 VDD C_in Full_Adder_t2_0/XOR_1/AND_2_1/a_9_10# Full_Adder_t2_0/XOR_1/AND_2_1/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1051 Full_Adder_t2_0/m1_80_n261# Full_Adder_t2_0/XOR_1/AND_2_1/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1052 VDD Full_Adder_t2_0/XOR_1/m1_n97_39# Full_Adder_t2_0/XOR_1/AND_2_0/a_9_10# Full_Adder_t2_0/XOR_1/AND_2_0/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1053 Full_Adder_t2_0/XOR_1/AND_2_0/a_9_10# Full_Adder_t2_0/XOR_1/m1_n97_39# Full_Adder_t2_0/XOR_1/AND_2_0/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1054 VDD Full_Adder_t2_0/XOR_1/AND_2_0/a_9_10# Full_Adder_t2_0/XOR_1/m1_68_43# Full_Adder_t2_0/XOR_1/AND_2_0/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1055 Full_Adder_t2_0/XOR_1/AND_2_0/a_10_n33# Full_Adder_t2_0/m1_n114_n270# GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1056 VDD Full_Adder_t2_0/m1_n114_n270# Full_Adder_t2_0/XOR_1/AND_2_0/a_9_10# Full_Adder_t2_0/XOR_1/AND_2_0/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1057 Full_Adder_t2_0/XOR_1/m1_68_43# Full_Adder_t2_0/XOR_1/AND_2_0/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1058 Full_Adder_t2_0/XOR_1/m1_n97_39# C_in GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1059 VDD C_in Full_Adder_t2_0/XOR_1/m1_n97_39# Full_Adder_t2_0/XOR_1/CMOS_in_0/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1060 Full_Adder_t2_0/XOR_1/m1_n101_n52# Full_Adder_t2_0/m1_n114_n270# GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1061 VDD Full_Adder_t2_0/m1_n114_n270# Full_Adder_t2_0/XOR_1/m1_n101_n52# Full_Adder_t2_0/XOR_1/CMOS_in_1/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1062 VDD Full_Adder_t2_1/OR_2_0/a_n35_n16# D1 Full_Adder_t2_1/OR_2_0/w_40_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=135 ps=48
+M1063 Full_Adder_t2_1/OR_2_0/a_n35_n16# Full_Adder_t2_1/m1_188_n142# GND Gnd CMOSN w=15 l=5
++  ad=210 pd=88 as=0 ps=0
+M1064 Full_Adder_t2_1/OR_2_0/a_n35_n16# Full_Adder_t2_1/m1_188_n142# Full_Adder_t2_1/OR_2_0/a_n35_5# Full_Adder_t2_1/OR_2_0/w_n1_n2# CMOSP w=15 l=5
++  ad=135 pd=48 as=270 ps=96
+M1065 D1 Full_Adder_t2_1/OR_2_0/a_n35_n16# GND Gnd CMOSN w=15 l=5
++  ad=105 pd=44 as=0 ps=0
+M1066 VDD Full_Adder_t2_1/m1_147_n142# Full_Adder_t2_1/OR_2_0/a_n35_5# Full_Adder_t2_1/OR_2_0/w_n42_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1067 Full_Adder_t2_1/OR_2_0/a_n35_n16# Full_Adder_t2_1/m1_147_n142# GND Gnd CMOSN w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1068 VDD Full_Adder_t2_1/m1_n114_n270# Full_Adder_t2_1/AND_2_1/a_9_10# Full_Adder_t2_1/AND_2_1/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1069 Full_Adder_t2_1/AND_2_1/a_9_10# Full_Adder_t2_1/m1_n114_n270# Full_Adder_t2_1/AND_2_1/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1070 VDD Full_Adder_t2_1/AND_2_1/a_9_10# Full_Adder_t2_1/m1_147_n142# Full_Adder_t2_1/AND_2_1/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1071 Full_Adder_t2_1/AND_2_1/a_10_n33# D0 GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1072 VDD D0 Full_Adder_t2_1/AND_2_1/a_9_10# Full_Adder_t2_1/AND_2_1/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1073 Full_Adder_t2_1/m1_147_n142# Full_Adder_t2_1/AND_2_1/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1074 VDD A1 Full_Adder_t2_1/AND_2_0/a_9_10# Full_Adder_t2_1/AND_2_0/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1075 Full_Adder_t2_1/AND_2_0/a_9_10# A1 Full_Adder_t2_1/AND_2_0/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1076 VDD Full_Adder_t2_1/AND_2_0/a_9_10# Full_Adder_t2_1/m1_188_n142# Full_Adder_t2_1/AND_2_0/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1077 Full_Adder_t2_1/AND_2_0/a_10_n33# b_eff1 GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1078 VDD b_eff1 Full_Adder_t2_1/AND_2_0/a_9_10# Full_Adder_t2_1/AND_2_0/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1079 Full_Adder_t2_1/m1_188_n142# Full_Adder_t2_1/AND_2_0/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1080 VDD Full_Adder_t2_1/XOR_0/OR_2_0/a_n35_n16# Full_Adder_t2_1/m1_n114_n270# Full_Adder_t2_1/XOR_0/OR_2_0/w_40_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=135 ps=48
+M1081 Full_Adder_t2_1/XOR_0/OR_2_0/a_n35_n16# Full_Adder_t2_1/m1_83_n75# GND Gnd CMOSN w=15 l=5
++  ad=210 pd=88 as=0 ps=0
+M1082 Full_Adder_t2_1/XOR_0/OR_2_0/a_n35_n16# Full_Adder_t2_1/m1_83_n75# Full_Adder_t2_1/XOR_0/OR_2_0/a_n35_5# Full_Adder_t2_1/XOR_0/OR_2_0/w_n1_n2# CMOSP w=15 l=5
++  ad=135 pd=48 as=270 ps=96
+M1083 Full_Adder_t2_1/m1_n114_n270# Full_Adder_t2_1/XOR_0/OR_2_0/a_n35_n16# GND Gnd CMOSN w=15 l=5
++  ad=105 pd=44 as=0 ps=0
+M1084 VDD Full_Adder_t2_1/XOR_0/m1_68_43# Full_Adder_t2_1/XOR_0/OR_2_0/a_n35_5# Full_Adder_t2_1/XOR_0/OR_2_0/w_n42_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1085 Full_Adder_t2_1/XOR_0/OR_2_0/a_n35_n16# Full_Adder_t2_1/XOR_0/m1_68_43# GND Gnd CMOSN w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1086 VDD Full_Adder_t2_1/XOR_0/m1_n101_n52# Full_Adder_t2_1/XOR_0/AND_2_1/a_9_10# Full_Adder_t2_1/XOR_0/AND_2_1/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1087 Full_Adder_t2_1/XOR_0/AND_2_1/a_9_10# Full_Adder_t2_1/XOR_0/m1_n101_n52# Full_Adder_t2_1/XOR_0/AND_2_1/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1088 VDD Full_Adder_t2_1/XOR_0/AND_2_1/a_9_10# Full_Adder_t2_1/m1_83_n75# Full_Adder_t2_1/XOR_0/AND_2_1/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1089 Full_Adder_t2_1/XOR_0/AND_2_1/a_10_n33# A1 GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1090 VDD A1 Full_Adder_t2_1/XOR_0/AND_2_1/a_9_10# Full_Adder_t2_1/XOR_0/AND_2_1/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1091 Full_Adder_t2_1/m1_83_n75# Full_Adder_t2_1/XOR_0/AND_2_1/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1092 VDD Full_Adder_t2_1/XOR_0/m1_n97_39# Full_Adder_t2_1/XOR_0/AND_2_0/a_9_10# Full_Adder_t2_1/XOR_0/AND_2_0/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1093 Full_Adder_t2_1/XOR_0/AND_2_0/a_9_10# Full_Adder_t2_1/XOR_0/m1_n97_39# Full_Adder_t2_1/XOR_0/AND_2_0/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1094 VDD Full_Adder_t2_1/XOR_0/AND_2_0/a_9_10# Full_Adder_t2_1/XOR_0/m1_68_43# Full_Adder_t2_1/XOR_0/AND_2_0/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1095 Full_Adder_t2_1/XOR_0/AND_2_0/a_10_n33# b_eff1 GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1096 VDD b_eff1 Full_Adder_t2_1/XOR_0/AND_2_0/a_9_10# Full_Adder_t2_1/XOR_0/AND_2_0/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1097 Full_Adder_t2_1/XOR_0/m1_68_43# Full_Adder_t2_1/XOR_0/AND_2_0/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1098 Full_Adder_t2_1/XOR_0/m1_n97_39# A1 GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1099 VDD A1 Full_Adder_t2_1/XOR_0/m1_n97_39# Full_Adder_t2_1/XOR_0/CMOS_in_0/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1100 Full_Adder_t2_1/XOR_0/m1_n101_n52# b_eff1 GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1101 VDD b_eff1 Full_Adder_t2_1/XOR_0/m1_n101_n52# Full_Adder_t2_1/XOR_0/CMOS_in_1/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1102 VDD Full_Adder_t2_1/XOR_1/OR_2_0/a_n35_n16# S1 Full_Adder_t2_1/XOR_1/OR_2_0/w_40_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=135 ps=48
+M1103 Full_Adder_t2_1/XOR_1/OR_2_0/a_n35_n16# Full_Adder_t2_1/m1_80_n261# GND Gnd CMOSN w=15 l=5
++  ad=210 pd=88 as=0 ps=0
+M1104 Full_Adder_t2_1/XOR_1/OR_2_0/a_n35_n16# Full_Adder_t2_1/m1_80_n261# Full_Adder_t2_1/XOR_1/OR_2_0/a_n35_5# Full_Adder_t2_1/XOR_1/OR_2_0/w_n1_n2# CMOSP w=15 l=5
++  ad=135 pd=48 as=270 ps=96
+M1105 S1 Full_Adder_t2_1/XOR_1/OR_2_0/a_n35_n16# GND Gnd CMOSN w=15 l=5
++  ad=105 pd=44 as=0 ps=0
+M1106 VDD Full_Adder_t2_1/XOR_1/m1_68_43# Full_Adder_t2_1/XOR_1/OR_2_0/a_n35_5# Full_Adder_t2_1/XOR_1/OR_2_0/w_n42_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1107 Full_Adder_t2_1/XOR_1/OR_2_0/a_n35_n16# Full_Adder_t2_1/XOR_1/m1_68_43# GND Gnd CMOSN w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1108 VDD Full_Adder_t2_1/XOR_1/m1_n101_n52# Full_Adder_t2_1/XOR_1/AND_2_1/a_9_10# Full_Adder_t2_1/XOR_1/AND_2_1/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1109 Full_Adder_t2_1/XOR_1/AND_2_1/a_9_10# Full_Adder_t2_1/XOR_1/m1_n101_n52# Full_Adder_t2_1/XOR_1/AND_2_1/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1110 VDD Full_Adder_t2_1/XOR_1/AND_2_1/a_9_10# Full_Adder_t2_1/m1_80_n261# Full_Adder_t2_1/XOR_1/AND_2_1/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1111 Full_Adder_t2_1/XOR_1/AND_2_1/a_10_n33# D0 GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1112 VDD D0 Full_Adder_t2_1/XOR_1/AND_2_1/a_9_10# Full_Adder_t2_1/XOR_1/AND_2_1/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1113 Full_Adder_t2_1/m1_80_n261# Full_Adder_t2_1/XOR_1/AND_2_1/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1114 VDD Full_Adder_t2_1/XOR_1/m1_n97_39# Full_Adder_t2_1/XOR_1/AND_2_0/a_9_10# Full_Adder_t2_1/XOR_1/AND_2_0/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1115 Full_Adder_t2_1/XOR_1/AND_2_0/a_9_10# Full_Adder_t2_1/XOR_1/m1_n97_39# Full_Adder_t2_1/XOR_1/AND_2_0/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1116 VDD Full_Adder_t2_1/XOR_1/AND_2_0/a_9_10# Full_Adder_t2_1/XOR_1/m1_68_43# Full_Adder_t2_1/XOR_1/AND_2_0/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1117 Full_Adder_t2_1/XOR_1/AND_2_0/a_10_n33# Full_Adder_t2_1/m1_n114_n270# GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1118 VDD Full_Adder_t2_1/m1_n114_n270# Full_Adder_t2_1/XOR_1/AND_2_0/a_9_10# Full_Adder_t2_1/XOR_1/AND_2_0/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1119 Full_Adder_t2_1/XOR_1/m1_68_43# Full_Adder_t2_1/XOR_1/AND_2_0/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1120 Full_Adder_t2_1/XOR_1/m1_n97_39# D0 GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1121 VDD D0 Full_Adder_t2_1/XOR_1/m1_n97_39# Full_Adder_t2_1/XOR_1/CMOS_in_0/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1122 Full_Adder_t2_1/XOR_1/m1_n101_n52# Full_Adder_t2_1/m1_n114_n270# GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1123 VDD Full_Adder_t2_1/m1_n114_n270# Full_Adder_t2_1/XOR_1/m1_n101_n52# Full_Adder_t2_1/XOR_1/CMOS_in_1/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1124 VDD Full_Adder_t2_2/OR_2_0/a_n35_n16# D2 Full_Adder_t2_2/OR_2_0/w_40_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=135 ps=48
+M1125 Full_Adder_t2_2/OR_2_0/a_n35_n16# Full_Adder_t2_2/m1_188_n142# GND Gnd CMOSN w=15 l=5
++  ad=210 pd=88 as=0 ps=0
+M1126 Full_Adder_t2_2/OR_2_0/a_n35_n16# Full_Adder_t2_2/m1_188_n142# Full_Adder_t2_2/OR_2_0/a_n35_5# Full_Adder_t2_2/OR_2_0/w_n1_n2# CMOSP w=15 l=5
++  ad=135 pd=48 as=270 ps=96
+M1127 D2 Full_Adder_t2_2/OR_2_0/a_n35_n16# GND Gnd CMOSN w=15 l=5
++  ad=105 pd=44 as=0 ps=0
+M1128 VDD Full_Adder_t2_2/m1_147_n142# Full_Adder_t2_2/OR_2_0/a_n35_5# Full_Adder_t2_2/OR_2_0/w_n42_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1129 Full_Adder_t2_2/OR_2_0/a_n35_n16# Full_Adder_t2_2/m1_147_n142# GND Gnd CMOSN w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1130 VDD Full_Adder_t2_2/m1_n114_n270# Full_Adder_t2_2/AND_2_1/a_9_10# Full_Adder_t2_2/AND_2_1/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1131 Full_Adder_t2_2/AND_2_1/a_9_10# Full_Adder_t2_2/m1_n114_n270# Full_Adder_t2_2/AND_2_1/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1132 VDD Full_Adder_t2_2/AND_2_1/a_9_10# Full_Adder_t2_2/m1_147_n142# Full_Adder_t2_2/AND_2_1/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1133 Full_Adder_t2_2/AND_2_1/a_10_n33# D1 GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1134 VDD D1 Full_Adder_t2_2/AND_2_1/a_9_10# Full_Adder_t2_2/AND_2_1/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1135 Full_Adder_t2_2/m1_147_n142# Full_Adder_t2_2/AND_2_1/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1136 VDD A2 Full_Adder_t2_2/AND_2_0/a_9_10# Full_Adder_t2_2/AND_2_0/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1137 Full_Adder_t2_2/AND_2_0/a_9_10# A2 Full_Adder_t2_2/AND_2_0/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1138 VDD Full_Adder_t2_2/AND_2_0/a_9_10# Full_Adder_t2_2/m1_188_n142# Full_Adder_t2_2/AND_2_0/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1139 Full_Adder_t2_2/AND_2_0/a_10_n33# b_eff2 GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1140 VDD b_eff2 Full_Adder_t2_2/AND_2_0/a_9_10# Full_Adder_t2_2/AND_2_0/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1141 Full_Adder_t2_2/m1_188_n142# Full_Adder_t2_2/AND_2_0/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1142 VDD Full_Adder_t2_2/XOR_0/OR_2_0/a_n35_n16# Full_Adder_t2_2/m1_n114_n270# Full_Adder_t2_2/XOR_0/OR_2_0/w_40_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=135 ps=48
+M1143 Full_Adder_t2_2/XOR_0/OR_2_0/a_n35_n16# Full_Adder_t2_2/m1_83_n75# GND Gnd CMOSN w=15 l=5
++  ad=210 pd=88 as=0 ps=0
+M1144 Full_Adder_t2_2/XOR_0/OR_2_0/a_n35_n16# Full_Adder_t2_2/m1_83_n75# Full_Adder_t2_2/XOR_0/OR_2_0/a_n35_5# Full_Adder_t2_2/XOR_0/OR_2_0/w_n1_n2# CMOSP w=15 l=5
++  ad=135 pd=48 as=270 ps=96
+M1145 Full_Adder_t2_2/m1_n114_n270# Full_Adder_t2_2/XOR_0/OR_2_0/a_n35_n16# GND Gnd CMOSN w=15 l=5
++  ad=105 pd=44 as=0 ps=0
+M1146 VDD Full_Adder_t2_2/XOR_0/m1_68_43# Full_Adder_t2_2/XOR_0/OR_2_0/a_n35_5# Full_Adder_t2_2/XOR_0/OR_2_0/w_n42_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1147 Full_Adder_t2_2/XOR_0/OR_2_0/a_n35_n16# Full_Adder_t2_2/XOR_0/m1_68_43# GND Gnd CMOSN w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1148 VDD Full_Adder_t2_2/XOR_0/m1_n101_n52# Full_Adder_t2_2/XOR_0/AND_2_1/a_9_10# Full_Adder_t2_2/XOR_0/AND_2_1/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1149 Full_Adder_t2_2/XOR_0/AND_2_1/a_9_10# Full_Adder_t2_2/XOR_0/m1_n101_n52# Full_Adder_t2_2/XOR_0/AND_2_1/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1150 VDD Full_Adder_t2_2/XOR_0/AND_2_1/a_9_10# Full_Adder_t2_2/m1_83_n75# Full_Adder_t2_2/XOR_0/AND_2_1/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1151 Full_Adder_t2_2/XOR_0/AND_2_1/a_10_n33# A2 GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1152 VDD A2 Full_Adder_t2_2/XOR_0/AND_2_1/a_9_10# Full_Adder_t2_2/XOR_0/AND_2_1/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1153 Full_Adder_t2_2/m1_83_n75# Full_Adder_t2_2/XOR_0/AND_2_1/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1154 VDD Full_Adder_t2_2/XOR_0/m1_n97_39# Full_Adder_t2_2/XOR_0/AND_2_0/a_9_10# Full_Adder_t2_2/XOR_0/AND_2_0/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1155 Full_Adder_t2_2/XOR_0/AND_2_0/a_9_10# Full_Adder_t2_2/XOR_0/m1_n97_39# Full_Adder_t2_2/XOR_0/AND_2_0/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1156 VDD Full_Adder_t2_2/XOR_0/AND_2_0/a_9_10# Full_Adder_t2_2/XOR_0/m1_68_43# Full_Adder_t2_2/XOR_0/AND_2_0/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1157 Full_Adder_t2_2/XOR_0/AND_2_0/a_10_n33# b_eff2 GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1158 VDD b_eff2 Full_Adder_t2_2/XOR_0/AND_2_0/a_9_10# Full_Adder_t2_2/XOR_0/AND_2_0/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1159 Full_Adder_t2_2/XOR_0/m1_68_43# Full_Adder_t2_2/XOR_0/AND_2_0/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1160 Full_Adder_t2_2/XOR_0/m1_n97_39# A2 GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1161 VDD A2 Full_Adder_t2_2/XOR_0/m1_n97_39# Full_Adder_t2_2/XOR_0/CMOS_in_0/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1162 Full_Adder_t2_2/XOR_0/m1_n101_n52# b_eff2 GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1163 VDD b_eff2 Full_Adder_t2_2/XOR_0/m1_n101_n52# Full_Adder_t2_2/XOR_0/CMOS_in_1/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1164 VDD Full_Adder_t2_2/XOR_1/OR_2_0/a_n35_n16# S2 Full_Adder_t2_2/XOR_1/OR_2_0/w_40_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=135 ps=48
+M1165 Full_Adder_t2_2/XOR_1/OR_2_0/a_n35_n16# Full_Adder_t2_2/m1_80_n261# GND Gnd CMOSN w=15 l=5
++  ad=210 pd=88 as=0 ps=0
+M1166 Full_Adder_t2_2/XOR_1/OR_2_0/a_n35_n16# Full_Adder_t2_2/m1_80_n261# Full_Adder_t2_2/XOR_1/OR_2_0/a_n35_5# Full_Adder_t2_2/XOR_1/OR_2_0/w_n1_n2# CMOSP w=15 l=5
++  ad=135 pd=48 as=270 ps=96
+M1167 S2 Full_Adder_t2_2/XOR_1/OR_2_0/a_n35_n16# GND Gnd CMOSN w=15 l=5
++  ad=105 pd=44 as=0 ps=0
+M1168 VDD Full_Adder_t2_2/XOR_1/m1_68_43# Full_Adder_t2_2/XOR_1/OR_2_0/a_n35_5# Full_Adder_t2_2/XOR_1/OR_2_0/w_n42_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1169 Full_Adder_t2_2/XOR_1/OR_2_0/a_n35_n16# Full_Adder_t2_2/XOR_1/m1_68_43# GND Gnd CMOSN w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1170 VDD Full_Adder_t2_2/XOR_1/m1_n101_n52# Full_Adder_t2_2/XOR_1/AND_2_1/a_9_10# Full_Adder_t2_2/XOR_1/AND_2_1/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1171 Full_Adder_t2_2/XOR_1/AND_2_1/a_9_10# Full_Adder_t2_2/XOR_1/m1_n101_n52# Full_Adder_t2_2/XOR_1/AND_2_1/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1172 VDD Full_Adder_t2_2/XOR_1/AND_2_1/a_9_10# Full_Adder_t2_2/m1_80_n261# Full_Adder_t2_2/XOR_1/AND_2_1/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1173 Full_Adder_t2_2/XOR_1/AND_2_1/a_10_n33# D1 GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1174 VDD D1 Full_Adder_t2_2/XOR_1/AND_2_1/a_9_10# Full_Adder_t2_2/XOR_1/AND_2_1/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1175 Full_Adder_t2_2/m1_80_n261# Full_Adder_t2_2/XOR_1/AND_2_1/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1176 VDD Full_Adder_t2_2/XOR_1/m1_n97_39# Full_Adder_t2_2/XOR_1/AND_2_0/a_9_10# Full_Adder_t2_2/XOR_1/AND_2_0/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1177 Full_Adder_t2_2/XOR_1/AND_2_0/a_9_10# Full_Adder_t2_2/XOR_1/m1_n97_39# Full_Adder_t2_2/XOR_1/AND_2_0/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1178 VDD Full_Adder_t2_2/XOR_1/AND_2_0/a_9_10# Full_Adder_t2_2/XOR_1/m1_68_43# Full_Adder_t2_2/XOR_1/AND_2_0/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1179 Full_Adder_t2_2/XOR_1/AND_2_0/a_10_n33# Full_Adder_t2_2/m1_n114_n270# GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1180 VDD Full_Adder_t2_2/m1_n114_n270# Full_Adder_t2_2/XOR_1/AND_2_0/a_9_10# Full_Adder_t2_2/XOR_1/AND_2_0/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1181 Full_Adder_t2_2/XOR_1/m1_68_43# Full_Adder_t2_2/XOR_1/AND_2_0/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1182 Full_Adder_t2_2/XOR_1/m1_n97_39# D1 GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1183 VDD D1 Full_Adder_t2_2/XOR_1/m1_n97_39# Full_Adder_t2_2/XOR_1/CMOS_in_0/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1184 Full_Adder_t2_2/XOR_1/m1_n101_n52# Full_Adder_t2_2/m1_n114_n270# GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1185 VDD Full_Adder_t2_2/m1_n114_n270# Full_Adder_t2_2/XOR_1/m1_n101_n52# Full_Adder_t2_2/XOR_1/CMOS_in_1/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1186 VDD Full_Adder_t2_3/OR_2_0/a_n35_n16# C_over Full_Adder_t2_3/OR_2_0/w_40_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=135 ps=48
+M1187 Full_Adder_t2_3/OR_2_0/a_n35_n16# Full_Adder_t2_3/m1_188_n142# GND Gnd CMOSN w=15 l=5
++  ad=210 pd=88 as=0 ps=0
+M1188 Full_Adder_t2_3/OR_2_0/a_n35_n16# Full_Adder_t2_3/m1_188_n142# Full_Adder_t2_3/OR_2_0/a_n35_5# Full_Adder_t2_3/OR_2_0/w_n1_n2# CMOSP w=15 l=5
++  ad=135 pd=48 as=270 ps=96
+M1189 C_over Full_Adder_t2_3/OR_2_0/a_n35_n16# GND Gnd CMOSN w=15 l=5
++  ad=105 pd=44 as=0 ps=0
+M1190 VDD Full_Adder_t2_3/m1_147_n142# Full_Adder_t2_3/OR_2_0/a_n35_5# Full_Adder_t2_3/OR_2_0/w_n42_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1191 Full_Adder_t2_3/OR_2_0/a_n35_n16# Full_Adder_t2_3/m1_147_n142# GND Gnd CMOSN w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1192 VDD Full_Adder_t2_3/m1_n114_n270# Full_Adder_t2_3/AND_2_1/a_9_10# Full_Adder_t2_3/AND_2_1/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1193 Full_Adder_t2_3/AND_2_1/a_9_10# Full_Adder_t2_3/m1_n114_n270# Full_Adder_t2_3/AND_2_1/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1194 VDD Full_Adder_t2_3/AND_2_1/a_9_10# Full_Adder_t2_3/m1_147_n142# Full_Adder_t2_3/AND_2_1/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1195 Full_Adder_t2_3/AND_2_1/a_10_n33# D2 GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1196 VDD D2 Full_Adder_t2_3/AND_2_1/a_9_10# Full_Adder_t2_3/AND_2_1/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1197 Full_Adder_t2_3/m1_147_n142# Full_Adder_t2_3/AND_2_1/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1198 VDD A3 Full_Adder_t2_3/AND_2_0/a_9_10# Full_Adder_t2_3/AND_2_0/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1199 Full_Adder_t2_3/AND_2_0/a_9_10# A3 Full_Adder_t2_3/AND_2_0/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1200 VDD Full_Adder_t2_3/AND_2_0/a_9_10# Full_Adder_t2_3/m1_188_n142# Full_Adder_t2_3/AND_2_0/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1201 Full_Adder_t2_3/AND_2_0/a_10_n33# b_eff3 GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1202 VDD b_eff3 Full_Adder_t2_3/AND_2_0/a_9_10# Full_Adder_t2_3/AND_2_0/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1203 Full_Adder_t2_3/m1_188_n142# Full_Adder_t2_3/AND_2_0/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1204 VDD Full_Adder_t2_3/XOR_0/OR_2_0/a_n35_n16# Full_Adder_t2_3/m1_n114_n270# Full_Adder_t2_3/XOR_0/OR_2_0/w_40_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=135 ps=48
+M1205 Full_Adder_t2_3/XOR_0/OR_2_0/a_n35_n16# Full_Adder_t2_3/m1_83_n75# GND Gnd CMOSN w=15 l=5
++  ad=210 pd=88 as=0 ps=0
+M1206 Full_Adder_t2_3/XOR_0/OR_2_0/a_n35_n16# Full_Adder_t2_3/m1_83_n75# Full_Adder_t2_3/XOR_0/OR_2_0/a_n35_5# Full_Adder_t2_3/XOR_0/OR_2_0/w_n1_n2# CMOSP w=15 l=5
++  ad=135 pd=48 as=270 ps=96
+M1207 Full_Adder_t2_3/m1_n114_n270# Full_Adder_t2_3/XOR_0/OR_2_0/a_n35_n16# GND Gnd CMOSN w=15 l=5
++  ad=105 pd=44 as=0 ps=0
+M1208 VDD Full_Adder_t2_3/XOR_0/m1_68_43# Full_Adder_t2_3/XOR_0/OR_2_0/a_n35_5# Full_Adder_t2_3/XOR_0/OR_2_0/w_n42_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1209 Full_Adder_t2_3/XOR_0/OR_2_0/a_n35_n16# Full_Adder_t2_3/XOR_0/m1_68_43# GND Gnd CMOSN w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1210 VDD Full_Adder_t2_3/XOR_0/m1_n101_n52# Full_Adder_t2_3/XOR_0/AND_2_1/a_9_10# Full_Adder_t2_3/XOR_0/AND_2_1/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1211 Full_Adder_t2_3/XOR_0/AND_2_1/a_9_10# Full_Adder_t2_3/XOR_0/m1_n101_n52# Full_Adder_t2_3/XOR_0/AND_2_1/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1212 VDD Full_Adder_t2_3/XOR_0/AND_2_1/a_9_10# Full_Adder_t2_3/m1_83_n75# Full_Adder_t2_3/XOR_0/AND_2_1/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1213 Full_Adder_t2_3/XOR_0/AND_2_1/a_10_n33# A3 GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1214 VDD A3 Full_Adder_t2_3/XOR_0/AND_2_1/a_9_10# Full_Adder_t2_3/XOR_0/AND_2_1/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1215 Full_Adder_t2_3/m1_83_n75# Full_Adder_t2_3/XOR_0/AND_2_1/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1216 VDD Full_Adder_t2_3/XOR_0/m1_n97_39# Full_Adder_t2_3/XOR_0/AND_2_0/a_9_10# Full_Adder_t2_3/XOR_0/AND_2_0/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1217 Full_Adder_t2_3/XOR_0/AND_2_0/a_9_10# Full_Adder_t2_3/XOR_0/m1_n97_39# Full_Adder_t2_3/XOR_0/AND_2_0/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1218 VDD Full_Adder_t2_3/XOR_0/AND_2_0/a_9_10# Full_Adder_t2_3/XOR_0/m1_68_43# Full_Adder_t2_3/XOR_0/AND_2_0/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1219 Full_Adder_t2_3/XOR_0/AND_2_0/a_10_n33# b_eff3 GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1220 VDD b_eff3 Full_Adder_t2_3/XOR_0/AND_2_0/a_9_10# Full_Adder_t2_3/XOR_0/AND_2_0/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1221 Full_Adder_t2_3/XOR_0/m1_68_43# Full_Adder_t2_3/XOR_0/AND_2_0/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1222 Full_Adder_t2_3/XOR_0/m1_n97_39# A3 GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1223 VDD A3 Full_Adder_t2_3/XOR_0/m1_n97_39# Full_Adder_t2_3/XOR_0/CMOS_in_0/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1224 Full_Adder_t2_3/XOR_0/m1_n101_n52# b_eff3 GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1225 VDD b_eff3 Full_Adder_t2_3/XOR_0/m1_n101_n52# Full_Adder_t2_3/XOR_0/CMOS_in_1/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1226 VDD Full_Adder_t2_3/XOR_1/OR_2_0/a_n35_n16# S3 Full_Adder_t2_3/XOR_1/OR_2_0/w_40_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=135 ps=48
+M1227 Full_Adder_t2_3/XOR_1/OR_2_0/a_n35_n16# Full_Adder_t2_3/m1_80_n261# GND Gnd CMOSN w=15 l=5
++  ad=210 pd=88 as=0 ps=0
+M1228 Full_Adder_t2_3/XOR_1/OR_2_0/a_n35_n16# Full_Adder_t2_3/m1_80_n261# Full_Adder_t2_3/XOR_1/OR_2_0/a_n35_5# Full_Adder_t2_3/XOR_1/OR_2_0/w_n1_n2# CMOSP w=15 l=5
++  ad=135 pd=48 as=270 ps=96
+M1229 S3 Full_Adder_t2_3/XOR_1/OR_2_0/a_n35_n16# GND Gnd CMOSN w=15 l=5
++  ad=105 pd=44 as=0 ps=0
+M1230 VDD Full_Adder_t2_3/XOR_1/m1_68_43# Full_Adder_t2_3/XOR_1/OR_2_0/a_n35_5# Full_Adder_t2_3/XOR_1/OR_2_0/w_n42_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1231 Full_Adder_t2_3/XOR_1/OR_2_0/a_n35_n16# Full_Adder_t2_3/XOR_1/m1_68_43# GND Gnd CMOSN w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1232 VDD Full_Adder_t2_3/XOR_1/m1_n101_n52# Full_Adder_t2_3/XOR_1/AND_2_1/a_9_10# Full_Adder_t2_3/XOR_1/AND_2_1/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1233 Full_Adder_t2_3/XOR_1/AND_2_1/a_9_10# Full_Adder_t2_3/XOR_1/m1_n101_n52# Full_Adder_t2_3/XOR_1/AND_2_1/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1234 VDD Full_Adder_t2_3/XOR_1/AND_2_1/a_9_10# Full_Adder_t2_3/m1_80_n261# Full_Adder_t2_3/XOR_1/AND_2_1/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1235 Full_Adder_t2_3/XOR_1/AND_2_1/a_10_n33# D2 GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1236 VDD D2 Full_Adder_t2_3/XOR_1/AND_2_1/a_9_10# Full_Adder_t2_3/XOR_1/AND_2_1/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1237 Full_Adder_t2_3/m1_80_n261# Full_Adder_t2_3/XOR_1/AND_2_1/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1238 VDD Full_Adder_t2_3/XOR_1/m1_n97_39# Full_Adder_t2_3/XOR_1/AND_2_0/a_9_10# Full_Adder_t2_3/XOR_1/AND_2_0/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1239 Full_Adder_t2_3/XOR_1/AND_2_0/a_9_10# Full_Adder_t2_3/XOR_1/m1_n97_39# Full_Adder_t2_3/XOR_1/AND_2_0/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1240 VDD Full_Adder_t2_3/XOR_1/AND_2_0/a_9_10# Full_Adder_t2_3/XOR_1/m1_68_43# Full_Adder_t2_3/XOR_1/AND_2_0/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1241 Full_Adder_t2_3/XOR_1/AND_2_0/a_10_n33# Full_Adder_t2_3/m1_n114_n270# GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1242 VDD Full_Adder_t2_3/m1_n114_n270# Full_Adder_t2_3/XOR_1/AND_2_0/a_9_10# Full_Adder_t2_3/XOR_1/AND_2_0/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1243 Full_Adder_t2_3/XOR_1/m1_68_43# Full_Adder_t2_3/XOR_1/AND_2_0/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1244 Full_Adder_t2_3/XOR_1/m1_n97_39# D2 GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1245 VDD D2 Full_Adder_t2_3/XOR_1/m1_n97_39# Full_Adder_t2_3/XOR_1/CMOS_in_0/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1246 Full_Adder_t2_3/XOR_1/m1_n101_n52# Full_Adder_t2_3/m1_n114_n270# GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1247 VDD Full_Adder_t2_3/m1_n114_n270# Full_Adder_t2_3/XOR_1/m1_n101_n52# Full_Adder_t2_3/XOR_1/CMOS_in_1/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1248 VDD XOR_0/OR_2_0/a_n35_n16# b_eff3 XOR_0/OR_2_0/w_40_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=135 ps=48
+M1249 XOR_0/OR_2_0/a_n35_n16# m1_931_508# GND Gnd CMOSN w=15 l=5
++  ad=210 pd=88 as=0 ps=0
+M1250 XOR_0/OR_2_0/a_n35_n16# m1_931_508# XOR_0/OR_2_0/a_n35_5# XOR_0/OR_2_0/w_n1_n2# CMOSP w=15 l=5
++  ad=135 pd=48 as=270 ps=96
+M1251 b_eff3 XOR_0/OR_2_0/a_n35_n16# GND Gnd CMOSN w=15 l=5
++  ad=105 pd=44 as=0 ps=0
+M1252 VDD XOR_0/m1_68_43# XOR_0/OR_2_0/a_n35_5# XOR_0/OR_2_0/w_n42_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1253 XOR_0/OR_2_0/a_n35_n16# XOR_0/m1_68_43# GND Gnd CMOSN w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1254 VDD XOR_0/m1_n101_n52# XOR_0/AND_2_1/a_9_10# XOR_0/AND_2_1/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1255 XOR_0/AND_2_1/a_9_10# XOR_0/m1_n101_n52# XOR_0/AND_2_1/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1256 VDD XOR_0/AND_2_1/a_9_10# m1_931_508# XOR_0/AND_2_1/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1257 XOR_0/AND_2_1/a_10_n33# B3 GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1258 VDD B3 XOR_0/AND_2_1/a_9_10# XOR_0/AND_2_1/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1259 m1_931_508# XOR_0/AND_2_1/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1260 VDD XOR_0/m1_n97_39# XOR_0/AND_2_0/a_9_10# XOR_0/AND_2_0/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1261 XOR_0/AND_2_0/a_9_10# XOR_0/m1_n97_39# XOR_0/AND_2_0/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1262 VDD XOR_0/AND_2_0/a_9_10# XOR_0/m1_68_43# XOR_0/AND_2_0/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1263 XOR_0/AND_2_0/a_10_n33# C_in GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1264 VDD C_in XOR_0/AND_2_0/a_9_10# XOR_0/AND_2_0/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1265 XOR_0/m1_68_43# XOR_0/AND_2_0/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1266 XOR_0/m1_n97_39# B3 GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1267 VDD B3 XOR_0/m1_n97_39# XOR_0/CMOS_in_0/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1268 XOR_0/m1_n101_n52# C_in GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1269 VDD C_in XOR_0/m1_n101_n52# XOR_0/CMOS_in_1/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1270 VDD XOR_1/OR_2_0/a_n35_n16# b_eff2 XOR_1/OR_2_0/w_40_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=135 ps=48
+M1271 XOR_1/OR_2_0/a_n35_n16# m1_472_508# GND Gnd CMOSN w=15 l=5
++  ad=210 pd=88 as=0 ps=0
+M1272 XOR_1/OR_2_0/a_n35_n16# m1_472_508# XOR_1/OR_2_0/a_n35_5# XOR_1/OR_2_0/w_n1_n2# CMOSP w=15 l=5
++  ad=135 pd=48 as=270 ps=96
+M1273 b_eff2 XOR_1/OR_2_0/a_n35_n16# GND Gnd CMOSN w=15 l=5
++  ad=105 pd=44 as=0 ps=0
+M1274 VDD XOR_1/m1_68_43# XOR_1/OR_2_0/a_n35_5# XOR_1/OR_2_0/w_n42_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1275 XOR_1/OR_2_0/a_n35_n16# XOR_1/m1_68_43# GND Gnd CMOSN w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1276 VDD XOR_1/m1_n101_n52# XOR_1/AND_2_1/a_9_10# XOR_1/AND_2_1/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1277 XOR_1/AND_2_1/a_9_10# XOR_1/m1_n101_n52# XOR_1/AND_2_1/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1278 VDD XOR_1/AND_2_1/a_9_10# m1_472_508# XOR_1/AND_2_1/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1279 XOR_1/AND_2_1/a_10_n33# B2 GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1280 VDD B2 XOR_1/AND_2_1/a_9_10# XOR_1/AND_2_1/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1281 m1_472_508# XOR_1/AND_2_1/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1282 VDD XOR_1/m1_n97_39# XOR_1/AND_2_0/a_9_10# XOR_1/AND_2_0/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1283 XOR_1/AND_2_0/a_9_10# XOR_1/m1_n97_39# XOR_1/AND_2_0/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1284 VDD XOR_1/AND_2_0/a_9_10# XOR_1/m1_68_43# XOR_1/AND_2_0/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1285 XOR_1/AND_2_0/a_10_n33# C_in GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1286 VDD C_in XOR_1/AND_2_0/a_9_10# XOR_1/AND_2_0/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1287 XOR_1/m1_68_43# XOR_1/AND_2_0/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1288 XOR_1/m1_n97_39# B2 GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1289 VDD B2 XOR_1/m1_n97_39# XOR_1/CMOS_in_0/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1290 XOR_1/m1_n101_n52# C_in GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1291 VDD C_in XOR_1/m1_n101_n52# XOR_1/CMOS_in_1/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1292 VDD XOR_2/OR_2_0/a_n35_n16# b_eff1 XOR_2/OR_2_0/w_40_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=135 ps=48
+M1293 XOR_2/OR_2_0/a_n35_n16# m1_13_508# GND Gnd CMOSN w=15 l=5
++  ad=210 pd=88 as=0 ps=0
+M1294 XOR_2/OR_2_0/a_n35_n16# m1_13_508# XOR_2/OR_2_0/a_n35_5# XOR_2/OR_2_0/w_n1_n2# CMOSP w=15 l=5
++  ad=135 pd=48 as=270 ps=96
+M1295 b_eff1 XOR_2/OR_2_0/a_n35_n16# GND Gnd CMOSN w=15 l=5
++  ad=105 pd=44 as=0 ps=0
+M1296 VDD XOR_2/m1_68_43# XOR_2/OR_2_0/a_n35_5# XOR_2/OR_2_0/w_n42_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1297 XOR_2/OR_2_0/a_n35_n16# XOR_2/m1_68_43# GND Gnd CMOSN w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1298 VDD XOR_2/m1_n101_n52# XOR_2/AND_2_1/a_9_10# XOR_2/AND_2_1/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1299 XOR_2/AND_2_1/a_9_10# XOR_2/m1_n101_n52# XOR_2/AND_2_1/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1300 VDD XOR_2/AND_2_1/a_9_10# m1_13_508# XOR_2/AND_2_1/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1301 XOR_2/AND_2_1/a_10_n33# B1 GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1302 VDD B1 XOR_2/AND_2_1/a_9_10# XOR_2/AND_2_1/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1303 m1_13_508# XOR_2/AND_2_1/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1304 VDD XOR_2/m1_n97_39# XOR_2/AND_2_0/a_9_10# XOR_2/AND_2_0/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1305 XOR_2/AND_2_0/a_9_10# XOR_2/m1_n97_39# XOR_2/AND_2_0/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1306 VDD XOR_2/AND_2_0/a_9_10# XOR_2/m1_68_43# XOR_2/AND_2_0/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1307 XOR_2/AND_2_0/a_10_n33# C_in GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1308 VDD C_in XOR_2/AND_2_0/a_9_10# XOR_2/AND_2_0/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1309 XOR_2/m1_68_43# XOR_2/AND_2_0/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1310 XOR_2/m1_n97_39# B1 GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1311 VDD B1 XOR_2/m1_n97_39# XOR_2/CMOS_in_0/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1312 XOR_2/m1_n101_n52# C_in GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1313 VDD C_in XOR_2/m1_n101_n52# XOR_2/CMOS_in_1/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1314 VDD XOR_3/OR_2_0/a_n35_n16# b_eff0 XOR_3/OR_2_0/w_40_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=135 ps=48
+M1315 XOR_3/OR_2_0/a_n35_n16# m1_n449_508# GND Gnd CMOSN w=15 l=5
++  ad=210 pd=88 as=0 ps=0
+M1316 XOR_3/OR_2_0/a_n35_n16# m1_n449_508# XOR_3/OR_2_0/a_n35_5# XOR_3/OR_2_0/w_n1_n2# CMOSP w=15 l=5
++  ad=135 pd=48 as=270 ps=96
+M1317 b_eff0 XOR_3/OR_2_0/a_n35_n16# GND Gnd CMOSN w=15 l=5
++  ad=105 pd=44 as=0 ps=0
+M1318 VDD XOR_3/m1_68_43# XOR_3/OR_2_0/a_n35_5# XOR_3/OR_2_0/w_n42_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1319 XOR_3/OR_2_0/a_n35_n16# XOR_3/m1_68_43# GND Gnd CMOSN w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1320 VDD XOR_3/m1_n101_n52# XOR_3/AND_2_1/a_9_10# XOR_3/AND_2_1/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1321 XOR_3/AND_2_1/a_9_10# XOR_3/m1_n101_n52# XOR_3/AND_2_1/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1322 VDD XOR_3/AND_2_1/a_9_10# m1_n449_508# XOR_3/AND_2_1/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1323 XOR_3/AND_2_1/a_10_n33# B0 GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1324 VDD B0 XOR_3/AND_2_1/a_9_10# XOR_3/AND_2_1/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1325 m1_n449_508# XOR_3/AND_2_1/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1326 VDD XOR_3/m1_n97_39# XOR_3/AND_2_0/a_9_10# XOR_3/AND_2_0/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1327 XOR_3/AND_2_0/a_9_10# XOR_3/m1_n97_39# XOR_3/AND_2_0/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1328 VDD XOR_3/AND_2_0/a_9_10# XOR_3/m1_68_43# XOR_3/AND_2_0/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1329 XOR_3/AND_2_0/a_10_n33# C_in GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1330 VDD C_in XOR_3/AND_2_0/a_9_10# XOR_3/AND_2_0/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1331 XOR_3/m1_68_43# XOR_3/AND_2_0/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1332 XOR_3/m1_n97_39# B0 GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1333 VDD B0 XOR_3/m1_n97_39# XOR_3/CMOS_in_0/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1334 XOR_3/m1_n101_n52# C_in GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1335 VDD C_in XOR_3/m1_n101_n52# XOR_3/CMOS_in_1/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+C0 Full_Adder_t2_2/m1_n114_n270# GND 4.16fF
+C1 VDD b_eff0 4.29fF
+C2 Full_Adder_t2_1/m1_n114_n270# GND 4.16fF
+C3 VDD A0 2.01fF
+C4 b_eff3 VDD 3.71fF
+C5 Full_Adder_t2_3/m1_n114_n270# GND 4.16fF
+C6 Full_Adder_t2_0/m1_n114_n270# GND 4.16fF
+C7 VDD A3 2.01fF
+C8 VDD GND 28.71fF
+C9 VDD C_in 2.51fF
+C10 VDD b_eff1 3.69fF
+C11 A1 VDD 2.01fF
+C12 VDD b_eff2 3.71fF
+C13 A2 VDD 2.01fF
+C14 GND Gnd 44.10fF
+C15 Full_Adder_t2_3/m1_n114_n270# Gnd 2.71fF
+C16 D2 Gnd 2.97fF
+C17 b_eff3 Gnd 4.20fF
+C18 A3 Gnd 3.10fF
+C19 Full_Adder_t2_2/m1_n114_n270# Gnd 2.71fF
+C20 D1 Gnd 2.57fF
+C21 b_eff2 Gnd 5.14fF
+C22 A2 Gnd 3.20fF
+C23 VDD Gnd 37.70fF
+C24 Full_Adder_t2_1/m1_n114_n270# Gnd 2.71fF
+C25 D0 Gnd 2.12fF
+C26 b_eff1 Gnd 4.45fF
+C27 A1 Gnd 3.23fF
+C28 Full_Adder_t2_0/m1_n114_n270# Gnd 2.71fF
+C29 C_in Gnd 8.73fF
+C30 b_eff0 Gnd 11.74fF
+C31 A0 Gnd 3.20fF
+
+.control 
+run 
+tran 10u 120n
+plot v(S3) v(S2) v(S1) v(S0) v(C_over)
+.endc 
+
+.end

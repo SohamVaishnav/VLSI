@@ -1,0 +1,76 @@
+* SPICE3 file created from Decoder.ext - technology: scmos
+
+.option scale=0.09u
+.include TSMC_180nm.txt 
+.global GND Gnd gnd
+
+Vdd VDD 0 dc 1.8 
+
+VS0 Sel0 0 dc 1.8 
+VS1 Sel1 0 dc 0
+
+M1000 m1_n118_99# Sel0 GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=1692 ps=540
+M1001 VDD Sel0 m1_n118_99# CMOS_in_0/w_0_0# CMOSP w=14 l=4
++  ad=2412 pd=788 as=126 ps=46
+M1002 VDD m1_n118_99# AND_2_0/a_9_10# AND_2_0/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1003 AND_2_0/a_9_10# m1_n118_99# AND_2_0/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1004 VDD AND_2_0/a_9_10# y1 AND_2_0/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1005 AND_2_0/a_10_n33# m1_n119_22# GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1006 VDD m1_n119_22# AND_2_0/a_9_10# AND_2_0/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1007 y1 AND_2_0/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1008 VDD m1_n118_99# AND_2_1/a_9_10# AND_2_1/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1009 AND_2_1/a_9_10# m1_n118_99# AND_2_1/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1010 VDD AND_2_1/a_9_10# y2 AND_2_1/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1011 AND_2_1/a_10_n33# Sel1 GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1012 VDD Sel1 AND_2_1/a_9_10# AND_2_1/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1013 y2 AND_2_1/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1014 m1_n119_22# Sel1 GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1015 VDD Sel1 m1_n119_22# CMOS_in_1/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1016 VDD Sel0 AND_2_2/a_9_10# AND_2_2/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1017 AND_2_2/a_9_10# Sel0 AND_2_2/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1018 VDD AND_2_2/a_9_10# y3 AND_2_2/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1019 AND_2_2/a_10_n33# m1_n119_22# GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1020 VDD m1_n119_22# AND_2_2/a_9_10# AND_2_2/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1021 y3 AND_2_2/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1022 VDD Sel0 AND_2_3/a_9_10# AND_2_3/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1023 AND_2_3/a_9_10# Sel0 AND_2_3/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1024 VDD AND_2_3/a_9_10# y4 AND_2_3/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1025 AND_2_3/a_10_n33# Sel1 GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1026 VDD Sel1 AND_2_3/a_9_10# AND_2_3/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1027 y4 AND_2_3/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+C0 VDD GND 2.71fF
+
+.control 
+run 
+tran 10u 120n 
+plot v(Sel0) v(Sel1)+2
+plot v(y1) v(y2)+2 v(y3)+4 v(y4)+6 
+.endc 
+.end

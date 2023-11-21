@@ -1,0 +1,1348 @@
+* SPICE3 file created from 4_bit_ALU_t1.ext - technology: scmos
+
+.option scale=0.09u
+.include TSMC_180nm.txt 
+.global GND Gnd gnd 
+
+Vdd VDD 0 dc 1.8
+
+Va0 A0 0 dc 0
+Va1 A1 0 dc 1.8
+Va2 A2 0 dc 0
+Va3 A3 0 dc 0
+
+Vb0 B0 0 dc 0
+Vb1 B1 0 dc 1.8
+Vb2 B2 0 dc 0
+Vb3 B3 0 dc 0
+
+VS0 Sel0 0 dc 1.8
+VS1 Sel1 0 dc 1.8
+
+M1000 VDD m1_1573_797# Decoder_0/AND_2_1/a_9_10# Decoder_0/AND_2_1/w_n1_1# CMOSP w=20 l=7
++  ad=45126 pd=15240 as=360 ps=116
+M1001 Decoder_0/AND_2_1/a_9_10# m1_1573_797# Decoder_0/AND_2_1/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1002 VDD Decoder_0/AND_2_1/a_9_10# Decoder_0/m1_34_25# Decoder_0/AND_2_1/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1003 Decoder_0/AND_2_1/a_10_n33# Sel1 GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=33056 ps=11620
+M1004 VDD Sel1 Decoder_0/AND_2_1/a_9_10# Decoder_0/AND_2_1/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1005 Decoder_0/m1_34_25# Decoder_0/AND_2_1/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1006 VDD m1_1573_797# Decoder_0/AND_2_0/a_9_10# Decoder_0/AND_2_0/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1007 Decoder_0/AND_2_0/a_9_10# m1_1573_797# Decoder_0/AND_2_0/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1008 VDD Decoder_0/AND_2_0/a_9_10# Decoder_0/m1_34_115# Decoder_0/AND_2_0/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1009 Decoder_0/AND_2_0/a_10_n33# Decoder_0/m1_n119_22# GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1010 VDD Decoder_0/m1_n119_22# Decoder_0/AND_2_0/a_9_10# Decoder_0/AND_2_0/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1011 Decoder_0/m1_34_115# Decoder_0/AND_2_0/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1012 m1_1573_797# Sel0 GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1013 VDD Sel0 m1_1573_797# Decoder_0/CMOS_in_0/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1014 VDD Sel0 Decoder_0/AND_2_2/a_9_10# Decoder_0/AND_2_2/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1015 Decoder_0/AND_2_2/a_9_10# Sel0 Decoder_0/AND_2_2/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1016 VDD Decoder_0/AND_2_2/a_9_10# a_1385_635# Decoder_0/AND_2_2/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1017 Decoder_0/AND_2_2/a_10_n33# Decoder_0/m1_n119_22# GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1018 VDD Decoder_0/m1_n119_22# Decoder_0/AND_2_2/a_9_10# Decoder_0/AND_2_2/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1019 a_1385_635# Decoder_0/AND_2_2/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1020 Decoder_0/m1_n119_22# Sel1 GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1021 VDD Sel1 Decoder_0/m1_n119_22# Decoder_0/CMOS_in_1/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1022 VDD Sel0 Decoder_0/AND_2_3/a_9_10# Decoder_0/AND_2_3/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1023 Decoder_0/AND_2_3/a_9_10# Sel0 Decoder_0/AND_2_3/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1024 VDD Decoder_0/AND_2_3/a_9_10# m1_1294_638# Decoder_0/AND_2_3/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1025 Decoder_0/AND_2_3/a_10_n33# Sel1 GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1026 VDD Sel1 Decoder_0/AND_2_3/a_9_10# Decoder_0/AND_2_3/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1027 m1_1294_638# Decoder_0/AND_2_3/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1028 VDD 4_bit_Adder_t3_0/Full_Adder_t3_0/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/m1_96_135# 4_bit_Adder_t3_0/Full_Adder_t3_0/OR_2_0/w_40_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=135 ps=48
+M1029 4_bit_Adder_t3_0/Full_Adder_t3_0/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/Full_Adder_t3_0/m1_295_n32# GND Gnd CMOSN w=15 l=5
++  ad=210 pd=88 as=0 ps=0
+M1030 4_bit_Adder_t3_0/Full_Adder_t3_0/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/Full_Adder_t3_0/m1_295_n32# 4_bit_Adder_t3_0/Full_Adder_t3_0/OR_2_0/a_n35_5# 4_bit_Adder_t3_0/Full_Adder_t3_0/OR_2_0/w_n1_n2# CMOSP w=15 l=5
++  ad=135 pd=48 as=270 ps=96
+M1031 4_bit_Adder_t3_0/m1_96_135# 4_bit_Adder_t3_0/Full_Adder_t3_0/OR_2_0/a_n35_n16# GND Gnd CMOSN w=15 l=5
++  ad=105 pd=44 as=0 ps=0
+M1032 VDD 4_bit_Adder_t3_0/Full_Adder_t3_0/m1_252_n34# 4_bit_Adder_t3_0/Full_Adder_t3_0/OR_2_0/a_n35_5# 4_bit_Adder_t3_0/Full_Adder_t3_0/OR_2_0/w_n42_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1033 4_bit_Adder_t3_0/Full_Adder_t3_0/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/Full_Adder_t3_0/m1_252_n34# GND Gnd CMOSN w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1034 VDD 4_bit_Adder_t3_0/m1_96_n327# 4_bit_Adder_t3_0/Full_Adder_t3_0/AND_2_1/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_0/AND_2_1/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1035 4_bit_Adder_t3_0/Full_Adder_t3_0/AND_2_1/a_9_10# 4_bit_Adder_t3_0/m1_96_n327# 4_bit_Adder_t3_0/Full_Adder_t3_0/AND_2_1/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1036 VDD 4_bit_Adder_t3_0/Full_Adder_t3_0/AND_2_1/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_0/m1_252_n34# 4_bit_Adder_t3_0/Full_Adder_t3_0/AND_2_1/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1037 4_bit_Adder_t3_0/Full_Adder_t3_0/AND_2_1/a_10_n33# 4_bit_Adder_t3_0/Full_Adder_t3_0/m1_0_n50# GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1038 VDD 4_bit_Adder_t3_0/Full_Adder_t3_0/m1_0_n50# 4_bit_Adder_t3_0/Full_Adder_t3_0/AND_2_1/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_0/AND_2_1/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1039 4_bit_Adder_t3_0/Full_Adder_t3_0/m1_252_n34# 4_bit_Adder_t3_0/Full_Adder_t3_0/AND_2_1/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1040 VDD A3 4_bit_Adder_t3_0/Full_Adder_t3_0/AND_2_0/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_0/AND_2_0/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1041 4_bit_Adder_t3_0/Full_Adder_t3_0/AND_2_0/a_9_10# A3 4_bit_Adder_t3_0/Full_Adder_t3_0/AND_2_0/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1042 VDD 4_bit_Adder_t3_0/Full_Adder_t3_0/AND_2_0/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_0/m1_295_n32# 4_bit_Adder_t3_0/Full_Adder_t3_0/AND_2_0/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1043 4_bit_Adder_t3_0/Full_Adder_t3_0/AND_2_0/a_10_n33# 4_bit_Adder_t3_0/m1_941_n469# GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1044 VDD 4_bit_Adder_t3_0/m1_941_n469# 4_bit_Adder_t3_0/Full_Adder_t3_0/AND_2_0/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_0/AND_2_0/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1045 4_bit_Adder_t3_0/Full_Adder_t3_0/m1_295_n32# 4_bit_Adder_t3_0/Full_Adder_t3_0/AND_2_0/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1046 VDD 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_0/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/Full_Adder_t3_0/m1_0_n50# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_0/OR_2_0/w_40_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=135 ps=48
+M1047 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_0/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_0/m1_65_n48# GND Gnd CMOSN w=15 l=5
++  ad=210 pd=88 as=0 ps=0
+M1048 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_0/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_0/m1_65_n48# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_0/OR_2_0/a_n35_5# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_0/OR_2_0/w_n1_n2# CMOSP w=15 l=5
++  ad=135 pd=48 as=270 ps=96
+M1049 4_bit_Adder_t3_0/Full_Adder_t3_0/m1_0_n50# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_0/OR_2_0/a_n35_n16# GND Gnd CMOSN w=15 l=5
++  ad=105 pd=44 as=0 ps=0
+M1050 VDD 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_0/m1_68_43# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_0/OR_2_0/a_n35_5# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_0/OR_2_0/w_n42_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1051 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_0/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_0/m1_68_43# GND Gnd CMOSN w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1052 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_0/m1_n97_39# A3 GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1053 VDD A3 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_0/m1_n97_39# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_0/CMOS_in_0/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1054 VDD 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_0/m1_n97_39# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_0/AND_2_0/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_0/AND_2_0/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1055 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_0/AND_2_0/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_0/m1_n97_39# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_0/AND_2_0/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1056 VDD 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_0/AND_2_0/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_0/m1_68_43# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_0/AND_2_0/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1057 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_0/AND_2_0/a_10_n33# 4_bit_Adder_t3_0/m1_941_n469# GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1058 VDD 4_bit_Adder_t3_0/m1_941_n469# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_0/AND_2_0/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_0/AND_2_0/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1059 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_0/m1_68_43# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_0/AND_2_0/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1060 VDD 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_0/m1_n101_n52# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_0/AND_2_1/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_0/AND_2_1/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1061 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_0/AND_2_1/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_0/m1_n101_n52# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_0/AND_2_1/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1062 VDD 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_0/AND_2_1/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_0/m1_65_n48# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_0/AND_2_1/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1063 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_0/AND_2_1/a_10_n33# A3 GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1064 VDD A3 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_0/AND_2_1/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_0/AND_2_1/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1065 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_0/m1_65_n48# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_0/AND_2_1/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1066 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_0/m1_n101_n52# 4_bit_Adder_t3_0/m1_941_n469# GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1067 VDD 4_bit_Adder_t3_0/m1_941_n469# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_0/m1_n101_n52# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_0/CMOS_in_1/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1068 VDD 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_1/OR_2_0/a_n35_n16# m1_366_591# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_1/OR_2_0/w_40_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=135 ps=48
+M1069 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_1/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_1/m1_65_n48# GND Gnd CMOSN w=15 l=5
++  ad=210 pd=88 as=0 ps=0
+M1070 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_1/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_1/m1_65_n48# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_1/OR_2_0/a_n35_5# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_1/OR_2_0/w_n1_n2# CMOSP w=15 l=5
++  ad=135 pd=48 as=270 ps=96
+M1071 m1_366_591# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_1/OR_2_0/a_n35_n16# GND Gnd CMOSN w=15 l=5
++  ad=105 pd=44 as=0 ps=0
+M1072 VDD 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_1/m1_68_43# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_1/OR_2_0/a_n35_5# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_1/OR_2_0/w_n42_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1073 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_1/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_1/m1_68_43# GND Gnd CMOSN w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1074 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_1/m1_n97_39# 4_bit_Adder_t3_0/Full_Adder_t3_0/m1_0_n50# GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1075 VDD 4_bit_Adder_t3_0/Full_Adder_t3_0/m1_0_n50# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_1/m1_n97_39# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_1/CMOS_in_0/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1076 VDD 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_1/m1_n97_39# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_1/AND_2_0/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_1/AND_2_0/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1077 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_1/AND_2_0/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_1/m1_n97_39# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_1/AND_2_0/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1078 VDD 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_1/AND_2_0/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_1/m1_68_43# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_1/AND_2_0/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1079 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_1/AND_2_0/a_10_n33# 4_bit_Adder_t3_0/m1_96_n327# GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1080 VDD 4_bit_Adder_t3_0/m1_96_n327# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_1/AND_2_0/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_1/AND_2_0/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1081 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_1/m1_68_43# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_1/AND_2_0/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1082 VDD 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_1/m1_n101_n52# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_1/AND_2_1/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_1/AND_2_1/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1083 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_1/AND_2_1/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_1/m1_n101_n52# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_1/AND_2_1/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1084 VDD 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_1/AND_2_1/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_1/m1_65_n48# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_1/AND_2_1/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1085 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_1/AND_2_1/a_10_n33# 4_bit_Adder_t3_0/Full_Adder_t3_0/m1_0_n50# GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1086 VDD 4_bit_Adder_t3_0/Full_Adder_t3_0/m1_0_n50# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_1/AND_2_1/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_1/AND_2_1/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1087 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_1/m1_65_n48# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_1/AND_2_1/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1088 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_1/m1_n101_n52# 4_bit_Adder_t3_0/m1_96_n327# GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1089 VDD 4_bit_Adder_t3_0/m1_96_n327# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_1/m1_n101_n52# 4_bit_Adder_t3_0/Full_Adder_t3_0/XOR_1/CMOS_in_1/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1090 VDD 4_bit_Adder_t3_0/Full_Adder_t3_1/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/m1_543_110# 4_bit_Adder_t3_0/Full_Adder_t3_1/OR_2_0/w_40_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=135 ps=48
+M1091 4_bit_Adder_t3_0/Full_Adder_t3_1/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/Full_Adder_t3_1/m1_295_n32# GND Gnd CMOSN w=15 l=5
++  ad=210 pd=88 as=0 ps=0
+M1092 4_bit_Adder_t3_0/Full_Adder_t3_1/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/Full_Adder_t3_1/m1_295_n32# 4_bit_Adder_t3_0/Full_Adder_t3_1/OR_2_0/a_n35_5# 4_bit_Adder_t3_0/Full_Adder_t3_1/OR_2_0/w_n1_n2# CMOSP w=15 l=5
++  ad=135 pd=48 as=270 ps=96
+M1093 4_bit_Adder_t3_0/m1_543_110# 4_bit_Adder_t3_0/Full_Adder_t3_1/OR_2_0/a_n35_n16# GND Gnd CMOSN w=15 l=5
++  ad=105 pd=44 as=0 ps=0
+M1094 VDD 4_bit_Adder_t3_0/Full_Adder_t3_1/m1_252_n34# 4_bit_Adder_t3_0/Full_Adder_t3_1/OR_2_0/a_n35_5# 4_bit_Adder_t3_0/Full_Adder_t3_1/OR_2_0/w_n42_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1095 4_bit_Adder_t3_0/Full_Adder_t3_1/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/Full_Adder_t3_1/m1_252_n34# GND Gnd CMOSN w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1096 VDD Sel1 4_bit_Adder_t3_0/Full_Adder_t3_1/AND_2_1/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_1/AND_2_1/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1097 4_bit_Adder_t3_0/Full_Adder_t3_1/AND_2_1/a_9_10# Sel1 4_bit_Adder_t3_0/Full_Adder_t3_1/AND_2_1/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1098 VDD 4_bit_Adder_t3_0/Full_Adder_t3_1/AND_2_1/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_1/m1_252_n34# 4_bit_Adder_t3_0/Full_Adder_t3_1/AND_2_1/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1099 4_bit_Adder_t3_0/Full_Adder_t3_1/AND_2_1/a_10_n33# 4_bit_Adder_t3_0/Full_Adder_t3_1/m1_0_n50# GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1100 VDD 4_bit_Adder_t3_0/Full_Adder_t3_1/m1_0_n50# 4_bit_Adder_t3_0/Full_Adder_t3_1/AND_2_1/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_1/AND_2_1/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1101 4_bit_Adder_t3_0/Full_Adder_t3_1/m1_252_n34# 4_bit_Adder_t3_0/Full_Adder_t3_1/AND_2_1/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1102 VDD A0 4_bit_Adder_t3_0/Full_Adder_t3_1/AND_2_0/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_1/AND_2_0/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1103 4_bit_Adder_t3_0/Full_Adder_t3_1/AND_2_0/a_9_10# A0 4_bit_Adder_t3_0/Full_Adder_t3_1/AND_2_0/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1104 VDD 4_bit_Adder_t3_0/Full_Adder_t3_1/AND_2_0/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_1/m1_295_n32# 4_bit_Adder_t3_0/Full_Adder_t3_1/AND_2_0/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1105 4_bit_Adder_t3_0/Full_Adder_t3_1/AND_2_0/a_10_n33# 4_bit_Adder_t3_0/m1_939_251# GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1106 VDD 4_bit_Adder_t3_0/m1_939_251# 4_bit_Adder_t3_0/Full_Adder_t3_1/AND_2_0/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_1/AND_2_0/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1107 4_bit_Adder_t3_0/Full_Adder_t3_1/m1_295_n32# 4_bit_Adder_t3_0/Full_Adder_t3_1/AND_2_0/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1108 VDD 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_0/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/Full_Adder_t3_1/m1_0_n50# 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_0/OR_2_0/w_40_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=135 ps=48
+M1109 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_0/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_0/m1_65_n48# GND Gnd CMOSN w=15 l=5
++  ad=210 pd=88 as=0 ps=0
+M1110 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_0/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_0/m1_65_n48# 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_0/OR_2_0/a_n35_5# 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_0/OR_2_0/w_n1_n2# CMOSP w=15 l=5
++  ad=135 pd=48 as=270 ps=96
+M1111 4_bit_Adder_t3_0/Full_Adder_t3_1/m1_0_n50# 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_0/OR_2_0/a_n35_n16# GND Gnd CMOSN w=15 l=5
++  ad=105 pd=44 as=0 ps=0
+M1112 VDD 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_0/m1_68_43# 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_0/OR_2_0/a_n35_5# 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_0/OR_2_0/w_n42_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1113 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_0/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_0/m1_68_43# GND Gnd CMOSN w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1114 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_0/m1_n97_39# A0 GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1115 VDD A0 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_0/m1_n97_39# 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_0/CMOS_in_0/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1116 VDD 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_0/m1_n97_39# 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_0/AND_2_0/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_0/AND_2_0/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1117 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_0/AND_2_0/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_0/m1_n97_39# 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_0/AND_2_0/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1118 VDD 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_0/AND_2_0/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_0/m1_68_43# 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_0/AND_2_0/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1119 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_0/AND_2_0/a_10_n33# 4_bit_Adder_t3_0/m1_939_251# GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1120 VDD 4_bit_Adder_t3_0/m1_939_251# 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_0/AND_2_0/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_0/AND_2_0/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1121 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_0/m1_68_43# 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_0/AND_2_0/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1122 VDD 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_0/m1_n101_n52# 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_0/AND_2_1/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_0/AND_2_1/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1123 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_0/AND_2_1/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_0/m1_n101_n52# 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_0/AND_2_1/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1124 VDD 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_0/AND_2_1/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_0/m1_65_n48# 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_0/AND_2_1/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1125 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_0/AND_2_1/a_10_n33# A0 GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1126 VDD A0 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_0/AND_2_1/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_0/AND_2_1/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1127 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_0/m1_65_n48# 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_0/AND_2_1/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1128 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_0/m1_n101_n52# 4_bit_Adder_t3_0/m1_939_251# GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1129 VDD 4_bit_Adder_t3_0/m1_939_251# 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_0/m1_n101_n52# 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_0/CMOS_in_1/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1130 VDD 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_1/OR_2_0/a_n35_n16# m1_813_593# 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_1/OR_2_0/w_40_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=135 ps=48
+M1131 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_1/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_1/m1_65_n48# GND Gnd CMOSN w=15 l=5
++  ad=210 pd=88 as=0 ps=0
+M1132 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_1/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_1/m1_65_n48# 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_1/OR_2_0/a_n35_5# 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_1/OR_2_0/w_n1_n2# CMOSP w=15 l=5
++  ad=135 pd=48 as=270 ps=96
+M1133 m1_813_593# 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_1/OR_2_0/a_n35_n16# GND Gnd CMOSN w=15 l=5
++  ad=105 pd=44 as=0 ps=0
+M1134 VDD 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_1/m1_68_43# 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_1/OR_2_0/a_n35_5# 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_1/OR_2_0/w_n42_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1135 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_1/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_1/m1_68_43# GND Gnd CMOSN w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1136 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_1/m1_n97_39# 4_bit_Adder_t3_0/Full_Adder_t3_1/m1_0_n50# GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1137 VDD 4_bit_Adder_t3_0/Full_Adder_t3_1/m1_0_n50# 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_1/m1_n97_39# 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_1/CMOS_in_0/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1138 VDD 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_1/m1_n97_39# 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_1/AND_2_0/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_1/AND_2_0/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1139 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_1/AND_2_0/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_1/m1_n97_39# 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_1/AND_2_0/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1140 VDD 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_1/AND_2_0/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_1/m1_68_43# 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_1/AND_2_0/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1141 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_1/AND_2_0/a_10_n33# Sel1 GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1142 VDD Sel1 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_1/AND_2_0/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_1/AND_2_0/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1143 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_1/m1_68_43# 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_1/AND_2_0/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1144 VDD 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_1/m1_n101_n52# 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_1/AND_2_1/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_1/AND_2_1/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1145 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_1/AND_2_1/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_1/m1_n101_n52# 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_1/AND_2_1/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1146 VDD 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_1/AND_2_1/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_1/m1_65_n48# 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_1/AND_2_1/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1147 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_1/AND_2_1/a_10_n33# 4_bit_Adder_t3_0/Full_Adder_t3_1/m1_0_n50# GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1148 VDD 4_bit_Adder_t3_0/Full_Adder_t3_1/m1_0_n50# 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_1/AND_2_1/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_1/AND_2_1/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1149 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_1/m1_65_n48# 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_1/AND_2_1/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1150 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_1/m1_n101_n52# Sel1 GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1151 VDD Sel1 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_1/m1_n101_n52# 4_bit_Adder_t3_0/Full_Adder_t3_1/XOR_1/CMOS_in_1/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1152 VDD 4_bit_Adder_t3_0/XOR_0/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/m1_939_251# 4_bit_Adder_t3_0/XOR_0/OR_2_0/w_40_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=135 ps=48
+M1153 4_bit_Adder_t3_0/XOR_0/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/XOR_0/m1_65_n48# GND Gnd CMOSN w=15 l=5
++  ad=210 pd=88 as=0 ps=0
+M1154 4_bit_Adder_t3_0/XOR_0/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/XOR_0/m1_65_n48# 4_bit_Adder_t3_0/XOR_0/OR_2_0/a_n35_5# 4_bit_Adder_t3_0/XOR_0/OR_2_0/w_n1_n2# CMOSP w=15 l=5
++  ad=135 pd=48 as=270 ps=96
+M1155 4_bit_Adder_t3_0/m1_939_251# 4_bit_Adder_t3_0/XOR_0/OR_2_0/a_n35_n16# GND Gnd CMOSN w=15 l=5
++  ad=105 pd=44 as=0 ps=0
+M1156 VDD 4_bit_Adder_t3_0/XOR_0/m1_68_43# 4_bit_Adder_t3_0/XOR_0/OR_2_0/a_n35_5# 4_bit_Adder_t3_0/XOR_0/OR_2_0/w_n42_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1157 4_bit_Adder_t3_0/XOR_0/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/XOR_0/m1_68_43# GND Gnd CMOSN w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1158 4_bit_Adder_t3_0/XOR_0/m1_n97_39# B0 GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1159 VDD B0 4_bit_Adder_t3_0/XOR_0/m1_n97_39# 4_bit_Adder_t3_0/XOR_0/CMOS_in_0/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1160 VDD 4_bit_Adder_t3_0/XOR_0/m1_n97_39# 4_bit_Adder_t3_0/XOR_0/AND_2_0/a_9_10# 4_bit_Adder_t3_0/XOR_0/AND_2_0/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1161 4_bit_Adder_t3_0/XOR_0/AND_2_0/a_9_10# 4_bit_Adder_t3_0/XOR_0/m1_n97_39# 4_bit_Adder_t3_0/XOR_0/AND_2_0/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1162 VDD 4_bit_Adder_t3_0/XOR_0/AND_2_0/a_9_10# 4_bit_Adder_t3_0/XOR_0/m1_68_43# 4_bit_Adder_t3_0/XOR_0/AND_2_0/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1163 4_bit_Adder_t3_0/XOR_0/AND_2_0/a_10_n33# Sel1 GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1164 VDD Sel1 4_bit_Adder_t3_0/XOR_0/AND_2_0/a_9_10# 4_bit_Adder_t3_0/XOR_0/AND_2_0/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1165 4_bit_Adder_t3_0/XOR_0/m1_68_43# 4_bit_Adder_t3_0/XOR_0/AND_2_0/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1166 VDD 4_bit_Adder_t3_0/XOR_0/m1_n101_n52# 4_bit_Adder_t3_0/XOR_0/AND_2_1/a_9_10# 4_bit_Adder_t3_0/XOR_0/AND_2_1/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1167 4_bit_Adder_t3_0/XOR_0/AND_2_1/a_9_10# 4_bit_Adder_t3_0/XOR_0/m1_n101_n52# 4_bit_Adder_t3_0/XOR_0/AND_2_1/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1168 VDD 4_bit_Adder_t3_0/XOR_0/AND_2_1/a_9_10# 4_bit_Adder_t3_0/XOR_0/m1_65_n48# 4_bit_Adder_t3_0/XOR_0/AND_2_1/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1169 4_bit_Adder_t3_0/XOR_0/AND_2_1/a_10_n33# B0 GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1170 VDD B0 4_bit_Adder_t3_0/XOR_0/AND_2_1/a_9_10# 4_bit_Adder_t3_0/XOR_0/AND_2_1/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1171 4_bit_Adder_t3_0/XOR_0/m1_65_n48# 4_bit_Adder_t3_0/XOR_0/AND_2_1/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1172 4_bit_Adder_t3_0/XOR_0/m1_n101_n52# Sel1 GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1173 VDD Sel1 4_bit_Adder_t3_0/XOR_0/m1_n101_n52# 4_bit_Adder_t3_0/XOR_0/CMOS_in_1/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1174 VDD 4_bit_Adder_t3_0/Full_Adder_t3_2/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/m1_96_n327# 4_bit_Adder_t3_0/Full_Adder_t3_2/OR_2_0/w_40_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=135 ps=48
+M1175 4_bit_Adder_t3_0/Full_Adder_t3_2/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/Full_Adder_t3_2/m1_295_n32# GND Gnd CMOSN w=15 l=5
++  ad=210 pd=88 as=0 ps=0
+M1176 4_bit_Adder_t3_0/Full_Adder_t3_2/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/Full_Adder_t3_2/m1_295_n32# 4_bit_Adder_t3_0/Full_Adder_t3_2/OR_2_0/a_n35_5# 4_bit_Adder_t3_0/Full_Adder_t3_2/OR_2_0/w_n1_n2# CMOSP w=15 l=5
++  ad=135 pd=48 as=270 ps=96
+M1177 4_bit_Adder_t3_0/m1_96_n327# 4_bit_Adder_t3_0/Full_Adder_t3_2/OR_2_0/a_n35_n16# GND Gnd CMOSN w=15 l=5
++  ad=105 pd=44 as=0 ps=0
+M1178 VDD 4_bit_Adder_t3_0/Full_Adder_t3_2/m1_252_n34# 4_bit_Adder_t3_0/Full_Adder_t3_2/OR_2_0/a_n35_5# 4_bit_Adder_t3_0/Full_Adder_t3_2/OR_2_0/w_n42_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1179 4_bit_Adder_t3_0/Full_Adder_t3_2/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/Full_Adder_t3_2/m1_252_n34# GND Gnd CMOSN w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1180 VDD 4_bit_Adder_t3_0/m1_n28_n529# 4_bit_Adder_t3_0/Full_Adder_t3_2/AND_2_1/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_2/AND_2_1/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1181 4_bit_Adder_t3_0/Full_Adder_t3_2/AND_2_1/a_9_10# 4_bit_Adder_t3_0/m1_n28_n529# 4_bit_Adder_t3_0/Full_Adder_t3_2/AND_2_1/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1182 VDD 4_bit_Adder_t3_0/Full_Adder_t3_2/AND_2_1/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_2/m1_252_n34# 4_bit_Adder_t3_0/Full_Adder_t3_2/AND_2_1/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1183 4_bit_Adder_t3_0/Full_Adder_t3_2/AND_2_1/a_10_n33# 4_bit_Adder_t3_0/Full_Adder_t3_2/m1_0_n50# GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1184 VDD 4_bit_Adder_t3_0/Full_Adder_t3_2/m1_0_n50# 4_bit_Adder_t3_0/Full_Adder_t3_2/AND_2_1/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_2/AND_2_1/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1185 4_bit_Adder_t3_0/Full_Adder_t3_2/m1_252_n34# 4_bit_Adder_t3_0/Full_Adder_t3_2/AND_2_1/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1186 VDD A2 4_bit_Adder_t3_0/Full_Adder_t3_2/AND_2_0/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_2/AND_2_0/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1187 4_bit_Adder_t3_0/Full_Adder_t3_2/AND_2_0/a_9_10# A2 4_bit_Adder_t3_0/Full_Adder_t3_2/AND_2_0/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1188 VDD 4_bit_Adder_t3_0/Full_Adder_t3_2/AND_2_0/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_2/m1_295_n32# 4_bit_Adder_t3_0/Full_Adder_t3_2/AND_2_0/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1189 4_bit_Adder_t3_0/Full_Adder_t3_2/AND_2_0/a_10_n33# 4_bit_Adder_t3_0/m1_938_n224# GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1190 VDD 4_bit_Adder_t3_0/m1_938_n224# 4_bit_Adder_t3_0/Full_Adder_t3_2/AND_2_0/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_2/AND_2_0/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1191 4_bit_Adder_t3_0/Full_Adder_t3_2/m1_295_n32# 4_bit_Adder_t3_0/Full_Adder_t3_2/AND_2_0/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1192 VDD 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_0/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/Full_Adder_t3_2/m1_0_n50# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_0/OR_2_0/w_40_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=135 ps=48
+M1193 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_0/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_0/m1_65_n48# GND Gnd CMOSN w=15 l=5
++  ad=210 pd=88 as=0 ps=0
+M1194 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_0/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_0/m1_65_n48# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_0/OR_2_0/a_n35_5# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_0/OR_2_0/w_n1_n2# CMOSP w=15 l=5
++  ad=135 pd=48 as=270 ps=96
+M1195 4_bit_Adder_t3_0/Full_Adder_t3_2/m1_0_n50# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_0/OR_2_0/a_n35_n16# GND Gnd CMOSN w=15 l=5
++  ad=105 pd=44 as=0 ps=0
+M1196 VDD 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_0/m1_68_43# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_0/OR_2_0/a_n35_5# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_0/OR_2_0/w_n42_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1197 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_0/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_0/m1_68_43# GND Gnd CMOSN w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1198 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_0/m1_n97_39# A2 GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1199 VDD A2 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_0/m1_n97_39# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_0/CMOS_in_0/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1200 VDD 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_0/m1_n97_39# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_0/AND_2_0/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_0/AND_2_0/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1201 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_0/AND_2_0/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_0/m1_n97_39# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_0/AND_2_0/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1202 VDD 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_0/AND_2_0/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_0/m1_68_43# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_0/AND_2_0/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1203 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_0/AND_2_0/a_10_n33# 4_bit_Adder_t3_0/m1_938_n224# GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1204 VDD 4_bit_Adder_t3_0/m1_938_n224# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_0/AND_2_0/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_0/AND_2_0/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1205 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_0/m1_68_43# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_0/AND_2_0/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1206 VDD 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_0/m1_n101_n52# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_0/AND_2_1/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_0/AND_2_1/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1207 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_0/AND_2_1/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_0/m1_n101_n52# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_0/AND_2_1/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1208 VDD 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_0/AND_2_1/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_0/m1_65_n48# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_0/AND_2_1/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1209 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_0/AND_2_1/a_10_n33# A2 GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1210 VDD A2 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_0/AND_2_1/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_0/AND_2_1/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1211 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_0/m1_65_n48# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_0/AND_2_1/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1212 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_0/m1_n101_n52# 4_bit_Adder_t3_0/m1_938_n224# GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1213 VDD 4_bit_Adder_t3_0/m1_938_n224# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_0/m1_n101_n52# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_0/CMOS_in_1/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1214 VDD 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_1/OR_2_0/a_n35_n16# m1_366_137# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_1/OR_2_0/w_40_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=135 ps=48
+M1215 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_1/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_1/m1_65_n48# GND Gnd CMOSN w=15 l=5
++  ad=210 pd=88 as=0 ps=0
+M1216 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_1/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_1/m1_65_n48# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_1/OR_2_0/a_n35_5# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_1/OR_2_0/w_n1_n2# CMOSP w=15 l=5
++  ad=135 pd=48 as=270 ps=96
+M1217 m1_366_137# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_1/OR_2_0/a_n35_n16# GND Gnd CMOSN w=15 l=5
++  ad=105 pd=44 as=0 ps=0
+M1218 VDD 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_1/m1_68_43# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_1/OR_2_0/a_n35_5# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_1/OR_2_0/w_n42_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1219 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_1/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_1/m1_68_43# GND Gnd CMOSN w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1220 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_1/m1_n97_39# 4_bit_Adder_t3_0/Full_Adder_t3_2/m1_0_n50# GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1221 VDD 4_bit_Adder_t3_0/Full_Adder_t3_2/m1_0_n50# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_1/m1_n97_39# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_1/CMOS_in_0/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1222 VDD 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_1/m1_n97_39# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_1/AND_2_0/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_1/AND_2_0/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1223 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_1/AND_2_0/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_1/m1_n97_39# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_1/AND_2_0/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1224 VDD 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_1/AND_2_0/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_1/m1_68_43# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_1/AND_2_0/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1225 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_1/AND_2_0/a_10_n33# 4_bit_Adder_t3_0/m1_n28_n529# GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1226 VDD 4_bit_Adder_t3_0/m1_n28_n529# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_1/AND_2_0/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_1/AND_2_0/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1227 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_1/m1_68_43# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_1/AND_2_0/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1228 VDD 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_1/m1_n101_n52# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_1/AND_2_1/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_1/AND_2_1/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1229 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_1/AND_2_1/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_1/m1_n101_n52# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_1/AND_2_1/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1230 VDD 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_1/AND_2_1/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_1/m1_65_n48# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_1/AND_2_1/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1231 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_1/AND_2_1/a_10_n33# 4_bit_Adder_t3_0/Full_Adder_t3_2/m1_0_n50# GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1232 VDD 4_bit_Adder_t3_0/Full_Adder_t3_2/m1_0_n50# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_1/AND_2_1/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_1/AND_2_1/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1233 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_1/m1_65_n48# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_1/AND_2_1/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1234 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_1/m1_n101_n52# 4_bit_Adder_t3_0/m1_n28_n529# GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1235 VDD 4_bit_Adder_t3_0/m1_n28_n529# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_1/m1_n101_n52# 4_bit_Adder_t3_0/Full_Adder_t3_2/XOR_1/CMOS_in_1/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1236 VDD 4_bit_Adder_t3_0/XOR_1/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/m1_938_7# 4_bit_Adder_t3_0/XOR_1/OR_2_0/w_40_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=135 ps=48
+M1237 4_bit_Adder_t3_0/XOR_1/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/XOR_1/m1_65_n48# GND Gnd CMOSN w=15 l=5
++  ad=210 pd=88 as=0 ps=0
+M1238 4_bit_Adder_t3_0/XOR_1/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/XOR_1/m1_65_n48# 4_bit_Adder_t3_0/XOR_1/OR_2_0/a_n35_5# 4_bit_Adder_t3_0/XOR_1/OR_2_0/w_n1_n2# CMOSP w=15 l=5
++  ad=135 pd=48 as=270 ps=96
+M1239 4_bit_Adder_t3_0/m1_938_7# 4_bit_Adder_t3_0/XOR_1/OR_2_0/a_n35_n16# GND Gnd CMOSN w=15 l=5
++  ad=105 pd=44 as=0 ps=0
+M1240 VDD 4_bit_Adder_t3_0/XOR_1/m1_68_43# 4_bit_Adder_t3_0/XOR_1/OR_2_0/a_n35_5# 4_bit_Adder_t3_0/XOR_1/OR_2_0/w_n42_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1241 4_bit_Adder_t3_0/XOR_1/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/XOR_1/m1_68_43# GND Gnd CMOSN w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1242 4_bit_Adder_t3_0/XOR_1/m1_n97_39# B1 GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1243 VDD B1 4_bit_Adder_t3_0/XOR_1/m1_n97_39# 4_bit_Adder_t3_0/XOR_1/CMOS_in_0/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1244 VDD 4_bit_Adder_t3_0/XOR_1/m1_n97_39# 4_bit_Adder_t3_0/XOR_1/AND_2_0/a_9_10# 4_bit_Adder_t3_0/XOR_1/AND_2_0/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1245 4_bit_Adder_t3_0/XOR_1/AND_2_0/a_9_10# 4_bit_Adder_t3_0/XOR_1/m1_n97_39# 4_bit_Adder_t3_0/XOR_1/AND_2_0/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1246 VDD 4_bit_Adder_t3_0/XOR_1/AND_2_0/a_9_10# 4_bit_Adder_t3_0/XOR_1/m1_68_43# 4_bit_Adder_t3_0/XOR_1/AND_2_0/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1247 4_bit_Adder_t3_0/XOR_1/AND_2_0/a_10_n33# Sel1 GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1248 VDD Sel1 4_bit_Adder_t3_0/XOR_1/AND_2_0/a_9_10# 4_bit_Adder_t3_0/XOR_1/AND_2_0/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1249 4_bit_Adder_t3_0/XOR_1/m1_68_43# 4_bit_Adder_t3_0/XOR_1/AND_2_0/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1250 VDD 4_bit_Adder_t3_0/XOR_1/m1_n101_n52# 4_bit_Adder_t3_0/XOR_1/AND_2_1/a_9_10# 4_bit_Adder_t3_0/XOR_1/AND_2_1/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1251 4_bit_Adder_t3_0/XOR_1/AND_2_1/a_9_10# 4_bit_Adder_t3_0/XOR_1/m1_n101_n52# 4_bit_Adder_t3_0/XOR_1/AND_2_1/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1252 VDD 4_bit_Adder_t3_0/XOR_1/AND_2_1/a_9_10# 4_bit_Adder_t3_0/XOR_1/m1_65_n48# 4_bit_Adder_t3_0/XOR_1/AND_2_1/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1253 4_bit_Adder_t3_0/XOR_1/AND_2_1/a_10_n33# B1 GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1254 VDD B1 4_bit_Adder_t3_0/XOR_1/AND_2_1/a_9_10# 4_bit_Adder_t3_0/XOR_1/AND_2_1/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1255 4_bit_Adder_t3_0/XOR_1/m1_65_n48# 4_bit_Adder_t3_0/XOR_1/AND_2_1/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1256 4_bit_Adder_t3_0/XOR_1/m1_n101_n52# Sel1 GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1257 VDD Sel1 4_bit_Adder_t3_0/XOR_1/m1_n101_n52# 4_bit_Adder_t3_0/XOR_1/CMOS_in_1/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1258 VDD 4_bit_Adder_t3_0/Full_Adder_t3_3/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/m1_n28_n529# 4_bit_Adder_t3_0/Full_Adder_t3_3/OR_2_0/w_40_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=135 ps=48
+M1259 4_bit_Adder_t3_0/Full_Adder_t3_3/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/Full_Adder_t3_3/m1_295_n32# GND Gnd CMOSN w=15 l=5
++  ad=210 pd=88 as=0 ps=0
+M1260 4_bit_Adder_t3_0/Full_Adder_t3_3/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/Full_Adder_t3_3/m1_295_n32# 4_bit_Adder_t3_0/Full_Adder_t3_3/OR_2_0/a_n35_5# 4_bit_Adder_t3_0/Full_Adder_t3_3/OR_2_0/w_n1_n2# CMOSP w=15 l=5
++  ad=135 pd=48 as=270 ps=96
+M1261 4_bit_Adder_t3_0/m1_n28_n529# 4_bit_Adder_t3_0/Full_Adder_t3_3/OR_2_0/a_n35_n16# GND Gnd CMOSN w=15 l=5
++  ad=105 pd=44 as=0 ps=0
+M1262 VDD 4_bit_Adder_t3_0/Full_Adder_t3_3/m1_252_n34# 4_bit_Adder_t3_0/Full_Adder_t3_3/OR_2_0/a_n35_5# 4_bit_Adder_t3_0/Full_Adder_t3_3/OR_2_0/w_n42_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1263 4_bit_Adder_t3_0/Full_Adder_t3_3/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/Full_Adder_t3_3/m1_252_n34# GND Gnd CMOSN w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1264 VDD 4_bit_Adder_t3_0/m1_543_110# 4_bit_Adder_t3_0/Full_Adder_t3_3/AND_2_1/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_3/AND_2_1/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1265 4_bit_Adder_t3_0/Full_Adder_t3_3/AND_2_1/a_9_10# 4_bit_Adder_t3_0/m1_543_110# 4_bit_Adder_t3_0/Full_Adder_t3_3/AND_2_1/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1266 VDD 4_bit_Adder_t3_0/Full_Adder_t3_3/AND_2_1/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_3/m1_252_n34# 4_bit_Adder_t3_0/Full_Adder_t3_3/AND_2_1/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1267 4_bit_Adder_t3_0/Full_Adder_t3_3/AND_2_1/a_10_n33# 4_bit_Adder_t3_0/Full_Adder_t3_3/m1_0_n50# GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1268 VDD 4_bit_Adder_t3_0/Full_Adder_t3_3/m1_0_n50# 4_bit_Adder_t3_0/Full_Adder_t3_3/AND_2_1/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_3/AND_2_1/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1269 4_bit_Adder_t3_0/Full_Adder_t3_3/m1_252_n34# 4_bit_Adder_t3_0/Full_Adder_t3_3/AND_2_1/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1270 VDD A1 4_bit_Adder_t3_0/Full_Adder_t3_3/AND_2_0/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_3/AND_2_0/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1271 4_bit_Adder_t3_0/Full_Adder_t3_3/AND_2_0/a_9_10# A1 4_bit_Adder_t3_0/Full_Adder_t3_3/AND_2_0/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1272 VDD 4_bit_Adder_t3_0/Full_Adder_t3_3/AND_2_0/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_3/m1_295_n32# 4_bit_Adder_t3_0/Full_Adder_t3_3/AND_2_0/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1273 4_bit_Adder_t3_0/Full_Adder_t3_3/AND_2_0/a_10_n33# 4_bit_Adder_t3_0/m1_938_7# GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1274 VDD 4_bit_Adder_t3_0/m1_938_7# 4_bit_Adder_t3_0/Full_Adder_t3_3/AND_2_0/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_3/AND_2_0/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1275 4_bit_Adder_t3_0/Full_Adder_t3_3/m1_295_n32# 4_bit_Adder_t3_0/Full_Adder_t3_3/AND_2_0/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1276 VDD 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_0/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/Full_Adder_t3_3/m1_0_n50# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_0/OR_2_0/w_40_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=135 ps=48
+M1277 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_0/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_0/m1_65_n48# GND Gnd CMOSN w=15 l=5
++  ad=210 pd=88 as=0 ps=0
+M1278 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_0/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_0/m1_65_n48# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_0/OR_2_0/a_n35_5# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_0/OR_2_0/w_n1_n2# CMOSP w=15 l=5
++  ad=135 pd=48 as=270 ps=96
+M1279 4_bit_Adder_t3_0/Full_Adder_t3_3/m1_0_n50# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_0/OR_2_0/a_n35_n16# GND Gnd CMOSN w=15 l=5
++  ad=105 pd=44 as=0 ps=0
+M1280 VDD 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_0/m1_68_43# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_0/OR_2_0/a_n35_5# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_0/OR_2_0/w_n42_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1281 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_0/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_0/m1_68_43# GND Gnd CMOSN w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1282 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_0/m1_n97_39# A1 GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1283 VDD A1 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_0/m1_n97_39# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_0/CMOS_in_0/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1284 VDD 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_0/m1_n97_39# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_0/AND_2_0/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_0/AND_2_0/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1285 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_0/AND_2_0/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_0/m1_n97_39# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_0/AND_2_0/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1286 VDD 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_0/AND_2_0/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_0/m1_68_43# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_0/AND_2_0/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1287 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_0/AND_2_0/a_10_n33# 4_bit_Adder_t3_0/m1_938_7# GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1288 VDD 4_bit_Adder_t3_0/m1_938_7# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_0/AND_2_0/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_0/AND_2_0/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1289 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_0/m1_68_43# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_0/AND_2_0/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1290 VDD 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_0/m1_n101_n52# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_0/AND_2_1/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_0/AND_2_1/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1291 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_0/AND_2_1/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_0/m1_n101_n52# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_0/AND_2_1/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1292 VDD 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_0/AND_2_1/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_0/m1_65_n48# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_0/AND_2_1/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1293 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_0/AND_2_1/a_10_n33# A1 GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1294 VDD A1 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_0/AND_2_1/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_0/AND_2_1/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1295 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_0/m1_65_n48# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_0/AND_2_1/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1296 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_0/m1_n101_n52# 4_bit_Adder_t3_0/m1_938_7# GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1297 VDD 4_bit_Adder_t3_0/m1_938_7# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_0/m1_n101_n52# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_0/CMOS_in_1/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1298 VDD 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_1/OR_2_0/a_n35_n16# m1_814_138# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_1/OR_2_0/w_40_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=135 ps=48
+M1299 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_1/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_1/m1_65_n48# GND Gnd CMOSN w=15 l=5
++  ad=210 pd=88 as=0 ps=0
+M1300 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_1/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_1/m1_65_n48# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_1/OR_2_0/a_n35_5# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_1/OR_2_0/w_n1_n2# CMOSP w=15 l=5
++  ad=135 pd=48 as=270 ps=96
+M1301 m1_814_138# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_1/OR_2_0/a_n35_n16# GND Gnd CMOSN w=15 l=5
++  ad=105 pd=44 as=0 ps=0
+M1302 VDD 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_1/m1_68_43# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_1/OR_2_0/a_n35_5# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_1/OR_2_0/w_n42_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1303 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_1/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_1/m1_68_43# GND Gnd CMOSN w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1304 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_1/m1_n97_39# 4_bit_Adder_t3_0/Full_Adder_t3_3/m1_0_n50# GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1305 VDD 4_bit_Adder_t3_0/Full_Adder_t3_3/m1_0_n50# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_1/m1_n97_39# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_1/CMOS_in_0/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1306 VDD 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_1/m1_n97_39# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_1/AND_2_0/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_1/AND_2_0/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1307 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_1/AND_2_0/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_1/m1_n97_39# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_1/AND_2_0/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1308 VDD 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_1/AND_2_0/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_1/m1_68_43# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_1/AND_2_0/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1309 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_1/AND_2_0/a_10_n33# 4_bit_Adder_t3_0/m1_543_110# GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1310 VDD 4_bit_Adder_t3_0/m1_543_110# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_1/AND_2_0/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_1/AND_2_0/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1311 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_1/m1_68_43# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_1/AND_2_0/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1312 VDD 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_1/m1_n101_n52# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_1/AND_2_1/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_1/AND_2_1/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1313 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_1/AND_2_1/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_1/m1_n101_n52# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_1/AND_2_1/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1314 VDD 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_1/AND_2_1/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_1/m1_65_n48# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_1/AND_2_1/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1315 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_1/AND_2_1/a_10_n33# 4_bit_Adder_t3_0/Full_Adder_t3_3/m1_0_n50# GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1316 VDD 4_bit_Adder_t3_0/Full_Adder_t3_3/m1_0_n50# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_1/AND_2_1/a_9_10# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_1/AND_2_1/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1317 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_1/m1_65_n48# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_1/AND_2_1/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1318 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_1/m1_n101_n52# 4_bit_Adder_t3_0/m1_543_110# GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1319 VDD 4_bit_Adder_t3_0/m1_543_110# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_1/m1_n101_n52# 4_bit_Adder_t3_0/Full_Adder_t3_3/XOR_1/CMOS_in_1/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1320 VDD 4_bit_Adder_t3_0/XOR_2/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/m1_941_n469# 4_bit_Adder_t3_0/XOR_2/OR_2_0/w_40_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=135 ps=48
+M1321 4_bit_Adder_t3_0/XOR_2/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/XOR_2/m1_65_n48# GND Gnd CMOSN w=15 l=5
++  ad=210 pd=88 as=0 ps=0
+M1322 4_bit_Adder_t3_0/XOR_2/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/XOR_2/m1_65_n48# 4_bit_Adder_t3_0/XOR_2/OR_2_0/a_n35_5# 4_bit_Adder_t3_0/XOR_2/OR_2_0/w_n1_n2# CMOSP w=15 l=5
++  ad=135 pd=48 as=270 ps=96
+M1323 4_bit_Adder_t3_0/m1_941_n469# 4_bit_Adder_t3_0/XOR_2/OR_2_0/a_n35_n16# GND Gnd CMOSN w=15 l=5
++  ad=105 pd=44 as=0 ps=0
+M1324 VDD 4_bit_Adder_t3_0/XOR_2/m1_68_43# 4_bit_Adder_t3_0/XOR_2/OR_2_0/a_n35_5# 4_bit_Adder_t3_0/XOR_2/OR_2_0/w_n42_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1325 4_bit_Adder_t3_0/XOR_2/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/XOR_2/m1_68_43# GND Gnd CMOSN w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1326 4_bit_Adder_t3_0/XOR_2/m1_n97_39# B3 GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1327 VDD B3 4_bit_Adder_t3_0/XOR_2/m1_n97_39# 4_bit_Adder_t3_0/XOR_2/CMOS_in_0/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1328 VDD 4_bit_Adder_t3_0/XOR_2/m1_n97_39# 4_bit_Adder_t3_0/XOR_2/AND_2_0/a_9_10# 4_bit_Adder_t3_0/XOR_2/AND_2_0/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1329 4_bit_Adder_t3_0/XOR_2/AND_2_0/a_9_10# 4_bit_Adder_t3_0/XOR_2/m1_n97_39# 4_bit_Adder_t3_0/XOR_2/AND_2_0/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1330 VDD 4_bit_Adder_t3_0/XOR_2/AND_2_0/a_9_10# 4_bit_Adder_t3_0/XOR_2/m1_68_43# 4_bit_Adder_t3_0/XOR_2/AND_2_0/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1331 4_bit_Adder_t3_0/XOR_2/AND_2_0/a_10_n33# Sel1 GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1332 VDD Sel1 4_bit_Adder_t3_0/XOR_2/AND_2_0/a_9_10# 4_bit_Adder_t3_0/XOR_2/AND_2_0/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1333 4_bit_Adder_t3_0/XOR_2/m1_68_43# 4_bit_Adder_t3_0/XOR_2/AND_2_0/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1334 VDD 4_bit_Adder_t3_0/XOR_2/m1_n101_n52# 4_bit_Adder_t3_0/XOR_2/AND_2_1/a_9_10# 4_bit_Adder_t3_0/XOR_2/AND_2_1/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1335 4_bit_Adder_t3_0/XOR_2/AND_2_1/a_9_10# 4_bit_Adder_t3_0/XOR_2/m1_n101_n52# 4_bit_Adder_t3_0/XOR_2/AND_2_1/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1336 VDD 4_bit_Adder_t3_0/XOR_2/AND_2_1/a_9_10# 4_bit_Adder_t3_0/XOR_2/m1_65_n48# 4_bit_Adder_t3_0/XOR_2/AND_2_1/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1337 4_bit_Adder_t3_0/XOR_2/AND_2_1/a_10_n33# B3 GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1338 VDD B3 4_bit_Adder_t3_0/XOR_2/AND_2_1/a_9_10# 4_bit_Adder_t3_0/XOR_2/AND_2_1/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1339 4_bit_Adder_t3_0/XOR_2/m1_65_n48# 4_bit_Adder_t3_0/XOR_2/AND_2_1/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1340 4_bit_Adder_t3_0/XOR_2/m1_n101_n52# Sel1 GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1341 VDD Sel1 4_bit_Adder_t3_0/XOR_2/m1_n101_n52# 4_bit_Adder_t3_0/XOR_2/CMOS_in_1/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1342 VDD 4_bit_Adder_t3_0/XOR_3/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/m1_938_n224# 4_bit_Adder_t3_0/XOR_3/OR_2_0/w_40_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=135 ps=48
+M1343 4_bit_Adder_t3_0/XOR_3/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/XOR_3/m1_65_n48# GND Gnd CMOSN w=15 l=5
++  ad=210 pd=88 as=0 ps=0
+M1344 4_bit_Adder_t3_0/XOR_3/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/XOR_3/m1_65_n48# 4_bit_Adder_t3_0/XOR_3/OR_2_0/a_n35_5# 4_bit_Adder_t3_0/XOR_3/OR_2_0/w_n1_n2# CMOSP w=15 l=5
++  ad=135 pd=48 as=270 ps=96
+M1345 4_bit_Adder_t3_0/m1_938_n224# 4_bit_Adder_t3_0/XOR_3/OR_2_0/a_n35_n16# GND Gnd CMOSN w=15 l=5
++  ad=105 pd=44 as=0 ps=0
+M1346 VDD 4_bit_Adder_t3_0/XOR_3/m1_68_43# 4_bit_Adder_t3_0/XOR_3/OR_2_0/a_n35_5# 4_bit_Adder_t3_0/XOR_3/OR_2_0/w_n42_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1347 4_bit_Adder_t3_0/XOR_3/OR_2_0/a_n35_n16# 4_bit_Adder_t3_0/XOR_3/m1_68_43# GND Gnd CMOSN w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1348 4_bit_Adder_t3_0/XOR_3/m1_n97_39# B2 GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1349 VDD B2 4_bit_Adder_t3_0/XOR_3/m1_n97_39# 4_bit_Adder_t3_0/XOR_3/CMOS_in_0/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1350 VDD 4_bit_Adder_t3_0/XOR_3/m1_n97_39# 4_bit_Adder_t3_0/XOR_3/AND_2_0/a_9_10# 4_bit_Adder_t3_0/XOR_3/AND_2_0/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1351 4_bit_Adder_t3_0/XOR_3/AND_2_0/a_9_10# 4_bit_Adder_t3_0/XOR_3/m1_n97_39# 4_bit_Adder_t3_0/XOR_3/AND_2_0/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1352 VDD 4_bit_Adder_t3_0/XOR_3/AND_2_0/a_9_10# 4_bit_Adder_t3_0/XOR_3/m1_68_43# 4_bit_Adder_t3_0/XOR_3/AND_2_0/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1353 4_bit_Adder_t3_0/XOR_3/AND_2_0/a_10_n33# Sel1 GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1354 VDD Sel1 4_bit_Adder_t3_0/XOR_3/AND_2_0/a_9_10# 4_bit_Adder_t3_0/XOR_3/AND_2_0/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1355 4_bit_Adder_t3_0/XOR_3/m1_68_43# 4_bit_Adder_t3_0/XOR_3/AND_2_0/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1356 VDD 4_bit_Adder_t3_0/XOR_3/m1_n101_n52# 4_bit_Adder_t3_0/XOR_3/AND_2_1/a_9_10# 4_bit_Adder_t3_0/XOR_3/AND_2_1/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1357 4_bit_Adder_t3_0/XOR_3/AND_2_1/a_9_10# 4_bit_Adder_t3_0/XOR_3/m1_n101_n52# 4_bit_Adder_t3_0/XOR_3/AND_2_1/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1358 VDD 4_bit_Adder_t3_0/XOR_3/AND_2_1/a_9_10# 4_bit_Adder_t3_0/XOR_3/m1_65_n48# 4_bit_Adder_t3_0/XOR_3/AND_2_1/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1359 4_bit_Adder_t3_0/XOR_3/AND_2_1/a_10_n33# B2 GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1360 VDD B2 4_bit_Adder_t3_0/XOR_3/AND_2_1/a_9_10# 4_bit_Adder_t3_0/XOR_3/AND_2_1/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1361 4_bit_Adder_t3_0/XOR_3/m1_65_n48# 4_bit_Adder_t3_0/XOR_3/AND_2_1/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1362 4_bit_Adder_t3_0/XOR_3/m1_n101_n52# Sel1 GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1363 VDD Sel1 4_bit_Adder_t3_0/XOR_3/m1_n101_n52# 4_bit_Adder_t3_0/XOR_3/CMOS_in_1/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1364 VDD m1_1573_797# AND_2_1/a_9_10# AND_2_1/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1365 AND_2_1/a_9_10# m1_1573_797# AND_2_1/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1366 VDD AND_2_1/a_9_10# S2 AND_2_1/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1367 AND_2_1/a_10_n33# m1_366_137# GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1368 VDD m1_366_137# AND_2_1/a_9_10# AND_2_1/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1369 S2 AND_2_1/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1370 VDD m1_1573_797# AND_2_0/a_9_10# AND_2_0/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1371 AND_2_0/a_9_10# m1_1573_797# AND_2_0/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1372 VDD AND_2_0/a_9_10# S3 AND_2_0/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1373 AND_2_0/a_10_n33# m1_366_591# GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1374 VDD m1_366_591# AND_2_0/a_9_10# AND_2_0/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1375 S3 AND_2_0/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1376 VDD m1_1573_797# AND_2_2/a_9_10# AND_2_2/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1377 AND_2_2/a_9_10# m1_1573_797# AND_2_2/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1378 VDD AND_2_2/a_9_10# S1 AND_2_2/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1379 AND_2_2/a_10_n33# m1_814_138# GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1380 VDD m1_814_138# AND_2_2/a_9_10# AND_2_2/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1381 S1 AND_2_2/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1382 VDD m1_1573_797# AND_2_3/a_9_10# AND_2_3/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1383 AND_2_3/a_9_10# m1_1573_797# AND_2_3/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1384 VDD AND_2_3/a_9_10# S0 AND_2_3/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1385 AND_2_3/a_10_n33# m1_813_593# GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1386 VDD m1_813_593# AND_2_3/a_9_10# AND_2_3/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1387 S0 AND_2_3/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1388 4_bit_Comp_t2_0/4_input_OR_0/a_14_n20# 4_bit_Comp_t2_0/A0nB0 GND Gnd CMOSN w=12 l=4
++  ad=384 pd=160 as=0 ps=0
+M1389 Lth 4_bit_Comp_t2_0/4_input_OR_0/a_14_n20# GND Gnd CMOSN w=12 l=4
++  ad=96 pd=40 as=0 ps=0
+M1390 4_bit_Comp_t2_0/4_input_OR_0/a_14_n20# 4_bit_Comp_t2_0/A2nB2 GND Gnd CMOSN w=12 l=4
++  ad=0 pd=0 as=0 ps=0
+M1391 4_bit_Comp_t2_0/4_input_OR_0/a_14_n20# 4_bit_Comp_t2_0/A3nB3 GND Gnd CMOSN w=12 l=4
++  ad=0 pd=0 as=0 ps=0
+M1392 VDD 4_bit_Comp_t2_0/A0nB0 4_bit_Comp_t2_0/4_input_OR_0/a_14_5# 4_bit_Comp_t2_0/4_input_OR_0/w_n2_n2# CMOSP w=12 l=4
++  ad=0 pd=0 as=192 ps=80
+M1393 4_bit_Comp_t2_0/4_input_OR_0/a_72_17# 4_bit_Comp_t2_0/A1nB1 4_bit_Comp_t2_0/4_input_OR_0/a_14_5# 4_bit_Comp_t2_0/4_input_OR_0/w_56_n2# CMOSP w=12 l=4
++  ad=216 pd=84 as=0 ps=0
+M1394 4_bit_Comp_t2_0/4_input_OR_0/a_14_n20# 4_bit_Comp_t2_0/A2nB2 4_bit_Comp_t2_0/4_input_OR_0/a_130_5# 4_bit_Comp_t2_0/4_input_OR_0/w_171_n2# CMOSP w=12 l=4
++  ad=108 pd=42 as=192 ps=80
+M1395 VDD 4_bit_Comp_t2_0/4_input_OR_0/a_14_n20# Lth 4_bit_Comp_t2_0/4_input_OR_0/w_227_n2# CMOSP w=12 l=4
++  ad=0 pd=0 as=96 ps=40
+M1396 4_bit_Comp_t2_0/4_input_OR_0/a_14_n20# 4_bit_Comp_t2_0/A1nB1 GND Gnd CMOSN w=12 l=4
++  ad=0 pd=0 as=0 ps=0
+M1397 4_bit_Comp_t2_0/4_input_OR_0/a_72_17# 4_bit_Comp_t2_0/A3nB3 4_bit_Comp_t2_0/4_input_OR_0/a_130_5# 4_bit_Comp_t2_0/4_input_OR_0/w_114_n2# CMOSP w=12 l=4
++  ad=0 pd=0 as=0 ps=0
+M1398 4_bit_Comp_t2_0/4_input_OR_1/a_14_n20# 4_bit_Comp_t2_0/m1_237_n357# GND Gnd CMOSN w=12 l=4
++  ad=384 pd=160 as=0 ps=0
+M1399 Gth 4_bit_Comp_t2_0/4_input_OR_1/a_14_n20# GND Gnd CMOSN w=12 l=4
++  ad=96 pd=40 as=0 ps=0
+M1400 4_bit_Comp_t2_0/4_input_OR_1/a_14_n20# 4_bit_Comp_t2_0/a_442_n358# GND Gnd CMOSN w=12 l=4
++  ad=0 pd=0 as=0 ps=0
+M1401 4_bit_Comp_t2_0/4_input_OR_1/a_14_n20# 4_bit_Comp_t2_0/a_384_n389# GND Gnd CMOSN w=12 l=4
++  ad=0 pd=0 as=0 ps=0
+M1402 VDD 4_bit_Comp_t2_0/m1_237_n357# 4_bit_Comp_t2_0/4_input_OR_1/a_14_5# 4_bit_Comp_t2_0/4_input_OR_1/w_n2_n2# CMOSP w=12 l=4
++  ad=0 pd=0 as=192 ps=80
+M1403 4_bit_Comp_t2_0/4_input_OR_1/a_72_17# 4_bit_Comp_t2_0/m1_293_n361# 4_bit_Comp_t2_0/4_input_OR_1/a_14_5# 4_bit_Comp_t2_0/4_input_OR_1/w_56_n2# CMOSP w=12 l=4
++  ad=216 pd=84 as=0 ps=0
+M1404 4_bit_Comp_t2_0/4_input_OR_1/a_14_n20# 4_bit_Comp_t2_0/a_442_n358# 4_bit_Comp_t2_0/4_input_OR_1/a_130_5# 4_bit_Comp_t2_0/4_input_OR_1/w_171_n2# CMOSP w=12 l=4
++  ad=108 pd=42 as=192 ps=80
+M1405 VDD 4_bit_Comp_t2_0/4_input_OR_1/a_14_n20# Gth 4_bit_Comp_t2_0/4_input_OR_1/w_227_n2# CMOSP w=12 l=4
++  ad=0 pd=0 as=96 ps=40
+M1406 4_bit_Comp_t2_0/4_input_OR_1/a_14_n20# 4_bit_Comp_t2_0/m1_293_n361# GND Gnd CMOSN w=12 l=4
++  ad=0 pd=0 as=0 ps=0
+M1407 4_bit_Comp_t2_0/4_input_OR_1/a_72_17# 4_bit_Comp_t2_0/a_384_n389# 4_bit_Comp_t2_0/4_input_OR_1/a_130_5# 4_bit_Comp_t2_0/4_input_OR_1/w_114_n2# CMOSP w=12 l=4
++  ad=0 pd=0 as=0 ps=0
+M1408 4_bit_Comp_t2_0/m1_n83_113# A3 GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1409 VDD A3 4_bit_Comp_t2_0/m1_n83_113# 4_bit_Comp_t2_0/CMOS_in_0/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1410 VDD 4_bit_Comp_t2_0/m1_n121_n17# 4_bit_Comp_t2_0/AND_2_1/a_9_10# 4_bit_Comp_t2_0/AND_2_1/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1411 4_bit_Comp_t2_0/AND_2_1/a_9_10# 4_bit_Comp_t2_0/m1_n121_n17# 4_bit_Comp_t2_0/AND_2_1/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1412 VDD 4_bit_Comp_t2_0/AND_2_1/a_9_10# 4_bit_Comp_t2_0/m1_237_n357# 4_bit_Comp_t2_0/AND_2_1/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1413 4_bit_Comp_t2_0/AND_2_1/a_10_n33# A3 GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1414 VDD A3 4_bit_Comp_t2_0/AND_2_1/a_9_10# 4_bit_Comp_t2_0/AND_2_1/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1415 4_bit_Comp_t2_0/m1_237_n357# 4_bit_Comp_t2_0/AND_2_1/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1416 VDD 4_bit_Comp_t2_0/m1_n83_113# 4_bit_Comp_t2_0/AND_2_0/a_9_10# 4_bit_Comp_t2_0/AND_2_0/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1417 4_bit_Comp_t2_0/AND_2_0/a_9_10# 4_bit_Comp_t2_0/m1_n83_113# 4_bit_Comp_t2_0/AND_2_0/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1418 VDD 4_bit_Comp_t2_0/AND_2_0/a_9_10# 4_bit_Comp_t2_0/A3nB3 4_bit_Comp_t2_0/AND_2_0/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1419 4_bit_Comp_t2_0/AND_2_0/a_10_n33# B3 GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1420 VDD B3 4_bit_Comp_t2_0/AND_2_0/a_9_10# 4_bit_Comp_t2_0/AND_2_0/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1421 4_bit_Comp_t2_0/A3nB3 4_bit_Comp_t2_0/AND_2_0/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1422 4_bit_Comp_t2_0/m1_n121_n17# B3 GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1423 VDD B3 4_bit_Comp_t2_0/m1_n121_n17# 4_bit_Comp_t2_0/CMOS_in_1/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1424 4_bit_Comp_t2_0/m1_n70_n71# A2 GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1425 VDD A2 4_bit_Comp_t2_0/m1_n70_n71# 4_bit_Comp_t2_0/CMOS_in_2/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1426 4_bit_Comp_t2_0/m1_92_n284# A0 GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1427 VDD A0 4_bit_Comp_t2_0/m1_92_n284# 4_bit_Comp_t2_0/CMOS_in_4/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1428 4_bit_Comp_t2_0/m1_n72_n157# B2 GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1429 VDD B2 4_bit_Comp_t2_0/m1_n72_n157# 4_bit_Comp_t2_0/CMOS_in_3/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1430 4_bit_Comp_t2_0/m1_726_n284# B0 GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1431 VDD B0 4_bit_Comp_t2_0/m1_726_n284# 4_bit_Comp_t2_0/CMOS_in_5/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1432 4_bit_Comp_t2_0/m1_68_n377# A1 GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1433 VDD A1 4_bit_Comp_t2_0/m1_68_n377# 4_bit_Comp_t2_0/CMOS_in_6/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1434 4_bit_Comp_t2_0/m1_691_n360# B1 GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1435 VDD B1 4_bit_Comp_t2_0/m1_691_n360# 4_bit_Comp_t2_0/CMOS_in_7/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1436 4_bit_Comp_t2_0/4_input_AND_0/a_n21_n38# 4_bit_Comp_t2_0/m1_2_n284# 4_bit_Comp_t2_0/4_input_AND_0/a_n57_n49# Gnd CMOSN w=13 l=3
++  ad=208 pd=84 as=208 ps=84
+M1437 VDD 4_bit_Comp_t2_0/m1_2_n284# 4_bit_Comp_t2_0/4_input_AND_0/a_n57_n38# 4_bit_Comp_t2_0/4_input_AND_0/w_n28_n22# CMOSP w=13 l=4
++  ad=0 pd=0 as=468 ps=176
+M1438 GND B1 4_bit_Comp_t2_0/4_input_AND_0/a_14_n49# Gnd CMOSN w=13 l=3
++  ad=0 pd=0 as=208 ps=84
+M1439 GND 4_bit_Comp_t2_0/4_input_AND_0/a_n57_n38# 4_bit_Comp_t2_0/A1nB1 Gnd CMOSN w=13 l=3
++  ad=0 pd=0 as=104 ps=42
+M1440 4_bit_Comp_t2_0/4_input_AND_0/a_n21_n38# 4_bit_Comp_t2_0/m1_68_n377# 4_bit_Comp_t2_0/4_input_AND_0/a_14_n49# Gnd CMOSN w=13 l=3
++  ad=0 pd=0 as=0 ps=0
+M1441 VDD 4_bit_Comp_t2_0/m1_n45_n288# 4_bit_Comp_t2_0/4_input_AND_0/a_n57_n38# 4_bit_Comp_t2_0/4_input_AND_0/w_n64_n22# CMOSP w=13 l=4
++  ad=0 pd=0 as=0 ps=0
+M1442 VDD 4_bit_Comp_t2_0/m1_68_n377# 4_bit_Comp_t2_0/4_input_AND_0/a_n57_n38# 4_bit_Comp_t2_0/4_input_AND_0/w_7_n22# CMOSP w=13 l=4
++  ad=0 pd=0 as=0 ps=0
+M1443 4_bit_Comp_t2_0/4_input_AND_0/a_n57_n38# 4_bit_Comp_t2_0/m1_n45_n288# 4_bit_Comp_t2_0/4_input_AND_0/a_n57_n49# Gnd CMOSN w=13 l=3
++  ad=104 pd=42 as=0 ps=0
+M1444 VDD B1 4_bit_Comp_t2_0/4_input_AND_0/a_n57_n38# 4_bit_Comp_t2_0/4_input_AND_0/w_42_n22# CMOSP w=13 l=4
++  ad=0 pd=0 as=0 ps=0
+M1445 VDD 4_bit_Comp_t2_0/4_input_AND_0/a_n57_n38# 4_bit_Comp_t2_0/A1nB1 4_bit_Comp_t2_0/4_input_AND_0/w_77_n22# CMOSP w=13 l=4
++  ad=0 pd=0 as=117 ps=44
+M1446 4_bit_Comp_t2_0/5_input_AND_0/a_14_n29# 4_bit_Comp_t2_0/m1_n45_n288# 4_bit_Comp_t2_0/5_input_AND_0/a_4_n29# Gnd CMOSN w=12 l=2
++  ad=192 pd=80 as=96 ps=40
+M1447 4_bit_Comp_t2_0/5_input_AND_0/a_57_n29# 4_bit_Comp_t2_0/m1_2_n284# 4_bit_Comp_t2_0/5_input_AND_0/a_14_n29# Gnd CMOSN w=12 l=2
++  ad=192 pd=80 as=0 ps=0
+M1448 VDD 4_bit_Comp_t2_0/m1_34_n284# 4_bit_Comp_t2_0/5_input_AND_0/a_4_n29# 4_bit_Comp_t2_0/5_input_AND_0/w_86_n4# CMOSP w=14 l=4
++  ad=0 pd=0 as=770 ps=250
+M1449 VDD 4_bit_Comp_t2_0/m1_n45_n288# 4_bit_Comp_t2_0/5_input_AND_0/a_4_n29# 4_bit_Comp_t2_0/5_input_AND_0/w_n1_n4# CMOSP w=14 l=4
++  ad=0 pd=0 as=0 ps=0
+M1450 GND 4_bit_Comp_t2_0/5_input_AND_0/a_4_n29# 4_bit_Comp_t2_0/A0nB0 Gnd CMOSN w=12 l=2
++  ad=0 pd=0 as=96 ps=40
+M1451 VDD B0 4_bit_Comp_t2_0/5_input_AND_0/a_4_n29# 4_bit_Comp_t2_0/5_input_AND_0/w_174_n4# CMOSP w=14 l=4
++  ad=0 pd=0 as=0 ps=0
+M1452 VDD 4_bit_Comp_t2_0/m1_2_n284# 4_bit_Comp_t2_0/5_input_AND_0/a_4_n29# 4_bit_Comp_t2_0/5_input_AND_0/w_42_n4# CMOSP w=14 l=4
++  ad=0 pd=0 as=0 ps=0
+M1453 VDD 4_bit_Comp_t2_0/5_input_AND_0/a_4_n29# 4_bit_Comp_t2_0/A0nB0 4_bit_Comp_t2_0/5_input_AND_0/w_219_n4# CMOSP w=14 l=4
++  ad=0 pd=0 as=154 ps=50
+M1454 VDD 4_bit_Comp_t2_0/m1_92_n284# 4_bit_Comp_t2_0/5_input_AND_0/a_4_n29# 4_bit_Comp_t2_0/5_input_AND_0/w_130_n4# CMOSP w=14 l=4
++  ad=0 pd=0 as=0 ps=0
+M1455 GND B0 4_bit_Comp_t2_0/5_input_AND_0/a_145_n29# Gnd CMOSN w=12 l=2
++  ad=0 pd=0 as=192 ps=80
+M1456 4_bit_Comp_t2_0/5_input_AND_0/a_101_n29# 4_bit_Comp_t2_0/m1_34_n284# 4_bit_Comp_t2_0/5_input_AND_0/a_57_n29# Gnd CMOSN w=12 l=2
++  ad=192 pd=80 as=0 ps=0
+M1457 4_bit_Comp_t2_0/5_input_AND_0/a_145_n29# 4_bit_Comp_t2_0/m1_92_n284# 4_bit_Comp_t2_0/5_input_AND_0/a_101_n29# Gnd CMOSN w=12 l=2
++  ad=0 pd=0 as=0 ps=0
+M1458 4_bit_Comp_t2_0/5_input_AND_2/a_14_n29# a_1385_635# 4_bit_Comp_t2_0/5_input_AND_2/a_4_n29# Gnd CMOSN w=12 l=2
++  ad=192 pd=80 as=96 ps=40
+M1459 4_bit_Comp_t2_0/5_input_AND_2/a_57_n29# 4_bit_Comp_t2_0/m1_724_77# 4_bit_Comp_t2_0/5_input_AND_2/a_14_n29# Gnd CMOSN w=12 l=2
++  ad=192 pd=80 as=0 ps=0
+M1460 VDD 4_bit_Comp_t2_0/m1_n45_n288# 4_bit_Comp_t2_0/5_input_AND_2/a_4_n29# 4_bit_Comp_t2_0/5_input_AND_2/w_86_n4# CMOSP w=14 l=4
++  ad=0 pd=0 as=770 ps=250
+M1461 VDD a_1385_635# 4_bit_Comp_t2_0/5_input_AND_2/a_4_n29# 4_bit_Comp_t2_0/5_input_AND_2/w_n1_n4# CMOSP w=14 l=4
++  ad=0 pd=0 as=0 ps=0
+M1462 GND 4_bit_Comp_t2_0/5_input_AND_2/a_4_n29# Eql Gnd CMOSN w=12 l=2
++  ad=0 pd=0 as=96 ps=40
+M1463 VDD 4_bit_Comp_t2_0/m1_34_n284# 4_bit_Comp_t2_0/5_input_AND_2/a_4_n29# 4_bit_Comp_t2_0/5_input_AND_2/w_174_n4# CMOSP w=14 l=4
++  ad=0 pd=0 as=0 ps=0
+M1464 VDD 4_bit_Comp_t2_0/m1_724_77# 4_bit_Comp_t2_0/5_input_AND_2/a_4_n29# 4_bit_Comp_t2_0/5_input_AND_2/w_42_n4# CMOSP w=14 l=4
++  ad=0 pd=0 as=0 ps=0
+M1465 VDD 4_bit_Comp_t2_0/5_input_AND_2/a_4_n29# Eql 4_bit_Comp_t2_0/5_input_AND_2/w_219_n4# CMOSP w=14 l=4
++  ad=0 pd=0 as=154 ps=50
+M1466 VDD 4_bit_Comp_t2_0/m1_2_n284# 4_bit_Comp_t2_0/5_input_AND_2/a_4_n29# 4_bit_Comp_t2_0/5_input_AND_2/w_130_n4# CMOSP w=14 l=4
++  ad=0 pd=0 as=0 ps=0
+M1467 GND 4_bit_Comp_t2_0/m1_34_n284# 4_bit_Comp_t2_0/5_input_AND_2/a_145_n29# Gnd CMOSN w=12 l=2
++  ad=0 pd=0 as=192 ps=80
+M1468 4_bit_Comp_t2_0/5_input_AND_2/a_101_n29# 4_bit_Comp_t2_0/m1_n45_n288# 4_bit_Comp_t2_0/5_input_AND_2/a_57_n29# Gnd CMOSN w=12 l=2
++  ad=192 pd=80 as=0 ps=0
+M1469 4_bit_Comp_t2_0/5_input_AND_2/a_145_n29# 4_bit_Comp_t2_0/m1_2_n284# 4_bit_Comp_t2_0/5_input_AND_2/a_101_n29# Gnd CMOSN w=12 l=2
++  ad=0 pd=0 as=0 ps=0
+M1470 4_bit_Comp_t2_0/4_input_AND_1/a_n21_n38# 4_bit_Comp_t2_0/m1_2_n284# 4_bit_Comp_t2_0/4_input_AND_1/a_n57_n49# Gnd CMOSN w=13 l=3
++  ad=208 pd=84 as=208 ps=84
+M1471 VDD 4_bit_Comp_t2_0/m1_2_n284# 4_bit_Comp_t2_0/4_input_AND_1/a_n57_n38# 4_bit_Comp_t2_0/4_input_AND_1/w_n28_n22# CMOSP w=13 l=4
++  ad=0 pd=0 as=468 ps=176
+M1472 GND 4_bit_Comp_t2_0/m1_691_n360# 4_bit_Comp_t2_0/4_input_AND_1/a_14_n49# Gnd CMOSN w=13 l=3
++  ad=0 pd=0 as=208 ps=84
+M1473 GND 4_bit_Comp_t2_0/4_input_AND_1/a_n57_n38# 4_bit_Comp_t2_0/a_384_n389# Gnd CMOSN w=13 l=3
++  ad=0 pd=0 as=104 ps=42
+M1474 4_bit_Comp_t2_0/4_input_AND_1/a_n21_n38# A1 4_bit_Comp_t2_0/4_input_AND_1/a_14_n49# Gnd CMOSN w=13 l=3
++  ad=0 pd=0 as=0 ps=0
+M1475 VDD 4_bit_Comp_t2_0/m1_n45_n288# 4_bit_Comp_t2_0/4_input_AND_1/a_n57_n38# 4_bit_Comp_t2_0/4_input_AND_1/w_n64_n22# CMOSP w=13 l=4
++  ad=0 pd=0 as=0 ps=0
+M1476 VDD A1 4_bit_Comp_t2_0/4_input_AND_1/a_n57_n38# 4_bit_Comp_t2_0/4_input_AND_1/w_7_n22# CMOSP w=13 l=4
++  ad=0 pd=0 as=0 ps=0
+M1477 4_bit_Comp_t2_0/4_input_AND_1/a_n57_n38# 4_bit_Comp_t2_0/m1_n45_n288# 4_bit_Comp_t2_0/4_input_AND_1/a_n57_n49# Gnd CMOSN w=13 l=3
++  ad=104 pd=42 as=0 ps=0
+M1478 VDD 4_bit_Comp_t2_0/m1_691_n360# 4_bit_Comp_t2_0/4_input_AND_1/a_n57_n38# 4_bit_Comp_t2_0/4_input_AND_1/w_42_n22# CMOSP w=13 l=4
++  ad=0 pd=0 as=0 ps=0
+M1479 VDD 4_bit_Comp_t2_0/4_input_AND_1/a_n57_n38# 4_bit_Comp_t2_0/a_384_n389# 4_bit_Comp_t2_0/4_input_AND_1/w_77_n22# CMOSP w=13 l=4
++  ad=0 pd=0 as=117 ps=44
+M1480 4_bit_Comp_t2_0/5_input_AND_1/a_14_n29# 4_bit_Comp_t2_0/m1_n45_n288# 4_bit_Comp_t2_0/5_input_AND_1/a_4_n29# Gnd CMOSN w=12 l=2
++  ad=192 pd=80 as=96 ps=40
+M1481 4_bit_Comp_t2_0/5_input_AND_1/a_57_n29# 4_bit_Comp_t2_0/m1_2_n284# 4_bit_Comp_t2_0/5_input_AND_1/a_14_n29# Gnd CMOSN w=12 l=2
++  ad=192 pd=80 as=0 ps=0
+M1482 VDD 4_bit_Comp_t2_0/m1_34_n284# 4_bit_Comp_t2_0/5_input_AND_1/a_4_n29# 4_bit_Comp_t2_0/5_input_AND_1/w_86_n4# CMOSP w=14 l=4
++  ad=0 pd=0 as=770 ps=250
+M1483 VDD 4_bit_Comp_t2_0/m1_n45_n288# 4_bit_Comp_t2_0/5_input_AND_1/a_4_n29# 4_bit_Comp_t2_0/5_input_AND_1/w_n1_n4# CMOSP w=14 l=4
++  ad=0 pd=0 as=0 ps=0
+M1484 GND 4_bit_Comp_t2_0/5_input_AND_1/a_4_n29# 4_bit_Comp_t2_0/a_442_n358# Gnd CMOSN w=12 l=2
++  ad=0 pd=0 as=96 ps=40
+M1485 VDD 4_bit_Comp_t2_0/m1_726_n284# 4_bit_Comp_t2_0/5_input_AND_1/a_4_n29# 4_bit_Comp_t2_0/5_input_AND_1/w_174_n4# CMOSP w=14 l=4
++  ad=0 pd=0 as=0 ps=0
+M1486 VDD 4_bit_Comp_t2_0/m1_2_n284# 4_bit_Comp_t2_0/5_input_AND_1/a_4_n29# 4_bit_Comp_t2_0/5_input_AND_1/w_42_n4# CMOSP w=14 l=4
++  ad=0 pd=0 as=0 ps=0
+M1487 VDD 4_bit_Comp_t2_0/5_input_AND_1/a_4_n29# 4_bit_Comp_t2_0/a_442_n358# 4_bit_Comp_t2_0/5_input_AND_1/w_219_n4# CMOSP w=14 l=4
++  ad=0 pd=0 as=154 ps=50
+M1488 VDD A0 4_bit_Comp_t2_0/5_input_AND_1/a_4_n29# 4_bit_Comp_t2_0/5_input_AND_1/w_130_n4# CMOSP w=14 l=4
++  ad=0 pd=0 as=0 ps=0
+M1489 GND 4_bit_Comp_t2_0/m1_726_n284# 4_bit_Comp_t2_0/5_input_AND_1/a_145_n29# Gnd CMOSN w=12 l=2
++  ad=0 pd=0 as=192 ps=80
+M1490 4_bit_Comp_t2_0/5_input_AND_1/a_101_n29# 4_bit_Comp_t2_0/m1_34_n284# 4_bit_Comp_t2_0/5_input_AND_1/a_57_n29# Gnd CMOSN w=12 l=2
++  ad=192 pd=80 as=0 ps=0
+M1491 4_bit_Comp_t2_0/5_input_AND_1/a_145_n29# A0 4_bit_Comp_t2_0/5_input_AND_1/a_101_n29# Gnd CMOSN w=12 l=2
++  ad=0 pd=0 as=0 ps=0
+M1492 4_bit_Comp_t2_0/3_input_AND_0/a_n2_n23# B2 GND Gnd CMOSN w=12 l=5
++  ad=168 pd=76 as=0 ps=0
+M1493 VDD 4_bit_Comp_t2_0/3_input_AND_0/a_n38_n23# 4_bit_Comp_t2_0/A2nB2 4_bit_Comp_t2_0/3_input_AND_0/w_64_n10# CMOSP w=12 l=4
++  ad=0 pd=0 as=108 ps=42
+M1494 4_bit_Comp_t2_0/3_input_AND_0/a_n38_n23# 4_bit_Comp_t2_0/m1_n45_n288# 4_bit_Comp_t2_0/3_input_AND_0/a_n38_n35# Gnd CMOSN w=12 l=5
++  ad=84 pd=38 as=168 ps=76
+M1495 VDD B2 4_bit_Comp_t2_0/3_input_AND_0/a_n38_n23# 4_bit_Comp_t2_0/3_input_AND_0/w_27_n10# CMOSP w=12 l=4
++  ad=0 pd=0 as=324 ps=126
+M1496 VDD 4_bit_Comp_t2_0/m1_n70_n71# 4_bit_Comp_t2_0/3_input_AND_0/a_n38_n23# 4_bit_Comp_t2_0/3_input_AND_0/w_n9_n10# CMOSP w=12 l=4
++  ad=0 pd=0 as=0 ps=0
+M1497 4_bit_Comp_t2_0/3_input_AND_0/a_n2_n23# 4_bit_Comp_t2_0/m1_n70_n71# 4_bit_Comp_t2_0/3_input_AND_0/a_n38_n35# Gnd CMOSN w=12 l=5
++  ad=0 pd=0 as=0 ps=0
+M1498 4_bit_Comp_t2_0/A2nB2 4_bit_Comp_t2_0/3_input_AND_0/a_n38_n23# GND Gnd CMOSN w=12 l=5
++  ad=84 pd=38 as=0 ps=0
+M1499 VDD 4_bit_Comp_t2_0/m1_n45_n288# 4_bit_Comp_t2_0/3_input_AND_0/a_n38_n23# 4_bit_Comp_t2_0/3_input_AND_0/w_n45_n10# CMOSP w=12 l=4
++  ad=0 pd=0 as=0 ps=0
+M1500 4_bit_Comp_t2_0/m1_n45_n288# 4_bit_Comp_t2_0/XNOR_0/m1_52_52# GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1501 VDD 4_bit_Comp_t2_0/XNOR_0/m1_52_52# 4_bit_Comp_t2_0/m1_n45_n288# 4_bit_Comp_t2_0/XNOR_0/CMOS_in_0/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1502 VDD 4_bit_Comp_t2_0/XNOR_0/XOR_0/OR_2_0/a_n35_n16# 4_bit_Comp_t2_0/XNOR_0/m1_52_52# 4_bit_Comp_t2_0/XNOR_0/XOR_0/OR_2_0/w_40_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=135 ps=48
+M1503 4_bit_Comp_t2_0/XNOR_0/XOR_0/OR_2_0/a_n35_n16# 4_bit_Comp_t2_0/XNOR_0/XOR_0/m1_65_n48# GND Gnd CMOSN w=15 l=5
++  ad=210 pd=88 as=0 ps=0
+M1504 4_bit_Comp_t2_0/XNOR_0/XOR_0/OR_2_0/a_n35_n16# 4_bit_Comp_t2_0/XNOR_0/XOR_0/m1_65_n48# 4_bit_Comp_t2_0/XNOR_0/XOR_0/OR_2_0/a_n35_5# 4_bit_Comp_t2_0/XNOR_0/XOR_0/OR_2_0/w_n1_n2# CMOSP w=15 l=5
++  ad=135 pd=48 as=270 ps=96
+M1505 4_bit_Comp_t2_0/XNOR_0/m1_52_52# 4_bit_Comp_t2_0/XNOR_0/XOR_0/OR_2_0/a_n35_n16# GND Gnd CMOSN w=15 l=5
++  ad=105 pd=44 as=0 ps=0
+M1506 VDD 4_bit_Comp_t2_0/XNOR_0/XOR_0/m1_68_43# 4_bit_Comp_t2_0/XNOR_0/XOR_0/OR_2_0/a_n35_5# 4_bit_Comp_t2_0/XNOR_0/XOR_0/OR_2_0/w_n42_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1507 4_bit_Comp_t2_0/XNOR_0/XOR_0/OR_2_0/a_n35_n16# 4_bit_Comp_t2_0/XNOR_0/XOR_0/m1_68_43# GND Gnd CMOSN w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1508 4_bit_Comp_t2_0/XNOR_0/XOR_0/m1_n97_39# A3 GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1509 VDD A3 4_bit_Comp_t2_0/XNOR_0/XOR_0/m1_n97_39# 4_bit_Comp_t2_0/XNOR_0/XOR_0/CMOS_in_0/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1510 VDD 4_bit_Comp_t2_0/XNOR_0/XOR_0/m1_n97_39# 4_bit_Comp_t2_0/XNOR_0/XOR_0/AND_2_0/a_9_10# 4_bit_Comp_t2_0/XNOR_0/XOR_0/AND_2_0/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1511 4_bit_Comp_t2_0/XNOR_0/XOR_0/AND_2_0/a_9_10# 4_bit_Comp_t2_0/XNOR_0/XOR_0/m1_n97_39# 4_bit_Comp_t2_0/XNOR_0/XOR_0/AND_2_0/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1512 VDD 4_bit_Comp_t2_0/XNOR_0/XOR_0/AND_2_0/a_9_10# 4_bit_Comp_t2_0/XNOR_0/XOR_0/m1_68_43# 4_bit_Comp_t2_0/XNOR_0/XOR_0/AND_2_0/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1513 4_bit_Comp_t2_0/XNOR_0/XOR_0/AND_2_0/a_10_n33# B3 GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1514 VDD B3 4_bit_Comp_t2_0/XNOR_0/XOR_0/AND_2_0/a_9_10# 4_bit_Comp_t2_0/XNOR_0/XOR_0/AND_2_0/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1515 4_bit_Comp_t2_0/XNOR_0/XOR_0/m1_68_43# 4_bit_Comp_t2_0/XNOR_0/XOR_0/AND_2_0/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1516 VDD 4_bit_Comp_t2_0/XNOR_0/XOR_0/m1_n101_n52# 4_bit_Comp_t2_0/XNOR_0/XOR_0/AND_2_1/a_9_10# 4_bit_Comp_t2_0/XNOR_0/XOR_0/AND_2_1/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1517 4_bit_Comp_t2_0/XNOR_0/XOR_0/AND_2_1/a_9_10# 4_bit_Comp_t2_0/XNOR_0/XOR_0/m1_n101_n52# 4_bit_Comp_t2_0/XNOR_0/XOR_0/AND_2_1/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1518 VDD 4_bit_Comp_t2_0/XNOR_0/XOR_0/AND_2_1/a_9_10# 4_bit_Comp_t2_0/XNOR_0/XOR_0/m1_65_n48# 4_bit_Comp_t2_0/XNOR_0/XOR_0/AND_2_1/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1519 4_bit_Comp_t2_0/XNOR_0/XOR_0/AND_2_1/a_10_n33# A3 GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1520 VDD A3 4_bit_Comp_t2_0/XNOR_0/XOR_0/AND_2_1/a_9_10# 4_bit_Comp_t2_0/XNOR_0/XOR_0/AND_2_1/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1521 4_bit_Comp_t2_0/XNOR_0/XOR_0/m1_65_n48# 4_bit_Comp_t2_0/XNOR_0/XOR_0/AND_2_1/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1522 4_bit_Comp_t2_0/XNOR_0/XOR_0/m1_n101_n52# B3 GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1523 VDD B3 4_bit_Comp_t2_0/XNOR_0/XOR_0/m1_n101_n52# 4_bit_Comp_t2_0/XNOR_0/XOR_0/CMOS_in_1/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1524 4_bit_Comp_t2_0/3_input_AND_1/a_n2_n23# 4_bit_Comp_t2_0/m1_n72_n157# GND Gnd CMOSN w=12 l=5
++  ad=168 pd=76 as=0 ps=0
+M1525 VDD 4_bit_Comp_t2_0/3_input_AND_1/a_n38_n23# 4_bit_Comp_t2_0/m1_293_n361# 4_bit_Comp_t2_0/3_input_AND_1/w_64_n10# CMOSP w=12 l=4
++  ad=0 pd=0 as=108 ps=42
+M1526 4_bit_Comp_t2_0/3_input_AND_1/a_n38_n23# 4_bit_Comp_t2_0/m1_n45_n288# 4_bit_Comp_t2_0/3_input_AND_1/a_n38_n35# Gnd CMOSN w=12 l=5
++  ad=84 pd=38 as=168 ps=76
+M1527 VDD 4_bit_Comp_t2_0/m1_n72_n157# 4_bit_Comp_t2_0/3_input_AND_1/a_n38_n23# 4_bit_Comp_t2_0/3_input_AND_1/w_27_n10# CMOSP w=12 l=4
++  ad=0 pd=0 as=324 ps=126
+M1528 VDD A2 4_bit_Comp_t2_0/3_input_AND_1/a_n38_n23# 4_bit_Comp_t2_0/3_input_AND_1/w_n9_n10# CMOSP w=12 l=4
++  ad=0 pd=0 as=0 ps=0
+M1529 4_bit_Comp_t2_0/3_input_AND_1/a_n2_n23# A2 4_bit_Comp_t2_0/3_input_AND_1/a_n38_n35# Gnd CMOSN w=12 l=5
++  ad=0 pd=0 as=0 ps=0
+M1530 4_bit_Comp_t2_0/m1_293_n361# 4_bit_Comp_t2_0/3_input_AND_1/a_n38_n23# GND Gnd CMOSN w=12 l=5
++  ad=84 pd=38 as=0 ps=0
+M1531 VDD 4_bit_Comp_t2_0/m1_n45_n288# 4_bit_Comp_t2_0/3_input_AND_1/a_n38_n23# 4_bit_Comp_t2_0/3_input_AND_1/w_n45_n10# CMOSP w=12 l=4
++  ad=0 pd=0 as=0 ps=0
+M1532 4_bit_Comp_t2_0/m1_2_n284# 4_bit_Comp_t2_0/XNOR_1/m1_52_52# GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1533 VDD 4_bit_Comp_t2_0/XNOR_1/m1_52_52# 4_bit_Comp_t2_0/m1_2_n284# 4_bit_Comp_t2_0/XNOR_1/CMOS_in_0/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1534 VDD 4_bit_Comp_t2_0/XNOR_1/XOR_0/OR_2_0/a_n35_n16# 4_bit_Comp_t2_0/XNOR_1/m1_52_52# 4_bit_Comp_t2_0/XNOR_1/XOR_0/OR_2_0/w_40_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=135 ps=48
+M1535 4_bit_Comp_t2_0/XNOR_1/XOR_0/OR_2_0/a_n35_n16# 4_bit_Comp_t2_0/XNOR_1/XOR_0/m1_65_n48# GND Gnd CMOSN w=15 l=5
++  ad=210 pd=88 as=0 ps=0
+M1536 4_bit_Comp_t2_0/XNOR_1/XOR_0/OR_2_0/a_n35_n16# 4_bit_Comp_t2_0/XNOR_1/XOR_0/m1_65_n48# 4_bit_Comp_t2_0/XNOR_1/XOR_0/OR_2_0/a_n35_5# 4_bit_Comp_t2_0/XNOR_1/XOR_0/OR_2_0/w_n1_n2# CMOSP w=15 l=5
++  ad=135 pd=48 as=270 ps=96
+M1537 4_bit_Comp_t2_0/XNOR_1/m1_52_52# 4_bit_Comp_t2_0/XNOR_1/XOR_0/OR_2_0/a_n35_n16# GND Gnd CMOSN w=15 l=5
++  ad=105 pd=44 as=0 ps=0
+M1538 VDD 4_bit_Comp_t2_0/XNOR_1/XOR_0/m1_68_43# 4_bit_Comp_t2_0/XNOR_1/XOR_0/OR_2_0/a_n35_5# 4_bit_Comp_t2_0/XNOR_1/XOR_0/OR_2_0/w_n42_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1539 4_bit_Comp_t2_0/XNOR_1/XOR_0/OR_2_0/a_n35_n16# 4_bit_Comp_t2_0/XNOR_1/XOR_0/m1_68_43# GND Gnd CMOSN w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1540 4_bit_Comp_t2_0/XNOR_1/XOR_0/m1_n97_39# A2 GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1541 VDD A2 4_bit_Comp_t2_0/XNOR_1/XOR_0/m1_n97_39# 4_bit_Comp_t2_0/XNOR_1/XOR_0/CMOS_in_0/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1542 VDD 4_bit_Comp_t2_0/XNOR_1/XOR_0/m1_n97_39# 4_bit_Comp_t2_0/XNOR_1/XOR_0/AND_2_0/a_9_10# 4_bit_Comp_t2_0/XNOR_1/XOR_0/AND_2_0/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1543 4_bit_Comp_t2_0/XNOR_1/XOR_0/AND_2_0/a_9_10# 4_bit_Comp_t2_0/XNOR_1/XOR_0/m1_n97_39# 4_bit_Comp_t2_0/XNOR_1/XOR_0/AND_2_0/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1544 VDD 4_bit_Comp_t2_0/XNOR_1/XOR_0/AND_2_0/a_9_10# 4_bit_Comp_t2_0/XNOR_1/XOR_0/m1_68_43# 4_bit_Comp_t2_0/XNOR_1/XOR_0/AND_2_0/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1545 4_bit_Comp_t2_0/XNOR_1/XOR_0/AND_2_0/a_10_n33# B2 GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1546 VDD B2 4_bit_Comp_t2_0/XNOR_1/XOR_0/AND_2_0/a_9_10# 4_bit_Comp_t2_0/XNOR_1/XOR_0/AND_2_0/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1547 4_bit_Comp_t2_0/XNOR_1/XOR_0/m1_68_43# 4_bit_Comp_t2_0/XNOR_1/XOR_0/AND_2_0/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1548 VDD 4_bit_Comp_t2_0/XNOR_1/XOR_0/m1_n101_n52# 4_bit_Comp_t2_0/XNOR_1/XOR_0/AND_2_1/a_9_10# 4_bit_Comp_t2_0/XNOR_1/XOR_0/AND_2_1/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1549 4_bit_Comp_t2_0/XNOR_1/XOR_0/AND_2_1/a_9_10# 4_bit_Comp_t2_0/XNOR_1/XOR_0/m1_n101_n52# 4_bit_Comp_t2_0/XNOR_1/XOR_0/AND_2_1/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1550 VDD 4_bit_Comp_t2_0/XNOR_1/XOR_0/AND_2_1/a_9_10# 4_bit_Comp_t2_0/XNOR_1/XOR_0/m1_65_n48# 4_bit_Comp_t2_0/XNOR_1/XOR_0/AND_2_1/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1551 4_bit_Comp_t2_0/XNOR_1/XOR_0/AND_2_1/a_10_n33# A2 GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1552 VDD A2 4_bit_Comp_t2_0/XNOR_1/XOR_0/AND_2_1/a_9_10# 4_bit_Comp_t2_0/XNOR_1/XOR_0/AND_2_1/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1553 4_bit_Comp_t2_0/XNOR_1/XOR_0/m1_65_n48# 4_bit_Comp_t2_0/XNOR_1/XOR_0/AND_2_1/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1554 4_bit_Comp_t2_0/XNOR_1/XOR_0/m1_n101_n52# B2 GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1555 VDD B2 4_bit_Comp_t2_0/XNOR_1/XOR_0/m1_n101_n52# 4_bit_Comp_t2_0/XNOR_1/XOR_0/CMOS_in_1/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1556 4_bit_Comp_t2_0/m1_724_77# 4_bit_Comp_t2_0/XNOR_2/m1_52_52# GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1557 VDD 4_bit_Comp_t2_0/XNOR_2/m1_52_52# 4_bit_Comp_t2_0/m1_724_77# 4_bit_Comp_t2_0/XNOR_2/CMOS_in_0/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1558 VDD 4_bit_Comp_t2_0/XNOR_2/XOR_0/OR_2_0/a_n35_n16# 4_bit_Comp_t2_0/XNOR_2/m1_52_52# 4_bit_Comp_t2_0/XNOR_2/XOR_0/OR_2_0/w_40_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=135 ps=48
+M1559 4_bit_Comp_t2_0/XNOR_2/XOR_0/OR_2_0/a_n35_n16# 4_bit_Comp_t2_0/XNOR_2/XOR_0/m1_65_n48# GND Gnd CMOSN w=15 l=5
++  ad=210 pd=88 as=0 ps=0
+M1560 4_bit_Comp_t2_0/XNOR_2/XOR_0/OR_2_0/a_n35_n16# 4_bit_Comp_t2_0/XNOR_2/XOR_0/m1_65_n48# 4_bit_Comp_t2_0/XNOR_2/XOR_0/OR_2_0/a_n35_5# 4_bit_Comp_t2_0/XNOR_2/XOR_0/OR_2_0/w_n1_n2# CMOSP w=15 l=5
++  ad=135 pd=48 as=270 ps=96
+M1561 4_bit_Comp_t2_0/XNOR_2/m1_52_52# 4_bit_Comp_t2_0/XNOR_2/XOR_0/OR_2_0/a_n35_n16# GND Gnd CMOSN w=15 l=5
++  ad=105 pd=44 as=0 ps=0
+M1562 VDD 4_bit_Comp_t2_0/XNOR_2/XOR_0/m1_68_43# 4_bit_Comp_t2_0/XNOR_2/XOR_0/OR_2_0/a_n35_5# 4_bit_Comp_t2_0/XNOR_2/XOR_0/OR_2_0/w_n42_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1563 4_bit_Comp_t2_0/XNOR_2/XOR_0/OR_2_0/a_n35_n16# 4_bit_Comp_t2_0/XNOR_2/XOR_0/m1_68_43# GND Gnd CMOSN w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1564 4_bit_Comp_t2_0/XNOR_2/XOR_0/m1_n97_39# A0 GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1565 VDD A0 4_bit_Comp_t2_0/XNOR_2/XOR_0/m1_n97_39# 4_bit_Comp_t2_0/XNOR_2/XOR_0/CMOS_in_0/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1566 VDD 4_bit_Comp_t2_0/XNOR_2/XOR_0/m1_n97_39# 4_bit_Comp_t2_0/XNOR_2/XOR_0/AND_2_0/a_9_10# 4_bit_Comp_t2_0/XNOR_2/XOR_0/AND_2_0/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1567 4_bit_Comp_t2_0/XNOR_2/XOR_0/AND_2_0/a_9_10# 4_bit_Comp_t2_0/XNOR_2/XOR_0/m1_n97_39# 4_bit_Comp_t2_0/XNOR_2/XOR_0/AND_2_0/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1568 VDD 4_bit_Comp_t2_0/XNOR_2/XOR_0/AND_2_0/a_9_10# 4_bit_Comp_t2_0/XNOR_2/XOR_0/m1_68_43# 4_bit_Comp_t2_0/XNOR_2/XOR_0/AND_2_0/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1569 4_bit_Comp_t2_0/XNOR_2/XOR_0/AND_2_0/a_10_n33# B0 GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1570 VDD B0 4_bit_Comp_t2_0/XNOR_2/XOR_0/AND_2_0/a_9_10# 4_bit_Comp_t2_0/XNOR_2/XOR_0/AND_2_0/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1571 4_bit_Comp_t2_0/XNOR_2/XOR_0/m1_68_43# 4_bit_Comp_t2_0/XNOR_2/XOR_0/AND_2_0/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1572 VDD 4_bit_Comp_t2_0/XNOR_2/XOR_0/m1_n101_n52# 4_bit_Comp_t2_0/XNOR_2/XOR_0/AND_2_1/a_9_10# 4_bit_Comp_t2_0/XNOR_2/XOR_0/AND_2_1/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1573 4_bit_Comp_t2_0/XNOR_2/XOR_0/AND_2_1/a_9_10# 4_bit_Comp_t2_0/XNOR_2/XOR_0/m1_n101_n52# 4_bit_Comp_t2_0/XNOR_2/XOR_0/AND_2_1/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1574 VDD 4_bit_Comp_t2_0/XNOR_2/XOR_0/AND_2_1/a_9_10# 4_bit_Comp_t2_0/XNOR_2/XOR_0/m1_65_n48# 4_bit_Comp_t2_0/XNOR_2/XOR_0/AND_2_1/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1575 4_bit_Comp_t2_0/XNOR_2/XOR_0/AND_2_1/a_10_n33# A0 GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1576 VDD A0 4_bit_Comp_t2_0/XNOR_2/XOR_0/AND_2_1/a_9_10# 4_bit_Comp_t2_0/XNOR_2/XOR_0/AND_2_1/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1577 4_bit_Comp_t2_0/XNOR_2/XOR_0/m1_65_n48# 4_bit_Comp_t2_0/XNOR_2/XOR_0/AND_2_1/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1578 4_bit_Comp_t2_0/XNOR_2/XOR_0/m1_n101_n52# B0 GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1579 VDD B0 4_bit_Comp_t2_0/XNOR_2/XOR_0/m1_n101_n52# 4_bit_Comp_t2_0/XNOR_2/XOR_0/CMOS_in_1/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1580 4_bit_Comp_t2_0/m1_34_n284# 4_bit_Comp_t2_0/XNOR_3/m1_52_52# GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1581 VDD 4_bit_Comp_t2_0/XNOR_3/m1_52_52# 4_bit_Comp_t2_0/m1_34_n284# 4_bit_Comp_t2_0/XNOR_3/CMOS_in_0/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1582 VDD 4_bit_Comp_t2_0/XNOR_3/XOR_0/OR_2_0/a_n35_n16# 4_bit_Comp_t2_0/XNOR_3/m1_52_52# 4_bit_Comp_t2_0/XNOR_3/XOR_0/OR_2_0/w_40_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=135 ps=48
+M1583 4_bit_Comp_t2_0/XNOR_3/XOR_0/OR_2_0/a_n35_n16# 4_bit_Comp_t2_0/XNOR_3/XOR_0/m1_65_n48# GND Gnd CMOSN w=15 l=5
++  ad=210 pd=88 as=0 ps=0
+M1584 4_bit_Comp_t2_0/XNOR_3/XOR_0/OR_2_0/a_n35_n16# 4_bit_Comp_t2_0/XNOR_3/XOR_0/m1_65_n48# 4_bit_Comp_t2_0/XNOR_3/XOR_0/OR_2_0/a_n35_5# 4_bit_Comp_t2_0/XNOR_3/XOR_0/OR_2_0/w_n1_n2# CMOSP w=15 l=5
++  ad=135 pd=48 as=270 ps=96
+M1585 4_bit_Comp_t2_0/XNOR_3/m1_52_52# 4_bit_Comp_t2_0/XNOR_3/XOR_0/OR_2_0/a_n35_n16# GND Gnd CMOSN w=15 l=5
++  ad=105 pd=44 as=0 ps=0
+M1586 VDD 4_bit_Comp_t2_0/XNOR_3/XOR_0/m1_68_43# 4_bit_Comp_t2_0/XNOR_3/XOR_0/OR_2_0/a_n35_5# 4_bit_Comp_t2_0/XNOR_3/XOR_0/OR_2_0/w_n42_n2# CMOSP w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1587 4_bit_Comp_t2_0/XNOR_3/XOR_0/OR_2_0/a_n35_n16# 4_bit_Comp_t2_0/XNOR_3/XOR_0/m1_68_43# GND Gnd CMOSN w=15 l=5
++  ad=0 pd=0 as=0 ps=0
+M1588 4_bit_Comp_t2_0/XNOR_3/XOR_0/m1_n97_39# A1 GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1589 VDD A1 4_bit_Comp_t2_0/XNOR_3/XOR_0/m1_n97_39# 4_bit_Comp_t2_0/XNOR_3/XOR_0/CMOS_in_0/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1590 VDD 4_bit_Comp_t2_0/XNOR_3/XOR_0/m1_n97_39# 4_bit_Comp_t2_0/XNOR_3/XOR_0/AND_2_0/a_9_10# 4_bit_Comp_t2_0/XNOR_3/XOR_0/AND_2_0/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1591 4_bit_Comp_t2_0/XNOR_3/XOR_0/AND_2_0/a_9_10# 4_bit_Comp_t2_0/XNOR_3/XOR_0/m1_n97_39# 4_bit_Comp_t2_0/XNOR_3/XOR_0/AND_2_0/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1592 VDD 4_bit_Comp_t2_0/XNOR_3/XOR_0/AND_2_0/a_9_10# 4_bit_Comp_t2_0/XNOR_3/XOR_0/m1_68_43# 4_bit_Comp_t2_0/XNOR_3/XOR_0/AND_2_0/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1593 4_bit_Comp_t2_0/XNOR_3/XOR_0/AND_2_0/a_10_n33# B1 GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1594 VDD B1 4_bit_Comp_t2_0/XNOR_3/XOR_0/AND_2_0/a_9_10# 4_bit_Comp_t2_0/XNOR_3/XOR_0/AND_2_0/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1595 4_bit_Comp_t2_0/XNOR_3/XOR_0/m1_68_43# 4_bit_Comp_t2_0/XNOR_3/XOR_0/AND_2_0/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1596 VDD 4_bit_Comp_t2_0/XNOR_3/XOR_0/m1_n101_n52# 4_bit_Comp_t2_0/XNOR_3/XOR_0/AND_2_1/a_9_10# 4_bit_Comp_t2_0/XNOR_3/XOR_0/AND_2_1/w_n1_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=360 ps=116
+M1597 4_bit_Comp_t2_0/XNOR_3/XOR_0/AND_2_1/a_9_10# 4_bit_Comp_t2_0/XNOR_3/XOR_0/m1_n101_n52# 4_bit_Comp_t2_0/XNOR_3/XOR_0/AND_2_1/a_10_n33# Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=360 ps=112
+M1598 VDD 4_bit_Comp_t2_0/XNOR_3/XOR_0/AND_2_1/a_9_10# 4_bit_Comp_t2_0/XNOR_3/XOR_0/m1_65_n48# 4_bit_Comp_t2_0/XNOR_3/XOR_0/AND_2_1/w_101_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=180 ps=58
+M1599 4_bit_Comp_t2_0/XNOR_3/XOR_0/AND_2_1/a_10_n33# A1 GND Gnd CMOSN w=18 l=7
++  ad=0 pd=0 as=0 ps=0
+M1600 VDD A1 4_bit_Comp_t2_0/XNOR_3/XOR_0/AND_2_1/a_9_10# 4_bit_Comp_t2_0/XNOR_3/XOR_0/AND_2_1/w_50_1# CMOSP w=20 l=7
++  ad=0 pd=0 as=0 ps=0
+M1601 4_bit_Comp_t2_0/XNOR_3/XOR_0/m1_65_n48# 4_bit_Comp_t2_0/XNOR_3/XOR_0/AND_2_1/a_9_10# GND Gnd CMOSN w=18 l=7
++  ad=180 pd=56 as=0 ps=0
+M1602 4_bit_Comp_t2_0/XNOR_3/XOR_0/m1_n101_n52# B1 GND Gnd CMOSN w=14 l=4
++  ad=126 pd=46 as=0 ps=0
+M1603 VDD B1 4_bit_Comp_t2_0/XNOR_3/XOR_0/m1_n101_n52# 4_bit_Comp_t2_0/XNOR_3/XOR_0/CMOS_in_1/w_0_0# CMOSP w=14 l=4
++  ad=0 pd=0 as=126 ps=46
+M1604 4_bit_ANDer_t2_0/3_input_AND_0/a_n2_n23# B0 GND Gnd CMOSN w=12 l=5
++  ad=168 pd=76 as=0 ps=0
+M1605 VDD 4_bit_ANDer_t2_0/3_input_AND_0/a_n38_n23# C0 4_bit_ANDer_t2_0/3_input_AND_0/w_64_n10# CMOSP w=12 l=4
++  ad=0 pd=0 as=108 ps=42
+M1606 4_bit_ANDer_t2_0/3_input_AND_0/a_n38_n23# m1_1294_638# 4_bit_ANDer_t2_0/3_input_AND_0/a_n38_n35# Gnd CMOSN w=12 l=5
++  ad=84 pd=38 as=168 ps=76
+M1607 VDD B0 4_bit_ANDer_t2_0/3_input_AND_0/a_n38_n23# 4_bit_ANDer_t2_0/3_input_AND_0/w_27_n10# CMOSP w=12 l=4
++  ad=0 pd=0 as=324 ps=126
+M1608 VDD A0 4_bit_ANDer_t2_0/3_input_AND_0/a_n38_n23# 4_bit_ANDer_t2_0/3_input_AND_0/w_n9_n10# CMOSP w=12 l=4
++  ad=0 pd=0 as=0 ps=0
+M1609 4_bit_ANDer_t2_0/3_input_AND_0/a_n2_n23# A0 4_bit_ANDer_t2_0/3_input_AND_0/a_n38_n35# Gnd CMOSN w=12 l=5
++  ad=0 pd=0 as=0 ps=0
+M1610 C0 4_bit_ANDer_t2_0/3_input_AND_0/a_n38_n23# GND Gnd CMOSN w=12 l=5
++  ad=84 pd=38 as=0 ps=0
+M1611 VDD m1_1294_638# 4_bit_ANDer_t2_0/3_input_AND_0/a_n38_n23# 4_bit_ANDer_t2_0/3_input_AND_0/w_n45_n10# CMOSP w=12 l=4
++  ad=0 pd=0 as=0 ps=0
+M1612 4_bit_ANDer_t2_0/3_input_AND_1/a_n2_n23# B1 GND Gnd CMOSN w=12 l=5
++  ad=168 pd=76 as=0 ps=0
+M1613 VDD 4_bit_ANDer_t2_0/3_input_AND_1/a_n38_n23# C1 4_bit_ANDer_t2_0/3_input_AND_1/w_64_n10# CMOSP w=12 l=4
++  ad=0 pd=0 as=108 ps=42
+M1614 4_bit_ANDer_t2_0/3_input_AND_1/a_n38_n23# m1_1294_638# 4_bit_ANDer_t2_0/3_input_AND_1/a_n38_n35# Gnd CMOSN w=12 l=5
++  ad=84 pd=38 as=168 ps=76
+M1615 VDD B1 4_bit_ANDer_t2_0/3_input_AND_1/a_n38_n23# 4_bit_ANDer_t2_0/3_input_AND_1/w_27_n10# CMOSP w=12 l=4
++  ad=0 pd=0 as=324 ps=126
+M1616 VDD A1 4_bit_ANDer_t2_0/3_input_AND_1/a_n38_n23# 4_bit_ANDer_t2_0/3_input_AND_1/w_n9_n10# CMOSP w=12 l=4
++  ad=0 pd=0 as=0 ps=0
+M1617 4_bit_ANDer_t2_0/3_input_AND_1/a_n2_n23# A1 4_bit_ANDer_t2_0/3_input_AND_1/a_n38_n35# Gnd CMOSN w=12 l=5
++  ad=0 pd=0 as=0 ps=0
+M1618 C1 4_bit_ANDer_t2_0/3_input_AND_1/a_n38_n23# GND Gnd CMOSN w=12 l=5
++  ad=84 pd=38 as=0 ps=0
+M1619 VDD m1_1294_638# 4_bit_ANDer_t2_0/3_input_AND_1/a_n38_n23# 4_bit_ANDer_t2_0/3_input_AND_1/w_n45_n10# CMOSP w=12 l=4
++  ad=0 pd=0 as=0 ps=0
+M1620 4_bit_ANDer_t2_0/3_input_AND_2/a_n2_n23# B2 GND Gnd CMOSN w=12 l=5
++  ad=168 pd=76 as=0 ps=0
+M1621 VDD 4_bit_ANDer_t2_0/3_input_AND_2/a_n38_n23# C2 4_bit_ANDer_t2_0/3_input_AND_2/w_64_n10# CMOSP w=12 l=4
++  ad=0 pd=0 as=108 ps=42
+M1622 4_bit_ANDer_t2_0/3_input_AND_2/a_n38_n23# m1_1294_638# 4_bit_ANDer_t2_0/3_input_AND_2/a_n38_n35# Gnd CMOSN w=12 l=5
++  ad=84 pd=38 as=168 ps=76
+M1623 VDD B2 4_bit_ANDer_t2_0/3_input_AND_2/a_n38_n23# 4_bit_ANDer_t2_0/3_input_AND_2/w_27_n10# CMOSP w=12 l=4
++  ad=0 pd=0 as=324 ps=126
+M1624 VDD A2 4_bit_ANDer_t2_0/3_input_AND_2/a_n38_n23# 4_bit_ANDer_t2_0/3_input_AND_2/w_n9_n10# CMOSP w=12 l=4
++  ad=0 pd=0 as=0 ps=0
+M1625 4_bit_ANDer_t2_0/3_input_AND_2/a_n2_n23# A2 4_bit_ANDer_t2_0/3_input_AND_2/a_n38_n35# Gnd CMOSN w=12 l=5
++  ad=0 pd=0 as=0 ps=0
+M1626 C2 4_bit_ANDer_t2_0/3_input_AND_2/a_n38_n23# GND Gnd CMOSN w=12 l=5
++  ad=84 pd=38 as=0 ps=0
+M1627 VDD m1_1294_638# 4_bit_ANDer_t2_0/3_input_AND_2/a_n38_n23# 4_bit_ANDer_t2_0/3_input_AND_2/w_n45_n10# CMOSP w=12 l=4
++  ad=0 pd=0 as=0 ps=0
+M1628 4_bit_ANDer_t2_0/3_input_AND_3/a_n2_n23# B3 GND Gnd CMOSN w=12 l=5
++  ad=168 pd=76 as=0 ps=0
+M1629 VDD 4_bit_ANDer_t2_0/3_input_AND_3/a_n38_n23# C3 4_bit_ANDer_t2_0/3_input_AND_3/w_64_n10# CMOSP w=12 l=4
++  ad=0 pd=0 as=108 ps=42
+M1630 4_bit_ANDer_t2_0/3_input_AND_3/a_n38_n23# m1_1294_638# 4_bit_ANDer_t2_0/3_input_AND_3/a_n38_n35# Gnd CMOSN w=12 l=5
++  ad=84 pd=38 as=168 ps=76
+M1631 VDD B3 4_bit_ANDer_t2_0/3_input_AND_3/a_n38_n23# 4_bit_ANDer_t2_0/3_input_AND_3/w_27_n10# CMOSP w=12 l=4
++  ad=0 pd=0 as=324 ps=126
+M1632 VDD A3 4_bit_ANDer_t2_0/3_input_AND_3/a_n38_n23# 4_bit_ANDer_t2_0/3_input_AND_3/w_n9_n10# CMOSP w=12 l=4
++  ad=0 pd=0 as=0 ps=0
+M1633 4_bit_ANDer_t2_0/3_input_AND_3/a_n2_n23# A3 4_bit_ANDer_t2_0/3_input_AND_3/a_n38_n35# Gnd CMOSN w=12 l=5
++  ad=0 pd=0 as=0 ps=0
+M1634 C3 4_bit_ANDer_t2_0/3_input_AND_3/a_n38_n23# GND Gnd CMOSN w=12 l=5
++  ad=84 pd=38 as=0 ps=0
+M1635 VDD m1_1294_638# 4_bit_ANDer_t2_0/3_input_AND_3/a_n38_n23# 4_bit_ANDer_t2_0/3_input_AND_3/w_n45_n10# CMOSP w=12 l=4
++  ad=0 pd=0 as=0 ps=0
+C0 m1_366_137# m1_814_138# 4.97fF
+C1 GND VDD 54.28fF
+C2 4_bit_Adder_t3_0/m1_941_n469# m1_366_591# 2.35fF
+C3 4_bit_Adder_t3_0/m1_941_n469# A3 2.52fF
+C4 4_bit_Adder_t3_0/m1_939_251# VDD 2.24fF
+C5 GND 4_bit_Comp_t2_0/m1_n121_n17# 2.29fF
+C6 m1_813_593# m1_366_137# 2.15fF
+C7 m1_1573_797# m1_366_591# 2.61fF
+C8 4_bit_Comp_t2_0/m1_2_n284# B1 5.88fF
+C9 4_bit_Comp_t2_0/m1_n121_n17# A3 2.65fF
+C10 4_bit_Adder_t3_0/m1_938_n224# A2 2.35fF
+C11 A1 4_bit_Adder_t3_0/m1_938_7# 2.35fF
+C12 A2 B2 3.71fF
+C13 4_bit_Comp_t2_0/m1_n72_n157# B3 9.79fF
+C14 4_bit_Comp_t2_0/m1_2_n284# 4_bit_Comp_t2_0/m1_n45_n288# 6.69fF
+C15 VDD Sel1 2.99fF
+C16 4_bit_Adder_t3_0/m1_939_251# A0 2.35fF
+C17 4_bit_Comp_t2_0/m1_293_n361# 4_bit_Comp_t2_0/a_384_n389# 2.36fF
+C18 B1 Gnd 4.22fF
+C19 B0 Gnd 5.92fF
+C20 A0 Gnd 6.24fF
+C21 B2 Gnd 5.07fF
+C22 B3 Gnd 5.81fF
+C23 A3 Gnd 7.95fF
+C24 4_bit_Comp_t2_0/m1_n45_n288# Gnd 4.44fF
+C25 4_bit_Comp_t2_0/m1_34_n284# Gnd 2.78fF
+C26 4_bit_Comp_t2_0/m1_2_n284# Gnd 3.91fF
+C27 A2 Gnd 6.87fF
+C28 4_bit_Comp_t2_0/m1_n121_n17# Gnd 3.24fF
+C29 Sel1 Gnd 12.37fF
+C30 4_bit_Adder_t3_0/m1_543_110# Gnd 3.35fF
+C31 4_bit_Adder_t3_0/Full_Adder_t3_3/m1_0_n50# Gnd 3.47fF
+C32 4_bit_Adder_t3_0/m1_938_7# Gnd 4.02fF
+C33 A1 Gnd 6.69fF
+C34 VDD Gnd 35.41fF
+C35 4_bit_Adder_t3_0/m1_n28_n529# Gnd 3.48fF
+C36 4_bit_Adder_t3_0/Full_Adder_t3_2/m1_0_n50# Gnd 3.47fF
+C37 GND Gnd 59.06fF
+C38 4_bit_Adder_t3_0/m1_938_n224# Gnd 3.94fF
+C39 4_bit_Adder_t3_0/Full_Adder_t3_1/m1_0_n50# Gnd 3.47fF
+C40 4_bit_Adder_t3_0/m1_939_251# Gnd 2.49fF
+C41 4_bit_Adder_t3_0/m1_96_n327# Gnd 3.21fF
+C42 4_bit_Adder_t3_0/Full_Adder_t3_0/m1_0_n50# Gnd 3.47fF
+C43 4_bit_Adder_t3_0/m1_941_n469# Gnd 3.80fF
+C44 m1_1573_797# Gnd 3.73fF
+
+.control 
+run
+tran 10u 120n 
+plot v(S0) v(S1)+2 v(S2)+4 v(S3)+6
+plot v(Eql) v(Gth)+2 v(Lth)+4
+plot v(C0) v(C1)+2 v(C2)+4 v(C3)+6
+.endc 
+
+.end
