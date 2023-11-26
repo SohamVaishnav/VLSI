@@ -398,12 +398,60 @@ The main ALU code in Ngspice is shown below-
 For convenience, the \textbf{subckts} that have to be \textbf{.include}-ed haven't been shown in the above code.
 
 \subsection{MAGIC Layout}
+We now reach the final step of creating the 4-bit ALU, i.e. creating the layout using MAGIC. Here, we create the
+transistor-level layout using CMOS technology. \textbf{Note} that throughout the project we are using the TSMC 180nm
+technology. Therefore, the minimum permitted channel length in this case would be $0.18\mu$m. In MAGIC as well we 
+make use of \textbf{subcells} which are blocks of layouts that can be used to make a major layout.
+The following set of images shows the layouts of
+the major combinational blocks of the 4-bit ALU - \hyperlink{4DM}{Decoder}, \hyperlink{4ASM}{4-bit Add/Sub}, 
+\hyperlink{4CM}{4-bit Comparator}, \hyperlink{4AM}{4-bit ANDer} and finally the \hyperlink{4ALUM}{4-bit ALU}.
+\begin{figure}[htp]
+    \centering
+    \hypertarget{4DM}{\rotatebox{90}{\includegraphics[scale = 0.4]{Image_Decoder_mag.png}}}
+    \caption{Decoder Layout using MAGIC}
+    \label{fig:fig5}
+\end{figure}
+\begin{figure}[htp]
+    \centering
+    \hypertarget{4ASM}{\includegraphics[scale = 0.5]{Image_4-bit_AS_mag.png}}
+    \caption{4-bit Adder/Subtractor Layout using MAGIC}
+    \label{fig:fig6}
+\end{figure}
+\begin{figure}[htp]
+    \centering
+    \hypertarget{4CM}{\includegraphics[width = \textwidth, scale = 0.7]{Image_4-bit_Comp_mag.png}}
+    \caption{4-bit Comparator Layout using MAGIC}
+    \label{fig:fig7}
+\end{figure}
+\begin{figure}[htp]
+    \centering
+    \hypertarget{4AM}{\rotatebox{90}{\includegraphics[scale = 0.8]{Image_4-bit_ANDer_mag.png}}}
+    \caption{4-bit ANDer Layout using MAGIC}
+    \label{fig:fig8}
+\end{figure}
+\begin{figure}[htp]
+    \centering
+    \hypertarget{4ALUM}{\rotatebox{270}{\includegraphics[scale = 0.95]{Image_4-bit_ALU_mag.png}}}
+    \caption{4-bit ANDer Layout using MAGIC}
+    \label{fig:fig9}
+\end{figure}\newline
+The main part in MAGIC comes after the layout is made - when we need to convert it back to SPICE in order to check its 
+compliance with the gate-netlist that it was originally built from. 
+
 \section{Results and Inference}
-state the results - plots and delay analysis and analyse the design and netlist 
-of ALU based on the result 
+Now that all the components are built using all the tools, what's left is verification of the plots, i.e whether 
+the blocks are working as intended. For the same, I have posted all the plots obtained after using each of the three 
+tools. It is sufficient to paste the plots for the working of the entire ALU which indirectly verifies the working 
+of the individual blocks.
 \subsection{Verilog}
 \subsection{Ngspice}
 \subsection{MAGIC Layout}
+
 \section{Conclusion}
-conclude the project
+Wo observed that the 4-bit ALU, although very basic as compared to the used ones, served in effectively imparting the 
+knowledge that goes into designing and analysing it. It involves usage of multiple blocks which in turn are a combined 
+effort of smaller blocks - gates. After designing the logic and coding it in Verilog, we made use of NGSpice to
+create the transistor-level netlist. That lead us to its layout design using MAGIC which was again converted back to SPICE
+for verification. Finally, we ended the inference wuth delay analysis that was performed to identify the critical path of
+the entire circuit starting from the two 4-bit number inputs.
 \end{document}
