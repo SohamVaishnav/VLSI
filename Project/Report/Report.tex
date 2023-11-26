@@ -11,10 +11,18 @@
 \usepackage{graphicx}
 \usepackage{textcomp}
 \usepackage{xcolor}
+\usepackage{multicol}
 \usepackage{float}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
-    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \usepackage{titling}
+
+\lstdefinelanguage{SPICE}{
+  morekeywords={R,C,L,V,I},
+  sensitive=false,
+  morecomment=[l]{*},
+  morestring=[b]",
+}
 
 \title{
     \begin{center}
@@ -126,7 +134,7 @@ to the inputs to those blocks. The reasons are discussed below-
 \begin{itemize}
     \item To reduce the number of gates used which will therefore reduce the area of the layout 
     \item By applying enables to the inputs, we will create an issue for the Comparator, especially when it isn't to 
-    be used because then all the \textit{effective} inputs to the comparator will be 0 which will basically signal it 
+    be used because then all the \textit{effective} inputs to the comparator will be 0 which will basically signal it to 
     output a logic high at the \textbf{Eql}, thereby indicating that the inputs are equal, which is what we do not want 
     when other some other block is under use
 \end{itemize}
@@ -153,14 +161,242 @@ Therefore, based on the subtraction steps discussed earlier and using basic digi
 we note that if we XOR all bits with 1, they get inverted 
 and if we XOR them with 0, they remain the same, and if subtraction is to be performed, we put the first carry as 1 (to get
 2's complimentof the subtrahend), otherwise 0. Overall, the first carry will be the bit with which we XOR the bits of the
-second number.
+second number. \newline 
+Keeping these design principles in mind we follow the design as shown in \hyperlink{4AS}{Fig.3}. 
+Note that in the figure, \textbf{FA} stands for Full-Adder and $A_i$ and $B_i$ are the bits of the 
+two numbers. $S_i$ are the bits of the output and $C_i$ are the carries. $C_0$ is the first carry 
+which is equal to $M$ - the bit with which we XOR the bits $B_i$.
+\begin{figure}[htp]
+    \centering
+    \hypertarget{4AS}{\includegraphics[scale = 0.6]{Image_4-bit_Add-Sub.png}}
+    \caption{4-bit Adder/Subtractor}
+    \label{fig:fig2}
+\end{figure}
+
 \subsubsection{4-bit Comparator}
+The 4-bit Comparator does, as the name suggests, comparison between the two input numbers. The outputs to this 
+block are therefore \textbf{Eql}, \textbf{Gth} and \textbf{Lth} which stand for \textbf{Equal}, \textbf{Greater-than} and 
+\textbf{Less-than} respectively. It is important to note that we compare \textbf{B with respect to A} and not otherwise. 
+The logic for comparing A and B for the three conditions stated above is as follows-
+\begin{itemize}
+    \item \textbf{Eql} - For this purpose we XNOR $A_i$s and $B_i$s because according to the truth table of XNOR 
+    it returns a logic high when both the inputs are equal. Now, any two binary numbers are equal if all their bits are same
+    , i.e. all the XNORs must return a logic high. And one of the simplest ways to check this is to pass them though a 
+    5-input AND gate (5 because the $5^{th}$ input will be enable (\textbf{En})) which will return 1 only when all its 
+    inputs are 1.
+    \item \textbf{Gth} - The logic used here is based on the fact that we compare the numbers at the first bit where they differ.
+    Therefore, it only makes sense to start from the MSB. If MSB of both the numbers are equal then we move to the second bit
+    after MSB. But note that while moving to second bit, we must make sure that the first bits are not equal and therefore we
+    also take their XNOR into consideration. This applies to all the bits except for the MSB because there is no bit before that.
+    And since we are finding whether $A>B$, at every step we AND $A_i$ with $B_i^c$ alongside ANDing with the XNOR of  all $A_{i-1}$
+    and $B_{i-1}$ (again MSB are an exception because no previous bits). Finally we take an OR of the outputs of all the ANDs, which
+    will return a logic high if there is at least 1 bit where $A>B$
+    \item \textbf{Lth} - The logic here is exactly same as the one used for finding \textbf{Gth}. The only difference will be in the 
+    inputs given to the AND gates, where instead of $A_i$ and $B_i^c$, we now give $A_i^c$ and $B_i$. The rest remains same
+\end{itemize}
+Note that as done for \textbf{Eql}, we AND the final outputs of \textbf{Gth} and \textbf{Lth} (after ORing the outputs from 
+individual ANDs) with \textbf{En} that will be the output \textbf{D2} of the decoder. \newline 
+Interestingly, by applying Enable at the output end helps us eliminate the confusion regarding the numbers being equal that 
+would otherwise have persisted had we applied it at the input end. The logic-netlist for the same has been shown in 
+\hyperlink{4C}{Fig.4}.
+\begin{figure}[htp]
+    \centering
+    \hypertarget{4C}{\includegraphics[scale = 0.6]{Image_4-bit_Comparator.png}}
+    \caption{4-bit Comparator}
+    \label{fig:fig3}
+\end{figure}
+
 \subsubsection{4-bit ANDer}
+This is the simplest of all blocks in terms of its combinational logic. As the name suggests, we simply have to AND all
+the bits $A_i$ with bits $B_i$ and whatever results will be the 4-bit number which will be an ANDed version of the two inputs.
+The combinational logic has been demonstrated in \hyperlink{4A}{Fig.5}.
+\begin{figure}[htp]
+    \centering
+    \hypertarget{4A}{\includegraphics[scale = 1]{Image_4-bit_ANDer.png}}
+    \caption{4-bit ANDer}
+    \label{fig:fig4}
+\end{figure}
+Note that the outputs from each of these blocks will be further ANDed with \textbf{En} to comply with 
+our original idea of ANDing the enables to the outputs. Therefore, keeping this in mind, it would rather be better 
+to use 3-input AND gates which will reduce the transistor count by 10 in total.
+\\\\
+With this we end this section where all the designs have been discussed.
+
 \section{Tools/Platforms used for Building}
-explain which tools/platforms were used to build the project
-and explain what approach was taken while building those (subckt and subcells)
+Here, we explore the tools used to realise the logic for the combinational circuits discussed in the previous section.
+Three most fundamental tools have been used to build this each of which is discussed elaborately.
 \subsection{Verilog}
+Verilog helps in realising the logic-level coding which is basically the first step in ensuring that the logic we came up with 
+was correct and does indeed work the way it was intended. To make coding simpler, we make use of \textbf{modules} of each block 
+which made the code look more decipherable. The code and has been shown below-
+\begin{multicols}{2}
+\setlength{\columnseprule}{0.4pt}
+\begin{lstlisting}[language = Verilog]
+module two_four_Decoder
+(
+    input [1:0] Sel,
+    output [3:0] Y
+);
+and (Y[0],~Sel[1],~Sel[0]);
+and (Y[1],~Sel[1],Sel[0]);
+and (Y[2],Sel[1],~Sel[0]);
+and (Y[3],Sel[1],Sel[0]);
+endmodule
+
+
+module full_adder
+(
+    input A,B,C,
+    output [1:0] Y
+);
+wire w1,w2,c;
+and (c,A,B);
+xor (w1,A,B);
+
+xor (Y[0],w1,C);
+
+and (w2,C,w1);
+or (Y[1],c,w2);
+endmodule;
+
+module four_bit_Adder_Subtr
+(
+    input En,
+    input C0,
+    input [3:0] A,B,
+    output [4:0] Y
+);
+wire [3:0] b;
+xor (b[0],C0,B[0]);
+xor (b[1],C0,B[1]);
+xor (b[2],C0,B[2]);
+xor (b[3],C0,B[3]);
+
+wire [1:0] y1,y2,y3,y4;
+full_adder f1(A[0],b[0],
+C0,y1);
+and (Y[0],En,y1[0]);
+full_adder f2(A[1],b[1],
+y1[1],y2);
+and (Y[1],En,y2[0]);
+full_adder f3(A[2],b[2],
+y2[1],y3);
+and (Y[2],En,y3[0]);
+full_adder f4(A[3],b[3],
+y3[1],y4);
+and (Y[3],En,y4[0]);
+and (Y[4],En,y4[1]);
+endmodule
+
+module four_bit_Comp
+(
+    input En,
+    input [3:0] A,B,
+    output Eq,Gt,Lt
+);
+wire w1,w2,w3,w4;
+xnor (w1,A[0],B[0]);
+xnor (w2,A[1],B[1]);
+xnor (w3,A[2],B[2]);
+xnor (w4,A[3],B[3]);
+and (Eq,En,w1,w2,w3,
+w4);
+
+wire w5,w6,w7,w8,w13;
+and (w5,A[3],~B[3]);
+and (w6,w4,A[2],~B[2]);
+and (w7,w3,w4,A[1],~B[1]);
+and (w8,w2,w3,w4,A[0],
+~B[0]);
+or (w13,w5,w6,w7,w8);
+and (Gt,En,w13);
+
+wire w9,w10,w11,w12,
+w14;
+and (w9,~A[3],B[3]);
+and (w10,w4,~A[2],B[2]);
+and (w11,w3,w4,~A[1],B[1]);
+and (w12,w2,w3,w4,~A[0],
+B[0]);
+or (w14,w9,w10,w11,w12);
+and (Lt,En,w14);
+endmodule
+
+module four_bit_ANDer
+(
+    input En,
+    input [3:0]A,B,
+    output [3:0] Y
+);
+and (Y[0],En,A[0],B[0]);
+and (Y[1],En,A[1],B[1]);
+and (Y[2],En,A[2],B[2]);
+and (Y[3],En,A[3],B[3]);
+endmodule
+
+module four_bit_ALU
+(   
+    input [3:0] A,B,
+    input [1:0] Sel,
+    output [4:0] Y_addSub,
+    output [3:0] Y_and,
+    output Eq,Gt,Lt
+);
+wire [3:0] y;
+
+two_four_Decoder D(Sel,y);
+
+four_bit_Adder_Subtr 
+f1(!Sel[1],Sel[0],
+A,B,Y_addSub);
+four_bit_Comp 
+f3(y[2],A,B,Eq,Gt,Lt);
+four_bit_ANDer 
+f4(y[3],A,B,Y_and);
+endmodule
+\end{lstlisting}
+\end{multicols}
+
 \subsection{Ngspice}
+Ngspice is a language used to construct the gate-(or transistor)level netlist based on the boolean logic developed in
+Verilog. The approach taken here is the one where we declare \textbf{subckts} for individual gates and thereafter blocks.
+The main ALU code in Ngspice is shown below-
+\begin{multicols}{2}
+\setlength{\columnseprule}{0.4pt}
+\begin{lstlisting}[language = SPICE]
+    .title 4 Bit ALU
+    .include TSMC_180nm.txt
+    .global gnd
+    
+    VinSelD0 SelD_0 0 dc 0
+    VinSelD1 SelD_1 0 dc 0
+    
+    VDD vdd 0 1.8
+    
+    X1 SelD_0 SelD_1 
+    y1 y2 y3 y4 vdd 0 
+    2_4_Decoder
+
+    X5 y_as 
+    A3 A2 A1 A0 B3 B2 B1 B0 
+    C_over S3 S2 S1 S0 vdd 0 
+    4_bit_Adder_Sub
+    
+    X6 y3 
+    A3 A2 A1 A0 B3 B2 B1 B0 
+    Eql Gth Lth vdd 0 
+    4_bit_Comparator
+    
+    X7 y4 
+    A3 A2 A1 A0 B3 B2 B1 B0 
+    C3 C2 C1 C0 vdd 0 
+    4_bit_ANDer
+    
+    .end
+\end{lstlisting}
+\end{multicols}
+For convenience, the \textbf{subckts} that have to be \textbf{.include}-ed haven't been shown in the above code.
+
 \subsection{MAGIC Layout}
 \section{Results and Inference}
 state the results - plots and delay analysis and analyse the design and netlist 
