@@ -12,7 +12,7 @@
 \usepackage{textcomp}
 \usepackage{xcolor}
 \usepackage{multicol}
-\usepackage{float}
+% \usepackage{float}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
 T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \usepackage{titling}
@@ -85,7 +85,7 @@ The tools required to complete the project are -
 \section{Building the Individual Blocks}
 This section deals with the approach taken to build the individual blocks which 
 when put together, will result into a 4-bit ALU. The reasoning behind a particular design has also been
-discussed alongside.
+discussed alongside. (\textbf{4-bit ALU} block in \textbf{Section}~\ref{sec:Appendix})
 \subsection{2x4 Decoder and Enabler}
 To select a particular function/operation to be performed on the two 4-bit input 
 numbers, as discussed, we need either a MUX or a Decoder. \newline
@@ -128,7 +128,7 @@ Infering from \hyperlink{Dec}{Fig.2}, \textbf{A0} and \textbf{A1} stand for sele
 and \textbf{Sel1} respectively. Also, logically based on \hyperlink{dec_tab}{Table 1}, \textbf{D0} 
 corresponds to \textbf{Addition}, \textbf{D1} to \textbf{Subtraction}, \textbf{D2} to \textbf{Comparison} and 
 \textbf{D3} to \textbf{ANDing}. These outputs of the Decoder therefore serve as the \textit{Enables} (\textbf{En}) 
-for the functional combinational blocks. \newline 
+for the functional combinational blocks. Logic can be found in \textbf{Section}~\ref{sec:Appendix}\newline 
 \textbf{Note} - We will apply the enables to the output of each operational blocks rather than applying it 
 to the inputs to those blocks. The reasons are discussed below-
 \begin{itemize}
@@ -161,7 +161,7 @@ Therefore, based on the subtraction steps discussed earlier and using basic digi
 we note that if we XOR all bits with 1, they get inverted 
 and if we XOR them with 0, they remain the same, and if subtraction is to be performed, we put the first carry as 1 (to get
 2's complimentof the subtrahend), otherwise 0. Overall, the first carry will be the bit with which we XOR the bits of the
-second number. \newline 
+second number. (\textbf{Section}~\ref{sec:Appendix})\newline 
 Keeping these design principles in mind we follow the design as shown in \hyperlink{4AS}{Fig.3}. 
 Note that in the figure, \textbf{FA} stands for Full-Adder and $A_i$ and $B_i$ are the bits of the 
 two numbers. $S_i$ are the bits of the output and $C_i$ are the carries. $C_0$ is the first carry 
@@ -198,7 +198,7 @@ Note that as done for \textbf{Eql}, we AND the final outputs of \textbf{Gth} and
 individual ANDs) with \textbf{En} that will be the output \textbf{D2} of the decoder. \newline 
 Interestingly, by applying Enable at the output end helps us eliminate the confusion regarding the numbers being equal that 
 would otherwise have persisted had we applied it at the input end. The logic-netlist for the same has been shown in 
-\hyperlink{4C}{Fig.4}.
+\hyperlink{4C}{Fig.4}. Logic can be found in \textbf{Section}~\ref{sec:Appendix}.
 \begin{figure}[htp]
     \centering
     \hypertarget{4C}{\includegraphics[scale = 0.6]{Image_4-bit_Comparator.png}}
@@ -218,7 +218,7 @@ The combinational logic has been demonstrated in \hyperlink{4A}{Fig.5}.
 \end{figure}
 Note that the outputs from each of these blocks will be further ANDed with \textbf{En} to comply with 
 our original idea of ANDing the enables to the outputs. Therefore, keeping this in mind, it would rather be better 
-to use 3-input AND gates which will reduce the transistor count by 10 in total.
+to use 3-input AND gates which will reduce the transistor count by 10 in total. Logic in \textbf{Section}~\ref{sec:Appendix}.
 \\\\
 With this we end this section where all the designs have been discussed.
 
@@ -444,8 +444,218 @@ the blocks are working as intended. For the same, I have posted all the plots ob
 tools. It is sufficient to paste the plots for the working of the entire ALU which indirectly verifies the working 
 of the individual blocks.
 \subsection{Verilog}
+The plots for different sets of inputs has been shown using verilog as follows:
+\begin{figure}[htp]
+    \centering
+    \hypertarget{GTK1}{\includegraphics[scale = 0.3]{ALU_Outputs_1_sample.png}}
+    \caption{GTK Plot for A=0101 and B=1011}
+    \label{fig:fig10}
+\end{figure}
+\begin{figure}[htp]
+    \centering
+    \hypertarget{GTK12}{\includegraphics[scale = 0.3]{ALU_Outputs_12_samples.png}}
+    \caption{GTK Plot for combinations of different values of A and B}
+    \label{fig:fig11}
+\end{figure}
+\begin{figure}[htp]
+    \centering
+    \hypertarget{VeriOut12}{\includegraphics[scale = 0.5]{Output_result_12_samples.png}}
+    \caption{Terminal Output for combinations of different values of A and B}
+    \label{fig:fig12}
+\end{figure}
+
 \subsection{Ngspice}
+Here we plot the output waveforms for same (A=0101 and B=1011) input that we had used for Verilog. The plots we therefore get 
+are as follows:
+\begin{figure}[htp]
+    \centering
+    \hypertarget{NGA}{\includegraphics[scale = 0.3]{Adder-Subtractor_output (00-select).png}}
+    \caption{Addition}
+    \label{fig:fig13}
+\end{figure}
+\begin{figure}[htp!]
+    \centering
+    \hypertarget{NGS}{\includegraphics[scale = 0.3]{Adder-Subtractor_output (01-select).png}}
+    \caption{Subtraction}
+    \label{fig:fig14}
+\end{figure}
+\begin{figure}[htp!]
+    \centering
+    \hypertarget{NGC}{\includegraphics[scale = 0.3]{Comparator_output.png}}
+    \caption{Comparator}
+    \label{fig:fig15}
+\end{figure}
+\begin{figure}[htp!]
+    \centering
+    \hypertarget{NGA}{\includegraphics[scale = 0.3]{ANDer_output.png}}
+    \caption{ANDing}
+    \label{fig:fig16}
+\end{figure}
+
 \subsection{MAGIC Layout}
+In MAGIC, once the layout is done, as mentioned earlier, we convert it abck to SPICE in order to check whether the layout 
+that was made referring to the netlist did turn out the way we wanted it to, i.e. it is giving desired output for desired 
+set of inputs. \newline 
+Furthermore, the outputs obtained on the SPICE files made from MAGIC layout show us the "real" picture as to how will the 
+output look once the layout is fabricated and made into an IC. The delays in this case are the closest to the ones you 
+can get in real life.\newline 
+Elaborating on the previous point, if closely observed, the layout outputs will have a lightly larger delay in their outputs
+as compared to those in the NGSpice plots due to the use of actual parametrised transistors used in layout.
+The plots thus obtained are as follows: (Note: A=0101 and B=1011)
+\begin{figure}[htp!]
+    \centering
+    \hypertarget{MA}{\includegraphics[scale = 0.5]{4_bit_AS_00.png}}
+    \caption{Addition}
+    \label{fig:fig17}
+\end{figure}
+\begin{figure}[htp!]
+    \centering
+    \hypertarget{MS}{\includegraphics[scale = 0.5]{4_bit_AS_01.png}}
+    \caption{Subtraction}
+    \label{fig:fig18}
+\end{figure}
+\begin{figure}[htp!]
+    \centering
+    \hypertarget{MC1}{\includegraphics[scale = 0.5]{4_bit_C_10.png}}
+    \caption{Comparison}
+    \label{fig:fig19}
+\end{figure}
+\begin{figure}[htp!]
+    \centering
+    \hypertarget{MC2}{\includegraphics[scale = 0.5]{4_bit_C_10_diffIn.png}}
+    \caption{Comparison with inputs A=0101 and B=0011}
+    \label{fig:fig20}
+\end{figure}
+\begin{figure}[htp!]
+    \centering
+    \hypertarget{MAnd}{\includegraphics[scale = 0.5]{4_bit_AND_11.png}}
+    \caption{ANDing}
+    \label{fig:fig21}
+\end{figure} \newline 
+
+\subsection{Observation based on Images}
+After looking at all the images, we conclude that the MAGIC images are more accurate to suite to the real scenario than
+those by any other platform. The occasional \textit{spikes} in MAGIC plots are due to flow of \textbf{back-current} or 
+\textbf{leakage-current}. In out design, the spikes seem more prominent due to the non-uniformity across gates, especially
+their sizes which differ from gate to gate. Also, the length of the path taken by inputs as well as each intermediate output
+to reach the desired destination matters quite significantly when talking about \textit{spikes}.\newline 
+Another observation that comes to notice is that if we reduce the amount of time for the pulse, then the \textit{spikes}
+become more pronounced in terms of visibility. The reason for this will be cleared in the following section. 
+
+\subsection{Delay Analysis}
+One of the most important aspects of Digital IC design is delay analyis. This is a crucial part of the process because 
+as a manufacturer you wouldn't want the user to have a bad experience by waiting for the outputs after giving the inputs.
+We want the input-to-output response as quick as possible. This also plays an important role in the power consumption of 
+the blocks used. \newline 
+One of the ways to reduce delays is by increasing the \textbf{Supply}, but that increases the power by a good amount because 
+power is quadratically proportional to \textbf{Supply}. \hyperlink{del_tab}{Table 2} shows the comprehensive delay analysis
+for each block culminating into a \textbf{4-bit-ALU}, the maximum delay of which will be decided by the block with maximum 
+latency. \newline 
+Now, as per \hyperlink{del_tab}{Table 2}, we see that the Adder-Subtractor has the highest delay for both inputs and that does make
+sense because of the fact that the Full-Adder is being cascaded multiple times. The delay is also maximised due to the path taken by
+the inputs which varies for each one, and to add to it, the non-uniformity in the construction of gates (size of transistors)
+also plays a big role. Finally, since I have added an enabler-like block at the output-end, a little delay is added by that as
+well.
+\begin{table}[htp!]
+\begin{center} 
+\hypertarget{del_tab}{
+\begin{tabular}{|p{1.8cm}|p{1.8cm}|p{1.5cm}|p{1.5cm}|p{3cm}|}
+    \hline 
+    \textbf{Block} & \textbf{Input Combo} & \textbf{input A} (Max delay due to any of its bits) & \textbf{input B} (Max delay due to any of its bits) & \textbf{Explanantion} \\
+    \hline
+    Adder-Subtractor & A=15, B=0 and A=0, B=15 & 2.54353e-9s & 3.74776e-9s & Delay for B is more because it passes through 
+    XOR gates which adds the time.\\
+    \hline 
+    Comparator & A=15, B=0 and A=0, B=15 and A=15, B=15 & 1.41977e-9s for Gt, 1.53620e-9s for Eq &  1.41114e-9s for Lt, 
+    1.52226e-9s for Eq & The delays here for A and B are almost equal due to the symmetry in the circuit\\
+    \hline 
+    ANDer & A=15, B=15 & 3.41690e-10s & 3.33547e-10s & Delays for A and B are almost equal due to symmetry in the circuit and 
+    more interestingly it has the least delay of all blocks due to involvement of only 1 type of gate and without any cascading. \\
+    \hline
+\end{tabular}}
+\caption{Delay Analysis for each block}
+\label{tab:t2}
+\end{center}
+\end{table} \newline
+From the \hyperlink{del_tab}{Table 2}, we conclude that the maximum delay for the entire ALU is found in the \textbf{Adder-Subtractor}
+block. This delay traces its path from input $B_0$ to $S_3$, passing through an XOR gate to start with and propagating via \textit{carries}
+to each cascaded full-adder. It therefore forms the critical path of the \textbf{ALU}. Thus, we can conveniently conclude that the maximum 
+delay of the \textbf{ALU} is \textbf{3.74776e-9s}.
+
+\section{Appendix-1 Boolean Logic}
+\label{sec:Appendix}
+This section deals with the boolean logic used for constructing each block. 
+\begin{itemize}
+    \item \textbf{Decoder} - This is a simple design that helps the user choose which function to perform based on the select lines.
+    The logic for it goes as follows:
+    \begin{center}
+        $y_0 = Sel_0^cSel_1^c$\\
+        $y_1 = Sel_0^cSel_1$\\
+        $y_2 = Sel_0Sel_1^c$\\
+        $y_3 = Sel_0Sel_1$
+    \end{center}
+    Where $Sel_0$ and $Sel_1$ are the select lines.
+    \item \textbf{Addition} - Here, just the logic for Full-Adder is shown. To make the 4-bit Adder we simply cascade the 
+    Full-Adders. The logic goes as follows:
+    \begin{center}
+        $C_{out} = C_{in}(A\otimes B) + AB$ \\
+        $S = C_{in}\otimes (A\otimes B)$
+    \end{center}
+    where $C_{out}$ is the output carry and $C_{in}$ is the input carry. $S$ is the output sum.\newline 
+    Now when we cascade four of these to make a 4-bit Adder, the input carry to the first block is given by the user, but 
+    the from the second block onwards, input carry to the block is the output carry of the previous block. The logic goes
+    as follows:
+    \begin{center}
+        $C_{out0} = C_{0}(A_0\otimes B_0) + A_0B_0$ \\
+        $S_0 = C_{0}\otimes (A_0\otimes B_0)$
+
+        $C_{out1} = C_{out0}(A_1\otimes B_1) + A_1B_1$ \\
+        $S_1 = C_{out0}\otimes (A_1\otimes B_1)$
+
+        $C_{out2} = C_{out1}(A_2\otimes B_2) + A_2B_2$ \\
+        $S_2 = C_{out1}\otimes (A_2\otimes B_2)$
+
+        $C_{out3} = C_{out2}(A_3\otimes B_3) + A_3B_3$ \\
+        $S_3 = C_{out2}\otimes (A_3\otimes B_3)$
+    \end{center}
+    $C_{out3}$ becomes the overflow bit for a four-bit adder.
+    \item \textbf{Subtraction} - Subtraction is not different that addition if we see the subtrahend as the 2's complement 
+    of the number to be subtracted. To get that, we just add a few more gates - XOR gates and pass the bits of B through them.
+    \begin{center}
+        $B_{eff0} = B_0\otimes C_0$\\
+        $B_{eff1} = B_1\otimes C_0$\\
+        $B_{eff2} = B_2\otimes C_0$\\
+        $B_{eff3} = B_3\otimes C_0$
+    \end{center}
+    Finally, in the previous logic for the Full-Adders (in the cascaded ones as well) we simply replace $B_i$ with $B_{effi}$. 
+    These gates together with the cascade form the 4-bit Adder.
+    \item \textbf{Comparator} - Given two 4-bit numbers, we basically need to output whether $A>B$ or $A<B$ or $A=B$. The 
+    boolean logic for the same goes as follows:
+    \begin{center}
+        $Eq = (A_0\otimes B_0)^c(A_1\otimes B_1)^c(A_2\otimes B_2)^c(A_3\otimes B_3)^c$
+    \end{center} 
+    Now let $x_i = (A_i\otimes B_i)^c$, then 
+    \begin{center}
+        $Gt = (A_3B_3^c) + x_3(A_2B_2^c) + x_3x_2(A_1B_1^c) + x_3x_2x_1(A_0B_0^c)$
+        $Lt = (A_3^cB_3) + x_3(A_2^cB_2) + x_3x_2(A_1^cB_1) + x_3x_2x_1(A_0^cB_0)$
+    \end{center}
+    where $Eq$, $Gt$ and $Lt$ represent $A=B$, $A>B$ and $A<B$ respectively.
+    \item \textbf{ANDer} - This is a very straightforward block whose logic is as follows:
+    \begin{center}
+        $C_0 = A_0B_0$\\
+        $C_1 = A_1B_1$\\
+        $C_2 = A_2B_2$\\
+        $C_3 = A_3B_3$
+    \end{center}
+    where, $C_0$, $C_1$, $C_2$ and $C_3$ are outputs.
+\end{itemize}
+Finally, we combine all of this to make the \textbf{4-bit ALU}, which looks as follows:
+\begin{figure}[htp!]
+    \centering
+    \hypertarget{4ALU}{\rotatebox{90}{\includegraphics[scale = 0.25]{Image_4-bit_ALU.jpg}}}
+    \caption{4-bit ALU}
+    \label{fig:fig22}
+\end{figure}
 
 \section{Conclusion}
 Wo observed that the 4-bit ALU, although very basic as compared to the used ones, served in effectively imparting the 
